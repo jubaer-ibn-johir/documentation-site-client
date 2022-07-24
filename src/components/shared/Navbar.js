@@ -7,8 +7,8 @@ const Navbar = ({ children }) => {
         <div className="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
-                <div className="w-full navbar bg-white fixed top-0 shadow-lg lg:px-10">
-                    <div className="flex-1 px-2 mx-2 text-2xl font-bold"><Link to="/"><span className='text-primary text-3xl font-bold'>E</span>asy<span className='text-secondary text-3xl font-bold'>D</span>ocs</Link></div>
+                <div className="w-full navbar bg-white fixed top-0  lg:px-10">
+                    <div className="flex-1 px-2 mx-2 text-2xl font-bold"><Link to="/"><span className='text-primary text-4xl font-bold'>E</span>asy<span className='text-secondary text-3xl font-bold'>D</span>ocs</Link></div>
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -17,23 +17,23 @@ const Navbar = ({ children }) => {
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             <div className="menu menu-horizontal mr-[160px]">
-                                <li><Link className='hover:bg-white hover:text-primary' to="/docs">Docs</Link></li>
+                                <li><Link className='hover:bg-white hover:text-primary text-2xl' to="/docs">Docs</Link></li>
                                 <li className="dropdown dropdown-hover">
-                                    <label tabIndex="0" className='flex items-center hover:bg-white hover:text-primary'>Blogs<IoIosArrowDown></IoIosArrowDown></label>
+                                    <label tabIndex="0" className='flex items-center hover:bg-white hover:text-primary text-2xl'>Blogs<IoIosArrowDown></IoIosArrowDown></label>
                                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                        <li><Link className='hover:bg-white hover:text-primary' to="/blog">Blog</Link></li>
+                                        <li><Link className='hover:bg-white hover:text-primary ' to="/blog">Blog</Link></li>
                                         <li><Link className='hover:bg-white hover:text-primary' to="/tutorial">Tutorial</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link className='hover:bg-white hover:text-primary' to="/dashboard">Dashboard</Link></li>
+                                <li><Link className='hover:bg-white hover:text-primary text-2xl' to="/dashboard">Dashboard</Link></li>
                                 <li className="dropdown dropdown-hover">
-                                    <label tabIndex="0" className='flex items-center hover:bg-white hover:text-primary'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
+                                    <label tabIndex="0" className='flex items-center hover:bg-white hover:text-primary text-2xl'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
                                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                        <li><Link className='hover:bg-white hover:text-primary' to="/contact">Contact Us</Link></li>
+                                        <li><Link className='hover:bg-white hover:text-primary ' to="/contact">Contact Us</Link></li>
                                         <li><Link className='hover:bg-white hover:text-primary' to="/about">About</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link className='hover:bg-white hover:text-primary' to="/languages">Languages</Link></li>
+                                <li><Link className='hover:bg-white hover:text-primary text-2xl' to="/languages">Languages</Link></li>
                             </div>
                             <label className="swap swap-rotate mr-[20px]">
                                 <input type="checkbox" />
