@@ -1,11 +1,32 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Login from './components/autentication/Login';
+import SingUp from './components/autentication/SingUp';
+import ContactUs from './components/contactUs/ContactUs';
+import Docs from './components/Docs/Docs';
+import Nextjs from './components/Docs/Nextjs';
+import Reactjs from './components/Docs/Reactjs';
+import Reduxjs from './components/Docs/Reduxjs';
+import Home from './components/home/Home';
+
 import Footer from './components/shared/Footer';
 import Navbar from './components/shared/Navbar';
+import NotFound from './components/shared/NotFound';
 
 function App() {
   return (
     <div>
      <Navbar>
+        <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="/singup" element={<SingUp></SingUp>} />
+          <Route path="/docs" element={<Docs></Docs>} />
+          <Route path="/react" element={<Reactjs></Reactjs>} />
+          <Route path="/redux" element={<Reduxjs></Reduxjs>} />
+          <Route path="/nextjs" element={<Nextjs></Nextjs>}/>
+          <Route path="/login" element={<Login></Login>} />
+          <Route path='*' element={<NotFound></NotFound>}></Route>
+        </Routes>
      <Footer></Footer>
      </Navbar>
     </div>

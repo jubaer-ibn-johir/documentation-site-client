@@ -7,7 +7,7 @@ const Navbar = ({ children }) => {
         <div className="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
-                <div className="w-full navbar sticky top-0 bg-white shadow-lg lg:px-10">
+                <div className="w-full navbar  top-0 fixed  lg:px-10">
                     <div className="flex-1 px-2 mx-2 text-2xl font-bold"><Link to="/"><span className='text-primary text-3xl font-bold'>E</span>asy<span className='text-secondary text-3xl font-bold'>D</span>ocs</Link></div>
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -42,7 +42,7 @@ const Navbar = ({ children }) => {
 
                             </label>
                             <li><Link className="btn bg-transparent text-primary btn-primary hover:text-white rounded-full" to="/courses">Our Courses</Link></li>
-                            <li><Link className='btn btn-primary text-white rounded-full ml-4' to="/signin">Sign In</Link></li>
+                            <li><Link className='btn btn-primary text-white rounded-full ml-4' to="/login">Sign In</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const Navbar = ({ children }) => {
                     </div>
                     <li><Link className='hover:bg-white hover:text-primary' to="/languages">Languages</Link></li>
                     <li><Link className="btn bg-transparent text-primary mb-3 ml-4 w-[150px] btn-primary hover:text-white rounded-full" to="/courses">Our Courses</Link></li>
-                    <li><Link className='btn btn-primary w-[150px] text-white rounded-md ml-4' to="/signin">Sign In</Link></li>
+                    <li><Link className='btn btn-primary w-[150px] text-white rounded-md ml-4' to="/login">Sign In</Link></li>
                 </ul>
             </div>
         </div>
