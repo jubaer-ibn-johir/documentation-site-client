@@ -10,16 +10,19 @@ import Reduxjs from './components/Docs/Reduxjs';
 import Home from './components/home/Home';
 
 import Footer from './components/shared/Footer';
+import Hearder from './components/shared/Hearder';
 import Navbar from './components/shared/Navbar';
 import NotFound from './components/shared/NotFound';
 
 function App() {
   return (
     <div>
-     <Navbar>
+     {/* <Navbar> */}
+     <Hearder></Hearder>
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path="/singup" element={<SingUp></SingUp>} />
+          <Route path="/contact" element={<ContactUs></ContactUs>} />
           <Route path="/docs" element={<Docs></Docs>} />
           <Route path="/react" element={<Reactjs></Reactjs>} />
           <Route path="/redux" element={<Reduxjs></Reduxjs>} />
@@ -27,8 +30,9 @@ function App() {
           <Route path="/login" element={<Login></Login>} />
           <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
-     <Footer></Footer>
-     </Navbar>
+        <Footer></Footer>
+     {/* </Navbar> */}
+ 
     </div>
   );
 }
