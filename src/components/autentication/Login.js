@@ -51,7 +51,7 @@ const Login = () => {
     }
     return (
         <div>
-            <div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
+            <div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center pt-[100px]">
                 <div
                     class="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md"
                 >

@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Nextjs = () => {
+const Reactjs = () => {
     return (
         <div>
-            
         </div>
     );
 };
 
-export default Nextjs;
+export default Reactjs;

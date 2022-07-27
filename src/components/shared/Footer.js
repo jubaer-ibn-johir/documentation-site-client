@@ -36,7 +36,7 @@ const Footer = () => {
                 <label class="input-group">
                     
                     <input type="text" placeholder="info@site.com" onFocus={{borderd:"none"}} class="input bg-slate-300" />
-                    <span className='bg-primary text-white z-20'>Email</span>
+                    <span className='bg-primary text-white'>Email</span>
                 </label>
             </div>
           <div className='mt-7'>
