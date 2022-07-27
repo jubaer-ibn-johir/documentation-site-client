@@ -4,9 +4,9 @@ import Login from './components/autentication/Login';
 import SingUp from './components/autentication/SingUp';
 import ContactUs from './components/contactUs/ContactUs';
 import Docs from './components/Docs/Docs';
-import Nextjs from './components/Docs/Nextjs';
-import Reactjs from './components/Docs/Reactjs';
-import Reduxjs from './components/Docs/Reduxjs';
+import Nextjs from './components/Docs/NextJS/Nextjs';
+import Reactjs from './components/Docs/ReactJS/Reactjs';
+import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
 
 import Footer from './components/shared/Footer';
@@ -24,7 +24,7 @@ function App() {
           <Route path="/singup" element={<SingUp></SingUp>} />
           <Route path="/contact" element={<ContactUs></ContactUs>} />
           <Route path="/docs" element={<Docs></Docs>} />
-          <Route path="/react" element={<Reactjs></Reactjs>} />
+          <Route path="/reactjs" element={<Reactjs></Reactjs>} />
           <Route path="/redux" element={<Reduxjs></Reduxjs>} />
           <Route path="/nextjs" element={<Nextjs></Nextjs>}/>
           <Route path="/login" element={<Login></Login>} />
