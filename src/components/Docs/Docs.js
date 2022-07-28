@@ -3,21 +3,18 @@ import bannerBg from '../../assets/home-img/banner.png'
 import reduxBg from '../../assets/docs/redux.gif'
 import nextBg from '../../assets/docs/next-js.svg'
 import { FaReact } from 'react-icons/fa';
-import { AiOutlineArrowRight} from 'react-icons/ai';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 const Docs = () => {
     return (
         <div>
-            <div class="hero h-96  banner flex justify-center items-center " style={{ backgroundImage: `url(${bannerBg})`}}>
+            <div class="hero h-96  banner flex justify-center items-center " style={{ backgroundImage: `url(${bannerBg})` }}>
 
                 <div class="hero-content text-center text-neutral-content ">
                     <div class="">
                         <h1 class="mb-8 text-4xl lg:text-6xl font-semibold tracking-wider text-black">Documentation</h1>
                         <p class="mb-5 text-gray-500 text-xl lg:text-2xl">Home <i class="fa-solid fa-share"></i> Docs </p>
-
-
-
                     </div>
                 </div>
             </div>
@@ -56,7 +53,7 @@ const Docs = () => {
                         <h2 class="card-title text-xl">Next js Documentation</h2>
                         <small>The React Framework
                             for Production</small>
-                            <div class="card-actions">
+                        <div class="card-actions">
                             <footer className='mt-5 text-primary'><Link className='flex items-center' to='/nextjs'>Read More <AiOutlineArrowRight className='ml-1'></AiOutlineArrowRight></Link> <i class="fa-solid fa-arrow-right"></i></footer>
                         </div>
                     </div>
