@@ -4,7 +4,11 @@ import Login from './components/autentication/Login';
 import SingUp from './components/autentication/SingUp';
 import ContactUs from './components/contactUs/ContactUs';
 import Docs from './components/Docs/Docs';
+import GetServerSideProps from './components/Docs/NextJS/GetServerSideProps';
+import NextDocs from './components/Docs/NextJS/NextDocs';
+import NextGetStarted from './components/Docs/NextJS/NextGetStarted';
 import Nextjs from './components/Docs/NextJS/Nextjs';
+import NextPages from './components/Docs/NextJS/NextPages';
 import Reactjs from './components/Docs/ReactJS/Reactjs';
 import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
@@ -17,22 +21,27 @@ import NotFound from './components/shared/NotFound';
 function App() {
   return (
     <div>
-     {/* <Navbar> */}
-     <Hearder></Hearder>
-        <Routes>
-          <Route path="/" element={<Home></Home>} />
-          <Route path="/singup" element={<SingUp></SingUp>} />
-          <Route path="/contact" element={<ContactUs></ContactUs>} />
-          <Route path="/docs" element={<Docs></Docs>} />
-          <Route path="/reactjs" element={<Reactjs></Reactjs>} />
-          <Route path="/redux" element={<Reduxjs></Reduxjs>} />
-          <Route path="/nextjs" element={<Nextjs></Nextjs>}/>
-          <Route path="/login" element={<Login></Login>} />
-          <Route path='*' element={<NotFound></NotFound>}></Route>
-        </Routes>
-        <Footer></Footer>
-     {/* </Navbar> */}
- 
+      {/* <Navbar> */}
+      <Hearder></Hearder>
+      <Routes>
+        <Route path="/" element={<Home></Home>} />
+        <Route path="/singup" element={<SingUp></SingUp>} />
+        <Route path="/contact" element={<ContactUs></ContactUs>} />
+        <Route path="/docs" element={<Docs></Docs>} />
+        <Route path="/reactjs" element={<Reactjs></Reactjs>} />
+        <Route path="/redux" element={<Reduxjs></Reduxjs>} />
+        <Route path="/nextjs" element={<Nextjs></Nextjs>} />
+        <Route path="/login" element={<Login></Login>} />
+        <Route path='next-get-started' element={<NextDocs></NextDocs>}>
+          <Route index element={<NextGetStarted></NextGetStarted>}></Route>
+          <Route path='next-pages' element={<NextPages></NextPages>}></Route>
+          <Route path='getServerSideProps' element={<GetServerSideProps></GetServerSideProps>}></Route>
+        </Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+      </Routes>
+      <Footer></Footer>
+      {/* </Navbar> */}
+
     </div>
   );
 }
