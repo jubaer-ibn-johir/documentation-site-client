@@ -4,10 +4,14 @@ import Login from './components/autentication/Login';
 import SingUp from './components/autentication/SingUp';
 import ContactUs from './components/contactUs/ContactUs';
 import Docs from './components/Docs/Docs';
+import GetServerSideProps from './components/Docs/NextJS/GetServerSideProps';
+import NextDocs from './components/Docs/NextJS/NextDocs';
+import NextGetStarted from './components/Docs/NextJS/NextGetStarted';
 import Nextjs from './components/Docs/NextJS/Nextjs';
 import Installation from './components/Docs/ReactJS/Installation';
 import MainConcepts from './components/Docs/ReactJS/MainConcepts';
 import ReactDashboard from './components/Docs/ReactJS/ReactDashboard';
+import NextPages from './components/Docs/NextJS/NextPages';
 import Reactjs from './components/Docs/ReactJS/Reactjs';
 import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
@@ -35,12 +39,17 @@ function App() {
           <Route index element={<Installation></Installation>}></Route>
           <Route path='mainconcepts' element={<MainConcepts></MainConcepts>}></Route>
         </Route>
+        <Route path='next-get-started' element={<NextDocs></NextDocs>}>
+          <Route index element={<NextGetStarted></NextGetStarted>}></Route>
+          <Route path='next-pages' element={<NextPages></NextPages>}></Route>
+          <Route path='getServerSideProps' element={<GetServerSideProps></GetServerSideProps>}></Route>
+        </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       {/* </Navbar> */}
 
-    </div>
+    </div >
   );
 }
 

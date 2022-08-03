@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerBg from '../../assets/home-img/banner.png'
+import bannerBg from '../../assets/docs/docs-banner.png'
 import reduxBg from '../../assets/docs/redux.gif'
 import nextBg from '../../assets/docs/next-js.svg'
 import { FaReact } from 'react-icons/fa';
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Docs = () => {
     return (
         <div>
-            <div class="hero h-96  banner flex justify-center items-center " style={{ backgroundImage: `url(${bannerBg})` }}>
+            <div class="hero h-96  banner flex justify-center items-center " style={{ backgroundImage: `url(${bannerBg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
                 <div class="hero-content text-center text-neutral-content ">
                     <div class="">
