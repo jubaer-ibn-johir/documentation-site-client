@@ -3,6 +3,8 @@ import './App.css';
 import About from './components/about/About';
 import Login from './components/autentication/Login';
 import SingUp from './components/autentication/SingUp';
+import BlogDetails from './components/Blogs/BlogDetails';
+import Blogs from './components/Blogs/Blogs';
 import ContactUs from './components/contactUs/ContactUs';
 import Docs from './components/Docs/Docs';
 import GetServerSideProps from './components/Docs/NextJS/GetServerSideProps';
@@ -35,6 +37,8 @@ function App() {
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/docs" element={<Docs></Docs>} />
+        <Route path="/blog" element={<Blogs></Blogs>} />
+          <Route path="/blogDetail/:blogDetailId" element={<BlogDetails/>} />
         <Route path="/reactjs" element={<Reactjs></Reactjs>} />
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />
