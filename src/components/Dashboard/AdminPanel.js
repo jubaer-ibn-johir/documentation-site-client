@@ -4,15 +4,16 @@ import { Link, Outlet } from 'react-router-dom';
 const AdminPanel = () => {
     return (
         <div>
-            <div className='flex items-center'>
-                <label htmlFor="dashboard-sidebar" className="btn btn-square btn-ghost">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </label>
-                <span>Dashboard</span>
-            </div>
             <div class="drawer drawer-mobile bg-accent">
                 <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content mt-16">
+                    <div className='flex items-center lg:border-hidden border border-t-0 border-x-0 border-b-sky-300'>
+                        <label for="dashboard-sidebar" tabIndex="1" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <span className='lg:hidden block'>Dashboard</span>
+                    </div>
+                    {/* <label for="dashboard-sidebar" className="btn btn-primary drawer-button lg:hidden rounded-lg">Next</label> */}
                     <Outlet></Outlet>
                 </div>
                 <div class="drawer-side mt-16">
