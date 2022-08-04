@@ -61,27 +61,36 @@ const Hearder = () => {
                         <span class="line line3"></span>
                     </div>
                     <ul class="menu-items flex items-center">
+                        
+                        <li><Link className=' hover:underline  ml-[-100px] lg:ml-0 ' to="/docs">Docs</Link></li>
 
-                        <li><Link className=' hover:underline text-xl ml-[-100px] lg:ml-0 ' to="/docs">Docs</Link></li>
+                        
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-98px] lg:ml-0  mb-2 lg:mb-0 hover:underline text-xl'>Blogs<IoIosArrowDown></IoIosArrowDown></label>
                             <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 ml-[-100px] lg:ml-0  rounded-box ">
-                                <li ><Link className=' hover:underline text-xl' to="/blog">Blog</Link></li>
-                                <li><Link className='hover:underline text-xl' to="/tutorial">Tutorial</Link></li>
-                                <li><Link className='hover:underline text-xl' to="/courses">Courses</Link></li>
+                                <li ><Link className=' hover:underline ' to="/blog">Blog</Link></li>
+                                <li><Link className='hover:underline ' to="/tutorial">Tutorial</Link></li>
+                                <li><Link className='hover:underline ' to="/courses">Courses</Link></li>
                             </ul>
                         </div>
-                        {
-                            user &&
-                            <li><Link className=' hover:text-primary text-xl ml-[-102px] lg:ml-0 hover:underline' to="/dashboard">Dashboard</Link></li>
-                        }
+                       {
+                        user &&
+                            <li><Link className=' hover:text-primary  ml-[-102px] lg:ml-0 hover:underline' to="/dashboard">Dashboard</Link></li>
+                       }
+                        
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-86px] lg:ml-0  mb-2 lg:mb-0 hover:underline text-xl'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
                             <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 ml-[-100px] lg:ml-0  rounded-box w-52">
-                                <li><Link className=' hover:underline  text-xl' to="/contact">Contact Us</Link></li>
-                                <li><Link className=' hover:underline text-xl' to="/about">About</Link></li>
+                                <li><Link className=' hover:underline  ' to="/contact">Contact Us</Link></li>
+                                <li><Link className=' hover:underline ' to="/about">About</Link></li>
                             </ul>
                         </div>
+                       { 
+                       user
+                       ?
+                                <li><Link onClick={handleSignOut}  className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">LogOut</Link></li>
+                       :
+                       <li><Link className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">Login</Link></li>}
                         {
                             user
                                 ?
