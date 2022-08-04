@@ -29,6 +29,7 @@ function App() {
       <Hearder></Hearder>
       <Routes>
         <Route path="/" element={<Home></Home>} />
+        
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/docs" element={<Docs></Docs>} />
