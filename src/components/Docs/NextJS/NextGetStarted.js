@@ -1,7 +1,8 @@
-
 import React from 'react';
 import { javascript } from '@codemirror/lang-javascript';
 import CodeMirror from '@uiw/react-codemirror';
+
+
 
 const NextGetStarted = () => {
     const onChange = React.useCallback((value, viewUpdate) => {
