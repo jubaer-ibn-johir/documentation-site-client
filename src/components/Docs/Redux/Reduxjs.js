@@ -8,7 +8,7 @@ import { AiOutlinePicCenter } from "react-icons/ai";
 
 const Reduxjs = () => {
     return (
-        <div>
+        <div className='bg-accent'>
             <div className='flex justify-center items-center' style={{ backgroundColor: '#0FCFEC' }}>
                 <div className='lg:my-40 md:my-40 my-36 text-center'>
                     <h1 className='text-white lg:text-5xl md:text-5xl text-4xl font-bold'>Redux</h1>

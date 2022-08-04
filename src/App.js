@@ -25,6 +25,12 @@ import Hearder from './components/shared/Hearder';
 import Navbar from './components/shared/Navbar';
 import NotFound from './components/shared/NotFound';
 import CoreConcepts from './components/Docs/Redux/CoreConcepts';
+import AdminPanel from './components/Dashboard/AdminPanel';
+import Dashboard from './components/Dashboard/Dashboard';
+import ManageUsers from './components/Dashboard/ManageUsers';
+import ManageBlogs from './components/Dashboard/ManageBlogs';
+import ManageTutorials from './components/Dashboard/ManageTutorials';
+import ManageCourses from './components/Dashboard/ManageCourses';
 
 function App() {
   return (
@@ -38,7 +44,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
-          <Route path="/blogDetail/:blogDetailId" element={<BlogDetails/>} />
+        <Route path="/blogDetail/:blogDetailId" element={<BlogDetails />} />
         <Route path="/reactjs" element={<Reactjs></Reactjs>} />
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />
@@ -53,6 +59,13 @@ function App() {
           <Route path='installation' element={<Installation></Installation>}></Route>
           <Route path='why-redux' element={<WhyRedux></WhyRedux>}></Route>
           <Route path='core-concepts' element={<CoreConcepts></CoreConcepts>}></Route>
+        </Route>
+        <Route path='admin-panel' element={<AdminPanel></AdminPanel>}>
+          <Route index element={<Dashboard></Dashboard>}></Route>
+          <Route path='manage-users' element={<ManageUsers></ManageUsers>}></Route>
+          <Route path='manage-blogs' element={<ManageBlogs></ManageBlogs>}></Route>
+          <Route path='manage-tutorials' element={<ManageTutorials></ManageTutorials>}></Route>
+          <Route path='manage-courses' element={<ManageCourses></ManageCourses>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

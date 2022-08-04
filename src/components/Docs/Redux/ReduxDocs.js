@@ -10,7 +10,7 @@ const ReduxDocs = () => {
                 <div className="drawer-content ">
                     <Outlet></Outlet>
                 </div>
-                <div className="drawer-side mt-16 shadow-2xl ">
+                <div className="drawer-side mt-16 shadow-2xl">
                     <label for="next-button" className="drawer-overlay"></label>
                     <ul className="menu p-4 overflow-y-auto w-80  text-base-content  shadow-2xl bg-white" >
                         {/* <!-- Sidebar content here --> */}

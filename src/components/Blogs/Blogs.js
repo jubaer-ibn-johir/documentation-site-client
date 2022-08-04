@@ -27,11 +27,11 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className=" lg:ml-12 md:ml-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className=" lg:ml-12 md:ml-6 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {
-        blogs.map((blog) =>  <Blog 
-          key={blog._id} 
-          blog={blog}
+          blogs.map((blog) => <Blog
+            key={blog._id}
+            blog={blog}
           ></Blog>)
         }
       </div>
