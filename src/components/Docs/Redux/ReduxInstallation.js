@@ -2,7 +2,7 @@ import React from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
 
-const Installation = () => {
+const ReduxInstallation = () => {
     const onChange = React.useCallback((value, viewUpdate) => {
         console.log("value:", value);
     }, []);
@@ -100,4 +100,4 @@ const Installation = () => {
     );
 };
 
-export default Installation;
+export default ReduxInstallation;

@@ -11,18 +11,20 @@ import GetServerSideProps from './components/Docs/NextJS/GetServerSideProps';
 import NextDocs from './components/Docs/NextJS/NextDocs';
 import NextGetStarted from './components/Docs/NextJS/NextGetStarted';
 import Nextjs from './components/Docs/NextJS/Nextjs';
+import Installation from './components/Docs/ReactJS/Installation';
+import MainConcepts from './components/Docs/ReactJS/MainConcepts';
+import ReactDashboard from './components/Docs/ReactJS/ReactDashboard';
 import NextPages from './components/Docs/NextJS/NextPages';
 import WhyRedux from './components/Docs/Redux/WhyRedux';
 import Reactjs from './components/Docs/ReactJS/Reactjs';
 import GetStarted from './components/Docs/Redux/GetStarted';
-import Installation from './components/Docs/Redux/Installation';
+import ReduxInstallation from './components/Docs/Redux/ReduxInstallation';
 import ReduxDocs from './components/Docs/Redux/ReduxDocs';
 import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
 
 import Footer from './components/shared/Footer';
 import Hearder from './components/shared/Hearder';
-import Navbar from './components/shared/Navbar';
 import NotFound from './components/shared/NotFound';
 import CoreConcepts from './components/Docs/Redux/CoreConcepts';
 import AdminPanel from './components/Dashboard/AdminPanel';
@@ -49,6 +51,10 @@ function App() {
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />
         <Route path="/login" element={<Login></Login>} />
+        <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
+          <Route index element={<Installation></Installation>}></Route>
+          <Route path='mainconcepts' element={<MainConcepts></MainConcepts>}></Route>
+        </Route>
         <Route path='next-get-started' element={<NextDocs></NextDocs>}>
           <Route index element={<NextGetStarted></NextGetStarted>}></Route>
           <Route path='next-pages' element={<NextPages></NextPages>}></Route>
@@ -56,7 +62,7 @@ function App() {
         </Route>
         <Route path='get-started' element={<ReduxDocs></ReduxDocs>}>
           <Route index element={<GetStarted></GetStarted>}></Route>
-          <Route path='installation' element={<Installation></Installation>}></Route>
+          <Route path='installation' element={<ReduxInstallation></ReduxInstallation>}></Route>
           <Route path='why-redux' element={<WhyRedux></WhyRedux>}></Route>
           <Route path='core-concepts' element={<CoreConcepts></CoreConcepts>}></Route>
         </Route>
@@ -72,7 +78,7 @@ function App() {
       <Footer></Footer>
       {/* </Navbar> */}
 
-    </div>
+    </div >
   );
 }
 
