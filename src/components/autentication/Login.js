@@ -6,6 +6,7 @@ import Loading from '../shared/Loading';
 import SocialLogIn from './SocialLogIn';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -23,15 +24,13 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    
-    if ( user) {
+    const [token]=useToken(user)
+    if ( token) {
         navigate(from, { replace: true });
     }
-
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
         auth
     );
-
 
     if (loading || sending) {
         return <Loading></Loading>

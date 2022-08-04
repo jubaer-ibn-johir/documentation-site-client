@@ -38,7 +38,8 @@ const Hearder = () => {
     const handleSignOut = () => {
 
         signOut(auth);
-        navigate('/')
+        localStorage.removeItem('accessToken')
+        navigate('/login')
     }
     if (loading) {
         return <Loading></Loading>
