@@ -1,6 +1,7 @@
 import React from 'react';
 import docImg from '../../assets/home-img/Build-docs.jpg'
 import { BsCheckLg } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const BuildDocuments = () => {
     return (
@@ -16,12 +17,13 @@ const BuildDocuments = () => {
                     <br />
                     information to flow freely among everyone at the company <br />
                     with  social feature of employees</p>
-                <div className=''>
+                <div className='mb-12'>
                     <p className='flex items-center gap-x-3 mt-5 mb-3 text-xl text-gray-500'><BsCheckLg className='text-primary'></BsCheckLg>Complete control of your text.</p>
                     <p className='flex items-center gap-x-3 my-3 text-xl text-gray-500'><BsCheckLg className='text-primary'></BsCheckLg>Layer Organized .</p>
                     <p className='flex items-center gap-x-3 my-3 text-xl text-gray-500'><BsCheckLg className='text-primary'></BsCheckLg>visualize your code. </p>
                 </div>
-                <button className='btn btn-secondary mt-5 pt-6 pb-12 px-10 text-white  font-semibold text-xl'>Reade More</button>
+                {/* <button className='btn btn-secondary mt-5 pt-6 pb-12 px-10 text-white  font-semibold text-xl'>Reade More</button> */}
+                <Link to="/docs" className='bg-secondary rounded-2xl py-3 px-7 text-white  font-semibold text-xl'>Reade More</Link>
             </div>
         </div >
     );

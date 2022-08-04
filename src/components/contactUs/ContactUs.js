@@ -17,12 +17,12 @@ const ContactUs = () => {
                         <p className='mb-12 lg:ml-0 md:ml-5 ml-5'><Link to="/" className='font-semibold '>EasyDoc</Link> / Contact</p>
                     </div>
                 </div> */}
-                <div style={{ "backgroundImage":` url(${ contactBg2 })`, "backgroundSize": "cover", "backgroundRepeat": "no-repeat" }}>
+                <div style={{ "backgroundImage": ` url(${contactBg2})`, "backgroundSize": "cover", "backgroundRepeat": "no-repeat", "backgroundPosition": "center" }}>
                     <div className='max-w-7xl mx-auto py-12'>
                         <div>
                             <div className='flex justify-center'>
                                 <div>
-                                    <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium mt-5 mb-2 text-center'>Contact Us !</h1>
+                                    <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium mt-40 mb-2 text-center'>Contact Us !</h1>
                                     <p className='lg:text-lg md:text-lg text-base lg:mx-0 md:mx-0 mx-5 text-gray-400 text-center'>We are always here to help you whatever way we can.</p>
                                 </div>
                             </div>
