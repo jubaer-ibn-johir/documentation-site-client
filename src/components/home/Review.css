@@ -38,6 +38,8 @@
     background: #ffffff;
     -webkit-box-shadow: 6px 6px 24px #d9d9d9, -6px -6px 24px #ffffff;
     box-shadow: 6px 6px 24px #d9d9d9, -6px -6px 24px #ffffff;
+    width: 370px;
+    margin-left: 20px;
 }
 
 /* .swiper-container {
@@ -97,5 +99,10 @@ section .title {
 
     .icon {
         margin-left: -50px;
+    }
+
+    .customBg {
+        width: 290px;
+        margin-left: 0px;
     }
 }

@@ -6,9 +6,9 @@ import backgroundIcon from '../../../assets/react-doc/react-bg.png'
 const ReactHome = () => {
     return (
         <section style={{
-            background: `url(${backgroundIcon})`, backgroundColor: '#282c34', backgroundRepeat: 'no-repeat', backgroundPositionX: '100%', backgroundPositionY: '100px', backgroundSize: '50% auto',
+            background: `url(${backgroundIcon})`, backgroundColor: '#282c34', backgroundRepeat: 'no-repeat', backgroundPositionX: '100%', backgroundPositionY: '100px', backgroundSize: '50% auto', height: '520px'
         }}
-            className='bg-aaccent lg:h-full overlay'>
+            className='bg-aaccent lg:min-h-screen overlay'>
             <div className=''>
                 <h1 className='text-primary text-center text-5xl lg:text-7xl  font-bold pt-28'>React</h1>
                 <h2 className='text-2xl lg:text-4xl leading-9 text-center mt-12 text-white'>A JavaScript library for building user interfaces</h2>
