@@ -6,9 +6,9 @@ const BuildDocuments = () => {
     return (
         <div className='lg:ml-16 ml-0 mx-auto  grid grid-cols-1 lg:grid-cols-2 my-10  lg:my-40 gap-x-16'>
             <div className='mt-7'>
-                <img style={{ borderRadius: '10px' }} src={docImg} alt="" />
+                <img className='w-96 lg:w-full' style={{ borderRadius: '10px' }} src={docImg} alt="" />
             </div>
-            <div className='pl-5 lg:pl-0 mt-10 lg:mt-0'>
+            <div className='pl-10 lg:pl-0 mt-10 lg:mt-0'>
                 <h2 className='font-bold mb-5 text-4xl leading-10'>Build online documentation
                     <br />
                     with EasyDoc</h2>
