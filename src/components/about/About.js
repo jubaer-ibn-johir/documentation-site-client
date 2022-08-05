@@ -3,6 +3,7 @@ import aboutBg from '../../assets/about-img/aboutBg.png';
 import about from '../../assets/about-img/about2.png';
 import jubaerVai from '../../assets/about-img/Jubaer vai2.jpg';
 import sohagVai from '../../assets/about-img/Sohag vai2.jpg';
+import sohagVai2 from '../../assets/about-img/Sohag vai.png';
 import hridoyVai from '../../assets/about-img/Hridoy vai.png';
 import naeem from '../../assets/about-img/Naeem.jpg';
 
@@ -54,7 +55,7 @@ const About = () => {
                             <p style={{ "color": '#6B7280' }}>MERN-Stack Developer</p>
                         </div>
                         <div>
-                            <img src={sohagVai} alt="" />
+                            <img src={sohagVai2} alt="" />
                             <p>Rakibul Hasan Sohag</p>
                             <p style={{ "color": '#6B7280' }}>MERN-Stack Developer</p>
                         </div>
