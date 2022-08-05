@@ -92,12 +92,7 @@ const Hearder = () => {
                                 <li><Link onClick={handleSignOut}  className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">LogOut</Link></li>
                        :
                        <li><Link className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">Login</Link></li>}
-                        {
-                            user
-                                ?
-                                <li><Link onClick={handleSignOut} className='btn btn-secondary  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">LogOut</Link></li>
-                                :
-                                <li><Link className='btn btn-secondary  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login"><IoIosLogIn ></IoIosLogIn>Sign In</Link></li>}
+                
                         {/* <li><Link className=' hover:underline' to="/languages">Languages</Link></li> */}
                         <li onClick={myFunction}>
                             <DarkModeToggle

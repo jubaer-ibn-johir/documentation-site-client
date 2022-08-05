@@ -21,6 +21,7 @@ import Home from './components/home/Home';
 import Footer from './components/shared/Footer';
 import Hearder from './components/shared/Hearder';
 import NotFound from './components/shared/NotFound';
+import Tutorial from './components/Tutorial/Tutorial';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
       <Hearder></Hearder>
       <Routes>
         <Route path="/" element={<Home></Home>} />
-        
+        <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/docs" element={<Docs></Docs>} />
