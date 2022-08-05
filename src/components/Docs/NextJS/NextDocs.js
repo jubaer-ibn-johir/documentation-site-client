@@ -13,7 +13,7 @@ const NextDocs = () => {
                 </div>
                 <div className="drawer-side mt-16 shadow-lg">
                     <label for="next-button" className="drawer-overlay"></label>
-                    <ul className="menu p-4 overflow-y-auto w-80 text-base-content rounded-md">
+                    <ul className="menu p-4 overflow-y-auto w-80 text-base-content rounded-md bg-white shadow-2xl">
                         {/* <!-- Sidebar content here --> */}
                         <li><Link to="/next-get-started" className='lg:text-lg text-base'>Getting Started</Link></li>
                         <li><Link to="/next-get-started/next-pages" className='lg:text-lg text-base'>Pages</Link></li>

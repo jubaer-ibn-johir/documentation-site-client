@@ -8,7 +8,7 @@ const Tutorial = () => {
     const { register, handleSubmit ,reset} = useForm();
     const [tutorials, setTutorial] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/tutorial')
+        fetch('tutorials.json')
             .then(res => res.json())
             .then(data => setTutorial(data))
     }, [])

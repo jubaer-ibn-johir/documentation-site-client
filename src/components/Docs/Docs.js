@@ -19,7 +19,7 @@ const Docs = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 mb-28 justify-items-center '>
+            <div className='grid grid-cols-1 lg:grid-cols-3 mb-28 justify-items-center gap-5 '>
                 <div class="card w-96 bg-base-100 shadow-xl lg:-mt-32 ">
                     <figure class="px-10 pt-10">
                         <FaReact className='w-60 h-28 text-primary' />
