@@ -3,7 +3,6 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css'
 import DarkModeToggle from "react-dark-mode-toggle";
-import { IoIosLogIn } from 'react-icons/io'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
@@ -38,7 +37,8 @@ const Hearder = () => {
     const handleSignOut = () => {
 
         signOut(auth);
-        navigate('/')
+        localStorage.removeItem('accessToken')
+        navigate('/login')
     }
     if (loading) {
         return <Loading></Loading>
@@ -71,10 +71,8 @@ const Hearder = () => {
                                 <li><Link className='hover:underline text-lg' to="/courses">Courses</Link></li>
                             </ul>
                         </div>
-                        {
-                            user &&
-                            <li><Link className=' hover:text-primary  ml-[-102px] lg:ml-0 hover:underline' to="/dashboard">Dashboard</Link></li>
-                        }
+                      
+                            <li><Link className=' hover:text-primary  ml-[-102px] lg:ml-0 hover:underline' to="/admin-panel">Dashboard</Link></li>
 
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-86px] lg:ml-0  mb-2 lg:mb-0 hover:underline font-medium text-lg'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
@@ -83,12 +81,14 @@ const Hearder = () => {
                                 <li><Link className=' hover:underline ' to="/about">About</Link></li>
                             </ul>
                         </div>
+                
+                        {/* <li><Link className=' hover:underline' to="/languages">Languages</Link></li> */}
                         {
                             user
                                 ?
                                 <li><Link onClick={handleSignOut} className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">LogOut</Link></li>
                                 :
-                                <li><Link className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">Login</Link></li>}
+                                <li><Link className='  rounded-full ml-[-100px] lg:ml-0 hover:underline  w-[100px] mr-4' to="/login">Login</Link></li>}
 
                         <li onClick={myFunction}>
                             <DarkModeToggle
