@@ -19,7 +19,7 @@ const BlogDetails = () => {
         style={{ backgroundImage: `url(${blogBg})` }}
       ></div>
             <h3>{blogDetail.title}</h3>
-            {/* <h3 className='mt-12'>hello world</h3> */}
+            <h3 className='mt-12'>hello world</h3>
         </div>
     );
 };

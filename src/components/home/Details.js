@@ -6,50 +6,52 @@ const Details = () => {
     return (
         <div className='mt-10  ' >
             <div class="hero-content text-center text-neutral-content ">
-                <div class="">
-                    <h1 class="mb-8 text-2xl lg:text-4xl font-semibold tracking-wider text-black">Know about our EasyDocs</h1>
-                    <p class=" text-gray-500 text-xl lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
-                    
-
-
+                <div class=" flex justify-center items-center">
+                    <div>
+                        <h1 class="mb-8 text-2xl lg:text-4xl font-semibold tracking-wider text-black">Know about our EasyDocs</h1>
+                        <p class=" text-gray-500 text-xl  lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
+                    </div>
                 </div>
             </div>
             <div className='m-20  '>
                 <Tabs>
-                    <TabList>
-                        <Tab><h1 className='text-primary text-xl font-bold'>Docs</h1></Tab>
-                        <Tab> <h1 className='text-primary text-xl font-bold'>Feature</h1></Tab>
-                        <Tab> <h1 className='text-primary text-xl font-bold'>Technology </h1></Tab>
+
+                    <TabList >
+                        <div className='flex -ml-10 lg:-ml-0'>
+                            <Tab><h1 className='text-primary text-xl font-bold'>Docs</h1></Tab>
+                            <Tab> <h1 className='text-primary text-xl font-bold'>Feature</h1></Tab>
+                            <Tab> <h1 className='text-primary text-xl font-bold'>Technology </h1></Tab>
+                        </div>
                     </TabList>
 
                     <TabPanel>
                         <div className='hero-content text-center '>
-                            <img className=' mt-10 w-16' src="https://www.clipartmax.com/png/middle/198-1986092_icon-documents-control-plan-icon.png" alt="" />
+                            <img className=' mt-10 w-14 lg:w-16 icon ' src="https://www.clipartmax.com/png/middle/198-1986092_icon-documents-control-plan-icon.png" alt="" />
                             <div class="title"><span>EasyDocs Documentation</span></div>
                         </div>
-                        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10 lg:mx-0 md:mx-5 mx-5'>
-                            <div>
+                        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10'>
+                            <div className='w-80 lg:w-full -ml-8 lg:-ml-0'>
                                 <h1 className='text-xl text-primary'>React js</h1><br />
-                                <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                                <p className='text-xl  '>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
 
                             </div>
-                            <div>
+                            <div className='w-80 lg:w-full -ml-8 lg:-ml-0'>
                                 <h1 className='text-xl text-primary'>Tailwind Css</h1><br />
                                 <p className='text-xl'>Rapidly build modern websites without ever leaving your HTML.A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
                             </div>
-                            <div>
+                            <div className='w-80 lg:w-full -ml-8 lg:-ml-0'>
                                 <h1 className='text-xl text-primary'>Firebase for authentication</h1><br />
                                 <p className='text-xl'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
                             </div>
-                            <div>
+                            <div className='w-80 lg:w-full -ml-8 lg:-ml-0'>
                                 <h1 className='text-xl text-primary'>Heroku for server deploy</h1><br />
                                 <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
                             </div>
-                            <div>
+                            <div className='w-80 lg:w-full -ml-8 lg:-ml-0'>
                                 <h1 className='text-xl text-primary'>Node js & Express js for backend</h1><br />
                                 <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
                             </div>
-                            <div>
+                            <div className='w-80 lg:w-full -ml-8 lg:-ml-0'>
                                 <h1 className='text-xl text-primary'>MongoDB for database</h1><br />
                                 <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
                             </div>
@@ -98,7 +100,7 @@ const Details = () => {
                         </div>
                         <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10 lg:mx-0 md:mx-5 mx-5'>
                             <div>
-                               <h1 className='text-xl text-primary'>React js</h1><br />
+                                <h1 className='text-xl text-primary'>React js</h1><br />
                                 <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
 
                             </div>
@@ -108,7 +110,7 @@ const Details = () => {
                             </div>
                             <div>
                                 <h1 className='text-xl text-primary'>Firebase for authentication</h1><br />
-                                <p className='text-xl'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p> 
+                                <p className='text-xl'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
                             </div>
                             <div>
                                 <h1 className='text-xl text-primary'>Heroku for server deploy</h1><br />

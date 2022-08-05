@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './components/about/About';
 import Login from './components/autentication/Login';
 import SingUp from './components/autentication/SingUp';
 import BlogDetails from './components/Blogs/BlogDetails';
@@ -14,13 +15,24 @@ import Installation from './components/Docs/ReactJS/Installation';
 import MainConcepts from './components/Docs/ReactJS/MainConcepts';
 import ReactDashboard from './components/Docs/ReactJS/ReactDashboard';
 import NextPages from './components/Docs/NextJS/NextPages';
+import WhyRedux from './components/Docs/Redux/WhyRedux';
 import Reactjs from './components/Docs/ReactJS/Reactjs';
+import GetStarted from './components/Docs/Redux/GetStarted';
+import ReduxInstallation from './components/Docs/Redux/ReduxInstallation';
+import ReduxDocs from './components/Docs/Redux/ReduxDocs';
 import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
 
 import Footer from './components/shared/Footer';
 import Hearder from './components/shared/Hearder';
 import NotFound from './components/shared/NotFound';
+import CoreConcepts from './components/Docs/Redux/CoreConcepts';
+import AdminPanel from './components/Dashboard/AdminPanel';
+import Dashboard from './components/Dashboard/Dashboard';
+import ManageUsers from './components/Dashboard/ManageUsers';
+import ManageBlogs from './components/Dashboard/ManageBlogs';
+import ManageTutorials from './components/Dashboard/ManageTutorials';
+import ManageCourses from './components/Dashboard/ManageCourses';
 
 function App() {
   return (
@@ -32,6 +44,7 @@ function App() {
         
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
+        <Route path="/about" element={<About></About>}></Route>
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
         <Route path="/blogDetail/:blogDetailId" element={<BlogDetails />} />
@@ -47,6 +60,19 @@ function App() {
           <Route index element={<NextGetStarted></NextGetStarted>}></Route>
           <Route path='next-pages' element={<NextPages></NextPages>}></Route>
           <Route path='getServerSideProps' element={<GetServerSideProps></GetServerSideProps>}></Route>
+        </Route>
+        <Route path='get-started' element={<ReduxDocs></ReduxDocs>}>
+          <Route index element={<GetStarted></GetStarted>}></Route>
+          <Route path='installation' element={<ReduxInstallation></ReduxInstallation>}></Route>
+          <Route path='why-redux' element={<WhyRedux></WhyRedux>}></Route>
+          <Route path='core-concepts' element={<CoreConcepts></CoreConcepts>}></Route>
+        </Route>
+        <Route path='admin-panel' element={<AdminPanel></AdminPanel>}>
+          <Route index element={<Dashboard></Dashboard>}></Route>
+          <Route path='manage-users' element={<ManageUsers></ManageUsers>}></Route>
+          <Route path='manage-blogs' element={<ManageBlogs></ManageBlogs>}></Route>
+          <Route path='manage-tutorials' element={<ManageTutorials></ManageTutorials>}></Route>
+          <Route path='manage-courses' element={<ManageCourses></ManageCourses>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
