@@ -10,7 +10,7 @@ import UperFooter from './UperFooter';
 const Reactjs = () => {
     return (
         <div>
-            <br />
+
             <ReactHome></ReactHome>
             <Declarative></Declarative>
             <SimpleComponents></SimpleComponents>
