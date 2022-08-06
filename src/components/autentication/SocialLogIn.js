@@ -8,11 +8,12 @@ import Loading from '../shared/Loading';
 const SocialLogIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, gituser, loading1, error1] = useSignInWithGithub(auth);
+
     const navigate = useNavigate()
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-    
-    const [token]= useToken(user || gituser)
+
+    const [token] = useToken(user || gituser)
     if (token) {
         navigate(from, { replace: true });
     }

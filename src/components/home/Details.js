@@ -26,7 +26,7 @@ const Details = () => {
 
                     <TabPanel>
                         <div className='hero-content text-center '>
-                            <img className=' mt-10 w-14 lg:w-16 icon ' src="https://www.clipartmax.com/png/middle/198-1986092_icon-documents-control-plan-icon.png" alt="" />
+                            <img className=' mt-10 w-14 lg:w-16 icon' src="https://www.clipartmax.com/png/middle/198-1986092_icon-documents-control-plan-icon.png" alt="" />
                             <div class="title"><span>EasyDocs Documentation</span></div>
                         </div>
                         <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10'>

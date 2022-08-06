@@ -33,6 +33,7 @@ import ManageUsers from './components/Dashboard/ManageUsers';
 import ManageBlogs from './components/Dashboard/ManageBlogs';
 import ManageTutorials from './components/Dashboard/ManageTutorials';
 import ManageCourses from './components/Dashboard/ManageCourses';
+// import Navbar from './components/shared/Navbar';
 
 function App() {
   return (
