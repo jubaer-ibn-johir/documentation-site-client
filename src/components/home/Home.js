@@ -10,15 +10,12 @@ import Details from './Details';
 const Home = () => {
     return (
         <div>
-            
             {/* <ScrollToTop smooth color="red" top='20' /> */}
-           <Banner></Banner>
+            <Banner></Banner>
             <Details></Details>
             <BuildDocuments></BuildDocuments>
-           <Solution></Solution>
-           <Reviws></Reviws>
-           
-           
+            <Solution></Solution>
+            <Reviws></Reviws>
         </div>
     );
 };

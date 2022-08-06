@@ -21,6 +21,7 @@ const SingUp = () => {
     if (error) {
         errorElement = <p className='text-red-700'>Error: {error?.message}</p>
     }
+
     const [token] = useToken(user)
     const navigate = useNavigate()
     const location = useLocation();

@@ -24,8 +24,8 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    const [token]=useToken(user)
-    if ( token) {
+    const [token] = useToken(user)
+    if (token) {
         navigate(from, { replace: true });
     }
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
@@ -119,7 +119,7 @@ const Login = () => {
                                 </button>
                             </div>
                             {/* <SocialLogin></SocialLogin> */}
-                         
+
                             <SocialLogIn></SocialLogIn>
                             <ToastContainer />
 
