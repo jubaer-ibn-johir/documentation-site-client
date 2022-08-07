@@ -9,7 +9,7 @@ import OurAreaChart from './OurAreaChart';
 const Dashboard = () => {
     return (
         <div>
-            <div className='p-8'>
+            <div className='p-8 bg-accent rounded-xl'>
                 <div className='grid grid-cols-1 gap-8'>
                     <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
                         <div className='flex h-28 items-center justify-between rounded-md bg-white p-4'>

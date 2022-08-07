@@ -1,20 +1,20 @@
 import React from 'react';
 import { AiFillDelete } from 'react-icons/ai';
 
-const ManageCourses = () => {
+const TutorialsManage = () => {
     return (
-        <div className='lg:p-8 md:p-8 p-4 h-full bg-blue-50 mb-12 rounded-xl'>
+        <div className='lg:p-8 md:p-8 p-4 h-full bg-red-50 mb-12 rounded-xl'>
             <div>
-                <h1 className='lg:text-5xl md:text-4xl text-3xl text-center my-5 font-semibold text-blue-900'>Manage Courses</h1>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl text-center my-5 font-semibold text-red-900'>Manage Tutorials</h1>
             </div>
             <div class="overflow-x-auto shadow-xl">
                 <table class="table w-full">
                     <thead>
                         <tr>
-                            <th className='bg-blue-300'></th>
-                            <th className='bg-blue-300'>Courses</th>
-                            <th className='bg-blue-300'>Short Description</th>
-                            <th className='bg-blue-300'>Delete</th>
+                            <th className='bg-red-300'></th>
+                            <th className='bg-red-300'>Tutorials</th>
+                            <th className='bg-red-300'>Short Description</th>
+                            <th className='bg-red-300'>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,4 +61,4 @@ const ManageCourses = () => {
     );
 };
 
-export default ManageCourses;
+export default TutorialsManage;
