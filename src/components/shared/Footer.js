@@ -10,7 +10,7 @@ const Footer = () => {
             <div style={{position:"absolute",right:"0",bottom:"0",zIndex:"-1"}}>
                 <img className='h-[300px]' src={footerShap} alt="" />
             </div>
-           <div className='grid grid-cols-1 md:grid-cols-3 mb-6 ml-9'>
+           <div className='lg:flex justify-between mb-6 ml-9 lg:mx-20'>
            <div>
                 <h2 className='font-bold text-2xl py-8'><Link to="/"><span className='text-primary text-3xl font-bold'>E</span>asy<span className='text-secondary text-3xl font-bold'>D</span>ocs</Link></h2>
                 <p className=''>Manage any project from start to finish with <br />

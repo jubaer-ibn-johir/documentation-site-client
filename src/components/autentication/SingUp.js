@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../shared/Loading';
 import SocialLogIn from './SocialLogIn';
+import useToken from '../../hooks/useToken';
 
 const SingUp = () => {
     const [email, setEmail] = useState('');
@@ -20,13 +21,13 @@ const SingUp = () => {
     if (error) {
         errorElement = <p className='text-red-700'>Error: {error?.message}</p>
     }
-
+    const [token] = useToken(user)
     const navigate = useNavigate()
-  
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
-    if ( user) {
-        navigate('/')
-        // console.log('login');
+    if (token) {
+        navigate(from, { replace: true });
     }
 
     if (loading) {
@@ -120,7 +121,7 @@ const SingUp = () => {
             </div>
         </div>
     );
-   
+
 };
 
 export default SingUp;

@@ -22,10 +22,10 @@ import ReduxInstallation from './components/Docs/Redux/ReduxInstallation';
 import ReduxDocs from './components/Docs/Redux/ReduxDocs';
 import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
-
 import Footer from './components/shared/Footer';
 import Hearder from './components/shared/Hearder';
 import NotFound from './components/shared/NotFound';
+import Tutorial from './components/Tutorial/Tutorial';
 import CoreConcepts from './components/Docs/Redux/CoreConcepts';
 import AdminPanel from './components/Dashboard/AdminPanel';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -41,7 +41,7 @@ function App() {
       <Hearder></Hearder>
       <Routes>
         <Route path="/" element={<Home></Home>} />
-        
+        <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/about" element={<About></About>}></Route>
