@@ -15,7 +15,7 @@ import avatar6 from '../../assets/home-img/img-6.png'
 
 const Reviws = () => {
     return (
-        <div className="my-16 lg:max-w-7xl mx-12 ">
+        <div className="my-16 lg:max-w-7xl mx-auto">
             <h1 className="text-center text-4xl font-semibold tracking-wide">What People Says</h1>
             <p className="text-center text-xl my-5 text-gray-500">We care about your opinion</p>
             <Swiper

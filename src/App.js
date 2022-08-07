@@ -33,6 +33,9 @@ import ManageUsers from './components/Dashboard/ManageUsers';
 import ManageBlogs from './components/Dashboard/ManageBlogs';
 import ManageTutorials from './components/Dashboard/ManageTutorials';
 import ManageCourses from './components/Dashboard/ManageCourses';
+import AddTutorial from './components/Dashboard/AddTutorial';
+import TutorialsManage from './components/Dashboard/TutorialsManage';
+// import Navbar from './components/shared/Navbar';
 
 function App() {
   return (
@@ -73,6 +76,8 @@ function App() {
           <Route path='manage-blogs' element={<ManageBlogs></ManageBlogs>}></Route>
           <Route path='manage-tutorials' element={<ManageTutorials></ManageTutorials>}></Route>
           <Route path='manage-courses' element={<ManageCourses></ManageCourses>}></Route>
+          <Route path='add-tutorial' element={<AddTutorial></AddTutorial>}></Route>
+          <Route path='tutorials-manage' element={<TutorialsManage></TutorialsManage>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

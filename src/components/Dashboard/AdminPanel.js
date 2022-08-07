@@ -9,7 +9,7 @@ import { ImBlogger2 } from 'react-icons/im';
 const AdminPanel = () => {
     return (
         <div>
-            <div class="drawer drawer-mobile bg-accent">
+            <div class="drawer drawer-mobile">
                 <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content mt-16">
                     <div className='flex items-center lg:border-hidden border border-t-0 border-x-0 border-b-sky-300 lg:mt-0 md:mt-5 mt-5'>
@@ -18,14 +18,12 @@ const AdminPanel = () => {
                         </label>
                         <span className='lg:hidden block'>Dashboard</span>
                     </div>
-                    {/* <label for="dashboard-sidebar" className="btn btn-primary drawer-button lg:hidden rounded-lg">Next</label> */}
                     <Outlet></Outlet>
                 </div>
                 <div class="drawer-side mt-16">
                     <label for="dashboard-sidebar" class="drawer-overlay"></label>
                     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                         <li className='text-xl'><Link to="/">< AiFillHome />Home</Link></li>
-                        {/* <li><Link to="/dashboard">Dashboard</Link></li> */}
                         <li className='text-xl'><Link to="/admin-panel"><MdDashboard />Dashboard</Link></li>
                         <li className='text-xl'><Link to="/admin-panel/manage-users"><FaUsers />Manage Users</Link></li>
                         <li className='text-xl'><Link to="/admin-panel/manage-blogs">< ImBlogger2 />Manage Blogs</Link></li>

@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Easy Docs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Link: [link here](link here).
 
-## Available Scripts
+### Short description of the project:
+- This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
+- Every page of this site has two common things Navbar & Footer.
+- In the Navbar section, we have 4 pages of nav links (Docs, Blogs, Contact Us) with dropdowns, and two more buttons (Login & Dark Mood).
+- In the Footer, we have a social section on the left side and also have a huge amount of important links in the middle, and a newsletter section on the right side. At the bottom, we also have a copyright section.
+- On the Home Page, at first, there is a banner with the search bar. And then the documentation section with a Read More button that takes to the documentation page. Then we have two solutions buttons (Help & FAQ). Before the footer, we have added a reviews slider.
+- After that, we have a Doc page, where we have implemented three documentations (ReactJs, ReduxJs & NextJs). Every item has a home page with a Get Started button that takes to the Documentation page.
+- And then, we have a dropdown item with three routes (Blogs, Tutorial & Courses). In the blogs page, we have some blogs. And in the Tutorial page, we have some video tutorials.
+- Besides, we have another dropdown item named Contact Us, that has two routes (Contact Us & About Us). Contact Us page has details info to contact with us and a form that is featured with mail system. And the About Us page shows info about our team also.
+- The Login page will help to login if already registered. If not, then the Register system is also ready.
+- Now let’s know some features of our site. By clicking the dark mood, our page will change its theme to dark. We have a scroll-to-top button, that takes to the top section from the bottom. We also have Required Auth system, that protects our routes. We have a dashboard with various roles like Admin, User, etc.
+- At last, let's come to the Dashboard. In the dashboard, we have info about a summary of all we have. We have shown it also with an Area Chart. We have used nested routes in the dashboard. An admin can manage all the users, blogs, tutorials, courses, reviews, etc.
 
-In the project directory, you can run:
 
-### `npm start`
+***More details will come day by day. Cause we are still working on this project.***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies :
+- React.js
+- React-Router
+- Tailwind
+- DaisyUI
+- Recharts
+- Firebase Authentication
+- React Firebase Hooks 
+- React Hooks Form 
+- NodeJs
+- MongoDB
+- Heroku etc.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Thank You
