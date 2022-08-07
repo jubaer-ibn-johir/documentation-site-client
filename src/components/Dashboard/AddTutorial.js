@@ -7,7 +7,7 @@ const AddTutorial = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
     return (
-        <div className='lg:p-8 md:p-8 p-4 lg:pb-0 md:pb-0 pb-24 bg-lime-50 lg:h-screen md:h-screen flex justify-center items-center lg:py-0 md:py-0 py-12'>
+        <div className='lg:p-8 md:p-8 p-4 lg:pb-0 md:pb-0 pb-24 bg-lime-50 h-full rounded-xl flex justify-center items-center lg:py-0 md:py-0 py-12'>
             <div className='rounded-xl bg-white lg:p-12 p-8 lg:w-1/2 md:w-96 w-80 grid grid-cols-1 shadow-md hover:shadow-xl transition-all'>
                 <div className='lg:-mt-24 -mt-16 text-center flex justify-center items-center'>
                     <div className='bg-gradient-to-r hover:bg-gradient-to-l from-lime-500 to-lime-300 h-16 w-16 rounded-full flex justify-center items-center'>
