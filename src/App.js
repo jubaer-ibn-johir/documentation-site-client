@@ -35,6 +35,7 @@ import ManageTutorials from './components/Dashboard/ManageTutorials';
 import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
+import Courses from './components/courses/Courses';
 // import Navbar from './components/shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 
@@ -47,6 +48,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
+        <Route path='/courses' element={<Courses></Courses>}></Route>
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/about" element={<About></About>}></Route>
