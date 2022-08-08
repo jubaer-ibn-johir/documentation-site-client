@@ -36,6 +36,8 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 // import Navbar from './components/shared/Navbar';
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   return (
@@ -83,6 +85,7 @@ function App() {
       </Routes>
       <Footer></Footer>
       {/* </Navbar> */}
+      <ToastContainer />
 
     </div >
   );
