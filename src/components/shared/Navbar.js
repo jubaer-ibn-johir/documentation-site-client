@@ -39,7 +39,7 @@ const Navbar = ({ children }) => {
                                     <label tabIndex="0" className='flex items-center hover:bg-white hover:text-primary'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
                                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                                         <li><Link className='hover:bg-white hover:text-primary' to="/contact">Contact Us</Link></li>
-                                        <li><Link className='hover:bg-white hover:text-primary' to="/about">About</Link></li>
+                                        <li><Link className='hover:bg-white hover:text-primary' to="/about">About Us</Link></li>
                                     </ul>
                                 </li>
                                 <li><Link className='hover:bg-white hover:text-primary' to="/languages">Languages</Link></li>
@@ -92,7 +92,7 @@ const Navbar = ({ children }) => {
                         <label tabIndex="0" className='flex items-center hover:bg-white hover:text-primary'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
                         <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link className='hover:bg-white hover:text-primary' to="/contact">Contact Us</Link></li>
-                            <li><Link className='hover:bg-white hover:text-primary' to="/about">About</Link></li>
+                            <li><Link className='hover:bg-white hover:text-primary' to="/about">About Us</Link></li>
                         </ul>
                     </div>
                     <li><Link className='hover:bg-white hover:text-primary' to="/languages">Languages</Link></li>

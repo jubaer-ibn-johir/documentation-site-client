@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillDelete } from 'react-icons/ai';
+import { BiEdit } from 'react-icons/bi';
 
 const ManageBlogs = () => {
     return (
@@ -23,9 +24,16 @@ const ManageBlogs = () => {
                             <td className='font-semibold'>Should You Invest In Internal...</td>
                             <td>Aliquam finibus augue ac diam euismod, nec...</td>
                             <th>
-                                <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
-                                    <div className='text-red-500 text-3xl leading-3'>
-                                        <button className='text-center'><AiFillDelete /></button>
+                                <div className='flex gap-3 items-center'>
+                                    <div className='w-12 h-12 rounded-full bg-green-100 flex justify-center items-center'>
+                                        <div className='text-green-500 text-3xl leading-3'>
+                                            <button className='text-center'><BiEdit /></button>
+                                        </div>
+                                    </div>
+                                    <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
+                                        <div className='text-red-500 text-3xl leading-3'>
+                                            <button className='text-center'><AiFillDelete /></button>
+                                        </div>
                                     </div>
                                 </div>
                             </th>
@@ -35,9 +43,16 @@ const ManageBlogs = () => {
                             <td className='font-semibold'>After Microsoft Ignite, Keep...</td>
                             <td>Aliquam finibus augue ac diam euismod, nec...</td>
                             <th>
-                                <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
-                                    <div className='text-red-500 text-3xl leading-3'>
-                                        <button className='text-center'><AiFillDelete /></button>
+                                <div className='flex gap-3 items-center'>
+                                    <div className='w-12 h-12 rounded-full bg-green-100 flex justify-center items-center'>
+                                        <div className='text-green-500 text-3xl leading-3'>
+                                            <button className='text-center'><BiEdit /></button>
+                                        </div>
+                                    </div>
+                                    <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
+                                        <div className='text-red-500 text-3xl leading-3'>
+                                            <button className='text-center'><AiFillDelete /></button>
+                                        </div>
                                     </div>
                                 </div>
                             </th>
@@ -47,9 +62,16 @@ const ManageBlogs = () => {
                             <td className='font-semibold'>All English MSDN And TechNet...</td>
                             <td>Aliquam finibus augue ac diam euismod, nec...</td>
                             <th>
-                                <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
-                                    <div className='text-red-500 text-3xl leading-3'>
-                                        <button className='text-center'><AiFillDelete /></button>
+                                <div className='flex gap-3 items-center'>
+                                    <div className='w-12 h-12 rounded-full bg-green-100 flex justify-center items-center'>
+                                        <div className='text-green-500 text-3xl leading-3'>
+                                            <button className='text-center' data-tooltip-target="Edit"><BiEdit /></button>
+                                        </div>
+                                    </div>
+                                    <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
+                                        <div className='text-red-500 text-3xl leading-3'>
+                                            <button className='text-center'><AiFillDelete /></button>
+                                        </div>
                                     </div>
                                 </div>
                             </th>

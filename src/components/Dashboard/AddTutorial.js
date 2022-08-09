@@ -1,6 +1,5 @@
 import React from 'react';
 import { MdLibraryAdd } from 'react-icons/md';
-import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 
 const AddTutorial = () => {
@@ -16,8 +15,8 @@ const AddTutorial = () => {
                 </div>
                 <div className='my-5'>
                     <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
-                        <input {...register("title", { required: true, maxLength: 20 })} required placeholder='Title' className='w-full bg-lime-50 outline-none px-5 py-2 rounded-md mb-3' />
-                        <input {...register("EmbedCode", { pattern: /^[A-Za-z]+$/i })} required placeholder='Video Embed Code' className='w-full bg-lime-50 outline-none px-5 py-2 rounded-md mb-3' />
+                        <input {...register("title", { required: true, maxLength: 20 })} placeholder='Title' className='w-full bg-lime-50 outline-none px-5 py-2 rounded-md mb-3' />
+                        <input {...register("EmbedCode")} placeholder='Video Embed Code' className='w-full bg-lime-50 outline-none px-5 py-2 rounded-md mb-3' />
                         <textarea {...register("textArea")} cols="30" rows="5" placeholder='Description' className='w-full bg-lime-50 outline-none px-5 py-2 rounded-md mb-3' />
                         <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-lime-500 to-lime-300 cursor-pointer w-28' value="Add" />
                     </form>

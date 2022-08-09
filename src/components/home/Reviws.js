@@ -6,12 +6,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Pagination, Navigation, Autoplay } from "swiper";
-import avatar1 from '../../assets/home-img/img-1.png'
-import avatar2 from '../../assets/home-img/img-2.jpg'
-import avatar3 from '../../assets/home-img/img-3.png'
-import avatar4 from '../../assets/home-img/img-4.png'
-import avatar5 from '../../assets/home-img/img-5.png'
-import avatar6 from '../../assets/home-img/img-6.png'
+import avatar1 from '../../assets/home-img/img-1.png';
+import avatar2 from '../../assets/home-img/img-2.jpg';
+import avatar3 from '../../assets/home-img/img-3.png';
+import avatar4 from '../../assets/home-img/img-4.png';
+import avatar5 from '../../assets/home-img/img-5.png';
+import avatar6 from '../../assets/home-img/img-6.png';
+import AddReview from './AddReview';
+
 
 const Reviws = () => {
     return (
@@ -207,6 +209,12 @@ const Reviws = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            <div className='my-16'>
+                <div className='text-center'>
+                    <label for="AddReview" class="btn modal-button text-white bg-secondary hover:bg-transparent hover:text-secondary capitalize tracking-widest border-2 border-secondary  hover:border-secondary shadow-xl">Add a Review</label>
+                </div>
+
+            </div>
         </div >
     );
 };
