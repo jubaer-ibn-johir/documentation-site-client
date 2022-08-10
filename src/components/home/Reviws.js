@@ -1,5 +1,5 @@
 import React from 'react';
-import './Review.css'
+import './Review.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +12,7 @@ import avatar3 from '../../assets/home-img/img-3.png'
 import avatar4 from '../../assets/home-img/img-4.png'
 import avatar5 from '../../assets/home-img/img-5.png'
 import avatar6 from '../../assets/home-img/img-6.png'
+import AddReview from './AddReview';
 
 const Reviws = () => {
     return (
@@ -186,6 +187,37 @@ const Reviws = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            <AddReview></AddReview>
+            {/* <input type="checkbox" id="AddReview" class="modal-toggle" />
+                <div class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box shadow-2xl bg-emerald-50">
+                        <label for="AddReview" class="btn btn-sm btn-circle absolute right-2 top-2 bg-secondary text-white border-secondary hover:border-secondary hover:text-secondary hover:bg-transparent ">✕</label>
+
+                        <div className='my-5 '>
+                            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 ">
+                                <div className='grid grid-cols-1 justify-items-center'>
+                                    <div className='h-16 w-16 rounded-full mb-5'>
+                                        <img src={userAvatar} alt="" className='rounded-full w-full' />
+                                    </div>
+                                    <div>
+                                        <p className='font-semibold text-xl'>User Name</p>
+                                    </div>
+                                </div>
+                                <div className='flex items-center gap-3 text-left'>
+                                    <p className='font-semibold'>Rate Us: </p>
+                                    <ReactStars
+                                        count={5}
+                                        onChange={ratingChanged}
+                                        size={24}
+                                        activeColor="#ffd700"
+                                    />
+                                </div>
+                                <textarea {...register("textArea")} cols="30" rows="5" placeholder='Add a Review' className='w-full outline-none px-5 py-2 rounded-md mb-3 bg-emerald-200' />
+                                <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-emerald-500 to-emerald-300 cursor-pointer w-28 justify-center' value="Add" />
+                            </form>
+                        </div>
+                    </div>
+                </div> */}
         </div >
     );
 };
