@@ -213,7 +213,6 @@ const Reviws = () => {
                 <div className='text-center'>
                     <label for="AddReview" class="btn modal-button text-white bg-secondary hover:bg-transparent hover:text-secondary capitalize tracking-widest border-2 border-secondary  hover:border-secondary shadow-xl">Add a Review</label>
                 </div>
-
             </div>
         </div >
     );
