@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SingleUser from './SingleUser';
 
 const ManageUsers = () => {
     const [users,setUsers]=useState([])
@@ -6,7 +7,7 @@ const ManageUsers = () => {
         fetch(`https://polar-shore-69456.herokuapp.com/user`)
         .then(res=>res.json())
         .then(data=>setUsers(data))
-    },[])
+    },[users])
     return (
         <div className='lg:p-8 md:p-8 p-4 bg-violet-50 h-full rounded-xl'>
             <div>
@@ -25,7 +26,7 @@ const ManageUsers = () => {
                     </thead>
                     <tbody>
                     {
-
+                      users.map((user,index)=><SingleUser index={index} key={user._id} user={user}></SingleUser>)
                     }
                     </tbody>
                 </table>
