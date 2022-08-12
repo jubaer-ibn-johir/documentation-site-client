@@ -36,6 +36,7 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 import Courses from './components/courses/Courses';
+import AddBlogs from './components/Blogs/AddBlogs';
 // import Navbar from './components/shared/Navbar';
 
 function App() {
@@ -52,6 +53,8 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
+        <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
+
         <Route path="/blogDetail/:blogDetailId" element={<BlogDetails />} />
         <Route path="/reactjs" element={<Reactjs></Reactjs>} />
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
