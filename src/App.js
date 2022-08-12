@@ -36,19 +36,19 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 import Courses from './components/courses/Courses';
-// import Navbar from './components/shared/Navbar';
 import { ToastContainer } from 'react-toastify';
-
+import Payment from './components/courses/Payment';
+import SingleCourseDetails from './components/courses/SingleCourseDetails';
 
 function App() {
   return (
     <div>
-      {/* <Navbar> */}
       <Hearder></Hearder>
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
         <Route path='/courses' element={<Courses></Courses>}></Route>
+        <Route path='/singleCourseDetails/:courseId' element={<SingleCourseDetails></SingleCourseDetails>}></Route>
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/about" element={<About></About>}></Route>
@@ -59,6 +59,8 @@ function App() {
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />
         <Route path="/login" element={<Login></Login>} />
+        <Route path="/payment" element={<Payment></Payment>} />
+
         <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
           <Route index element={<Installation></Installation>}></Route>
           <Route path='mainconcepts' element={<MainConcepts></MainConcepts>}></Route>
@@ -86,7 +88,6 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
-      {/* </Navbar> */}
       <ToastContainer />
 
     </div >
