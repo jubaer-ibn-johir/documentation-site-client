@@ -1,6 +1,5 @@
 [
     {
-        "id": "62f3383afd968cbf2ada0487",
         "price": 6500,
         "name": "Full Stack Web Development",
         "time": "80 hr 30 min",
@@ -9,7 +8,6 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur nulla facilis autem, deserunt tenetur fugit. Delectus commodi natus, rerum minima aspernatur ea aperiam! Nostrum laboriosam dolores placeat reprehenderit soluta."
     },
     {
-        "id": "62f3383afd968cbf2ada0487",
         "price": 4500,
         "name": "Learn Redux",
         "time": "40 hr 30 min",
@@ -18,7 +16,6 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur nulla facilis autem, deserunt tenetur fugit. Delectus commodi natus, rerum minima aspernatur ea aperiam! Nostrum laboriosam dolores placeat reprehenderit soluta."
     },
     {
-        "id": "62f3383afd968cbf2ada0487",
         "price": 5500,
         "name": "Learn Python",
         "time": "70 hr 30 min",

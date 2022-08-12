@@ -3,7 +3,7 @@ import { FaEnvelope } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
 import { IoIosCall } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import contactBg1 from '../../assets/contact-us/breadcumbs-section.jpg';
+// import contactBg1 from '../../assets/contact-us/breadcumbs-section.jpg';
 import contactBg2 from '../../assets/contact-us/contact-bg-hotchpotch-1.jpg';
 import contactBg3 from '../../assets/contact-us/desk-bg-final2.png';
 import emailjs from 'emailjs-com'
