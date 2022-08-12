@@ -1,0 +1,26 @@
+[
+    {
+        "price": 6500,
+        "name": "Full Stack Web Development",
+        "time": "80 hr 30 min",
+        "lessons": "300",
+        "image": "https://i.ibb.co/28k0cV6/full-stack.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur nulla facilis autem, deserunt tenetur fugit. Delectus commodi natus, rerum minima aspernatur ea aperiam! Nostrum laboriosam dolores placeat reprehenderit soluta."
+    },
+    {
+        "price": 4500,
+        "name": "Learn Redux",
+        "time": "40 hr 30 min",
+        "lessons": "100",
+        "image": "https://i.ibb.co/gM2wJ9Q/redux.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur nulla facilis autem, deserunt tenetur fugit. Delectus commodi natus, rerum minima aspernatur ea aperiam! Nostrum laboriosam dolores placeat reprehenderit soluta."
+    },
+    {
+        "price": 5500,
+        "name": "Learn Python",
+        "time": "70 hr 30 min",
+        "lessons": "250",
+        "image": "https://i.ibb.co/1n3fw2D/python.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur nulla facilis autem, deserunt tenetur fugit. Delectus commodi natus, rerum minima aspernatur ea aperiam! Nostrum laboriosam dolores placeat reprehenderit soluta."
+    }
+]

@@ -12,6 +12,7 @@ import avatar3 from '../../assets/home-img/img-3.png'
 import avatar4 from '../../assets/home-img/img-4.png'
 import avatar5 from '../../assets/home-img/img-5.png'
 import avatar6 from '../../assets/home-img/img-6.png'
+import AddReview from './AddReview';
 
 const Reviws = () => {
     return (
@@ -207,6 +208,12 @@ const Reviws = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            <div className='my-16'>
+                <div className='text-center'>
+                    <label for="AddReview" class="btn modal-button text-white bg-secondary hover:bg-transparent hover:text-secondary capitalize tracking-widest border-2 border-secondary  hover:border-secondary shadow-xl">Add a Review</label>
+                    <AddReview></AddReview>
+                </div>
+            </div>
         </div >
     );
 };
