@@ -2,11 +2,17 @@ import React from 'react';
 import { MdLibraryAdd } from 'react-icons/md';
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import useAdmin from '../../hooks/useAdmin';
 
 const AddTutorial = () => {
     const { register, handleSubmit,reset} = useForm();
+    const [user1]=useAuthState(auth)
+    const [admin]=useAdmin(user1)
     const onSubmit = data => {
-        fetch(`https://polar-shore-69456.herokuapp.com/tutorial`,{
+        if(admin){
+            fetch(`https://polar-shore-69456.herokuapp.com/tutorial`,{
             method:"POST",
             headers:{
                 'content-type':'application/json'
@@ -31,6 +37,14 @@ const AddTutorial = () => {
                   })
             }
         })
+        }
+        else{
+            Swal.fire({
+                title: 'Only admin can add to Tutorial!',
+                icon: 'error',
+                confirmButtonText: 'ok'
+              })
+        }
         
     };
     return (

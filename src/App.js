@@ -36,6 +36,8 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 import Courses from './components/courses/Courses';
+import UserProfile from './components/UserProfile/UserProfile';
+// import Navbar from './components/shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import Payment from './components/courses/Payment';
 import SingleCourseDetails from './components/courses/SingleCourseDetails';
@@ -59,8 +61,8 @@ function App() {
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />
         <Route path="/login" element={<Login></Login>} />
+        <Route path='/user-profile' element={<UserProfile></UserProfile>}></Route>
         <Route path="/payment" element={<Payment></Payment>} />
-
         <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
           <Route index element={<Installation></Installation>}></Route>
           <Route path='mainconcepts' element={<MainConcepts></MainConcepts>}></Route>
