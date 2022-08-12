@@ -64,15 +64,15 @@ const Hearder = () => {
 
                         <li><Link className=' hover:underline text-lg ml-[-100px] lg:ml-0 ' to="/docs">Docs</Link></li>
                         <div className="dropdown ml-4">
-                            <label tabIndex="0" className='flex items-center ml-[-98px] lg:ml-0  mb-2 lg:mb-0 font-medium hover:underline text-lg '>Blogs<IoIosArrowDown></IoIosArrowDown></label>
+                            <label tabIndex="0" className='flex items-center ml-[-98px] lg:ml-0  mb-2 lg:mb-0 hover:underline font-medium  text-lg '>Blogs<IoIosArrowDown></IoIosArrowDown></label>
                             <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 ml-[-100px] lg:ml-0  rounded-box ">
                                 <li ><Link className=' hover:underline text-lg' to="/blog">Blog</Link></li>
                                 <li><Link className='hover:underline text-lg' to="/tutorial">Tutorial</Link></li>
                                 <li><Link className='hover:underline text-lg' to="/courses">Courses</Link></li>
                             </ul>
                         </div>
-                      
-                            <li><Link className=' hover:text-primary  ml-[-102px] lg:ml-0 hover:underline' to="/admin-panel">Dashboard</Link></li>
+
+                        <li><Link className=' hover:text-primary text-lg  ml-[-102px] lg:-ml-3 hover:underline' to="/admin-panel">Dashboard</Link></li>
 
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-86px] lg:ml-0  mb-2 lg:mb-0 hover:underline font-medium text-lg'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
@@ -81,7 +81,7 @@ const Hearder = () => {
                                 <li><Link className=' hover:underline ' to="/about">About</Link></li>
                             </ul>
                         </div>
-                
+
                         {/* <li><Link className=' hover:underline' to="/languages">Languages</Link></li> */}
                         {
                             user
