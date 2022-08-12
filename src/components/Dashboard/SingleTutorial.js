@@ -1,12 +1,17 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { AiFillDelete } from 'react-icons/ai';
 import Swal from 'sweetalert2';
+import auth from '../../firebase.init';
+import useAdmin from '../../hooks/useAdmin';
 
 const SingleTutorial = ({tutorial,index}) => {
     const {_id,title,description}=tutorial
-
+    const [user1]=useAuthState(auth)
+    const [admin]=useAdmin(user1)
     const handleDelete =(id)=>{
-       fetch(`https://polar-shore-69456.herokuapp.com/tutorial/${id}`,{
+       if(admin){
+        fetch(`https://polar-shore-69456.herokuapp.com/tutorial/${id}`,{
         method:'DELETE'
        })
         .then(res=>res.json())
@@ -26,6 +31,14 @@ const SingleTutorial = ({tutorial,index}) => {
                   })
             }
         })
+       }
+       else{
+        Swal.fire({
+            title: 'Only can delete tutorial!',
+            icon: 'error',
+            confirmButtonText: 'ok'
+          })
+       }
     }
     return (
         <tr>
