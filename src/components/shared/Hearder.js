@@ -95,6 +95,7 @@ const Hearder = () => {
                             <li><Link className=' hover:text-primary  ml-[-102px] text-lg lg:ml-0 hover:underline' to="/admin-panel">Dashboard</Link></li>
 
 
+
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-86px] lg:ml-0  mb-2 lg:mb-0 hover:underline font-medium text-lg'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
                             <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 ml-[-100px] lg:ml-0  rounded-box w-52">

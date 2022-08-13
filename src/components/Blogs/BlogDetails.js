@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import blogBg from "../../assets/blogs/blog-bg.png";
-import Details from './../home/Details';
+import Details from "./../home/Details";
 const BlogDetails = () => {
   const { blogDetailId } = useParams();
   const [blogDetail, setBlogDetail] = useState({});
@@ -39,6 +39,7 @@ const BlogDetails = () => {
         />
         <h3 className="my-6">{blogDetail.category}</h3>
         <h3 className="text-xl">{blogDetail.details}</h3>
+        <h2>comment</h2>
       </div>
     </div>
   );
