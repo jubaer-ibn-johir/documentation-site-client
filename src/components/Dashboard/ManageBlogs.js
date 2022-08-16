@@ -1,7 +1,5 @@
-import React from 'react';
 import { AiFillDelete } from 'react-icons/ai';
 import { BiEdit } from 'react-icons/bi';
-
 import React, { useEffect, useState } from 'react';
 import SingleBlog from './SingleBlog';
 
