@@ -3,20 +3,25 @@ import { FaEnvelope } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
 import { IoIosCall } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import contactBg1 from '../../assets/contact-us/breadcumbs-section.jpg';
+// import contactBg1 from '../../assets/contact-us/breadcumbs-section.jpg';
 import contactBg2 from '../../assets/contact-us/contact-bg-hotchpotch-1.jpg';
 import contactBg3 from '../../assets/contact-us/desk-bg-final2.png';
+import emailjs from 'emailjs-com'
+import { toast } from 'react-toastify';
 
 const ContactUs = () => {
+    const sendEmail = e => {
+        e.preventDefault()
+
+        emailjs.sendForm('service_fxrj295', 'template_2rw7uit', e.target, 'P442xSSTKMHmprr8j')
+            .then(res => {
+                console.log(res);
+                toast('Email send successfully')
+            })
+    }
     return (
         <div>
             <div>
-                {/* <div style={{ "backgroundImage": ` url(${contactBg1})` }}>
-                    <div className='max-w-7xl mx-auto py-12'>
-                        <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium mt-10 lg:ml-0 md:ml-5 ml-5 '>Contact</h1>
-                        <p className='mb-12 lg:ml-0 md:ml-5 ml-5'><Link to="/" className='font-semibold '>EasyDoc</Link> / Contact</p>
-                    </div>
-                </div> */}
                 <div style={{ "backgroundImage": ` url(${contactBg2})`, "backgroundSize": "cover", "backgroundRepeat": "no-repeat", "backgroundPosition": "center" }}>
                     <div className='max-w-7xl mx-auto py-12'>
                         <div>
@@ -57,13 +62,13 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <div className='lg:mx-0 md:mx-5 mx-5'>
-                            <form action="" className='my-12 text-center'>
+                            <form action="" className='my-12 text-center' onSubmit={sendEmail}>
                                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mb-5'>
-                                    <input type="text" required placeholder='First Name' className='rounded-md py-3 px-5 outline-none border-2 border-slate-200' />
-                                    <input type="text" required placeholder='Last Name' className='rounded-md py-3 px-5 outline-none border-2 border-slate-200' />
-                                    <input type="email" required placeholder='Email' className='rounded-md py-3 px-5 outline-none border-2 border-slate-200' />
+                                    <input type="text" name='firstName' required placeholder='First Name' className='rounded-md py-3 px-5 outline-none border-2 border-slate-200' />
+                                    <input type="text" name='lastName' required placeholder='Last Name' className='rounded-md py-3 px-5 outline-none border-2 border-slate-200' />
+                                    <input type="email" name='email' required placeholder='Email' className='rounded-md py-3 px-5 outline-none border-2 border-slate-200' />
                                 </div>
-                                <textarea name="" id="" cols="30" rows="5" placeholder='Enter your message' className='w-full grid grid-cols-1 outline-none px-5 py-5 rounded-md border-2 border-slate-200'></textarea><br />
+                                <textarea name="message" id="" cols="30" rows="5" placeholder='Enter your message' className='w-full grid grid-cols-1 outline-none px-5 py-5 rounded-md border-2 border-slate-200'></textarea><br />
                                 <button type="submit" className='px-10 py-2 text-white font-bold rounded-md' style={{ backgroundColor: '#0FCFEC' }}>Send Message</button>
                             </form>
                         </div>

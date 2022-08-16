@@ -2,7 +2,17 @@ import React from 'react';
 import { AiFillDelete } from 'react-icons/ai';
 import { BiEdit } from 'react-icons/bi';
 
+import React, { useEffect, useState } from 'react';
+import SingleBlog from './SingleBlog';
+
+
 const ManageBlogs = () => {
+    const [blogs, setBlogs] = useState([])
+    useEffect(() => {
+        fetch(`https://polar-shore-69456.herokuapp.com/blog`)
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [blogs])
     return (
         <div className='lg:p-8 md:p-8 p-4 bg-sky-50 h-full rounded-xl'>
             <div>
@@ -19,6 +29,7 @@ const ManageBlogs = () => {
                         </tr>
                     </thead>
                     <tbody>
+                        HEAD
                         <tr>
                             <th>1</th>
                             <td className='font-semibold'>Should You Invest In Internal...</td>
@@ -76,10 +87,15 @@ const ManageBlogs = () => {
                                 </div>
                             </th>
                         </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+
+                        {
+                            blogs.map((blog, index) => <SingleBlog index={index} key={blog._id} blog={blog}></SingleBlog>)
+                        }
+
+                    </tbody >
+                </table >
+            </div >
+        </div >
     );
 };
 

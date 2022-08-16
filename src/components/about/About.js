@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutBg from '../../assets/about-img/aboutBg.png';
 import about from '../../assets/about-img/about2.png';
-import aboutImg from '../../assets/about-img/aboutImg.jpg';
+import aboutImg from '../../assets/about-img/about-pic.jpg';
 import jubaerVai from '../../assets/about-img/Jubaer vai2.jpg';
 import sohagVai from '../../assets/about-img/Sohag vai2.jpg';
 import sohagVai2 from '../../assets/about-img/Sohag vai.png';
