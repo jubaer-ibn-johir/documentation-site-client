@@ -41,6 +41,7 @@ import UserProfile from './components/UserProfile/UserProfile';
 import { ToastContainer } from 'react-toastify';
 import Payment from './components/courses/Payment';
 import SingleCourseDetails from './components/courses/SingleCourseDetails';
+import AddBlogs from './components/Blogs/AddBlogs';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
         <Route path="/blogDetail/:blogDetailId" element={<BlogDetails />} />
+        <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
         <Route path="/reactjs" element={<Reactjs></Reactjs>} />
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />
