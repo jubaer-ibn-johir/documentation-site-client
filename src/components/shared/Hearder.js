@@ -90,8 +90,16 @@ const Hearder = () => {
                                 <li><Link className='hover:underline text-lg' to="/courses">Courses</Link></li>
                             </ul>
                         </div>
+<<<<<<< HEAD
 
                         <li><Link className=' hover:text-primary text-lg  ml-[-102px] lg:-ml-3 hover:underline' to="/admin-panel">Dashboard</Link></li>
+=======
+
+                      
+                            <li><Link className=' hover:text-primary  ml-[-102px] text-lg lg:ml-0 hover:underline' to="/admin-panel">Dashboard</Link></li>
+
+
+>>>>>>> 6d657e1f8caa378d58795c84170b9738bea70794
 
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-86px] lg:ml-0  mb-2 lg:mb-0 hover:underline font-medium text-lg'>Contact us<IoIosArrowDown></IoIosArrowDown></label>

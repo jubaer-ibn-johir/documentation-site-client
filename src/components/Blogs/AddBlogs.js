@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-
-
+ 
+ 
 const AddBlogs = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
@@ -36,7 +36,7 @@ const AddBlogs = () => {
               placeholder="Title"
               className=" input border border-gray-200 w-full bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
             />
-
+ 
             <textarea
               {...register("description")}
               cols="30"
@@ -55,5 +55,5 @@ const AddBlogs = () => {
     </div>
   );
 };
-
+ 
 export default AddBlogs;
