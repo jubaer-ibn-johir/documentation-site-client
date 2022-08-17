@@ -4,6 +4,7 @@ import BuildDocuments from './BuildDocuments';
 import Reviws from './Reviws';
 import Solution from './Solution';
 import Details from './Details';
+import AddReview from './AddReview';
 // import ScrollToTop from "react-scroll-to-top";
 
 
