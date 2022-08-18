@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Blog from "./Blog";
 import blogBg from "../../assets/blogs/blog-bg.png";
+import { useNavigate } from "react-router-dom";
+import BlogTextEditor from "./BlogTextEditor";
 
 const Blogs = () => {
+
+
+  const navigate = useNavigate();
+  const navigateToAddBlog = id => {
+    navigate(`/addBlogs`)
+  }
+
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("blogs.json")
+    fetch(`https://polar-shore-69456.herokuapp.com/blog`)
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
@@ -25,6 +34,10 @@ const Blogs = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="text-center ">
+        <h2 className="font-bold text-3xl mb-12">Contribute in our blog section</h2>
+        <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border-none text-white bg-teal-500" onClick={() => navigateToAddBlog()}>Click to write and add blog </button>
       </div>
 
       <div className=" lg:ml-12 md:ml-6 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
