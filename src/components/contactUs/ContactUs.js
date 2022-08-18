@@ -68,7 +68,7 @@ const ContactUs = () => {
                                     <input type="email" required placeholder='Email' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
                                 </div>
                                 <textarea name="" id="" cols="30" rows="5" placeholder='Enter your message' className='w-full grid grid-cols-1 outline-none px-5 py-5 rounded-md border-2 border-orange-200 text-orange-500'></textarea><br />
-                                <button type="submit" className='px-10 py-3 text-white font-bold rounded-md bg-orange-400 hover:bg-white hover:border-orange-400 hover:border-2 hover:text-orange-500 transition-all'>Send Message</button>
+                                <button type="submit" className='px-10 py-3 text-white font-bold rounded-md border-orange-400 border-2 bg-orange-400 hover:bg-white hover:border-orange-400 hover:border-2 hover:text-orange-500 transition-all'>Send Message</button>
                             </form>
                         </div>
                     </div>

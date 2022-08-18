@@ -27,7 +27,6 @@ const ManageBlogs = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        HEAD
                         <tr>
                             <th>1</th>
                             <td className='font-semibold'>Should You Invest In Internal...</td>

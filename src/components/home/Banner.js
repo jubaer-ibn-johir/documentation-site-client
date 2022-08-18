@@ -17,8 +17,6 @@ const Banner = ({ isDarkMode }) => {
                         <input type="text" placeholder="Search Knowledge Based" class=" w-full max-w-lg text-lg lg:text-2xl px-8 py-3 " />
                         <p className='font-bold text-4xl text-white border-2 py-2   shadow-lg px-6 bg-primary '><FaSearch></FaSearch></p>
                     </div>
-
-
                 </div>
             </div>
         </div>
