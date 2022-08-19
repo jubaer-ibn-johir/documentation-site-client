@@ -10,7 +10,7 @@ import Loading from './Loading';
 import blankPic from '../../assets/profile/user-profile.png'
 import logo from '../../assets/logo/logo4.png'
 
-const Hearder = () => {
+const Hearder = ({handleThemeChange, theme}) => {
     const [isDarkMode, setIsDarkMode] = useState(() => false);
     const [navSize, setnavSize] = useState("10rem");
     const [navColor, setnavColor] = useState("transparent");
@@ -92,6 +92,7 @@ const Hearder = () => {
                         </div>
 
                         <li><Link className=' hover:text-primary text-lg  ml-[-102px] lg:-ml-3 hover:underline' to="/admin-panel">Dashboard</Link></li>
+                        <li><Link className=' hover:text-primary text-lg  ml-[-102px] lg:-ml-3 hover:underline' to="/ask">Ask</Link></li>
 
                         <div className="dropdown ml-4">
                             <label tabIndex="0" className='flex items-center ml-[-86px] lg:ml-0  mb-2 lg:mb-0 hover:underline font-medium text-lg'>Contact us<IoIosArrowDown></IoIosArrowDown></label>
