@@ -7,7 +7,7 @@ const GetStarted = () => {
         console.log("value:", value);
     }, []);
     return (
-        <div className='my-10 max-w-7xl mx-auto'>
+        <div className='my-10 lg:mx-16 mx-0'>
             <div className='lg:mx-0 md:mx-5 mx-5'>
                 <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold mb-5 mt-20'>Getting Started with Redux</h1>
                 <p className='mb-5'>Redux is a predictable state container for JavaScript apps.</p>

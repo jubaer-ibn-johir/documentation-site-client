@@ -7,45 +7,45 @@ import auth from '../../firebase.init';
 import useAdmin from '../../hooks/useAdmin';
 
 const AddTutorial = () => {
-    const { register, handleSubmit,reset} = useForm();
-    const [user1]=useAuthState(auth)
-    const [admin]=useAdmin(user1)
+    const { register, handleSubmit, reset } = useForm();
+    const [user1] = useAuthState(auth)
+    const [admin] = useAdmin(user1)
     const onSubmit = data => {
-        if(admin){
-            fetch(`https://polar-shore-69456.herokuapp.com/tutorial`,{
-            method:"POST",
-            headers:{
-                'content-type':'application/json'
-            },
-            body:JSON.stringify(data)
-        })
-        .then(res=>res.json())
-        .then(result=>{
-            if(result.insertedId){
-                Swal.fire({
-                    title: 'Successfully added Tutorial!',
-                    icon: 'success',
-                    confirmButtonText: 'ok'
-                  })
-                  reset()
-            }
-            else{
-                Swal.fire({
-                    title: 'Faild to add Tutorial!',
-                    icon: 'error',
-                    confirmButtonText: 'ok'
-                  })
-            }
-        })
+        if (admin) {
+            fetch(`https://polar-shore-69456.herokuapp.com/tutorial`, {
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(res => res.json())
+                .then(result => {
+                    if (result.insertedId) {
+                        Swal.fire({
+                            title: 'Successfully added Tutorial!',
+                            icon: 'success',
+                            confirmButtonText: 'ok'
+                        })
+                        reset()
+                    }
+                    else {
+                        Swal.fire({
+                            title: 'Faild to add Tutorial!',
+                            icon: 'error',
+                            confirmButtonText: 'ok'
+                        })
+                    }
+                })
         }
-        else{
+        else {
             Swal.fire({
                 title: 'Only admin can add to Tutorial!',
                 icon: 'error',
                 confirmButtonText: 'ok'
-              })
+            })
         }
-        
+
     };
     return (
         <div className='lg:p-8 md:p-8 p-4 lg:pb-0 md:pb-0 pb-24 bg-lime-50 h-full rounded-xl flex justify-center items-center lg:py-0 md:py-0 py-12'>
