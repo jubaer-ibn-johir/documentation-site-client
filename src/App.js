@@ -36,7 +36,11 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 import Courses from './components/courses/Courses';
+
+import AddBlogs from './components/Blogs/AddBlogs';
+
 import UserProfile from './components/UserProfile/UserProfile';
+
 // import Navbar from './components/shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import Payment from './components/courses/Payment';
@@ -44,6 +48,7 @@ import SingleCourseDetails from './components/courses/SingleCourseDetails';
 import Ask from './components/AskQuestion/Ask';
 import AskQuestion from './components/AskQuestion/AskQuestion';
 import Answer from './components/AskQuestion/Answer';
+
 
 function App() {
   return (
@@ -62,7 +67,10 @@ function App() {
         <Route path="/answer" element={<Answer></Answer>}></Route>
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
+        <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
+
         <Route path="/blogDetail/:blogDetailId" element={<BlogDetails />} />
+        <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
         <Route path="/reactjs" element={<Reactjs></Reactjs>} />
         <Route path="/redux" element={<Reduxjs></Reduxjs>} />
         <Route path="/nextjs" element={<Nextjs></Nextjs>} />

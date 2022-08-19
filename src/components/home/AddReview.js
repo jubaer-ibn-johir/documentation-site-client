@@ -14,8 +14,8 @@ const AddReview = () => {
         <div>
             <input type="checkbox" id="AddReview" class="modal-toggle" />
             <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box shadow-2xl bg-emerald-50">
-                    <label for="AddReview" class="btn btn-sm btn-circle absolute right-2 top-2 bg-secondary text-white border-secondary hover:border-secondary hover:text-secondary hover:bg-transparent ">✕</label>
+                <div class="modal-box shadow-2xl bg-cyan-50">
+                    <label for="AddReview" class="btn btn-sm btn-circle absolute right-2 top-2 bg-cyan-500 text-white border-cyan-500 hover:border-cyan-500 hover:text-cyan-500 hover:bg-transparent ">✕</label>
 
                     <div className='my-5'>
                         <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
@@ -36,8 +36,8 @@ const AddReview = () => {
                                     activeColor="#ffd700"
                                 />
                             </div>
-                            <textarea {...register("textArea")} cols="30" rows="5" placeholder='Add a Review' className='w-full outline-none px-5 py-2 rounded-md mb-3 bg-emerald-200' />
-                            <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-emerald-500 to-emerald-300 cursor-pointer w-28' value="Add" />
+                            <textarea {...register("textArea")} cols="30" rows="5" placeholder='Add a Review' className='w-full outline-none px-5 py-2 rounded-md mb-3 bg-cyan-200' />
+                            <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-cyan-300 cursor-pointer w-28' value="Add" />
                         </form>
                     </div>
                 </div>

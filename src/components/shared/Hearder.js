@@ -71,7 +71,7 @@ const Hearder = () => {
                     height: navSize,
                     transition: "all 1s"
                 }}
-                class="navbar  ">
+                class="navbar">
                 <div class="navbar-container container">
                     <input type="checkbox" name="" id="" />
                     <div class="hamburger-lines mt-3">

@@ -6,7 +6,7 @@ const AskQuestion = () => {
     const onSubmit = data => console.log(data);
     return (
         <div>
-            <div className='bg-cyan-700 pt-52 pb-16'>
+            <div className='bg-cyan-500 pt-52 pb-16'>
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='text-xl text-white text-center mt-3'>Shear your question with EasyDoc and find the best answer</p>
             </div>
@@ -38,7 +38,7 @@ const AskQuestion = () => {
                                 </div>
                             </div>
                             <textarea {...register("description")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3' />
-                            <input type="submit" className='text-white border-2 border-cyan-700 font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-cyan-700 hover:border-cyan-700 hover:text-cyan-700 hover:bg-transparent transition-all cursor-pointer text-center' value="Submit" />
+                            <input type="submit" className='text-white border-2 border-cyan-500 font-bold text-xl px-5 py-2 rounded-xl gap-2 bg-cyan-500 hover:border-cyan-500 hover:text-cyan-500 hover:bg-transparent transition-all cursor-pointer text-center' value="Submit" />
                         </form>
                     </div>
                 </div>

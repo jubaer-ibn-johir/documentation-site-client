@@ -10,7 +10,7 @@ const Ask = () => {
     const onSubmit = data => console.log(data);
     return (
         <div>
-            <div className='bg-cyan-700 pt-52 pb-16'>
+            <div className='bg-cyan-500 pt-52 pb-16'>
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='text-xl text-white text-center mt-3'>Find the answer of your question</p>
             </div>
@@ -28,11 +28,15 @@ const Ask = () => {
                         <div class="form-control w-full max-w-xs">
                             <select class="select select-bordered">
                                 <option disabled selected>Select Category</option>
-                                <option>Star Wars</option>
-                                <option>Harry Potter</option>
-                                <option>Lord of the Rings</option>
-                                <option>Planet of the Apes</option>
-                                <option>Star Trek</option>
+                                <option>Creative</option>
+                                <option>Programming</option>
+                                <option>Life Style</option>
+                                <option>News</option>
+                                <option>Photography</option>
+                                <option>Skill</option>
+                                <option>Tourist Tours</option>
+                                <option>Marketing</option>
+                                <option>Education</option>
                             </select>
                         </div>
                     </div>
@@ -41,7 +45,7 @@ const Ask = () => {
                     <div className='col-span-8 mt-5'>
                         <div className='flex justify-between items-center'>
                             <p className='font-semibold text-3xl mb-3'>Questions</p>
-                            <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                            <Link to="/askQuestion" className='bg-cyan-500 text-white rounded-xl px-5 py-3 border-2 border-cyan-500 flex items-center gap-2 hover:text-cyan-500 hover:border-2 hover:border-cyan-500 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                         </div>
                         <div className='bg-cyan-100 p-5 mt-5'>
                             <p className='text-sm'>Skill</p>
