@@ -80,7 +80,9 @@ section .title {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: #4070f4;
+    /* background: #4070f4; */
+    background: rgb(6 182 212);
+    ;
     left: 0;
     bottom: 0;
 }

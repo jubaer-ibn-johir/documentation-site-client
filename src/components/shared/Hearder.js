@@ -35,23 +35,23 @@ const Hearder = () => {
 
     const [user, loading] = useAuthState(auth);
     const navigate = useNavigate()
-    const [userData,setUserData]=useState({});
-    useEffect(()=>{
-        const email=user?.email
-        if(email){
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`,{
-            method:'GET',
-            headers:{
-                'content-type':'application/json',
-                authorization:`Bearer ${localStorage.getItem('accessToken')}`
-            }
-        })
-        .then(res => res.json())
-        .then(data => {
-           setUserData(data)
-        })
+    const [userData, setUserData] = useState({});
+    useEffect(() => {
+        const email = user?.email
+        if (email) {
+            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+                method: 'GET',
+                headers: {
+                    'content-type': 'application/json',
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
+                    setUserData(data)
+                })
         }
-    },[user])
+    }, [user])
 
     const handleSignOut = () => {
 
@@ -71,7 +71,7 @@ const Hearder = () => {
                     height: navSize,
                     transition: "all 1s"
                 }}
-                class="navbar  ">
+                class="navbar">
                 <div class="navbar-container container">
                     <input type="checkbox" name="" id="" />
                     <div class="hamburger-lines mt-3">
@@ -106,12 +106,12 @@ const Hearder = () => {
                             user
                                 ?
                                 <div className="dropdown ml-4">
-                                <label tabIndex="0" className='flex items-center ml-[-98px] lg:ml-0  mb-2 lg:mb-0 font-medium hover:underline text-lg '><img className='w-10 h-10 rounded-full cursor-pointer' src={userData?.photo ? userData?.photo : blankPic } alt="" /></label>
-                                <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 ml-[-100px] lg:ml-0  rounded-box ">
-                                    <li ><Link onClick={handleSignOut} className=' hover:underline text-lg' to="/login">LogOut</Link></li>
-                                    <li><Link className='hover:underline text-lg' to="/user-profile">Profile</Link></li>
-                                </ul>
-                            </div>
+                                    <label tabIndex="0" className='flex items-center ml-[-98px] lg:ml-0  mb-2 lg:mb-0 font-medium hover:underline text-lg '><img className='w-10 h-10 rounded-full cursor-pointer' src={userData?.photo ? userData?.photo : blankPic} alt="" /></label>
+                                    <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 ml-[-100px] lg:ml-0  rounded-box ">
+                                        <li ><Link onClick={handleSignOut} className=' hover:underline text-lg' to="/login">LogOut</Link></li>
+                                        <li><Link className='hover:underline text-lg' to="/user-profile">Profile</Link></li>
+                                    </ul>
+                                </div>
                                 // <li><Link onClick={handleSignOut} className='  rounded-full ml-[-100px] lg:ml-0   w-[100px] text-white mr-4' to="/login">LogOut</Link></li>
                                 :
                                 <li><Link className='  rounded-full ml-[-100px] lg:ml-0 hover:underline  w-[100px] mr-4' to="/login">Login</Link></li>}
