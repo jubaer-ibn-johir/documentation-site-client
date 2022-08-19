@@ -2,13 +2,22 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import { AiOutlineQuestionCircle } from 'react-icons/ai';
-import userAvatar from '../../assets/review-img/User-avatar.png';
-
+import { useState } from 'react';
+import { useEffect } from 'react';
+import SingleQuestion from './SingleQuestion';
 
 const Ask = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
+    const [questions,setQuestion]=useState([])
+    useEffect(()=>{
+        fetch(`https://polar-shore-69456.herokuapp.com/question`)
+        .then(res=>res.json())
+        .then(data=>setQuestion(data))
+    },[])
+
     return (
+
         <div>
             <div className='bg-cyan-500 pt-52 pb-16'>
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
@@ -28,15 +37,11 @@ const Ask = () => {
                         <div class="form-control w-full max-w-xs">
                             <select class="select select-bordered">
                                 <option disabled selected>Select Category</option>
-                                <option>Creative</option>
-                                <option>Programming</option>
-                                <option>Life Style</option>
-                                <option>News</option>
-                                <option>Photography</option>
-                                <option>Skill</option>
-                                <option>Tourist Tours</option>
-                                <option>Marketing</option>
-                                <option>Education</option>
+                                <option>Star Wars</option>
+                                <option>Harry Potter</option>
+                                <option>Lord of the Rings</option>
+                                <option>Planet of the Apes</option>
+                                <option>Star Trek</option>
                             </select>
                         </div>
                     </div>
@@ -45,50 +50,14 @@ const Ask = () => {
                     <div className='col-span-8 mt-5'>
                         <div className='flex justify-between items-center'>
                             <p className='font-semibold text-3xl mb-3'>Questions</p>
-                            <Link to="/askQuestion" className='bg-cyan-500 text-white rounded-xl px-5 py-3 border-2 border-cyan-500 flex items-center gap-2 hover:text-cyan-500 hover:border-2 hover:border-cyan-500 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                            <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                         </div>
-                        <div className='bg-cyan-100 p-5 mt-5'>
-                            <p className='text-sm'>Skill</p>
-                            <Link to="/answer" className='text-2xl font-bold hover:underline'>Install openssl-devel on Mac</Link>
-
-                            <div className='flex gap-5 items-center justify-between mt-5'>
-                                <div className='flex gap-5 items-center'>
-                                    <div className='h-12 w-12 rounded-full'>
-                                        <img src={userAvatar} alt="" className='w-full rounded-full' />
-                                    </div>
-                                    <div className='flex justify-between items-center'>
-                                        <div>
-                                            <p className='text-xl'>User Name</p>
-                                            <p className='text-sm'>Date</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='text-right'>
-                                    <p className='text-xl'>2 answers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='bg-cyan-100 p-5 mt-5'>
-                            <p className='text-sm'>Creative</p>
-                            <Link to="#" className='text-2xl font-bold hover:underline'>How to post a blog in EasyDoc?</Link>
-
-                            <div className='flex gap-5 items-center justify-between mt-5'>
-                                <div className='flex gap-5 items-center'>
-                                    <div className='h-12 w-12 rounded-full'>
-                                        <img src={userAvatar} alt="" className='w-full rounded-full' />
-                                    </div>
-                                    <div className='flex justify-between items-center'>
-                                        <div>
-                                            <p className='text-xl'>User Name</p>
-                                            <p className='text-sm'>Date</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='text-right'>
-                                    <p className='text-xl'>5 answers</p>
-                                </div>
-                            </div>
-                        </div>
+                     
+                    <div>
+                        {
+                          questions.map(question=><SingleQuestion question={question} key={question._id}></SingleQuestion>)
+                        }
+                    </div>
                     </div>
                     <div className='col-span-4 grid grid-cols-1 justify-items-center'>
                         <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full'>
@@ -100,9 +69,12 @@ const Ask = () => {
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
+
     );
 };
 
