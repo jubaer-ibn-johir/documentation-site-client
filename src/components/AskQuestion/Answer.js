@@ -10,22 +10,22 @@ const Answer = () => {
     return (
         <div style={{ "backgroundColor": "#F8FAFC" }}>
             <div className='bg-cyan-500'>
-                <div className='max-w-7xl mx-auto'>
-                    <div className='pt-52 pb-16 flex  justify-between'>
+                <div className='max-w-7xl lg:mx-auto mx-5'>
+                    <div className='pt-52 pb-16 lg:flex md:flex grid grid-cols-1 justify-between'>
                         <div className=''>
                             <p className='text-sm text-cyan-200'>Skill</p>
                             <h1 className='text-3xl font-medium text-white '>Install openssl-devel on Mac</h1>
                             <p className='text-cyan-200'>date</p>
                         </div>
                         <div>
-                            <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-white transition-all w-44'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                            <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-white transition-all w-44 lg:mt-0 md:mt-0 mt-5'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='max-w-7xl mx-auto my-5'>
+            <div className='max-w-7xl lg:mx-auto md:mx-5 mx-5 my-5'>
                 <div className='grid grid-cols-12 gap-5 mb-5'>
-                    <div className='col-span-6'>
+                    <div className='lg:col-span-6 md:col-span-6 col-span-12'>
                         <div className='w-full'>
                             <p className='text-xl'>I need to install the openssl-devel on Mac. But I've tried brew and macport both. Neither of them work.
 
@@ -74,7 +74,7 @@ const Answer = () => {
                             </form>
                         </div>
                     </div>
-                    <div className='col-span-6 grid grid-cols-1 justify-items-center h-full'>
+                    <div className='lg:col-span-6 md:col-span-6 col-span-12 grid grid-cols-1 justify-items-center h-full'>
                         <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full'>
                             <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
                             </p>

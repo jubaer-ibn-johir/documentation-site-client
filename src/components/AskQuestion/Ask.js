@@ -14,15 +14,15 @@ const Ask = () => {
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='text-xl text-white text-center mt-3'>Find the answer of your question</p>
             </div>
-            <div className='max-w-7xl mx-auto my-12'>
+            <div className='max-w-7xl lg:mx-auto md:mx-5 mx-5 my-12'>
                 <div className='grid grid-cols-12 gap-5 mb-5'>
-                    <div className='col-span-8 bg-cyan-100 p-5'>
+                    <div className='lg:col-span-8 md:col-span-8 col-span-12 bg-cyan-100 p-5'>
                         <p className='text-center font-semibold text-2xl mb-3'>Search</p>
                         <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
                             <input type="text" placeholder="Search..." class="input w-full outline-none border-none" {...register("searchValue", { required: true, maxLength: 20 })} />
                         </form>
                     </div>
-                    <div className='col-span-4 bg-cyan-100 p-5 grid grid-cols-1 justify-items-center'>
+                    <div className='lg:col-span-4 md:col-span-4 col-span-12 bg-cyan-100 p-5 grid grid-cols-1 justify-items-center'>
                         <p className='text-center font-semibold text-2xl mb-3 '>Find Category Wise Question
                         </p>
                         <div class="form-control w-full max-w-xs">
@@ -42,7 +42,7 @@ const Ask = () => {
                     </div>
                 </div>
                 <div className='grid grid-cols-12 gap-5'>
-                    <div className='col-span-8 mt-5'>
+                    <div className='lg:col-span-8 md:col-span-8 col-span-12 mt-5'>
                         <div className='flex justify-between items-center'>
                             <p className='font-semibold text-3xl mb-3'>Questions</p>
                             <Link to="/askQuestion" className='bg-cyan-500 text-white rounded-xl px-5 py-3 border-2 border-cyan-500 flex items-center gap-2 hover:text-cyan-500 hover:border-2 hover:border-cyan-500 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
@@ -90,7 +90,7 @@ const Ask = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-span-4 grid grid-cols-1 justify-items-center'>
+                    <div className='lg:col-span-4 md:col-span-4 col-span-12 grid grid-cols-1 justify-items-center'>
                         <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full'>
                             <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
                             </p>
