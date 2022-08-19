@@ -45,10 +45,9 @@ import UserProfile from './components/UserProfile/UserProfile';
 import { ToastContainer } from 'react-toastify';
 import Payment from './components/courses/Payment';
 import SingleCourseDetails from './components/courses/SingleCourseDetails';
-import Ask from './components/AskQuestion/Ask';
 import AskQuestion from './components/AskQuestion/AskQuestion';
+import Ask from './components/AskQuestion/Ask';
 import Answer from './components/AskQuestion/Answer';
-
 
 function App() {
   return (
@@ -57,14 +56,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
+        <Route path="/ask" element={<Ask></Ask>}></Route>
+        <Route path="/askQuestion" element={<AskQuestion></AskQuestion>}></Route>
+        <Route path="/answer/:ansId" element={<Answer></Answer>}></Route>
         <Route path='/courses' element={<Courses></Courses>}></Route>
         <Route path='/singleCourseDetails/:courseId' element={<SingleCourseDetails></SingleCourseDetails>}></Route>
         <Route path="/singup" element={<SingUp></SingUp>} />
         <Route path="/contact" element={<ContactUs></ContactUs>} />
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/ask" element={<Ask></Ask>}></Route>
-        <Route path="/askQuestion" element={<AskQuestion></AskQuestion>}></Route>
-        <Route path="/answer" element={<Answer></Answer>}></Route>
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
         <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />

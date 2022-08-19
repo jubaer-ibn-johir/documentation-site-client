@@ -47,7 +47,7 @@ const UserProfile = () => {
                     phone:data.phone,  
                 }
                 fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`,{
-                    method:'POST',
+                    method:'PUT',
                     headers:{
                         'content-type':'application/json'
                     },
