@@ -83,7 +83,7 @@ const Answer = () => {
     },[answers])
     return (
         <div style={{ "backgroundColor": "#F8FAFC" }}>
-        <div className='bg-cyan-700'>
+        <div className='bg-cyan-500'>
             <div className='max-w-7xl mx-auto'>
                 <div className='pt-52 pb-16 flex  justify-between'>
                     <div className=''>
@@ -92,7 +92,7 @@ const Answer = () => {
                         <p className='text-cyan-200'>{qDate}</p>
                     </div>
                     <div>
-                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-white transition-all w-44'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                        <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-white transition-all w-44'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ const Answer = () => {
                         <p>Please give a authentic answer </p>
                         <form onSubmit={handleSubmit(onSubmit)} className="">
                             <textarea {...register("answer")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3' />
-                            <input type="submit" className='text-white border-2 border-cyan-700 font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-cyan-700 hover:border-cyan-700 hover:text-cyan-700 hover:bg-transparent transition-all cursor-pointer text-center' value="Post Your Answer" />
+                            <input type="submit" className='text-white border-2 border-cyan-500 font-bold text-xl px-5 py-2 rounded-xl gap-2 bg-cyan-500 hover:border-cyan-500 hover:text-cyan-500 hover:bg-transparent transition-all cursor-pointer text-center' value="Post Your Answer" />
                         </form>
                     </div>
                 </div>

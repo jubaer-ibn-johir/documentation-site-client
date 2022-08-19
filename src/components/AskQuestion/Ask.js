@@ -19,7 +19,7 @@ const Ask = () => {
     return (
 
         <div>
-            <div className='bg-cyan-700 pt-52 pb-16'>
+            <div className='bg-cyan-500 pt-52 pb-16'>
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='text-xl text-white text-center mt-3'>Find the answer of your question</p>
             </div>
@@ -50,7 +50,7 @@ const Ask = () => {
                     <div className='col-span-8 mt-5'>
                         <div className='flex justify-between items-center'>
                             <p className='font-semibold text-3xl mb-3'>Questions</p>
-                            <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                            <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                         </div>
                      
                     <div>

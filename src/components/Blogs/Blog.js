@@ -5,6 +5,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Blog = ({ blog }) => {
   const { _id, category, title, details, img } = blog;
+  const description = details.slice(0, 85)
 
   const navigate = useNavigate();
   const navigateToDetail = id => {
@@ -23,7 +24,7 @@ const Blog = ({ blog }) => {
         <h2 >{category}</h2>
 
         <p className="card-title">{title}</p>
-        <p>{details}</p>
+        <p>{description} </p>
 
         <div className="card-actions">
           <button className='mt-5 text-primary' onClick={() => navigateToDetail(_id, title)}>Read More  <i class="fa-solid fa-arrow-right"></i></button>
