@@ -109,7 +109,7 @@ const Details = () => {
                         <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10 lg:mx-0 md:mx-5 mx-5'>
                             <div>
                                 <h1 className='text-xl text-cyan-500 font-bold'>React js</h1>
-                                <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-cyan-500'><a href="https://firebase.google.com/">View more...</a></span></p>
+                                <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-cyan-500'><a href="https://reactjs.org/">View more...</a></span></p>
 
                             </div>
                             <div>
