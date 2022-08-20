@@ -1,41 +1,94 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
+import auth from '../../firebase.init';
 
 const AskQuestion = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const [user] = useAuthState(auth);
+    const [userData, setUserData] = useState({});
+    const { register, handleSubmit, reset } = useForm();
+    const { name, photo } = userData;
+    useEffect(() => {
+        const email = user?.email
+        if (email) {
+            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+                method: 'GET',
+                headers: {
+                    'content-type': 'application/json',
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
+                    setUserData(data)
+                })
+        }
+    }, [user])
+    const onSubmit = data => {
+        let today = new Date().toLocaleString();
+        let question = {
+            title: data.title,
+            description: data.description,
+            qName: name,
+            qPhoto: photo,
+            qDate: today,
+        }
+        fetch(`https://polar-shore-69456.herokuapp.com/question`, {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(question)
+        })
+            .then(res => res.json())
+            .then(result => {
+                if (result.insertedId) {
+                    Swal.fire({
+                        title: 'Successfully Posted!',
+                        icon: 'success',
+                        confirmButtonText: 'ok'
+                    })
+                    reset()
+                }
+                else {
+                    Swal.fire({
+                        title: 'Faild to Post!',
+                        icon: 'error',
+                        confirmButtonText: 'ok'
+                    })
+                }
+            })
+    };
+
     return (
         <div>
             <div className='bg-cyan-500 pt-52 pb-16'>
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='text-xl text-white text-center mt-3'>Shear your question with EasyDoc and find the best answer</p>
             </div>
-            <div className="max-w-7xl lg:mx-auto md:mx-5 mx-5">
+            <div className="max-w-7xl mx-auto">
                 <div className=" bg-cyan-100 my-5 gap-5 p-5 shadow-md hover:shadow-2xl transition-all rounded-xl">
                     <div className=''>
                         <form onSubmit={handleSubmit(onSubmit)} className="">
                             <div className='grid grid-cols-12 gap-5 mb-5'>
-                                <div className='lg:col-span-6 md:col-span-6 col-span-12'>
+                                <div className='col-span-6'>
                                     <div className='w-full'>
                                         <p className='text-sm'>Title</p>
-                                        <input type="text" placeholder="Please enter a title" class="input w-full outline-none border-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                        <input type="text" placeholder="Please enter a title" class="input w-full outline-none border-none" {...register("title", { required: true, maxLength: 100 })} />
                                     </div>
                                 </div>
-                                <div className='lg:col-span-6 md:col-span-6 col-span-12'>
+                                <div className='col-span-6'>
                                     <div>
                                         <p className='text-sm'>Select Category</p>
                                         <div class="form-control">
                                             <select class="select select-bordered">
                                                 <option disabled selected>Select Category</option>
-                                                <option>Creative</option>
-                                                <option>Programming</option>
-                                                <option>Life Style</option>
-                                                <option>News</option>
-                                                <option>Photography</option>
-                                                <option>Skill</option>
-                                                <option>Tourist Tours</option>
-                                                <option>Marketing</option>
-                                                <option>Education</option>
+                                                <option>Star Wars</option>
+                                                <option>Harry Potter</option>
+                                                <option>Lord of the Rings</option>
+                                                <option>Planet of the Apes</option>
+                                                <option>Star Trek</option>
                                             </select>
                                         </div>
                                     </div>
@@ -48,6 +101,7 @@ const AskQuestion = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 
