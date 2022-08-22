@@ -36,11 +36,8 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 import Courses from './components/courses/Courses';
-
 import AddBlogs from './components/Blogs/AddBlogs';
-
 import UserProfile from './components/UserProfile/UserProfile';
-
 // import Navbar from './components/shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import Payment from './components/courses/Payment';
@@ -48,11 +45,13 @@ import SingleCourseDetails from './components/courses/SingleCourseDetails';
 import AskQuestion from './components/AskQuestion/AskQuestion';
 import Ask from './components/AskQuestion/Ask';
 import Answer from './components/AskQuestion/Answer';
+import Navbar from './components/shared/Navbar';
 
 function App() {
   return (
     <div>
-      <Hearder></Hearder>
+      {/* <Hearder></Hearder> */}
+      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
@@ -104,7 +103,6 @@ function App() {
       </Routes>
       <Footer></Footer>
       <ToastContainer />
-
     </div >
   );
 }

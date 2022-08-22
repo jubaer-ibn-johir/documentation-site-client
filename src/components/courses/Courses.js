@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CourseDetails from './CourseDetails';
-
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 const Courses = () => {
     const [courses, setCourses] = useState([])
     useEffect(() => {
@@ -29,6 +29,11 @@ const Courses = () => {
                     ></CourseDetails>)
                 }
             </div>
+            <MessengerCustomerChat
+                pageId="107648688729749"
+                appId="629979325282821"
+                htmlRef="<REF_STRING>"
+            />,
         </div>
     );
 };
