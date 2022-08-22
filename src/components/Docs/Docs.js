@@ -1,13 +1,9 @@
 import React from 'react';
-import bannerBg from '../../assets/docs/docs-banner.png'
-import reduxBg from '../../assets/docs/redux.gif'
-import nextBg from '../../assets/docs/next-js.svg'
 import { FaReact } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiRedux } from 'react-icons/si';
 import { Link } from 'react-router-dom';
-import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Docs = () => {
     return (

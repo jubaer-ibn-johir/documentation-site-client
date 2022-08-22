@@ -36,11 +36,8 @@ import ManageCourses from './components/Dashboard/ManageCourses';
 import AddTutorial from './components/Dashboard/AddTutorial';
 import TutorialsManage from './components/Dashboard/TutorialsManage';
 import Courses from './components/courses/Courses';
-
 import AddBlogs from './components/Blogs/AddBlogs';
-
 import UserProfile from './components/UserProfile/UserProfile';
-
 // import Navbar from './components/shared/Navbar';
 import { ToastContainer } from 'react-toastify';
 import Payment from './components/courses/Payment';
