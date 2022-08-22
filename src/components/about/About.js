@@ -21,19 +21,19 @@ const About = () => {
                     <div><img src={aboutImg} alt="" /></div>
                     <div>
                         <div className='flex items-center'>
-                            <div className='w-8 bg-rose-500 mr-3' style={{ "height": '2px' }}></div>
-                            <p className='text-rose-500'>ABOUT</p>
+                            <div className='w-8 bg-teal-500 mr-3' style={{ "height": '2px' }}></div>
+                            <p className='text-teal-500'>ABOUT</p>
                         </div>
                         <div className='pb-5 border-b-2'>
-                            <h2 className='lg:text-3xl md:text-2xl text-xl font-bold mb-4'>A united world, connected by technology</h2>
-                            <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking.</li>
-                            <li>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
-                            <li>Many desktop publishing packages and web page editors now use Lorem Ipsum.</li>
+                            <h2 className='lg:text-3xl md:text-2xl text-xl font-bold mb-4'>A rich source of effective documentations.</h2>
+                            <li>Exporting technical documentation written in EasyDoc and hosting it on your website or help page should be an efficient process.</li>
+                            <li>documentation, just like the rest of your website, needs to be responsive if you want to provide your customers.</li>
+                            {/* <li>Your online documentation needs to stay up-to-date. There is no point in providing your users with inaccurate documentation.</li> */}
                         </div>
                         <div>
                             <blockquote>
-                                <p className='italic text-xl' style={{ "color": '#6B7280' }}>“Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.”</p>
-                                <cite className='italic font-bold'>Jhankar Mahabub, Owner & CEO, Programming Hero.</cite>
+                                <p className='mt-2 text-xl' style={{ "color": '#6B7280' }}>“Technical documentation is an invaluable resource for your users. And with fast-moving development teams and product release cycles, it can be a challenge to keep your documentation up-to-date, accessible, and looking professional.”</p>
+                                <cite className='mt-2 italic font-bold'> Programming Hero.</cite>
                             </blockquote>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Jubaer Ibn Zahir</h2>
-                                        <p className='mt-1 mb-3 text-rose-500'>Team Leader</p>
+                                        <p className='mt-1 mb-3 text-teal-600'>Team Leader</p>
                                         <p className='text-gray-400'>A very talented, team leader,<br /> Mr. Jubaer. His dedication helped<br /> us to reach our goals.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>
@@ -68,7 +68,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Rakibul Hasan Sohag</h2>
-                                        <p className='mt-1 mb-3 text-rose-500'>Team Member</p>
+                                        <p className='mt-1 mb-3 text-teal-600'>Team Member</p>
                                         <p className='text-gray-400'>Another talented, helpful team<br /> member, Mr. Sohag. He helps in the<br /> front-end design.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>
@@ -87,7 +87,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Saiful Islam Hridoy</h2>
-                                        <p className='mt-1 mb-3 text-rose-500'>Team Member</p>
+                                        <p className='mt-1 mb-3 text-teal-600'>Team Member</p>
                                         <p className='text-gray-400'>Mr. Hridoy, a talented, friendly<br /> team member. He helps mostly<br /> in the backend.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>
@@ -104,7 +104,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Jannatun Naeem</h2>
-                                        <p className='mt-1 mb-3 text-rose-500'>Team Member</p>
+                                        <p className='mt-1 mb-3 text-teal-600'>Team Member</p>
                                         <p className='text-gray-400'>Mr. Naeem, a front-end designer,<br /> helps in the designing part <br />of this project.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>

@@ -20,7 +20,7 @@ const Solution = () => {
                         <div className='text-white w-96'>
                             <h3 className='lg:text-2xl md:text-2xl text-xl font-bold'>Knowledge Base</h3>
                             <p className='lg:text-lg md:text-lg text-sm my-2'>Professionally cultivate one-to-one find customer service with robust ideas.</p>
-                            <Link to="#" className='font-bold flex items-center text-xl'>Go to help page <FaLongArrowAltRight className='ml-2' /></Link>
+                            <Link to="/contact" className='font-bold flex items-center text-xl'>Go to help page <FaLongArrowAltRight className='ml-2' /></Link>
                         </div>
                     </div>
                     <div className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5 bg-cyan-500 hover:shadow-2xl transition-all'>
@@ -30,7 +30,7 @@ const Solution = () => {
                         <div className='text-white w-96'>
                             <h3 className='lg:text-2xl md:text-2xl text-xl font-bold'>Frequently Asked Questions</h3>
                             <p className='lg:text-lg md:text-lg text-sm my-2'>We have some frequently asked questions feature to help you.</p>
-                            <Link to="#" className='font-bold flex items-center text-xl'>Go to FAQ page <FaLongArrowAltRight className='ml-2' /></Link>
+                            <Link to="/ask" className='font-bold flex items-center text-xl'>Go to FAQ page <FaLongArrowAltRight className='ml-2' /></Link>
                         </div>
                     </div>
                 </div>
