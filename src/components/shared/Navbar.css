@@ -9,6 +9,12 @@ body {
     background-color: black;
     /* color: white; */
 }
+.navbar a{
+    color: white;
+}
 
+.navbar a:hover{
+    color: white;
+}
 
 
