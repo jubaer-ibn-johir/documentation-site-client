@@ -63,11 +63,11 @@ const ContactUs = () => {
                         <div className='lg:mx-0 md:mx-5 mx-5'>
                             <form action="" className='my-12 text-center' onSubmit={sendEmail}>
                                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mb-5'>
-                                    <input type="text" required placeholder='First Name' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
-                                    <input type="text" required placeholder='Last Name' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
-                                    <input type="email" required placeholder='Email' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
+                                    <input type="text" name='firstName' required placeholder='First Name' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
+                                    <input type="text" name='lastName' required placeholder='Last Name' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
+                                    <input type="email" name='email' required placeholder='Email' className='rounded-md py-3 px-5 outline-none border-2 border-orange-200 text-orange-500' />
                                 </div>
-                                <textarea name="" id="" cols="30" rows="5" placeholder='Enter your message' className='w-full grid grid-cols-1 outline-none px-5 py-5 rounded-md border-2 border-orange-200 text-orange-500'></textarea><br />
+                                <textarea name="message" id="" cols="30" rows="5" placeholder='Enter your message' className='w-full grid grid-cols-1 outline-none px-5 py-5 rounded-md border-2 border-orange-200 text-orange-500'></textarea><br />
                                 <button type="submit" className='px-10 py-3 text-white font-bold rounded-md border-orange-400 border-2 bg-orange-400 hover:bg-white hover:border-orange-400 hover:border-2 hover:text-orange-500 transition-all'>Send Message</button>
                             </form>
                         </div>
