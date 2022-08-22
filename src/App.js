@@ -48,11 +48,13 @@ import SingleCourseDetails from './components/courses/SingleCourseDetails';
 import AskQuestion from './components/AskQuestion/AskQuestion';
 import Ask from './components/AskQuestion/Ask';
 import Answer from './components/AskQuestion/Answer';
+import Navbar from './components/shared/Navbar';
 
 function App() {
   return (
     <div>
-      <Hearder></Hearder>
+      {/* <Hearder></Hearder> */}
+      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
@@ -104,7 +106,6 @@ function App() {
       </Routes>
       <Footer></Footer>
       <ToastContainer />
-
     </div >
   );
 }

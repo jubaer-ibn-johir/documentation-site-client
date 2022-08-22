@@ -5,13 +5,13 @@ import Reviws from './Reviws';
 import Solution from './Solution';
 import Details from './Details';
 import AddReview from './AddReview';
-// import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from "react-scroll-to-top";
 
 
 const Home = () => {
     return (
         <div>
-            {/* <ScrollToTop smooth color="red" top='20' /> */}
+            <ScrollToTop smooth color="red" top='20' />
             <Banner></Banner>
             <Details></Details>
             <BuildDocuments></BuildDocuments>
