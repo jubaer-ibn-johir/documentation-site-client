@@ -9,6 +9,17 @@ import { signOut } from 'firebase/auth';
 import Loading from './Loading';
 import blankPic from '../../assets/profile/user-profile.png'
 import logo from '../../assets/logo/logo4.png'
+import DarkTheme, { createTheme } from 'react-dark-theme'
+const lightTheme = {
+    background: 'white',
+    text: 'black',
+}
+
+const darkTheme = {
+    background: 'black',
+    text: 'white',
+}
+const myTheme = createTheme(darkTheme, lightTheme)
 
 const Hearder = ({handleThemeChange, theme}) => {
     const [isDarkMode, setIsDarkMode] = useState(() => false);
@@ -62,7 +73,7 @@ const Hearder = ({handleThemeChange, theme}) => {
     if (loading) {
         return <Loading></Loading>
     }
-
+    
     return (
         <div>
             <nav
@@ -117,14 +128,11 @@ const Hearder = ({handleThemeChange, theme}) => {
                                 :
                                 <li><Link className='  rounded-full ml-[-100px] lg:ml-0 hover:underline  w-[100px] mr-4' to="/login">Login</Link></li>}
 
-                        <li onClick={myFunction}>
-                            <DarkModeToggle
-                                isDarkMode={isDarkMode}
-                                className='dark-mode ml-[-100px] lg:ml-0 mt-2 lg:mt-10'
-                                onChange={setIsDarkMode}
-                                checked={isDarkMode}
-                                size={50}
-                            />
+                        <li >
+                            <div style={{ backgroundColor: myTheme.background, color: myTheme.text }}>
+                                <DarkTheme light={lightTheme} dark={darkTheme} />
+                               
+                            </div>
                         </li>
                     </ul>
                     <Link className='text-2xl' to="/"><img className='w-[120px] h-8' src={logo} alt="" /></Link>
