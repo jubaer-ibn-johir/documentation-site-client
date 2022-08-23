@@ -20,9 +20,7 @@ const Payment = () => {
     }, [payment])
     return (
         <div>
-            <br />
-            <br />
-            <br />
+
             <div className='lg:w-1/2 mx-auto'>
                 <div className="card w-full max-w-md bg-base-100 shadow-xl my-12 ">
                     <div className="card-body">
