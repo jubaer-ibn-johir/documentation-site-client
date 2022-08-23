@@ -23,7 +23,7 @@ import ReduxDocs from './components/Docs/Redux/ReduxDocs';
 import Reduxjs from './components/Docs/Redux/Reduxjs';
 import Home from './components/home/Home';
 import Footer from './components/shared/Footer';
-import Hearder from './components/shared/Hearder';
+// import Hearder from './components/shared/Hearder';
 import NotFound from './components/shared/NotFound';
 import Tutorial from './components/Tutorial/Tutorial';
 import CoreConcepts from './components/Docs/Redux/CoreConcepts';
