@@ -9,12 +9,12 @@ import SingleQuestion from './SingleQuestion';
 const Ask = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
-    const [questions,setQuestion]=useState([])
-    useEffect(()=>{
+    const [questions, setQuestion] = useState([])
+    useEffect(() => {
         fetch(`https://polar-shore-69456.herokuapp.com/question`)
-        .then(res=>res.json())
-        .then(data=>setQuestion(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setQuestion(data))
+    }, [])
 
     return (
 
@@ -52,12 +52,12 @@ const Ask = () => {
                             <p className='font-semibold text-3xl mb-3'>Questions</p>
                             <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                         </div>
-                     
-                    <div>
-                        {
-                          questions.map(question=><SingleQuestion question={question} key={question._id}></SingleQuestion>)
-                        }
-                    </div>
+
+                        <div>
+                            {
+                                questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
+                            }
+                        </div>
                     </div>
                     <div className='col-span-4 grid grid-cols-1 justify-items-center'>
                         <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full'>
