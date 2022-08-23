@@ -46,6 +46,8 @@ import AskQuestion from './components/AskQuestion/AskQuestion';
 import Ask from './components/AskQuestion/Ask';
 import Answer from './components/AskQuestion/Answer';
 import Navbar from './components/shared/Navbar';
+import AddReview from './components/home/AddReview';
+import RequireAuth from './components/shared/RequireAuth'
 
 function App() {
   return (
@@ -66,7 +68,7 @@ function App() {
         <Route path="/docs" element={<Docs></Docs>} />
         <Route path="/blog" element={<Blogs></Blogs>} />
         <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
-
+        <Route path='/add-review' element={<RequireAuth><AddReview></AddReview></RequireAuth>}></Route>
         <Route path="/blogDetail/:blogDetailId" element={<BlogDetails />} />
         <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
         <Route path="/reactjs" element={<Reactjs></Reactjs>} />

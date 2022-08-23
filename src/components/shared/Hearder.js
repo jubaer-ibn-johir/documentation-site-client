@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css'
-import DarkModeToggle from "react-dark-mode-toggle";
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
@@ -31,7 +31,6 @@ const Hearder = ({handleThemeChange, theme}) => {
             window.removeEventListener("scroll", listenScrollEvent);
         };
     }, []);
-
 
 
     const [user, loading] = useAuthState(auth);

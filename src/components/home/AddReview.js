@@ -1,30 +1,84 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import ReactStars from "react-rating-stars-component";
+import Swal from 'sweetalert2';
 import userAvatar from '../../assets/home-img/userAvatar.png';
+import auth from '../../firebase.init';
 
 const AddReview = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const [user] = useAuthState(auth);
+    const [userData, setUserData] = useState({});
+    const { register, handleSubmit, reset } = useForm();
+    const [rating,setRating]=useState(0)
+    const { name, photo } = userData;
+    useEffect(() => {
+        const email = user?.email
+        if (email) {
+            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+                method: 'GET',
+                headers: {
+                    'content-type': 'application/json',
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+                .then(res => res.json())
+                .then(data => {
+                    setUserData(data)
+                })
+        }
+    }, [user])
+    const onSubmit = data => {
+        let today = new Date().toLocaleString();
+        const review ={
+            reviewText: data.textArea,
+            rating:rating,
+            reviewName: name,
+            reviewPhoto: photo,
+            reviewDate: today,
+        }
+        fetch(`https://polar-shore-69456.herokuapp.com/review`, {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+            .then(res => res.json())
+            .then(result => {
+                if (result.insertedId) {
+                    Swal.fire({
+                        title: 'Successfully Posted!',
+                        icon: 'success',
+                        confirmButtonText: 'ok'
+                    })
+                    reset()
+                }
+                else {
+                    Swal.fire({
+                        title: 'Faild to Post!',
+                        icon: 'error',
+                        confirmButtonText: 'ok'
+                    })
+                }
+            })
+    };
 
     const ratingChanged = (newRating) => {
-        console.log(newRating);
+        setRating(newRating);
     }
     return (
         <div>
-            <input type="checkbox" id="AddReview" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box shadow-2xl bg-cyan-50">
-                    <label for="AddReview" class="btn btn-sm btn-circle absolute right-2 top-2 bg-cyan-500 text-white border-cyan-500 hover:border-cyan-500 hover:text-cyan-500 hover:bg-transparent ">✕</label>
+           
 
                     <div className='my-5'>
                         <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
                             <div className='grid grid-cols-1 justify-items-center'>
                                 <div className='h-16 w-16 rounded-full mb-5'>
-                                    <img src={userAvatar} alt="" className='rounded-full w-full' />
+                                    <img src={photo?photo:userAvatar} alt="" className='rounded-full w-full' />
                                 </div>
                                 <div>
-                                    <p className='font-semibold text-xl'>User Name</p>
+                                    <p className='font-semibold text-xl'>{name?name:"User Name"}</p>
                                 </div>
                             </div>
                             <div className='flex items-center gap-3 justify-start w-full'>
@@ -41,8 +95,6 @@ const AddReview = () => {
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
     );
 };
 

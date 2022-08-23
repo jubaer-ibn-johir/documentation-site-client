@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import { useNavigate } from 'react-router-dom';
 import { Pagination, Navigation, Autoplay } from "swiper";
 import avatar1 from '../../assets/home-img/img-1.png';
 import avatar2 from '../../assets/home-img/img-2.jpg';
@@ -15,6 +15,10 @@ import avatar6 from '../../assets/home-img/img-6.png';
 import AddReview from './AddReview';
 
 const Reviws = () => {
+    const navigate=useNavigate();
+    const handleNavigate=()=>{
+        navigate('/add-review')
+    }
     return (
         <div style={{ "backgroundColor": "#F8FAFC" }} className="py-5">
             <div className="my-16 lg:max-w-7xl mx-auto">
@@ -211,9 +215,7 @@ const Reviws = () => {
                 </Swiper>
                 <div className='my-16'>
                     <div className='text-center'>
-                        <label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label>
-
-                        <AddReview></AddReview>
+                        <button onClick={handleNavigate} class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</button>
 
                     </div >
                 </div >
