@@ -1,6 +1,7 @@
 import React from 'react';
 import { javascript } from '@codemirror/lang-javascript';
 import CodeMirror from '@uiw/react-codemirror';
+import ScrollToTop from 'react-scroll-to-top';
 
 const GetServerSideProps = () => {
     const onChange = React.useCallback((value, viewUpdate) => {
@@ -8,6 +9,7 @@ const GetServerSideProps = () => {
     }, []);
     return (
         <div className='ml-7 mr-7'>
+            <ScrollToTop smooth color="red" top='20' />
             <h2 className='lg:text-4xl text-3xl font-bold mt-16'>GetServerSideProps</h2>
             <p className='text-xl mt-5'>If you export a function called getServerSideProps (Server-Side Rendering) from a page, Next.js will pre-render this page on each request using the data returned by getServerSideProps.</p>
             <div className='my-7'>

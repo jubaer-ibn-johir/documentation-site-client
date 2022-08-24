@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import CourseDetails from './CourseDetails';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import ScrollToTop from 'react-scroll-to-top';
+
 const Courses = () => {
     const [courses, setCourses] = useState([])
     useEffect(() => {
@@ -11,6 +13,7 @@ const Courses = () => {
     }, [])
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <br />
             <br />
             <br />

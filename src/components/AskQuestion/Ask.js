@@ -5,6 +5,8 @@ import { AiOutlineQuestionCircle } from 'react-icons/ai';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import SingleQuestion from './SingleQuestion';
+import ScrollToTop from 'react-scroll-to-top';
+import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Ask = () => {
     const { register, handleSubmit } = useForm();
@@ -17,59 +19,87 @@ const Ask = () => {
     }, [])
 
     return (
-
         <div>
-            <div className='bg-cyan-500 pt-52 pb-16'>
-                <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
-                <p className='text-xl text-white text-center mt-3'>Find the answer of your question</p>
+            <ScrollToTop smooth color="red" top='20' />
+            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(90deg, rgba(52,156,176,1) 0%, rgba(0,76,119,1) 100%)' }}>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
+                <p className='lg:text-xl md:text-xl text-lg text-white text-center mt-3'>Find the answer of your question</p>
             </div>
-            <div className='max-w-7xl mx-auto my-12'>
-                <div className='grid grid-cols-12 gap-5 mb-5'>
-                    <div className='col-span-8 bg-cyan-100 p-5'>
-                        <p className='text-center font-semibold text-2xl mb-3'>Search</p>
-                        <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
-                            <input type="text" placeholder="Search..." class="input w-full outline-none border-none" {...register("searchValue", { required: true, maxLength: 20 })} />
-                        </form>
-                    </div>
-                    <div className='col-span-4 bg-cyan-100 p-5 grid grid-cols-1 justify-items-center'>
-                        <p className='text-center font-semibold text-2xl mb-3 '>Find Category Wise Question
-                        </p>
-                        <div class="form-control w-full max-w-xs">
-                            <select class="select select-bordered">
-                                <option disabled selected>Select Category</option>
-                                <option>Star Wars</option>
-                                <option>Harry Potter</option>
-                                <option>Lord of the Rings</option>
-                                <option>Planet of the Apes</option>
-                                <option>Star Trek</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div className='grid grid-cols-12 gap-5'>
-                    <div className='col-span-8 mt-5'>
-                        <div className='flex justify-between items-center'>
-                            <p className='font-semibold text-3xl mb-3'>Questions</p>
-                            <Link to="/askQuestion" className='bg-cyan-400 text-white rounded-xl px-5 py-3 border-2 border-cyan-400 flex items-center gap-2 hover:text-cyan-400 hover:border-2 hover:border-cyan-400 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
-                        </div>
+            <div className='w-full bg-slate-100 py-16'>
+                <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
+                    <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
+                        <div className='lg:w-2/3 md:w-2/3 w-full'>
+                            <div className='bg-white p-5'>
+                                <p className='text-center font-semibold text-2xl mb-3'>Search</p>
+                                <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
+                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                </form>
+                            </div>
+                            <div className='grid gap-5'>
+                                <div className='mt-5'>
+                                    <div className='flex justify-between items-center'>
+                                        <p className='font-semibold text-3xl mb-3'>Questions</p>
+                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                                    </div>
 
-                        <div>
-                            {
-                                questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
-                            }
-                        </div>
-                    </div>
-                    <div className='col-span-4 grid grid-cols-1 justify-items-center'>
-                        <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full'>
-                            <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
-                            </p>
-                        </div>
-                        <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full mt-5'>
-                            <p className='text-center font-semibold text-2xl mb-3'>Stay In Touch
-                            </p>
-                        </div>
-                    </div>
+                                    <div>
+                                        {
+                                            questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
+                                        }
+                                    </div>
+                                </div>
 
+
+                            </div>
+                        </div>
+                        <div className='lg:w-1/3 md:w-1/3 w-full'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center'>
+                                <p className='text-center font-semibold text-2xl mb-3 '>Find Category Wise Question
+                                </p>
+                                <div class="form-control w-full max-w-xs">
+                                    <select class="select select-bordered bg-slate-100 focus:outline-none">
+                                        <option disabled selected>Select Category</option>
+                                        <option>Creative</option>
+                                        <option>Programming</option>
+                                        <option>Lifestyle</option>
+                                        <option>News</option>
+                                        <option>Photography</option>
+                                        <option>Skill</option>
+                                        <option>Tourist Tours</option>
+                                        <option>Marketing</option>
+                                        <option>Education</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className='grid grid-cols-1 justify-items-center'>
+                                <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md'>
+                                    <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
+                                    </p>
+                                </div>
+                                <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md'>
+                                    <p className='text-center font-semibold text-2xl mb-3'>Stay In Touch
+                                    </p>
+                                    <div className='flex lg:gap-x-5 md:gap-x-3 gap-x-2 mt-6'>
+                                        <div className='lg:h-12 md:h-10 h-8 lg:w-12 md:w-10 w-8 rounded-full border-2 border-slate-400 hover:border-blue-800 flex justify-center items-center hover:bg-blue-800 transition-all'>
+                                            <a href="/"><FaFacebook className='hover:text-white text-slate-400 lg:w-7 md:w-5 w-4 lg:h-7 md:h-5 h-4'></FaFacebook></a>
+                                        </div>
+                                        <div className='lg:h-12 md:h-10 h-8 lg:w-12 md:w-10 w-8 rounded-full border-2 border-slate-400 hover:border-blue-800 flex justify-center items-center hover:bg-blue-800 transition-all'>
+                                            <a href="/"><FaLinkedin className='hover:text-white text-slate-400 lg:w-7 md:w-5 w-4 lg:h-7 md:h-5 h-4'></FaLinkedin></a>
+                                        </div>
+                                        <div className='lg:h-12 md:h-10 h-8 lg:w-12 md:w-10 w-8 rounded-full border-2 border-slate-400 hover:border-blue-800 flex justify-center items-center hover:bg-blue-800 transition-all'>
+                                            <a href="/"><FaYoutube className='hover:text-white text-slate-400 lg:w-7 md:w-5 w-4 lg:h-7 md:h-5 h-4'></FaYoutube></a>
+                                        </div>
+                                        <div className='lg:h-12 md:h-10 h-8 lg:w-12 md:w-10 w-8 rounded-full border-2 border-slate-400 hover:border-blue-800 flex justify-center items-center hover:bg-blue-800 transition-all'>
+                                            <a href="/"><FaTwitter className='hover:text-white text-slate-400 lg:w-7 md:w-5 w-4 lg:h-7 md:h-5 h-4'></FaTwitter></a>
+                                        </div>
+                                        {/* <a href="/"><FaLinkedin className='hover:text-blue-800 text-slate-400 w-7 h-7'></FaLinkedin></a>
+                                        <a href="/"><FaYoutube className='hover:text-red-600 text-slate-400 w-7 h-7'></FaYoutube></a>
+                                        <a href="/"><FaTwitter className='hover:text-blue-600 text-slate-400 w-7 h-7'></FaTwitter></a> */}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

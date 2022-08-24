@@ -9,6 +9,7 @@ import contactBg3 from '../../assets/contact-us/desk-bg-final2.png';
 import contactBg4 from '../../assets/contact-us/contactBg4.png';
 import emailjs from 'emailjs-com'
 import { toast } from 'react-toastify';
+import ScrollToTop from 'react-scroll-to-top';
 
 const ContactUs = () => {
     const sendEmail = e => {
@@ -22,6 +23,7 @@ const ContactUs = () => {
     }
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='bg-orange-50'>
                 <div className='pt-44 pb-10 bg-white' style={{ "box-shadow": "0 15px 15px 0px rgba(255, 102, 0, 0.2)" }}>
                     <h1 className='lg:text-5xl md:text-4xl text-3xl font-semibold text-center'>Contact Us !</h1>

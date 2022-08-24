@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SingleAnswer from './SingleAnswer';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 const Answer = () => {
@@ -83,7 +84,8 @@ const Answer = () => {
     }, [answers])
     return (
         <div style={{ "backgroundColor": "#F8FAFC" }}>
-            <div className='bg-cyan-500'>
+            <ScrollToTop smooth color="red" top='20' />
+            <div className='' style={{ background: 'linear-gradient(90deg, rgba(52,156,176,1) 0%, rgba(0,76,119,1) 100%)' }}>
                 <div className='max-w-7xl mx-auto'>
                     <div className='pt-52 pb-16 flex  justify-between'>
                         <div className=''>

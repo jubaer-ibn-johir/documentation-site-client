@@ -9,7 +9,7 @@ const Solution = () => {
         <div className='flex justify-center my-20'>
             <div>
                 <div className='text-center my-10'>
-                    <h1 className='lg:text-4xl md:text-3xl text-2xl font-medium'>Didn't find any solution?</h1>
+                    <h1 className='lg:text-4xl md:text-3xl text-2xl font-medium dark:text-white'>Didn't find any solution?</h1>
                     <p className='lg:text-xl md:text-lg text-lg lg:mx-0 md:mx-0 mx-4 mt-6'>Easily create Documentation, Knowledge-base, FAQ, Forum and more</p>
                 </div>
                 <div className='lg:flex grid grid-cols-1 gap-6'>

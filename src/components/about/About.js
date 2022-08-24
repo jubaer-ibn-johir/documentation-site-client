@@ -8,11 +8,13 @@ import sohagVai2 from '../../assets/about-img/Sohag vai.png';
 import hridoyVai from '../../assets/about-img/Hridoy vai.png';
 import naeem from '../../assets/about-img/Naeem.jpg';
 import { FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 const About = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='flex justify-center items-center lg:py-44 md:py-44 py-32 bg-cyan-600'>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white'>About Us</h1>
             </div>

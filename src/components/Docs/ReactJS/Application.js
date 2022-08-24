@@ -1,22 +1,24 @@
 import React from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Application = () => {
-    const onChange = React.useCallback((value, viewUpdate) => {
-        console.log("value:", value);
-    }, []);
-    return (
-        <div className='mx-0 lg:mx-20 mt-16'>
-            <div className='grid grid-cols-1 lg:grid-cols-2  gap-x-12'>
-                <div className='px-5 lg:px-0 mr-0 lg:mr-48'>
-                    <h2 className='text-4xl font-bold'>An Application</h2>
-                    <p className='mt-10 text-2xl leading-9 '>Using props and state, we can put together a small Todo application. This example uses state to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
-                    </p>
-                </div>
-                <div className='text-lg '>
-                    <CodeMirror
-                        value="class TodoApp extends React.Component {
+  const onChange = React.useCallback((value, viewUpdate) => {
+    console.log("value:", value);
+  }, []);
+  return (
+    <div className='mx-0 lg:mx-20 mt-16'>
+      <ScrollToTop smooth color="red" top='20' />
+      <div className='grid grid-cols-1 lg:grid-cols-2  gap-x-12'>
+        <div className='px-5 lg:px-0 mr-0 lg:mr-48'>
+          <h2 className='text-4xl font-bold'>An Application</h2>
+          <p className='mt-10 text-2xl leading-9 '>Using props and state, we can put together a small Todo application. This example uses state to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
+          </p>
+        </div>
+        <div className='text-lg '>
+          <CodeMirror
+            value="class TodoApp extends React.Component {
                             constructor(props) {
                               super(props);
                               this.state = { items: [], text: '' };
@@ -79,24 +81,24 @@ const Application = () => {
                           }
                           
                           root.render(<TodoApp />);"
-                        height="400px"
-                        theme="dark"
+            height="400px"
+            theme="dark"
 
-                        extensions={[javascript({ jsx: true })]}
-                        onChange={onChange}
-                    />
-                    <CodeMirror
-                        value="what needs to be done?"
-                        height="100px"
-                        extensions={[javascript({ jsx: true })]}
-                        onChange={(value, viewUpdate) => {
-                            console.log("value:", value);
-                        }}
-                    />
-                </div>
-            </div>
+            extensions={[javascript({ jsx: true })]}
+            onChange={onChange}
+          />
+          <CodeMirror
+            value="what needs to be done?"
+            height="100px"
+            extensions={[javascript({ jsx: true })]}
+            onChange={(value, viewUpdate) => {
+              console.log("value:", value);
+            }}
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Application;

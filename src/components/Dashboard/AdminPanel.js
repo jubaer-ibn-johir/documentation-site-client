@@ -5,10 +5,12 @@ import { MdDashboard, MdOutlineVideoStable } from 'react-icons/md';
 import { FaUsers } from 'react-icons/fa';
 import { FaCentercode } from 'react-icons/fa';
 import { ImBlogger2 } from 'react-icons/im';
+import ScrollToTop from 'react-scroll-to-top';
 
 const AdminPanel = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div class="drawer drawer-mobile">
                 <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content mt-16">

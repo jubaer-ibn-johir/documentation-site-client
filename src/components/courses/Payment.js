@@ -4,6 +4,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import CheckoutForm from './CheckoutForm';
 import { useParams } from 'react-router-dom';
 import UseCourses from '../../hooks/UseCourses';
+import ScrollToTop from 'react-scroll-to-top';
 
 const stripePromise = loadStripe('pk_test_51L0UcsIFjt8xvGHkZh0UClsyUEwizGqQxOfATx5z1osYgwu3MBGOWKN7qVI4M29Vcd9i6ZJGIUwgtaKlpCC4y0hC00NtQIly3N')
 
@@ -20,6 +21,7 @@ const Payment = () => {
     }, [payment])
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <br />
             <br />
             <br />

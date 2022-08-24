@@ -5,10 +5,12 @@ import { ImBlogger2 } from 'react-icons/im';
 import { MdRateReview, MdOutlineVideoStable } from 'react-icons/md';
 import { FaCentercode } from 'react-icons/fa';
 import OurAreaChart from './OurAreaChart';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Dashboard = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='p-8 bg-accent rounded-xl'>
                 <div className='grid grid-cols-1 gap-8'>
                     <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>

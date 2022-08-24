@@ -1,8 +1,10 @@
 import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Declarative = () => {
     return (
         <div className='mx-0 lg:mx-20 mt-16'>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-x-12'>
                 <div className='px-5 lg:px-0'>
                     <h2 style={{ color: '#6d6d6d' }} className='text-4xl'>Declarative</h2>
