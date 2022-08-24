@@ -5,7 +5,7 @@ import blankPic from '../../assets/profile/user-profile.png'
 import { FaRegEdit } from 'react-icons/fa'
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
-
+ 
 const UserProfile = () => {
     const [user] = useAuthState(auth);
     const [userData, setUserData] = useState({});
@@ -76,22 +76,22 @@ const UserProfile = () => {
     };
     return (
         <div>
-            <div className='flex justify-center items-center h-screen'>
-                <div class="card w-96 lg:w-[800px] bg-base-100 shadow-xl">
-                <label for="my-modal-6" class=" modal-button flex justify-end m-8 cursor-pointer"><FaRegEdit className='w-6 h-6'></FaRegEdit></label>
-                    <div class="card-body">
+            <div className='flex justify-center items-center h-screen '>
+                <div class="card w-96 lg:w-[800px] bg-base-100 shadow-xl bg-gradient-to-r from-purple-400 to-pink-400 ">
+                <label for="my-modal-6" className="  modal-button flex justify-end m-8 cursor-pointer"><FaRegEdit className='w-6 h-6'></FaRegEdit></label>
+                    <div class="card-body ">
                         <div className='flex justify-center'>
                             <div class="avatar">
-                                <div class="w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <div class="w-28 rounded-full ring ring-purple-500 ring-offset-base-100 ring-offset-2">
                                     <img src={userData?.photo ? userData?.photo : blankPic} alt="user" />
                                 </div>
                             </div>
                         </div>
                         <h2 className='text-center text-2xl'>{userData?.name}</h2>
-                        <div className='mt-8'>
-                            <p><span className='font-bold'>Email:</span> {userData?.email}</p>
-                            <p><span className='font-bold'>Address:</span> {userData?.address ? userData?.address : "None"}</p>
-                            <p><span className='font-bold'>Phone:</span> {userData?.phone ? userData?.phone : "None"}</p>
+                        <div className='mt-8 text-center'>
+                            <p><span className='font-bold  '>Email:</span> {userData?.email}</p>
+                            <p><span className='font-bold '>Address:</span> {userData?.address ? userData?.address : "None"}</p>
+                            <p><span className='font-bold '>Phone:</span> {userData?.phone ? userData?.phone : "None"}</p>
                         </div>
                     </div>
                 </div>
@@ -133,5 +133,5 @@ const UserProfile = () => {
         </div>
     );
 };
-
+ 
 export default UserProfile;
