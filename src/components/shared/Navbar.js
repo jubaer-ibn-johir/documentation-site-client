@@ -99,6 +99,12 @@ const Navbar = () => {
                 :
                 <li><Link className='font-bold' to="/login">Login</Link></li>
             }
+            <li>
+            <div className='bg-blue-700 hover:bg-blue-700'>
+              <label> {theme === "light" ? "Light" : "Dark"}</label>
+              <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+            </div>
+          </li>
           </ul>
         </div>
         <Link className='hidden lg:block' to="/"><img className='w-[120px] h-8 ' src={whiteLogo} alt="" /></Link>
