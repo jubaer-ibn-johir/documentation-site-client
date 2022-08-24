@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaReact } from 'react-icons/fa';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Blog = ({ blog }) => {
   const { _id, category, title, details, img } = blog;
@@ -13,6 +14,7 @@ const Blog = ({ blog }) => {
   }
   return (
     <div className="w-96 bg-blue-50 mt-6 shadow-xl">
+      <ScrollToTop smooth color="red" top='20' />
       <figure className="px-10 pt-10">
         <img
           src={img}

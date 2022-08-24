@@ -60,20 +60,22 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import './NoteFound.css'
+import './NoteFound.css';
+import ScrollToTop from 'react-scroll-to-top';
 
 
 const NotFound = () => {
   return (
     <div >
+      <ScrollToTop smooth color="red" top='20' />
       <section class="page_404 ">
         <div class="">
           <div class="row mt-8">
             <div class="col-sm-12 ">
               <div class="col-sm-10 col-sm-offset-1  text-center">
-              <h1 class="text-center text-6xl ">Not Found</h1>
+                <h1 class="text-center text-6xl ">Not Found</h1>
                 <div class="four_zero_four_bg ">
-                  
+
                 </div>
 
                 <div class="contant_box_404">
@@ -82,8 +84,8 @@ const NotFound = () => {
                   <p className="text-2xl font-bold">the page you are looking for not avaible at the moment!</p>
 
                   <div class="btnposi">
-                     <button className="commonButton mt-2 font-bold"> <Link to='/'>Back to Home</Link></button>
-                </div>
+                    <button className="commonButton mt-2 font-bold"> <Link to='/'>Back to Home</Link></button>
+                  </div>
                 </div>
               </div>
             </div>

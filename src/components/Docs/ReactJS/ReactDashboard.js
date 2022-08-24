@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { FaGreaterThan } from 'react-icons/fa';
+import ScrollToTop from 'react-scroll-to-top';
 
 const ReactDashboard = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div>
                 <div className="drawer drawer-mobile">
                     <input id="next-button" type="checkbox" className="drawer-toggle" />

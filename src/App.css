@@ -23,3 +23,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #3db8d3;
 }
+
+#light {
+  background-color: #fff;
+  /* color: #000; */
+}
+
+#dark {
+  background-color: rgb(51 65 85);
+  /* color: #fff !important; */
+
+}

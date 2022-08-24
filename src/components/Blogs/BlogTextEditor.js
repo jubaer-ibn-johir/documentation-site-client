@@ -1,6 +1,7 @@
 import React from 'react';
 import { Editor, EditorState, getDefaultKeyBinding, RichUtils} from 'draft-js';
-import './BlogText.css'
+import './BlogText.css';
+import ScrollToTop from 'react-scroll-to-top';
 
 class BlogTextEditor extends React.Component {
     constructor(props) {
@@ -73,6 +74,7 @@ class BlogTextEditor extends React.Component {
 
       return (
         <div className="RichEditor-root">
+          <ScrollToTop smooth color="red" top='20' />
           <BlockStyleControls
             editorState={editorState}
             onToggle={this.toggleBlockType}

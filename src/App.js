@@ -46,64 +46,71 @@ import AskQuestion from './components/AskQuestion/AskQuestion';
 import Ask from './components/AskQuestion/Ask';
 import Answer from './components/AskQuestion/Answer';
 import Navbar from './components/shared/Navbar';
+import { createContext, useState } from 'react';
+export const ThemeContext = createContext(null);
 
 function App() {
-  return (
-    <div>
-      {/* <Hearder></Hearder> */}
-      <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<Home></Home>} />
-        <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
-        <Route path="/ask" element={<Ask></Ask>}></Route>
-        <Route path="/askQuestion" element={<AskQuestion></AskQuestion>}></Route>
-        <Route path="/answer/:ansId" element={<Answer></Answer>}></Route>
-        <Route path='/courses' element={<Courses></Courses>}></Route>
-        <Route path='/singleCourseDetails/:courseId' element={<SingleCourseDetails></SingleCourseDetails>}></Route>
-        <Route path="/singup" element={<SingUp></SingUp>} />
-        <Route path="/contact" element={<ContactUs></ContactUs>} />
-        <Route path="/about" element={<About></About>}></Route>
-        <Route path="/docs" element={<Docs></Docs>} />
-        <Route path="/blog" element={<Blogs></Blogs>} />
-        <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
 
-        <Route path="/blogDetail" element={<BlogDetails />} />
-        <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
-        <Route path="/reactjs" element={<Reactjs></Reactjs>} />
-        <Route path="/redux" element={<Reduxjs></Reduxjs>} />
-        <Route path="/nextjs" element={<Nextjs></Nextjs>} />
-        <Route path="/login" element={<Login></Login>} />
-        <Route path='/user-profile' element={<UserProfile></UserProfile>}></Route>
-        <Route path="/payment" element={<Payment></Payment>} />
-        <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
-          <Route index element={<Installation></Installation>}></Route>
-          <Route path='mainconcepts' element={<MainConcepts></MainConcepts>}></Route>
-        </Route>
-        <Route path='next-get-started' element={<NextDocs></NextDocs>}>
-          <Route index element={<NextGetStarted></NextGetStarted>}></Route>
-          <Route path='next-pages' element={<NextPages></NextPages>}></Route>
-          <Route path='getServerSideProps' element={<GetServerSideProps></GetServerSideProps>}></Route>
-        </Route>
-        <Route path='get-started' element={<ReduxDocs></ReduxDocs>}>
-          <Route index element={<GetStarted></GetStarted>}></Route>
-          <Route path='installation' element={<ReduxInstallation></ReduxInstallation>}></Route>
-          <Route path='why-redux' element={<WhyRedux></WhyRedux>}></Route>
-          <Route path='core-concepts' element={<CoreConcepts></CoreConcepts>}></Route>
-        </Route>
-        <Route path='admin-panel' element={<AdminPanel></AdminPanel>}>
-          <Route index element={<Dashboard></Dashboard>}></Route>
-          <Route path='manage-users' element={<ManageUsers></ManageUsers>}></Route>
-          <Route path='manage-blogs' element={<ManageBlogs></ManageBlogs>}></Route>
-          <Route path='manage-tutorials' element={<ManageTutorials></ManageTutorials>}></Route>
-          <Route path='manage-courses' element={<ManageCourses></ManageCourses>}></Route>
-          <Route path='add-tutorial' element={<AddTutorial></AddTutorial>}></Route>
-          <Route path='tutorials-manage' element={<TutorialsManage></TutorialsManage>}></Route>
-        </Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
-      </Routes>
-      <Footer></Footer>
-      <ToastContainer />
-    </div >
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <ThemeContext.Provider value={[theme, setTheme]}>
+      <div id={theme}>
+        {/* <Hearder></Hearder> */}
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
+          <Route path="/ask" element={<Ask></Ask>}></Route>
+          <Route path="/askQuestion" element={<AskQuestion></AskQuestion>}></Route>
+          <Route path="/answer/:ansId" element={<Answer></Answer>}></Route>
+          <Route path='/courses' element={<Courses></Courses>}></Route>
+          <Route path='/singleCourseDetails/:courseId' element={<SingleCourseDetails></SingleCourseDetails>}></Route>
+          <Route path="/singup" element={<SingUp></SingUp>} />
+          <Route path="/contact" element={<ContactUs></ContactUs>} />
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/docs" element={<Docs></Docs>} />
+          <Route path="/blog" element={<Blogs></Blogs>} />
+          <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
+
+          <Route path="/blogDetails" element={<BlogDetails />} />
+          <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
+          <Route path="/reactjs" element={<Reactjs></Reactjs>} />
+          <Route path="/redux" element={<Reduxjs></Reduxjs>} />
+          <Route path="/nextjs" element={<Nextjs></Nextjs>} />
+          <Route path="/login" element={<Login></Login>} />
+          <Route path='/user-profile' element={<UserProfile></UserProfile>}></Route>
+          <Route path="/payment" element={<Payment></Payment>} />
+          <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
+            <Route index element={<Installation></Installation>}></Route>
+            <Route path='mainconcepts' element={<MainConcepts></MainConcepts>}></Route>
+          </Route>
+          <Route path='next-get-started' element={<NextDocs></NextDocs>}>
+            <Route index element={<NextGetStarted></NextGetStarted>}></Route>
+            <Route path='next-pages' element={<NextPages></NextPages>}></Route>
+            <Route path='getServerSideProps' element={<GetServerSideProps></GetServerSideProps>}></Route>
+          </Route>
+          <Route path='get-started' element={<ReduxDocs></ReduxDocs>}>
+            <Route index element={<GetStarted></GetStarted>}></Route>
+            <Route path='installation' element={<ReduxInstallation></ReduxInstallation>}></Route>
+            <Route path='why-redux' element={<WhyRedux></WhyRedux>}></Route>
+            <Route path='core-concepts' element={<CoreConcepts></CoreConcepts>}></Route>
+          </Route>
+          <Route path='admin-panel' element={<AdminPanel></AdminPanel>}>
+            <Route index element={<Dashboard></Dashboard>}></Route>
+            <Route path='manage-users' element={<ManageUsers></ManageUsers>}></Route>
+            <Route path='manage-blogs' element={<ManageBlogs></ManageBlogs>}></Route>
+            <Route path='manage-tutorials' element={<ManageTutorials></ManageTutorials>}></Route>
+            <Route path='manage-courses' element={<ManageCourses></ManageCourses>}></Route>
+            <Route path='add-tutorial' element={<AddTutorial></AddTutorial>}></Route>
+            <Route path='tutorials-manage' element={<TutorialsManage></TutorialsManage>}></Route>
+          </Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
+        </Routes>
+        <Footer></Footer>
+        <ToastContainer />
+      </div >
+    </ThemeContext.Provider>
   );
 }
 

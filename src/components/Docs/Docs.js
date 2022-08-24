@@ -4,10 +4,12 @@ import { BsArrowRight } from 'react-icons/bs';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { SiRedux } from 'react-icons/si';
 import { Link } from 'react-router-dom';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Docs = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='bg-indigo-50'>
                 <div className='pt-44 pb-10 bg-white' style={{ "box-shadow": "0 15px 15px 0px rgba(8, 0, 255, 0.2)" }}>
                     <h1 className='lg:text-5xl md:text-4xl text-3xl font-semibold text-center'>Documentations</h1>

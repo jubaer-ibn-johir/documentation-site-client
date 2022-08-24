@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 import { Area, AreaChart, CartesianGrid, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const OurAreaChart = () => {
@@ -34,6 +35,7 @@ const OurAreaChart = () => {
     ];
     return (
         <div className='flex items-center justify-center'>
+            <ScrollToTop smooth color="red" top='20' />
             <ResponsiveContainer width={"100%"} height={500}>
                 <AreaChart
                     data={data}

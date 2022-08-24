@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { FaGreaterThan } from 'react-icons/fa';
+import ScrollToTop from 'react-scroll-to-top';
 
 const ReduxDocs = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div className="drawer drawer-mobile ">
                 <input id="next-button" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content ">

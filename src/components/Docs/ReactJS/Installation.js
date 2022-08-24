@@ -1,8 +1,10 @@
 import React from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 
 const Installation = () => {
     return (
         <div className='mx-6 lg:mx-12'>
+            <ScrollToTop smooth color="red" top='20' />
             <h2 className='text-6xl font-bold'>Getting Started</h2>
             <p className='text-2xl text-gray-500 mt-10 leading-10'>This page is an overview of the React documentation and related
                 <br />
