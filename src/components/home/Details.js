@@ -41,18 +41,18 @@ const Details = () => {
                             <div >
                                 <img className=' w-100' src="https://docs-client-site.vercel.app/_next/image?url=https%3A%2F%2Fwordpress-theme.spider-themes.net%2Fdocy-dark%2Fwp-content%2Fuploads%2F2019%2F04%2Fspinner_logo-1.png&w=96&q=75" alt="" />
                                 <h1 className='text-2xl text-cyan-500 font-bold mt-5'>EasyDocs</h1>
-                                <p className='text-xl mb-5 mt-3 '>Docy is a powerful, responsive, and high-performance online documentation.</p>
+                                <p className='text-xl mb-5 mt-3 '>EasyDoc is a resourceful, responsive, and high-performance online documentation website.</p>
                             </div>
                             <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-20 grid-cols-1 mt-10'>
                                 <div>
-                                    <div className='text-2xl mb-5 text-cyan-500'>Target</div>
+                                    <div className='text-2xl mb-5 text-cyan-500'>Docs</div>
                                     <div className='flex'>
                                         <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
-                                        <h1 className='text-xl ml-6'> This is a   Documentation base web-site , where every one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.</h1>
+                                        <h1 className='text-xl ml-6'> This is a   Documentation base web-site , where every one can learn everything about React, Redux & NextJs. This website is mainly made with ReactJs.</h1>
                                     </div>
                                 </div>
                                 <div>
-                                    <div className='text-2xl mb-5 text-cyan-500'>Blog's</div>
+                                    <div className='text-2xl mb-5 text-cyan-500'>Blogs</div>
                                     <div className='flex'>
                                         <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
                                         <h1 className='text-xl ml-6'> The goal of the project is to give facilities to post documentation or blog and give support in making different types of documentation or blog.</h1>
