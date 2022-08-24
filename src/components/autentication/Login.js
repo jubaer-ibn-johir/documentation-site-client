@@ -11,6 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useToken from "../../hooks/useToken";
 import logo from '../../assets/logo/logo4.png'
+import ScrollToTop from 'react-scroll-to-top';
 
 const Login = () => {
   const emailRef = useRef("");
@@ -45,6 +46,7 @@ const Login = () => {
   };
   return (
     <div>
+      <ScrollToTop smooth color="red" top='20' />
       <div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center pt-16">
         <div class="flex flex-col  overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
           <div class="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">

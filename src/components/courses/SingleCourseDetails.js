@@ -4,12 +4,14 @@ import UseCourses from '../../hooks/UseCourses';
 import { BiStopwatch } from 'react-icons/bi';
 import { RiPlayList2Fill } from 'react-icons/ri';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import ScrollToTop from 'react-scroll-to-top';
 
 const SingleCourseDetails = () => {
     const { courseId } = useParams()
     let [courses] = UseCourses(courseId)
     return (
         <div className='flex justify-center items-center lg:py-24 md:py-16 pb-16 bg-accent'>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='lg:flex md:grid md:grid-cols-2 grid grid-cols-1 justify-center items-center gap-5'>
                 <div className='bg-white shadow-xl hover:shadow-2xl rounded-md lg:mt-0 md:mt-0 mt-14'>
                     <div className='w-72'>

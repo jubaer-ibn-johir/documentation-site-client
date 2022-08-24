@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import blogBg from "../../assets/blogs/blog-bg.png";
 import Details from "./../home/Details";
+import ScrollToTop from 'react-scroll-to-top';
+
 const BlogDetails = () => {
   const { blogDetailId } = useParams();
   const [blogDetail, setBlogDetail] = useState({});
@@ -14,6 +16,7 @@ const BlogDetails = () => {
   }, []);
   return (
     <div>
+      <ScrollToTop smooth color="red" top='20' />
       <div
         class="hero h-96 flex justify-center items-center "
         style={{ backgroundImage: `url(${blogBg})` }}

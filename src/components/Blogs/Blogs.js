@@ -3,6 +3,7 @@ import Blog from "./Blog";
 import blogBg from "../../assets/blogs/blog-bg.png";
 import { useNavigate } from "react-router-dom";
 import BlogTextEditor from "./BlogTextEditor";
+import ScrollToTop from 'react-scroll-to-top';
 
 const Blogs = () => {
 
@@ -20,6 +21,7 @@ const Blogs = () => {
   }, []);
   return (
     <div className="mb-28">
+      <ScrollToTop smooth color="red" top='20' />
       <div
         class="hero h-96 flex justify-center items-center "
         style={{ backgroundImage: `url(${blogBg})` }}

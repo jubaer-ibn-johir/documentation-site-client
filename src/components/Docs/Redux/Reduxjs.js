@@ -5,10 +5,12 @@ import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 import { AiOutlinePicCenter } from "react-icons/ai";
+import ScrollToTop from 'react-scroll-to-top';
 
 const Reduxjs = () => {
     return (
         <div>
+            <ScrollToTop smooth color="red" top='20' />
             <div className='bg-cyan-50'>
                 <div className='flex justify-center items-center' style={{ "backgroundColor": '#0FCFEC' }}>
                     <div className='my-24 text-center'>

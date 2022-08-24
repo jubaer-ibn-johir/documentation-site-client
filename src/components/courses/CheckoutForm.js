@@ -1,7 +1,9 @@
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ScrollToTop from 'react-scroll-to-top';
 import { toast } from 'react-toastify';
+
 
 const CheckoutForm = (props) => {
     const stripe = useStripe()
@@ -102,6 +104,7 @@ const CheckoutForm = (props) => {
     }
     return (
         <>
+            <ScrollToTop smooth color="red" top='20' />
             <form onSubmit={handleSubmit}>
                 <CardElement
                     options={{

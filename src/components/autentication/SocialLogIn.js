@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import useToken from '../../hooks/useToken';
 import Loading from '../shared/Loading';
+import ScrollToTop from 'react-scroll-to-top';
 
 const SocialLogIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -28,6 +29,7 @@ const SocialLogIn = () => {
     }
     return (
         <div class="flex flex-col space-y-5">
+            <ScrollToTop smooth color="red" top='20' />
             <span class="flex items-center justify-center space-x-2">
                 <span class="h-px bg-gray-400 w-14"></span>
                 <span class="font-normal text-gray-500">or login with</span>
