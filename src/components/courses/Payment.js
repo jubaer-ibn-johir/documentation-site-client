@@ -20,28 +20,26 @@ const Payment = () => {
             })
     }, [payment])
     return (
-        <div>
+        <div className='bg-slate-400'>
             <ScrollToTop smooth color="red" top='20' />
-            <br />
-            <br />
-            <br />
-            <div className='lg:w-1/2 mx-auto'>
-                <div className="card w-full max-w-md bg-base-100 shadow-xl my-12 ">
-                    <div className="card-body">
-                        <p className="text-success font-bold">Hello </p>
-                        <h2 className="card-title"><span className='text-primary'>Please Pay for this course</span></h2>
-                        <p className='text-xl'>And Please pay BDT 4500</p>
+            <div className='h-screen flex justify-center items-center'>
+                <div className='lg:w-1/2 mx-auto'>
+                    <div className="card w-full max-w-md bg-base-100 shadow-xl my-12 ">
+                        <div className="card-body">
+                            <p className="text-success font-bold">Hello </p>
+                            <h2 className="card-title"><span className='text-primary'>Please Pay for this course</span></h2>
+                            <p className='text-xl'>And Please pay BDT 4500</p>
+                        </div>
                     </div>
-                </div>
-                <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100">
-                    <div className="card-body">
-                        <Elements stripe={stripePromise}>
-                            <CheckoutForm
-                                payment={payment}
-                            >
-
-                            </CheckoutForm>
-                        </Elements>
+                    <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100">
+                        <div className="card-body">
+                            <Elements stripe={stripePromise}>
+                                <CheckoutForm
+                                    payment={payment}
+                                >
+                                </CheckoutForm>
+                            </Elements>
+                        </div>
                     </div>
                 </div>
             </div>

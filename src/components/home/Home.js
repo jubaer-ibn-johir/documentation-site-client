@@ -13,9 +13,9 @@ const Home = () => {
         <div>
             <ScrollToTop smooth color="red" top='20' />
             <Banner></Banner>
-            <Details></Details>
             <BuildDocuments></BuildDocuments>
             <Solution></Solution>
+            <Details></Details>
             <Reviws></Reviws>
         </div>
     );

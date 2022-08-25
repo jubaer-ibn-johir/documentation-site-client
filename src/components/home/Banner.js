@@ -7,7 +7,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const Banner = ({ isDarkMode }) => {
     return (
-        <div class="hero h-96 lg:h-4/5 banner flex justify-center items-center" style={{ "backgroundImage": `url(${bannerImg})`, 'backgroundPosition': 'center', 'backgroundRepeat': 'no-repeat' }}>
+        <div class="hero h-96 lg:h-[80vh] banner flex justify-center items-center" style={{ "backgroundImage": `url(${bannerImg})`, 'backgroundPosition': 'center', 'backgroundRepeat': 'no-repeat' }}>
             {/* <ScrollToTop smooth color="#0FCFEC" top='100'/> */}
             <div class="hero-content text-center text-neutral-content ">
                 <div class="">
