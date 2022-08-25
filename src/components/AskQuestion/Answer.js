@@ -100,55 +100,6 @@ const Answer = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='max-w-7xl mx-auto my-5'>
-                <div className='grid grid-cols-12 gap-5 mb-5'>
-                    <div className='col-span-6'>
-                        <div className='w-full'>
-                            <p className='text-xl'>{description}</p>
-                        </div>
-                        <div className='my-12'>
-                            <div className='flex gap-5 items-center justify-end'>
-                                <div className='h-12 w-12 rounded-full'>
-                                    <img src={qPhoto ? qPhoto : userAvatar} alt="" className='w-full rounded-full' />
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <div>
-                                        <p className='text-xl'>{qName}</p>
-                                        <p className='text-sm'>{qDate}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='border-b-2'>
-                            <h1 className='font-semibold text-2xl pb-5'>{answers.length} - answers</h1>
-                        </div>
-                        {
-                            answers.map(answer => <SingleAnswer answer={answer} key={answer._id}></SingleAnswer>)
-                        }
-                        <div className='mb-12 mt-24'>
-                            <h1 className='font-semibold text-2xl pb-5'>Your Answer</h1>
-                            <p>Please give a authentic answer </p>
-                            <form onSubmit={handleSubmit(onSubmit)} className="">
-                                <textarea {...register("answer")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3' />
-                                <input type="submit" className='text-white border-2 border-cyan-500 font-bold text-xl px-5 py-2 rounded-xl gap-2 bg-cyan-500 hover:border-cyan-500 hover:text-cyan-500 hover:bg-transparent transition-all cursor-pointer text-center' value="Post Your Answer" />
-                            </form>
-                        </div>
-                    </div>
-                    <div className='col-span-6 grid grid-cols-1 justify-items-center h-full'>
-                        <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full'>
-                            <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
-                            </p>
-                        </div>
-                        <div className='bg-cyan-100 p-5 grid grid-cols-1 justify-items-center w-full mt-5'>
-                            <p className='text-center font-semibold text-2xl mb-3'>Stay In Touch
-                            </p>
-                        </div>
-                        <div className='w-full mt-5'>
-
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                 <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
                     <div className='lg:w-2/3 md:w-2/3 w-full my-12'>

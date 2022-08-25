@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import logo from '../../assets/logo/logo4.png';
 import whiteLogo from '../../assets/logo/white logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
