@@ -1,5 +1,5 @@
 * {
-  font-family: Public Sans, sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 
 /* width */
@@ -64,7 +64,6 @@
 #dark .componentsCommonBody {
   background-color: rgb(51 65 85) !important;
 }
-
 
 #dark .CardsCommonBg {
   background-color: rgb(60, 76, 98) !important;

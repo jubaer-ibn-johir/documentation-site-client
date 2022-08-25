@@ -19,7 +19,7 @@ const Footer = () => {
                 <div>
                     <div className='max-w-4xl mx-auto' >
                         <div className='flex items-center justify-between rounded-3xl px-14 py-5'>
-                            <div className=' flex items-center justify-between rounded-3xl py-5 bg-slate-400 p-5 -mt-28'>
+                            <div className='flex items-center justify-between rounded-3xl py-5 bg-slate-200 p-5 -mt-28'>
                                 <div>
                                     <img src={newsletterImg} alt="" className='-mt-28' />
                                     <h2 className='text-4xl mt-5 font-bold' style={{ color: '#0E1133' }}>Newsletter</h2>
