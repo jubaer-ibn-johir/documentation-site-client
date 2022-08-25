@@ -27,7 +27,7 @@ const Solution = () => {
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>
                             <img className='w-16' src={faqIcon} alt="" />
                         </div>
-                        <div className='text-white w-96'>
+                        <div className='text-white w-96' >
                             <h3 className='lg:text-2xl md:text-2xl text-xl font-bold'>Frequently Asked Questions</h3>
                             <p className='lg:text-lg md:text-lg text-sm my-2'>We have some frequently asked questions feature to help you.</p>
                             <Link to="/ask" className='font-bold flex items-center text-xl'>Go to FAQ page <FaLongArrowAltRight className='ml-2' /></Link>

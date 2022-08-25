@@ -14,7 +14,7 @@ const Details = () => {
             <div class="hero-content text-center text-neutral-content">
                 <div class="flex justify-center items-center">
                     <div className='mb-10'>
-                        <h1 class="mb-2 text-2xl lg:text-4xl font-semibold tracking-wider text-black">Know about our EasyDocs</h1>
+                        <h1 class="mb-2 text-2xl lg:text-4xl font-semibold tracking-wider ">Know about our EasyDocs</h1>
                         <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
                     </div>
                 </div>

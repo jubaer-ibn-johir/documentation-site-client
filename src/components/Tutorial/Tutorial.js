@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TutorialCard from './TutorialCard';
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import Loading from '../shared/Loading';
 import './Tutorial.css'
 import ScrollToTop from 'react-scroll-to-top';
