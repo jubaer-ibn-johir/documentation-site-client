@@ -13,6 +13,7 @@ import avatar4 from '../../assets/home-img/img-4.png';
 import avatar5 from '../../assets/home-img/img-5.png';
 import avatar6 from '../../assets/home-img/img-6.png';
 import AddReview from './AddReview';
+import { Link } from 'react-router-dom';
 
 const Reviws = () => {
     return (
@@ -211,9 +212,9 @@ const Reviws = () => {
                 </Swiper>
                 <div className='my-16'>
                     <div className='text-center'>
-                        <label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label>
+                        <Link to='/addReview'>    <label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label></Link>
 
-                        <AddReview></AddReview>
+                        {/* <AddReview></AddReview> */}
 
                     </div >
                 </div >
