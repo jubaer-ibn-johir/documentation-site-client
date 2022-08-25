@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import footerArrow from '../../assets/footer-img/left-arrow.png';
 import footerShap from '../../assets/footer-img/footer-shap-1.png';
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import logo from '../../assets/logo/logo4.png'
+import whiteLogo from '../../assets/logo/white logo.png';
+import { ThemeContext } from '../../App';
 
 const Footer = () => {
+    const [theme, setTheme] = useContext(ThemeContext)
     return (
         <div style={{ position: "relative", marginTop: "25px" }}>
             <div style={{ position: "absolute", right: "0", bottom: "0", zIndex: "-1" }}>
@@ -14,8 +17,9 @@ const Footer = () => {
             <div className='max-w-7xl mx-auto'>
                 <div className='lg:flex justify-between mb-6 ml-9 lg:mx-20'>
                     <div>
+                        {/* <label> {theme === "light" ? "Light" : "Dark"}</label> */}
                         {/* <h2 className='font-bold text-2xl py-8'><Link to="/"><span className='text-primary text-3xl font-bold'>E</span>asy<span className='text-secondary text-3xl font-bold'>D</span>ocs</Link></h2> */}
-                        <Link to="/"><img src={logo} alt="" className='mb-5 mt-10' /></Link>
+                        <Link to="/"><img src={theme === "light" ? `${logo}` : `${whiteLogo}`} alt="" className='mb-5 mt-10' /></Link>
                         <p className=''>Manage any project from start to finish with <br />
                             highly customizable views that make project <br />
                             planning a breezed out formal.</p>
