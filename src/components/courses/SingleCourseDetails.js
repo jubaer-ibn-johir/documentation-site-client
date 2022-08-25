@@ -37,14 +37,14 @@ const SingleCourseDetails = () => {
         //         </div>
         //     </div>
         // </div>
-        <div className='bg-slate-400'>
+        <div className='bg-slate-400 componentsCommonBody'>
             <div className='flex justify-center items-center lg:h-screen md:h-screen'>
                 <div className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
                     <div className='lg:flex md:flex grid grid-cols-1 rounded-xl lg:my-0 md:my-0 my-24' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
                         <div className='lg:w-1/2 md:w-1/2 w-full'>
                             <img src={courses.image} alt="" className='w-full h-full lg:rounded-l-lg md:rounded-l-lg rounded-t-lg' style={{}} />
                         </div>
-                        <div className='lg:py-12 md:py-8 py-8 lg:pl-12 md:pl-5 pl-5 lg:pr-8 md:pr-5 pr-5 lg:w-1/2 md:w-1/2 bg-white lg:rounded-r-lg md:rounded-r-lg rounded-b-lg'>
+                        <div className='lg:py-12 md:py-8 py-8 lg:pl-12 md:pl-5 pl-5 lg:pr-8 md:pr-5 pr-5 lg:w-1/2 md:w-1/2 bg-white lg:rounded-r-lg md:rounded-r-lg rounded-b-lg CardsCommonBg'>
                             <div className='px-5 pb-5'>
                                 <div className='flex justify-between mb-5 mt-2'>
                                     <div className='flex items-center gap-1'><span className='text-xl' style={{ "color": "#FF3066" }}><RiPlayList2Fill /></span>{courses.lessons} Lessons</div>

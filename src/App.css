@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: Public Sans, sans-serif;
 }
 
 /* width */
@@ -24,13 +24,52 @@
   background: #3db8d3;
 }
 
+.toggole-button {
+  width: 20px;
+}
+
 #light {
-  background-color: #fff;
-  /* color: #000; */
+  background-color: #fff !important;
+  color: #000 !important;
 }
 
 #dark {
-  background-color: rgb(51 65 85);
-  /* color: #fff !important; */
+  background-color: rgb(51 65 85) !important;
+  color: #fff !important;
 
+}
+
+#dark .title span {
+  color: #fff !important;
+}
+
+
+#dark .whiteTextToBlack {
+  color: #000 !important;
+}
+
+#dark .blackToWhite {
+  color: #fff !important;
+}
+
+#dark .commonParagraph {
+  color: gray !important;
+}
+
+#dark .reactHomeHead {
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+#dark .componentsCommonBody {
+  background-color: rgb(51 65 85) !important;
+}
+
+
+#dark .CardsCommonBg {
+  background-color: rgb(60, 76, 98) !important;
+}
+
+#dark .CardsCommonBgSecondary {
+  background-color: rgb(83, 99, 122) !important;
 }

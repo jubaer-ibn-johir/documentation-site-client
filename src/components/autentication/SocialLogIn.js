@@ -32,7 +32,7 @@ const SocialLogIn = () => {
             <ScrollToTop smooth color="red" top='20' />
             <span class="flex items-center justify-center space-x-2">
                 <span class="h-px bg-gray-400 w-14"></span>
-                <span class="font-normal text-gray-500">or login with</span>
+                <span class="font-normal text-gray-500 blackToWhite">or login with</span>
                 <span class="h-px bg-gray-400 w-14"></span>
             </span>
             {errorElement}
@@ -42,7 +42,7 @@ const SocialLogIn = () => {
                     class="flex items-center justify-center px-4 py-2 space-x-2 transition-colors duration-300 border border-gray-800 rounded-md group hover:bg-gray-800 focus:outline-none"
                 >
 
-                    <span class="text-sm font-medium text-gray-800 group-hover:text-white">Github</span>
+                    <span class="text-sm font-medium text-gray-800 group-hover:text-white blackToWhite">Github</span>
                 </p>
                 <p
                     onClick={() => signInWithGoogle()}
@@ -51,7 +51,7 @@ const SocialLogIn = () => {
                     <span>
 
                     </span>
-                    <span class="text-sm font-medium text-blue-500 group-hover:text-white cursor-pointer">Google</span>
+                    <span class="text-sm font-medium text-blue-500 group-hover:text-white cursor-pointer blackToWhite">Google</span>
                 </p>
             </div>
         </div>

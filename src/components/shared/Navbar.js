@@ -81,7 +81,7 @@ const Navbar = () => {
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
               </label>
               <ul class="p-2 bg-blue-600">
-                <li><Link className='font-bold' to="/courses">Cources</Link></li>
+                <li><Link className='font-bold' to="/courses">Courses</Link></li>
                 <li><Link className='font-bold' to="/tutorial">Tutorials</Link></li>
                 <li><Link className='font-bold' to="/contact">Contact Us</Link></li>
                 <li><Link className='font-bold' to="/about">About Us</Link></li>
@@ -119,11 +119,13 @@ const Navbar = () => {
               Pages
               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
             </label>
-            <ul class="p-2 bg-blue-600">
-              <li><Link className='font-bold' to="/courses">Cources</Link></li>
-              <li><Link className='font-bold' to="/tutorial">Tutorials</Link></li>
-              <li><Link className='font-bold' to="/contact">Contact Us</Link></li>
-              <li><Link className='font-bold' to="/about">About Us</Link></li>
+            <ul class=" bg-blue-600 z-10">
+              <div >
+                <li><Link className='font-bold' to="/courses">Courses</Link></li>
+                <li><Link className='font-bold' to="/tutorial">Tutorials</Link></li>
+                <li><Link className='font-bold' to="/contact">Contact Us</Link></li>
+                <li><Link className='font-bold' to="/about">About Us</Link></li>
+              </div>
             </ul>
           </li>
           {
@@ -138,8 +140,8 @@ const Navbar = () => {
               <li><Link className='font-bold' to="/login">Login</Link></li>
           }
           <li>
-            <div className='bg-blue-700 hover:bg-blue-700'>
-              <label> {theme === "light" ? "Light" : "Dark"}</label>
+            <div className='toggole-button'>
+              {/* <label> {theme === "light" ? "Light" : "Dark"}</label> */}
               <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
             </div>
           </li>

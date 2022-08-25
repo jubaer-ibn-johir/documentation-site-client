@@ -25,14 +25,14 @@ const Ask = () => {
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='lg:text-xl md:text-xl text-lg text-white text-center mt-3'>Find the answer of your question</p>
             </div>
-            <div className='w-full bg-slate-100 py-16'>
+            <div className='w-full bg-slate-100 py-16 componentsCommonBody'>
                 <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                     <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
                         <div className='lg:w-2/3 md:w-2/3 w-full'>
-                            <div className='bg-white p-5 rounded-md'>
+                            <div className='bg-white p-5 rounded-md CardsCommonBg'>
                                 <p className='text-center font-semibold text-2xl mb-3'>Search</p>
                                 <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center">
-                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none rounded-r-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none rounded-r-none CardsCommonBgSecondary" {...register("searchValue", { required: true, maxLength: 20 })} />
                                     <input type="submit" className='text-white border-2 bg-slate-500 border-slate-500 font-bold text-lg px-5 py-2 rounded-xl rounded-l-none gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-all cursor-pointer text-center' value="Submit" />
                                 </form>
                             </div>
@@ -54,11 +54,11 @@ const Ask = () => {
                             </div>
                         </div>
                         <div className='lg:w-1/3 md:w-1/3 w-full'>
-                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center rounded-md'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center rounded-md CardsCommonBg'>
                                 <p className='text-center font-semibold text-2xl mb-3 '>Find Category Wise Question
                                 </p>
                                 <div class="form-control w-full max-w-xs">
-                                    <select class="select select-bordered bg-slate-100 focus:outline-none">
+                                    <select class="select select-bordered bg-slate-100 focus:outline-none CardsCommonBgSecondary">
                                         <option disabled selected>Select Category</option>
                                         <option>Creative</option>
                                         <option>Programming</option>
@@ -73,11 +73,11 @@ const Ask = () => {
                                 </div>
                             </div>
                             <div className='grid grid-cols-1 justify-items-center'>
-                                <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md'>
+                                <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md CardsCommonBg'>
                                     <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
                                     </p>
                                 </div>
-                                <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md'>
+                                <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md CardsCommonBg'>
                                     <p className='text-center font-semibold text-2xl mb-3'>Stay In Touch
                                     </p>
                                     <div className='flex lg:gap-x-5 md:gap-x-3 gap-x-2 mt-6'>

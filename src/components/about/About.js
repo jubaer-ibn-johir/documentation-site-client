@@ -13,10 +13,10 @@ const About = () => {
     return (
         <div>
             <ScrollToTop smooth color="red" top='20' />
-            {/* <div className='flex justify-center items-center lg:py-44 md:py-44 py-32 bg-cyan-600'>
-                <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white'>About Us</h1>
+            {/* <div className='flex justify-center items-center lg:py-44 md:py-44 py-32' style={{ "backgroundImage": `url(${aboutBanner})`, "backgroundPosition": "center", "backgroundRepeat": "no-repeat", "backgroundSize": "cover" }}>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-sky-800'>About Us</h1>
             </div> */}
-            <div className='flex justify-center items-center lg:py-44 md:py-44 py-32' style={{ "backgroundImage": `url(${aboutBanner})`, "backgroundPosition": "center", "backgroundRepeat": "no-repeat", "backgroundSize": "cover" }}>
+            <div className='flex justify-center items-center lg:py-44 md:py-44 py-32' style={{ background: 'linear-gradient(223deg, rgba(46,107,152,1) 0%, rgba(174,199,191,1) 50%, rgba(46,107,152,1) 100%)' }}>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-sky-800'>About Us</h1>
             </div>
             <div className='max-w-7xl mx-auto'>
@@ -41,7 +41,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mb-20 lg:mx-8 md:mx-5 mx-3 py-16 lg:rounded-full md:rounded-3xl rounded-3xl shadow-xl' style={{ "backgroundColor": "#EBF8F4" }}>
+                <div className='mb-20 lg:mx-8 md:mx-5 mx-3 py-16 lg:rounded-full md:rounded-3xl rounded-3xl shadow-xl CardsCommonBg' style={{ "backgroundColor": "#EBF8F4" }}>
                     <div className='grid grid-cols-1 lg:gap-20 md:gap-16 gap-10' >
                         <div className='text-center'>
                             <h1 className='lg:text-5xl md:text-4xl text-3xl font-semibold uppercase'>Our Perfect Team</h1>
@@ -54,7 +54,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Jubaer Ibn Zahir</h2>
-                                        <p className='mt-1 mb-3 text-sky-800'>Team Leader</p>
+                                        <p className='mt-1 mb-3 text-sky-800 blackToWhite'>Team Leader</p>
                                         <p className='text-gray-400'>A very talented, team leader,<br /> Mr. Jubaer. His dedication helped<br /> us to reach our goals.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>
@@ -71,7 +71,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Rakibul Hasan Sohag</h2>
-                                        <p className='mt-1 mb-3 text-sky-800'>Team Member</p>
+                                        <p className='mt-1 mb-3 text-sky-800 blackToWhite'>Team Member</p>
                                         <p className='text-gray-400'>Another talented, helpful team<br /> member, Mr. Sohag. He helps in the<br /> front-end design.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>
@@ -90,7 +90,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Saiful Islam Hridoy</h2>
-                                        <p className='mt-1 mb-3 text-sky-800'>Team Member</p>
+                                        <p className='mt-1 mb-3 text-sky-800 blackToWhite'>Team Member</p>
                                         <p className='text-gray-400'>Mr. Hridoy, a talented, friendly<br /> team member. He helps mostly<br /> in the backend.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>
@@ -107,7 +107,7 @@ const About = () => {
                                 <div>
                                     <div>
                                         <h2 className='font-semibold text-xl'>Jannatun Naeem</h2>
-                                        <p className='mt-1 mb-3 text-sky-800'>Team Member</p>
+                                        <p className='mt-1 mb-3 text-sky-800 blackToWhite'>Team Member</p>
                                         <p className='text-gray-400'>Mr. Naeem, a front-end designer,<br /> helps in the designing part <br />of this project.</p>
                                     </div>
                                     <div className='flex items-center gap-3 mt-3'>

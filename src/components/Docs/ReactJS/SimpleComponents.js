@@ -13,8 +13,7 @@ const SimpleComponents = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2  gap-x-12'>
                 <div className='px-5 lg:px-0 mr-0 lg:mr-48'>
                     <h2 className='text-4xl font-bold'>A Simple Component</h2>
-                    <p className='mt-10 text-2xl leading-9 '>React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.
-                        <br />
+                    <p className='mt-10 text-xl leading-9 commonParagraph'>React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.
                         <br />
                         <span className='font-bold'> JSX is optional and not required to use React.</span> Try the Babel REPL to see the raw JavaScript code produced by the JSX compilation step</p>
                 </div>
