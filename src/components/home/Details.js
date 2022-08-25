@@ -11,13 +11,12 @@ import { DiMongodb } from "react-icons/di";
 const Details = () => {
     return (
         <div className='mt-10 max-w-7xl mx-auto' >
-            <div class="hero-content text-center text-neutral-content">
-                <div class="flex justify-center items-center">
-                    <div className='mb-10'>
-                        <h1 class="mb-2 text-2xl lg:text-4xl font-semibold tracking-wider text-black">Know about our EasyDocs</h1>
-                        <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
-                    </div>
-                </div>
+            
+            <div className='flex justify-center items-center mb-10'>
+              <div>
+                    <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>
+                    <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
+              </div>
             </div>
             <div className=''>
                 <Tabs>
@@ -31,7 +30,7 @@ const Details = () => {
                     </TabList>
 
                     <TabPanel>
-                        <div className='hero-content text-center flex justify-center items-center mt-5'>
+                        <div className='text-center flex justify-center items-center mt-5'>
                             <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
                                 <CgFileDocument className='w-12 h-12 text-cyan-500' />
                             </div>
