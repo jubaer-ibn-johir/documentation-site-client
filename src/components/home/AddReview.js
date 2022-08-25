@@ -19,9 +19,9 @@ const AddReview = () => {
     }
     return (
         <div>
-            <div className='flex justify-center items-center bg-cyan-200 '>
+            <div className='flex justify-center items-center bg-slate-300 '>
                
-                <Card sx={{ background: "rgb(103 232 249)", padding: 5, boxShadow: 3, marginTop: '100px', marginBottom: '50px', borderRadius: 3, }}>
+                <Card sx={{ background: "rgb(103 232 249)", padding:3, boxShadow: 3, marginTop: '100px', marginBottom: '50px', borderRadius: 3, }}>
                     {/* <CardMedia
                     component="img"
                     height="50"
@@ -29,10 +29,10 @@ const AddReview = () => {
                     alt="green iguana"
                 /> */}
                     <div className='flex justify-center items-center '>
-                        <Avatar alt="Remy Sharp" sx={{ width: 150, height: 150 }} src={user?.photo ? user?.photo : blankPic} />
+                        <Avatar alt="Remy Sharp" sx={{ width: 100, height: 100 }} src={user?.photo ? user?.photo : blankPic} />
                     </div>
                     <CardContent>
-                        <div className='my-5'>
+                        <div className='mb-5'>
                             <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
                                 <div className='grid grid-cols-1 justify-items-center'>
                                     <div>
