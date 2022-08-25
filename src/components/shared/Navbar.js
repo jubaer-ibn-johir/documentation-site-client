@@ -81,7 +81,7 @@ const Navbar = () => {
                 Pages
                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
               </label>
-              <ul class="p-2" style={{ backgroundColor: '#6c63a5' }}>
+              <ul class="p-2 bg-blue-600">
                 <li><Link className='font-bold' to="/courses">Cources</Link></li>
                 <li><Link className='font-bold' to="/tutorial">Tutorials</Link></li>
                 <li><Link className='font-bold' to="/contact">Contact Us</Link></li>
@@ -91,7 +91,7 @@ const Navbar = () => {
             {
               user ? <li tabindex="0">
                 <label className='flex items-center '><img className='w-10 h-10 rounded-full cursor-pointer' src={userData?.photo ? userData?.photo : blankPic} alt="" /></label>
-                <ul class="p-2" style={{ backgroundColor: '#6c63a5' }}>
+                <ul class="p-2 bg-blue-600">
                   <li><Link className='font-bold' to="/user-profile">My Profile</Link></li>
                   <li><Link onClick={handleSignOut} className='font-bold' to="/login">Logout</Link></li>
                 </ul>
@@ -99,6 +99,12 @@ const Navbar = () => {
                 :
                 <li><Link className='font-bold' to="/login">Login</Link></li>
             }
+            <li>
+              <div className='bg-blue-700 hover:bg-blue-700'>
+                <label> {theme === "light" ? "Light" : "Dark"}</label>
+                <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+              </div>
+            </li>
           </ul>
         </div>
         <Link className='hidden lg:block' to="/"><img className='w-[120px] h-8 ' src={whiteLogo} alt="" /></Link>
@@ -134,11 +140,10 @@ const Navbar = () => {
           }
           <li>
             <div className='bg-blue-700 hover:bg-blue-700'>
-              <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+              <label> {theme === "light" ? "Light" : "Dark"}</label>
               <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
             </div>
           </li>
-
         </ul>
       </div>
     </div>

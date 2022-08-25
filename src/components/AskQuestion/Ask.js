@@ -29,10 +29,11 @@ const Ask = () => {
                 <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                     <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
                         <div className='lg:w-2/3 md:w-2/3 w-full'>
-                            <div className='bg-white p-5'>
+                            <div className='bg-white p-5 rounded-md'>
                                 <p className='text-center font-semibold text-2xl mb-3'>Search</p>
-                                <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
-                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center">
+                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none rounded-r-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                    <input type="submit" className='text-white border-2 bg-slate-500 border-slate-500 font-bold text-lg px-5 py-2 rounded-xl rounded-l-none gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-all cursor-pointer text-center' value="Submit" />
                                 </form>
                             </div>
                             <div className='grid gap-5'>
@@ -53,7 +54,7 @@ const Ask = () => {
                             </div>
                         </div>
                         <div className='lg:w-1/3 md:w-1/3 w-full'>
-                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center rounded-md'>
                                 <p className='text-center font-semibold text-2xl mb-3 '>Find Category Wise Question
                                 </p>
                                 <div class="form-control w-full max-w-xs">
