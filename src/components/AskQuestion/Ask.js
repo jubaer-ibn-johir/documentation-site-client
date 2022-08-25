@@ -21,7 +21,7 @@ const Ask = () => {
     return (
         <div>
             <ScrollToTop smooth color="red" top='20' />
-            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(90deg, rgba(52,156,176,1) 0%, rgba(0,76,119,1) 100%)' }}>
+            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='lg:text-xl md:text-xl text-lg text-white text-center mt-3'>Find the answer of your question</p>
             </div>
@@ -37,7 +37,7 @@ const Ask = () => {
                                 </form>
                             </div>
                             <div className='grid gap-5'>
-                                <div className='mt-5'>
+                                <div className='mt-16'>
                                     <div className='flex justify-between items-center'>
                                         <p className='font-semibold text-3xl mb-3'>Questions</p>
                                         <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>

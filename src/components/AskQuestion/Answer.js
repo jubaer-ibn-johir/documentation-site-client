@@ -86,7 +86,7 @@ const Answer = () => {
     return (
         <div className='bg-slate-100'>
             <ScrollToTop smooth color="red" top='20' />
-            <div style={{ background: 'linear-gradient(90deg, rgba(52,156,176,1) 0%, rgba(0,76,119,1) 100%)' }}>
+            <div style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
                 <div className='max-w-7xl mx-auto'>
                     <div className='pt-52 pb-16 flex  justify-between'>
                         <div>
