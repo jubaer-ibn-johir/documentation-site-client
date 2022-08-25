@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
 import topImg from "../../assets/blogs/blog-bg.png";
@@ -15,6 +15,10 @@ import userAvatar from "../../assets/profile/user-profile.png";
 
 
 const Blogs = () => {
+    const navigate = useNavigate()
+    const handleNavigate=()=>{
+        navigate('/add-blog')
+    }
   const { register, handleSubmit } = useForm();
   const onSubmit = data => console.log(data);
 
@@ -40,6 +44,7 @@ const Blogs = () => {
         </div>
         <div className='lg:py-24 md:py-24 py-20' style={{ "backgroundColor": "#FAFCFD" }}>
             <div className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
+           <div className='flex justify-end my-7'> <button onClick={handleNavigate} className='bg-blue-700 text-white px-4 text-xl py-3 rounded-lg shadow-xl uppercase'>Post Blog</button></div>
                 <div className='lg:flex md:flex grid grid-cols-1 rounded-xl' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
                     <div className='lg:py-12 md:py-8 py-8 lg:pl-12 md:pl-5 pl-5 lg:pr-8 md:pr-5 pr-5 lg:w-1/2 md:w-1/2'>
                         <div className='flex gap-5'>

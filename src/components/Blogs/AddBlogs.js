@@ -1,90 +1,71 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
-import { BiImageAdd } from 'react-icons/bi';
 import ScrollToTop from "react-scroll-to-top";
 
 
 const AddBlogs = () => {
-  const [value, setValue] = useState('');
-
-  console.log(value);
-
-
-
-
-
-
-  // const { register, handleSubmit } = useForm();
-  const onSubmit = (e) => {
-    e.preventDefault()
-    const image = e.target.image.value;
-    const category = e.target.category.value;
-    const title = e.target.title.value;
-    setValue(value)
-
-    console.log(image, category, title, value);
-
-  }
+  const [category,setCategory]=useState('')
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data =>{
+    let today = new Date().toLocaleString();
+    const postBlog={
+      blogTitle:data.title,
+      blogCategory:category,
+      blogDescription:data.description,
+      blogImage:data.blogImage,
+      blogPostDate:today
+    }
+    console.log(postBlog)
+  };
   return (
     <div>
-      <ScrollToTop smooth color="red" top='20' />
-      <div className="bg-white lg:pt-44 md:pt-44 pt-32 pb-12 border border-b-2 shadow-2xl">
-        <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center">
-          Add Blogs
-        </p>
-      </div>
-      <div style={{ border: '1px solid #fff ', padding: "100px", boxShadow: '20px', }}>
-        <div className=" lg:p-8 md:p-8 sm:p-4 lg:pb-0 md:pb-0 pb-24 bg-lime-50 h-full rounded-xl flex justify-center items-center lg:py-0 md:py-0 py-12   ">
-          <div className=" m-12 mx-28 ">
-            <form
-              onSubmit={onSubmit}
-              className=" gap-5 w-50 justify-items-center"
-            >
-              <div >
-                <label> Choose file :</label>
-                <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
-                  <div class="md:flex">
-                    <div class="w-full p-3">
-                      <div class="relative border-dotted h-20  shadow-2xl w-full rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
-                        <div class="absolute">
-                          <div class="flex flex-col items-center">
-                            <BiImageAdd className=" text-5xl cursor-pointer text-blue-700" />
-                            <span class="block text-gray-400 font-normal">Attach you files here</span>
-                          </div>
+            <ScrollToTop smooth color="red" top='20' />
+            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(90deg, rgba(52,156,176,1) 0%, rgba(0,76,119,1) 100%)' }}>
+                <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
+                <p className='text-xl text-white text-center mt-3'>What's on your mind?</p>
+            </div>
+            <div className='w-full bg-slate-100 py-20'>
+                <div className="w-1/2 mx-auto">
+                    <div className=" bg-white gap-5 px-24 py-20 shadow-lg hover:shadow-xl transition-all rounded-xl">
+                        <div className=''>
+                            <form onSubmit={handleSubmit(onSubmit)} className="">
+                                <div className='grid grid-cols-12 gap-5 mb-5'>
+                                    <div className='col-span-6'>
+                                        <div className='w-full'>
+                                            <p className='text-sm'>Title</p>
+                                            <input type="text" placeholder="Please enter a title" class="input w-full outline-none focus:outline-none border-none bg-slate-100" {...register("title", { required: true, maxLength: 100 })} />
+                                        </div>
+                                    </div>
+                                    <div className='col-span-6'>
+                                        <div>
+                                            <p className='text-sm'>Select Category</p>
+                                            <div class="form-control">
+                                                <select onChange={(e)=>setCategory(e.target.value)} class="select select-bordered bg-slate-100 focus:outline-none">
+                                                    <option disabled selected>Select Category</option>
+                                                    <option>Creative</option>
+                                                    <option>Programming</option>
+                                                    <option>Lifestyle</option>
+                                                    <option>News</option>
+                                                    <option>Photography</option>
+                                                    <option>Skill</option>
+                                                    <option>Tourist Tours</option>
+                                                    <option>Marketing</option>
+                                                    <option>Education</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input className="mb-3" type='file' {...register("blogImage")}/>
+                                <textarea {...register("description")} required cols="30" rows="10" placeholder='Description' className='w-full bg-slate-100 outline-none px-5 py-2 rounded-md mb-3' />
+                                <input type="submit" className='text-slate-500 border-2 bg-slate-100 border-slate-500 font-bold text-xl px-5 py-2 rounded-xl gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-transparent transition-all cursor-pointer text-center' value="Submit" />
+                            </form>
                         </div>
-                        <input type="file" name='image' accept="image/png, image/jpeg" class="h-full w-full opacity-0" />
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <p className=" mt-9">Category :</p>
-              <input
-                name='category'
-
-                className="w-full mt-5 shadow-2xl text-black input border border-gray-200 bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
-              />
-              <p className=" mt-6">Title :</p>
-              <input
-                name='title'
-                className=" input mt-5 text-black shadow-2xl border border-gray-200 w-full bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
-              />
-              <p className=" mt-7">Description :</p>
-              <div >
-                <ReactQuill className="shadow-2xl mt-5" value={value} onChange={setValue} />
-              </div>
-              <input
-                type="submit"
-                className="text-white my-6 lg:ml-96 md:ml-36 align-items-center justify-content-center font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-teal-600 to-teal-300 cursor-pointer w-56"
-                value="Submit Blog"
-              />
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
+
   );
 };
 
