@@ -40,7 +40,7 @@ const Ask = () => {
                                 <div className='mt-16'>
                                     <div className='flex justify-between items-center'>
                                         <p className='font-semibold text-3xl mb-3'>Questions</p>
-                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-white transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                                     </div>
 
                                     <div>

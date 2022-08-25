@@ -17,7 +17,7 @@ const CourseDetails = (props) => {
             <div className=''>
                 <div className='flex justify-center items-center lg:py-24 md:py-16 pb-16 '>
                     <div className='lg:flex md:grid md:grid-cols-2 grid grid-cols-1 justify-center items-center gap-5'>
-                        <div className='bg-white shadow-xl hover:shadow-2xl rounded-md lg:mt-0 md:mt-0 mt-14'>
+                        <div className='bg-white shadow-xl hover:shadow-2xl transition-all rounded-md lg:mt-0 md:mt-0 mt-14'>
                             <div className='w-72'>
                                 <img src={image} className="w-full rounded-t-md" alt="" />
                             </div>
@@ -30,7 +30,7 @@ const CourseDetails = (props) => {
                                     <p className='font-semibold text-lg mt-5 mb-10'>{name}</p>
                                 </div>
                                 <div>
-                                    <button onClick={() => handleNavigate(_id)} className='flex items-center gap-1 hover:gap-3 tracking-widest text-white font-semibold px-5 py-3 rounded-xl' style={{ "backgroundColor": "#FF3066" }}>Enroll Now <HiOutlineArrowNarrowRight /></button>
+                                    <button onClick={() => handleNavigate(_id)} className='flex items-center gap-1 hover:gap-3 transition-all tracking-widest text-white font-semibold px-5 py-3 rounded-xl' style={{ "backgroundColor": "#FF3066" }}>Enroll Now <HiOutlineArrowNarrowRight /></button>
                                 </div>
                             </div>
                         </div>

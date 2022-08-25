@@ -138,7 +138,7 @@ const Answer = () => {
                     </div>
                     <div className='lg:w-1/3 md:w-1/3 w-full my-12'>
                         <div className='grid grid-cols-1 justify-items-center'>
-                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full rounded-md'>
                                 <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
                                 </p>
                             </div>
