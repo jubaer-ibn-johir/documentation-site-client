@@ -9,7 +9,7 @@ const NextDocs = () => {
             <ScrollToTop smooth color="red" top='20' />
             <div className="drawer drawer-mobile ">
                 <input id="next-button" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content mt-20 bg-slate-200">
+                <div className="drawer-content mt-20 bg-slate-200 componentsCommonBody">
                     {/* <h2 className='text-3xl'>Dashboard</h2> */}
                     <Outlet></Outlet>
                 </div>

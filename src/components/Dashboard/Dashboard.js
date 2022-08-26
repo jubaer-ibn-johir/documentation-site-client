@@ -9,7 +9,7 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className=''>
             <ScrollToTop smooth color="red" top='20' />
             <div className='px-8 py-10 bg-accent componentsCommonBody'>
                 <div className='grid grid-cols-1 gap-8'>

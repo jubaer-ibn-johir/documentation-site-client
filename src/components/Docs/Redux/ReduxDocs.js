@@ -9,7 +9,7 @@ const ReduxDocs = () => {
             <ScrollToTop smooth color="red" top='20' />
             <div className="drawer drawer-mobile ">
                 <input id="next-button" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content  mt-20 bg-slate-200">
+                <div className="drawer-content  mt-20 bg-slate-200 componentsCommonBody">
                     <Outlet></Outlet>
                 </div>
                 <div className="drawer-side mt-20 shadow-2xl lg:shadow-2xl lg:shadow-cyan-400">
