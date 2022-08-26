@@ -53,8 +53,12 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:py-24 md:py-24 py-20 componentsCommonBody' style={{ "backgroundColor": "#FAFCFD" }}>
-                    <div className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
+                <div
+                    
+                 className='lg:py-24 md:py-24 py-20 componentsCommonBody' style={{ "backgroundColor": "#FAFCFD" }}>
+                    <div 
+                    
+                    className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
                         <div className='lg:flex md:flex grid grid-cols-1 rounded-xl CardsCommonBg' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
                             <div className='lg:py-12 md:py-8 py-8 lg:pl-12 md:pl-5 pl-5 lg:pr-8 md:pr-5 pr-5 lg:w-1/2 md:w-1/2'>
                                 <div className='flex gap-5'>

@@ -2,15 +2,40 @@ import React from 'react';
 import docImg from '../../assets/home-img/Build-docs.jpg'
 import { BsCheckLg } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const BuildDocuments = () => {
     return (
-        <div className='max-w-7xl mx-auto my-28'>
+        <div className='max-w-7xl mx-auto my-28 overflow-hidden'>
             <div className='mx-auto grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5'>
-                <div className='mx-5'>
+                <div 
+                className='mx-5'
+                    data-aos="fade-up-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    // data-aos-anchor-placement="top-center"
+                >
                     <img className='w-96 lg:w-full' style={{ borderRadius: '10px' }} src={docImg} alt="" />
                 </div>
-                <div className='mx-5 lg:mx-0'>
+                <div 
+                className='mx-5 lg:mx-0'
+
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    // data-aos-anchor-placement="top-center"
+                >
                     <h2 className='font-bold mb-5 text-4xl leading-10'>Build online documentation
                         <br />
                         with EasyDoc</h2>

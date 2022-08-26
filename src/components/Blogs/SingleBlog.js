@@ -5,7 +5,8 @@ import { Link, useNavigate } from 'react-router-dom';
 const SingleBlog = ({blog}) => {
     const {blogCategory,blogDescription,blogImage,blogPostDate,blogTitle,blogUploaderName,blogUploaderPhoto,readTime,_id}=blog;
     return (
-        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+        <div    
+        class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
         <figure><img src={blogImage} alt="Shoes" className='w-full' /></figure>
         <div class="card-body">
             <div className='flex gap-5'>

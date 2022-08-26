@@ -14,7 +14,7 @@ const Reduxjs = () => {
         navigate('/get-started')
     }
     return (
-        <div className=''>
+        <div className='overflow-hidden'>
             <ScrollToTop smooth color="red" top='20' />
             {/* <div className='bg-cyan-50'>
                 <div className='flex justify-center items-center' style={{ "backgroundColor": '#0FCFEC' }}>
@@ -87,7 +87,18 @@ const Reduxjs = () => {
                     </div>
                 </div>
                 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 max-w-7xl mx-auto text-center my-24'>
-                    <div className=' lg:mx-0 md:mx-5 mx-5 bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'>
+                    <div 
+                    className=' lg:mx-0 md:mx-5 mx-5 bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'
+                    
+                        data-aos="flip-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                    
+                    >
                         {/* <div className='inline-block text-7xl ' style={{ 'color': '#0FCFEC' }}><TiTick /></div> */}
                         <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}>
                             <figure class="">
@@ -99,9 +110,22 @@ const Reduxjs = () => {
                             <p className='text-lg text-left commonParagraph'>Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.</p>
                         </div>
                     </div>
-                    <div className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'>
+                    <div 
+                    className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'  
+                        data-aos="flip-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                    >
                         {/* <div className='inline-block text-7xl' style={{ 'color': '#0FCFEC' }}><AiOutlinePicCenter /></div> */}
-                        <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}>
+                        <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}
+                          
+                        
+                        
+                        >
                             <figure class="">
                                 <AiOutlinePicCenter className='w-12 h-12' style={{ 'color': '#0FCFEC' }} />
                             </figure>
@@ -111,9 +135,25 @@ const Reduxjs = () => {
                             <p className='text-lg text-left commonParagraph'>Centralizing your application's state and logic enables powerful capabilities like undo/redo, state persistence, and much more.</p>
                         </div>
                     </div>
-                    <div className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'>
+                    <div 
+                    className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'
+                    
+                     
+                        data-aos="flip-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                    
+                    >
                         {/* <div className='inline-block text-7xl' style={{ 'color': '#0FCFEC' }}><VscDebugAll /></div> */}
-                        <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}>
+                        <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}
+                        
+                           
+                        
+                        >
                             <figure class="">
                                 <VscDebugAll className='w-12 h-12' style={{ 'color': '#0FCFEC' }} />
                             </figure>
@@ -123,10 +163,24 @@ const Reduxjs = () => {
                             <p className='text-lg text-left commonParagraph'>The Redux DevTools make it easy to trace when, where, why, and how your application's state changed.</p>
                         </div>
                     </div>
-                    <div className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'>
+                    <div 
+                    className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'
+                    
+                        data-aos="flip-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"   
+                    
+                    >
                         {/* <div className='inline-block text-7xl text-cyan-500' style={{ 'color': '#0FCFEC' }}><GrSettingsOption /></div> */}
                         {/* <div className='inline-block text-7xl text-cyan-500' style={{ 'color': '#0FCFEC' }}><MdOutlineSettingsSuggest /></div> */}
-                        <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}>
+                        <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}
+                        
+                       
+                        >
                             <figure class="">
                                 <MdOutlineSettingsSuggest className='w-12 h-12' style={{ 'color': '#0FCFEC' }} />
                             </figure>
@@ -142,11 +196,33 @@ const Reduxjs = () => {
                         <h3 className='text-2xl font-bold mb-10 reactHomeHead'>Other Libraries from the Redux Team</h3>
                     </div>
                     <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 max-w-7xl lg:mx-auto md:mx-5 mx-auto'>
-                        <div className='bg-white CardsCommonBg p-8 rounded-xl border-2 border-cyan-200 hover:shadow-xl hover:shadow-cyan-300 transition-all'>
+                        <div 
+                        className='bg-white CardsCommonBg p-8 rounded-xl border-2 border-cyan-200 hover:shadow-xl hover:shadow-cyan-300 transition-all'
+                        
+                            data-aos="fade-down-right"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                        
+                        >
                             <a href='https://react-redux.js.org/' style={{ color: '#0FCFEC' }} target="_blank" className='text-2xl font-bold'>React-Redux <FaExternalLinkSquareAlt className='inline' /> </a>
                             <p className='text-lg mt-3 commonParagraph'>Official React bindings for Redux</p>
                         </div>
-                        <div className='bg-white CardsCommonBg p-8 rounded-xl border-2 border-cyan-200 hover:shadow-xl hover:shadow-cyan-300 transition-all'>
+                        <div 
+                        className='bg-white CardsCommonBg p-8 rounded-xl border-2 border-cyan-200 hover:shadow-xl hover:shadow-cyan-300 transition-all'
+                            data-aos="fade-down-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                        
+                        
+                        >
                             <a href='https://redux-toolkit.js.org/' style={{ color: '#0FCFEC' }} target="_blank" className='text-2xl font-bold'>Redux Toolkit <FaExternalLinkSquareAlt className='inline' /> </a>
                             <p className='text-lg mt-3 commonParagraph'>The official, opinionated, batteries-included toolset for efficient Redux development</p>
                         </div>
