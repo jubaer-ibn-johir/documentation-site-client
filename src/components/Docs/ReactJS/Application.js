@@ -13,7 +13,7 @@ const Application = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2  gap-x-12'>
         <div className='px-5 lg:px-0 mr-0 lg:mr-48'>
           <h2 className='text-4xl font-bold'>An Application</h2>
-          <p className='mt-10 text-2xl leading-9 '>Using props and state, we can put together a small Todo application. This example uses state to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
+          <p className='mt-10 text-xl leading-9 commonParagraph'>Using props and state, we can put together a small Todo application. This example uses state to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
           </p>
         </div>
         <div className='text-lg '>

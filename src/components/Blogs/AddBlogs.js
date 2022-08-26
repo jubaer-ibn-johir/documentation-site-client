@@ -11,11 +11,6 @@ const AddBlogs = () => {
 
   console.log(value);
 
-
-
-
-
-
   // const { register, handleSubmit } = useForm();
   const onSubmit = (e) => {
     e.preventDefault()
@@ -47,7 +42,7 @@ const AddBlogs = () => {
                 <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                   <div class="md:flex">
                     <div class="w-full p-3">
-                      <div class="relative border-dotted h-20  shadow-2xl w-full rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
+                      <div class="relative h-20  shadow-2xl w-full rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
                         <div class="absolute">
                           <div class="flex flex-col items-center">
                             <BiImageAdd className=" text-5xl cursor-pointer text-blue-700" />
@@ -64,12 +59,12 @@ const AddBlogs = () => {
               <input
                 name='category'
 
-                className="w-full mt-5 shadow-2xl text-black input border border-gray-200 bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
+                className="w-full mt-5 shadow-2xl text-black input border-gray-200 bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
               />
               <p className=" mt-6">Title :</p>
               <input
                 name='title'
-                className=" input mt-5 text-black shadow-2xl border border-gray-200 w-full bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
+                className=" input mt-5 text-black shadow-2xl border-gray-200 w-full bg-lime-50  border-2 px-5 py-2 rounded-md mb-3"
               />
               <p className=" mt-7">Description :</p>
               <div >

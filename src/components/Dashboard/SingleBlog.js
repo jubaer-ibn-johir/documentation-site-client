@@ -44,10 +44,10 @@ const SingleBlog = ({ blog, index }) => {
     return (
         <tr>
             <ScrollToTop smooth color="red" top='20' />
-            <th>{index + 1}</th>
-            <td className='font-semibold'>{title}</td>
-            <td>{details.slice(0, 20)}...</td>
-            <th>
+            <th className='CardsCommonBg'>{index + 1}</th>
+            <td className='font-semibold CardsCommonBg'>{title}</td>
+            <td className='CardsCommonBg'>{details.slice(0, 20)}...</td>
+            <th className='CardsCommonBg'>
                 <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
                     <div className='text-red-500 text-3xl leading-3'>
                         <button onClick={() => handleDelete(_id)} className='text-center'><AiFillDelete /></button>

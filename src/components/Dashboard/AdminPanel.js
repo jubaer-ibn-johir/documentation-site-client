@@ -24,7 +24,7 @@ const AdminPanel = () => {
                 </div>
                 <div class="drawer-side mt-16">
                     <label for="dashboard-sidebar" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+                    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content CardsCommonBgSecondary blackToWhite">
                         <li className='text-xl'><Link to="/">< AiFillHome />Home</Link></li>
                         <li className='text-xl'><Link to="/admin-panel"><MdDashboard />Dashboard</Link></li>
                         <li className='text-xl'><Link to="/admin-panel/manage-users"><FaUsers />Manage Users</Link></li>

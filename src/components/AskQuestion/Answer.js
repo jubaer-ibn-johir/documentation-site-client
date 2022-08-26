@@ -84,7 +84,7 @@ const Answer = () => {
             .then(data => setAnswers(data))
     }, [answers])
     return (
-        <div className='bg-slate-100'>
+        <div className='bg-slate-100 componentsCommonBody'>
             <ScrollToTop smooth color="red" top='20' />
             <div style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
                 <div className='max-w-7xl mx-auto'>
@@ -103,7 +103,7 @@ const Answer = () => {
             <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                 <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
                     <div className='lg:w-2/3 md:w-2/3 w-full my-12'>
-                        <div className='bg-white pt-8 px-8 pb-3 mb-5 rounded-md '>
+                        <div className='bg-white pt-8 px-8 pb-3 mb-5 rounded-md CardsCommonBg'>
                             <div className='w-full'>
                                 <p className='text-xl'>{description}</p>
                             </div>
@@ -131,18 +131,18 @@ const Answer = () => {
                             <h1 className='font-semibold text-2xl '>Your Answer</h1>
                             <p className='mb-5'>Please give an authentic answer</p>
                             <form onSubmit={handleSubmit(onSubmit)} className="">
-                                <textarea {...register("answer")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3' />
+                                <textarea {...register("answer")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3 CardsCommonBg' />
                                 <input type="submit" className='text-white border-2 border-slate-500 font-bold text-lg px-5 py-2 rounded-xl gap-2 bg-slate-500 hover:border-slate-500 hover:text-slate-500 hover:bg-white transition-all cursor-pointer text-center' value="Post Your Answer" />
                             </form>
                         </div>
                     </div>
                     <div className='lg:w-1/3 md:w-1/3 w-full my-12'>
                         <div className='grid grid-cols-1 justify-items-center'>
-                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full rounded-md'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full rounded-md CardsCommonBg'>
                                 <p className='text-center font-semibold text-2xl mb-3'>Recent Questions
                                 </p>
                             </div>
-                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center w-full mt-5 rounded-md CardsCommonBg'>
                                 <p className='text-center font-semibold text-2xl mb-3'>Stay In Touch
                                 </p>
                                 <div className='flex lg:gap-x-5 md:gap-x-3 gap-x-2 mt-6'>

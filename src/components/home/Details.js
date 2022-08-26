@@ -10,13 +10,12 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 const Details = () => {
     return (
-        <div className='mt-10 max-w-7xl mx-auto' >
-            
+        <div className='mt-10 max-w-7xl lg:mx-auto md:mx-10 mx-5'>
             <div className='flex justify-center items-center mb-10'>
-              <div>
+                <div>
                     <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>
                     <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
-              </div>
+                </div>
             </div>
             <div className=''>
                 <Tabs>
@@ -92,14 +91,12 @@ const Details = () => {
                             </div>
                             <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-20 grid-cols-1 mt-10'>
                                 <div>
-
                                     <div className='flex'>
                                         <img className='w-10 h-10' src="https://wordpress-theme.spider-themes.net/docy/wp-content/uploads/2019/04/slack.png" alt="" />
                                         <h1 className='text-xl ml-6'>This is a magical feature which  user can post blogs, post review, can write comments on blogs.</h1>
                                     </div>
                                 </div>
                                 <div>
-
                                     <div className='flex'>
                                         <img className='w-10 h-10' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDMwIDI5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMwMEVDRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE0LjM5IDEzLjMxN0w3LjY3NCAyNiAyNy41IDI2IDIwLjc4NSAxMy4zMTd6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODcgLTY0MCkgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDQ5NikgdHJhbnNsYXRlKDEwLjUgOS41KSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik03LjY3NCAxMi4zNjZMNS4xMTYgMTcuMTIyIDEwLjU1MiAxNy4xMjJ6TTE3LjI2NyA2LjY1OUwxNC4wNyAxMy4zMTcgMjAuNzg1IDEzLjMxN3oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNjQwKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDk2KSB0cmFuc2xhdGUoMTAuNSA5LjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNDQ0ZCRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTUuMTE2IDE3LjEyMkwwLjMyIDI2IDE1Ljk4OCAyNiAxMC41NTIgMTcuMTIyeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC02NDApIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0OTYpIHRyYW5zbGF0ZSgxMC41IDkuNSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuMjE5IiBkPSJNNy43MTkgMTIuMDQ5TDAgMjYgMTUuOTg4IDI2eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC02NDApIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0OTYpIHRyYW5zbGF0ZSgxMC41IDkuNSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuMjE5IiBkPSJNMTEuNTEyIDE4LjUxMUwxNy4zMjIgNi4zNDEgMjcuNSAyNiAxNS41MDkgMjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNjQwKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDk2KSB0cmFuc2xhdGUoMTAuNSA5LjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iIzRCMzJCMCIgc3Ryb2tlLXdpZHRoPSIxLjIxOSIgZD0iTTQuNzk3IDE3LjEyMkwxMC41NTIgMTcuMTIyTTE0LjA3IDEzLjMxN0wxNy41NTggMTMuMzE3IDIwLjc4NSAxMy4zMTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNjQwKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDk2KSB0cmFuc2xhdGUoMTAuNSA5LjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNBRDFCRTAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEyLjc5MSAwTDE3LjI2NyAwIDE3LjI2NyAyLjk5IDEyLjc5MSAyLjk5eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC02NDApIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0OTYpIHRyYW5zbGF0ZSgxMC41IDkuNSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuMjE5IiBkPSJNMTcuMjY3IDYuOTc2VjIuOTltMCAwVjBoLTQuNDc2djIuOTloNC40NzZ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODcgLTY0MCkgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDQ5NikgdHJhbnNsYXRlKDEwLjUgOS41KSIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="" />
                                         <h1 className='text-xl ml-6'>Users will have the option to manage their profiles as well.They can change their username and image also.</h1>
@@ -120,7 +117,6 @@ const Details = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </TabPanel>
                     <TabPanel>
@@ -137,7 +133,6 @@ const Details = () => {
                                     <IoLogoReact className='w-32 h-12 text-cyan-500' />
                                     <p className='text-xl ml-6'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-cyan-500'><a target="_blank" href="https://reactjs.org/">View more...</a></span></p>
                                 </div>
-
                             </div>
                             <div>
                                 <h1 className='text-xl text-cyan-500  font-bold'>Tailwind Css</h1>
