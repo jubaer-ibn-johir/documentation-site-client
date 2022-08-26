@@ -2,20 +2,22 @@ import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 import Loading from '../shared/Loading';
+import ScrollToTop from 'react-scroll-to-top';
 
 const SocialLogIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, gituser, loading1, error1] = useSignInWithGithub(auth);
+
     const navigate = useNavigate()
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
-    
 
-    if ( user || gituser) {
+    const [token] = useToken(user || gituser)
+    if (token) {
         navigate(from, { replace: true });
     }
-
     let errorElement;
 
     if (loading || loading1) {
@@ -27,9 +29,10 @@ const SocialLogIn = () => {
     }
     return (
         <div class="flex flex-col space-y-5">
+            <ScrollToTop smooth color="red" top='20' />
             <span class="flex items-center justify-center space-x-2">
                 <span class="h-px bg-gray-400 w-14"></span>
-                <span class="font-normal text-gray-500">or login with</span>
+                <span class="font-normal text-gray-500 blackToWhite">or login with</span>
                 <span class="h-px bg-gray-400 w-14"></span>
             </span>
             {errorElement}
@@ -39,7 +42,7 @@ const SocialLogIn = () => {
                     class="flex items-center justify-center px-4 py-2 space-x-2 transition-colors duration-300 border border-gray-800 rounded-md group hover:bg-gray-800 focus:outline-none"
                 >
 
-                    <span class="text-sm font-medium text-gray-800 group-hover:text-white">Github</span>
+                    <span class="text-sm font-medium text-gray-800 group-hover:text-white blackToWhite">Github</span>
                 </p>
                 <p
                     onClick={() => signInWithGoogle()}
@@ -48,7 +51,7 @@ const SocialLogIn = () => {
                     <span>
 
                     </span>
-                    <span class="text-sm font-medium text-blue-500 group-hover:text-white">Google</span>
+                    <span class="text-sm font-medium text-blue-500 group-hover:text-white cursor-pointer blackToWhite">Google</span>
                 </p>
             </div>
         </div>

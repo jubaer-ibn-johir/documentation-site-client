@@ -4,21 +4,21 @@ import BuildDocuments from './BuildDocuments';
 import Reviws from './Reviws';
 import Solution from './Solution';
 import Details from './Details';
-// import ScrollToTop from "react-scroll-to-top";
+import AddReview from './AddReview';
+import ScrollToTop from "react-scroll-to-top";
+import Newsletter from './Newsletter';
 
 
 const Home = () => {
     return (
         <div>
-            
-            {/* <ScrollToTop smooth color="red" top='20' /> */}
-           <Banner></Banner>
-            <Details></Details>
+            <ScrollToTop smooth color="red" top='20' />
+            <Banner></Banner>
             <BuildDocuments></BuildDocuments>
-           <Solution></Solution>
-           <Reviws></Reviws>
-           
-           
+            <Solution></Solution>
+            <Details></Details>
+            <Reviws></Reviws>
+            {/* <Newsletter></Newsletter> */}
         </div>
     );
 };

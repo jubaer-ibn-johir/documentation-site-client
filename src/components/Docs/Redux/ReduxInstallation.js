@@ -1,14 +1,16 @@
 import React from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
+import ScrollToTop from 'react-scroll-to-top';
 
 const ReduxInstallation = () => {
     const onChange = React.useCallback((value, viewUpdate) => {
         console.log("value:", value);
     }, []);
     return (
-        <div className='my-10 max-w-7xl mx-auto'>
-            <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold mb-5 mt-20 lg:mx-0 md:mx-5 mx-5'>Installation</h1>
+        <div className='lg:mx-16 mx-0'>
+            <ScrollToTop smooth color="red" top='20' />
+            <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold py-5 lg:mx-0 md:mx-5 mx-5'>Installation</h1>
             <div className='lg:mx-0 md:mx-5 mx-5'>
                 <div>
                     <h1 className='lg:text-3xl md:text-2xl text-xl font-bold mb-5'>Redux Toolkit</h1>

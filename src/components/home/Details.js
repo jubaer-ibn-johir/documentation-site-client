@@ -1,128 +1,174 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-
+import { MdFeaturedPlayList } from 'react-icons/md';
+import { CgFileDocument, } from 'react-icons/cg';
+import { FaLaptopCode } from 'react-icons/fa';
+import { IoArrowRedoSharp, IoLogoReact, IoLogoFirebase, } from "react-icons/io5";
+import { SiHeroku, SiTailwindcss } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
 const Details = () => {
     return (
-        <div className='mt-10  ' >
-            <div class="hero-content text-center text-neutral-content ">
-                <div class="">
-                    <h1 class="mb-8 text-2xl lg:text-4xl font-semibold tracking-wider text-black">Know about our EasyDocs</h1>
-                    <p class=" text-gray-500 text-xl lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
-                    
-
-
+        <div className='mt-10 max-w-7xl lg:mx-auto md:mx-10 mx-5'>
+            <div className='flex justify-center items-center mb-10'>
+                <div>
+                    <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>
+                    <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
                 </div>
             </div>
-            <div className='m-20  '>
+            <div className=''>
                 <Tabs>
-                    <TabList>
-                        <Tab><h1 className='text-primary text-xl font-bold'>Docs</h1></Tab>
-                        <Tab> <h1 className='text-primary text-xl font-bold'>Feature</h1></Tab>
-                        <Tab> <h1 className='text-primary text-xl font-bold'>Technology </h1></Tab>
+
+                    <TabList >
+                        <div className='flex'>
+                            <Tab><h1 className='text-cyan-500 text-xl font-bold'>Docs</h1></Tab>
+                            <Tab> <h1 className='text-cyan-500 text-xl font-bold'>Feature</h1></Tab>
+                            <Tab> <h1 className='text-cyan-500 text-xl font-bold'>Technology </h1></Tab>
+                        </div>
                     </TabList>
 
                     <TabPanel>
-                        <div className='hero-content text-center '>
-                            <img className=' mt-10 w-16' src="https://www.clipartmax.com/png/middle/198-1986092_icon-documents-control-plan-icon.png" alt="" />
+                        <div className='text-center flex justify-center items-center mt-5'>
+                            <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
+                                <CgFileDocument className='w-12 h-12 text-cyan-500' />
+                            </div>
                             <div class="title"><span>EasyDocs Documentation</span></div>
                         </div>
-                        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10 lg:mx-0 md:mx-5 mx-5'>
-                            <div>
-                                <h1 className='text-xl text-primary'>React js</h1><br />
-                                <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-
+                        <div className='grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 my-16'>
+                            <div >
+                                <img className=' w-100' src="https://docs-client-site.vercel.app/_next/image?url=https%3A%2F%2Fwordpress-theme.spider-themes.net%2Fdocy-dark%2Fwp-content%2Fuploads%2F2019%2F04%2Fspinner_logo-1.png&w=96&q=75" alt="" />
+                                <h1 className='text-2xl text-cyan-500 font-bold mt-5'>EasyDocs</h1>
+                                <p className='text-xl mb-5 mt-3 '>EasyDoc is a resourceful, responsive, and high-performance online documentation website.</p>
                             </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Tailwind Css</h1><br />
-                                <p className='text-xl'>Rapidly build modern websites without ever leaving your HTML.A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Firebase for authentication</h1><br />
-                                <p className='text-xl'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Heroku for server deploy</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Node js & Express js for backend</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>MongoDB for database</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                            <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-20 grid-cols-1 mt-10'>
+                                <div className=''>
+                                    <div className='text-2xl mb-5 text-cyan-500'>Docs</div>
+                                    <div className='flex'>
+                                        <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
+                                        <h1 className='text-xl ml-6'> This is a   Documentation base web-site , where every one can learn everything about React, Redux & NextJs. This website is mainly made with ReactJs.</h1>
+                                    </div>
+                                </div>
+                                <div className=''>
+                                    <div className='text-2xl mb-5 text-cyan-500'>Blogs</div>
+                                    <div className='flex'>
+                                        <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
+                                        <h1 className='text-xl ml-6'> The goal of the project is to give facilities to post documentation or blog and give support in making different types of documentation or blog.</h1>
+                                    </div>
+                                </div>
+                                <div className=''>
+                                    <div className='text-2xl mb-5 text-cyan-500'>Dashboard</div>
+                                    <div className='flex'>
+                                        <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
+                                        <h1 className='text-xl ml-6'> let's come to the Dashboard. In the dashboard, we have info about a summary of all we have. and also  with various roles like Admin, User, etc.
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div className=''>
+                                    <div className='text-2xl mb-5 text-cyan-500'>ChangeLog</div>
+                                    <div className='flex'>
+                                        <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
+                                        <h1 className='text-xl ml-6'> This means there will be interesting features like a dark mood and a bright mood also.
+                                        </h1>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='hero-content text-center'>
-                            <img className=' mt-10  w-16' src="data:image/png;base64,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" alt="" />
+                        <div className='hero-content text-center mt-10 flex justify-center items-center'>
+                            <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
+                                <MdFeaturedPlayList className='w-12 h-12 text-cyan-500' />
+                            </div>
                             <div class="title"><span>EasyDocs Feature</span></div>
                         </div>
-                        <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10 lg:mx-0 md:mx-5 mx-5'>
-                            <div>
-                                <h1 className='text-xl text-primary'>React js</h1><br />
-                                <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                        <div className='grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1  mt-10 '>
+                            <div >
+                                <img className=' w-20' src="https://freepikpsd.com/file/2019/10/feature-png-Transparent-Images.png" alt="" />
+                                <h1 className='text-2xl text-cyan-500 font-bold mt-5'>EasyDocs Feature</h1>
+                                <p className='text-xl mb-5 mt-3 '>Docy is a powerful, responsive, and high-performance online documentation.</p>
+                            </div>
+                            <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-20 grid-cols-1 mt-10'>
+                                <div>
+                                    <div className='flex'>
+                                        <img className='w-10 h-10' src="https://wordpress-theme.spider-themes.net/docy/wp-content/uploads/2019/04/slack.png" alt="" />
+                                        <h1 className='text-xl ml-6'>This is a magical feature which  user can post blogs, post review, can write comments on blogs.</h1>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className='flex'>
+                                        <img className='w-10 h-10' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDMwIDI5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMwMEVDRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE0LjM5IDEzLjMxN0w3LjY3NCAyNiAyNy41IDI2IDIwLjc4NSAxMy4zMTd6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODcgLTY0MCkgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDQ5NikgdHJhbnNsYXRlKDEwLjUgOS41KSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik03LjY3NCAxMi4zNjZMNS4xMTYgMTcuMTIyIDEwLjU1MiAxNy4xMjJ6TTE3LjI2NyA2LjY1OUwxNC4wNyAxMy4zMTcgMjAuNzg1IDEzLjMxN3oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNjQwKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDk2KSB0cmFuc2xhdGUoMTAuNSA5LjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNDQ0ZCRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTUuMTE2IDE3LjEyMkwwLjMyIDI2IDE1Ljk4OCAyNiAxMC41NTIgMTcuMTIyeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC02NDApIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0OTYpIHRyYW5zbGF0ZSgxMC41IDkuNSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuMjE5IiBkPSJNNy43MTkgMTIuMDQ5TDAgMjYgMTUuOTg4IDI2eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC02NDApIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0OTYpIHRyYW5zbGF0ZSgxMC41IDkuNSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuMjE5IiBkPSJNMTEuNTEyIDE4LjUxMUwxNy4zMjIgNi4zNDEgMjcuNSAyNiAxNS41MDkgMjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNjQwKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDk2KSB0cmFuc2xhdGUoMTAuNSA5LjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZT0iIzRCMzJCMCIgc3Ryb2tlLXdpZHRoPSIxLjIxOSIgZD0iTTQuNzk3IDE3LjEyMkwxMC41NTIgMTcuMTIyTTE0LjA3IDEzLjMxN0wxNy41NTggMTMuMzE3IDIwLjc4NSAxMy4zMTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNjQwKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDk2KSB0cmFuc2xhdGUoMTAuNSA5LjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNBRDFCRTAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEyLjc5MSAwTDE3LjI2NyAwIDE3LjI2NyAyLjk5IDEyLjc5MSAyLjk5eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC02NDApIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0OTYpIHRyYW5zbGF0ZSgxMC41IDkuNSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuMjE5IiBkPSJNMTcuMjY3IDYuOTc2VjIuOTltMCAwVjBoLTQuNDc2djIuOTloNC40NzZ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODcgLTY0MCkgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDQ5NikgdHJhbnNsYXRlKDEwLjUgOS41KSIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="" />
+                                        <h1 className='text-xl ml-6'>Users will have the option to manage their profiles as well.They can change their username and image also.</h1>
+                                    </div>
+                                </div>
+                                <div>
 
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Tailwind Css</h1><br />
-                                <p className='text-xl'>Rapidly build modern websites without ever leaving your HTML.A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Firebase for authentication</h1><br />
-                                <p className='text-xl'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Heroku for server deploy</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>Node js & Express js for backend</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
-                            <div>
-                                <h1 className='text-xl text-primary'>MongoDB for database</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-                            </div>
+                                    <div className='flex'>
+                                        <img className='w-10 h-10' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIyOSIgdmlld0JveD0iMCAwIDM0IDI5Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjNEIzMkIwIiBzdHJva2Utd2lkdGg9IjEuNTAyIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTUuMjUgMTYuNTEzYzEuNzQgMCAzLjE1LTEuMzM3IDMuMTUtMi45ODYgMC0xLjY1LTEuNDEtMi45ODctMy4xNS0yLjk4N1MyLjEgMTEuODc4IDIuMSAxMy41MjdjMCAxLjY1IDEuNDEgMi45ODYgMy4xNSAyLjk4NnpNMTUuOTI1IDE4LjYyMmMyLjAzIDAgMy42NzUtMS42NTIgMy42NzUtMy42OSAwLTIuMDM3LTEuNjQ1LTMuNjg5LTMuNjc1LTMuNjg5cy0zLjY3NSAxLjY1Mi0zLjY3NSAzLjY5YzAgMi4wMzcgMS42NDUgMy42ODkgMy42NzUgMy42ODl6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODUgLTUxMikgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDM2OCkgdHJhbnNsYXRlKDguNSA5LjQ5NSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNMCAyMy4xODl2LTEuNTA1YzAtMS42OSAxLjM1LTMuMDYzIDMuMDEyLTMuMDYzaDQuMzg3Yy45OCAwIDEuODUuNDc3IDIuNDAxIDEuMjE1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODUgLTUxMikgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDM2OCkgdHJhbnNsYXRlKDguNSA5LjQ5NSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTI2LjI1IDE2LjUxM2MtMS43NCAwLTMuMTUtMS4zMzctMy4xNS0yLjk4NiAwLTEuNjUgMS40MS0yLjk4NyAzLjE1LTIuOTg3czMuMTUgMS4zMzggMy4xNSAyLjk4N2MwIDEuNjUtMS40MSAyLjk4Ni0zLjE1IDIuOTg2eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg1IC01MTIpIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCAzNjgpIHRyYW5zbGF0ZSg4LjUgOS40OTUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTTMxLjUgMjMuMTg5di0xLjUwNWMwLTEuNjktMS4zNS0zLjA2My0zLjAxMi0zLjA2M2gtNC4zODdjLS45OCAwLTEuODUuNDc3LTIuNDAxIDEuMjE1TTkuNDUgMjZ2LTEuODUyYzAtMi4wOCAxLjYzNC0zLjc3IDMuNjQ1LTMuNzdoNS4zMWMyLjAxMSAwIDMuNjQ1IDEuNjkgMy42NDUgMy43N1YyNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg1IC01MTIpIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCAzNjgpIHRyYW5zbGF0ZSg4LjUgOS40OTUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMwMEVDRkYiIGQ9Ik0xNS43NSAwTDE2LjYxNCAyLjc5MiAxOS40MTIgMi43OTIgMTcuMTQ5IDQuNTE3IDE4LjAxMyA3LjMwOSAxNS43NSA1LjU4NCAxMy40ODcgNy4zMDkgMTQuMzUxIDQuNTE3IDEyLjA4OCAyLjc5MiAxNC44ODYgMi43OTJ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODUgLTUxMikgdHJhbnNsYXRlKDU0IDEzNikgdHJhbnNsYXRlKDI0IDM2OCkgdHJhbnNsYXRlKDguNSA5LjQ5NSkiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTguMjI1IDQuMjE2TDguNjU3IDUuNzk0IDEwLjA1NiA1Ljc5NCA4LjkyNCA2Ljc2OSA5LjM1NyA4LjM0NyA4LjIyNSA3LjM3MiA3LjA5NCA4LjM0NyA3LjUyNiA2Ljc2OSA2LjM5NCA1Ljc5NCA3Ljc5MyA1Ljc5NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NSAtNTEyKSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgMzY4KSB0cmFuc2xhdGUoOC41IDkuNDk1KSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDBFQ0ZGIiBkPSJNMjMuMjc1IDQuMjE2TDIzLjcwNyA1Ljc5NCAyNS4xMDYgNS43OTQgMjMuOTc0IDYuNzY5IDI0LjQwNiA4LjM0NyAyMy4yNzUgNy4zNzIgMjIuMTQzIDguMzQ3IDIyLjU3NiA2Ljc2OSAyMS40NDQgNS43OTQgMjIuODQzIDUuNzk0eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg1IC01MTIpIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCAzNjgpIHRyYW5zbGF0ZSg4LjUgOS40OTUpIi8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="" />
+                                        <h1 className='text-xl ml-6'>A normal user will be counted as a viewer. They can only browse the home page and blog page. For that, they don’t have to register or log in.</h1>
+                                    </div>
+                                </div>
+                                <div>
 
+                                    <div className='flex'>
+                                        <img className='w-10 h-10' src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDMwIDM2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iIzRCMzJCMCIgc3Ryb2tlLXdpZHRoPSIxLjE2NSI+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNDNEM0QzQiIGQ9Ik0yNy4xNzUgMjAuMDUzTDI1LjIyIDE3LjA3bC0yLjEyMy42OWMtLjM2NS0uMjg4LS43NTYtLjU2LTEuMTU0LS43OTJsLS4xOTUtMi4yMzYtMy41MS0uNzI1LTEuMDA1IDEuOTY2Yy0uNDc0LjAzLS45NjUuMTQxLTEuNDE2LjI2MWwtMS42OS0xLjM5My0yLjk4MyAxLjk2Mi42MzggMi4wNWMtLjMzLjM1OS0uNjExLjc5LS44NTIgMS4yMzFsLTIuMTI3LjItLjczMSAzLjUxNSAxLjg2NC45NmMuMDQ1LjUuMTQ3IDEuMDMzLjI5OCAxLjUzM0w4Ljg3MiAyNy45M2wxLjk1NSAyLjk4MyAyLjAwOC0uNjVjLjM5OC4zMzguODI5LjYxOSAxLjI4NS44ODNsLjE5NSAyLjEzIDMuNTEuNzI1Ljk3Mi0xLjkxYy40OTktLjA0NS45OS0uMTU3IDEuNDktLjMxbDEuNjQ4IDEuMzg2IDMuMDA4LTEuOTc5LS42Ny0yLjFjLjMxNC0uMzgyLjU4Ny0uNzczLjgwMy0xLjE5OGwyLjE5My0uMjA3LjczMS0zLjUxNS0xLjk3OC0xLjAyN2MtLjA1NC0uNDYtLjE0OC0uOTI2LS4yNjctMS4zNzdsMS40Mi0xLjcxem0tNy43NSA2LjA1Yy0xLjE4NC43NzktMi43NS40MzMtMy41MS0uNzI1LS43NzUtMS4xODQtLjQyNy0yLjc1My43MzItMy41MTUgMS4xODMtLjc3OSAyLjc1LS40MzQgMy41MS43MjUuNzU4IDEuMTU5LjQyNyAyLjc1My0uNzMyIDMuNTE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC01NzQpIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0MzIpIHRyYW5zbGF0ZSgxMCA3KSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDBFQ0ZGIiBkPSJNOS4wMyAxNS4wMzRsLS40NzMtMS41NTYtMS4wMTkuMDNjLS4xMjMtLjE3NC0uMjU4LS4zNDMtLjQwMy0uNDk2bC4yMDItMS4wMDMtMS40NDQtLjc2OC0uNjkzLjczMWMtLjIxMi0uMDQ4LS40NDItLjA2Mi0uNjU0LS4wNjdsLS41NjEtLjgyNy0xLjU2LjQ3Ni4wMTYuOTc4Yy0uMTkuMTE1LS4zNy4yNjgtLjUzMS40M2wtLjk1OC0uMTg2TC4xOCAxNC4yMmwuNjkzLjY2Yy0uMDQ0LjIyNC0uMDY4LjQ3LS4wNjYuNzA4TDAgMTYuMTNsLjQ3MyAxLjU1Ni45NjMtLjAyN2MuMTMuMi4yODQuMzc3LjQ1LjU1MmwtLjE4OS45NTYgMS40NDQuNzY5LjY3MS0uNzExYy4yMjUuMDQ0LjQ1NS4wNTguNjkzLjA1NmwuNTQ0LjgxOCAxLjU3Mi0uNDgtLjAyMy0xLjAwNWMuMTg2LS4xMjcuMzU2LS4yNjMuNTA1LS40MmwuOTg3LjE5Ljc3My0xLjQ0NC0uNzM1LS43MDNjLjAzNi0uMjA4LjA1NC0uNDI1LjA2LS42MzdsLjg0Mi0uNTY2em0tNC4xNzMgMS42NTJjLS42MTguMTg5LTEuMjYtLjE2NC0xLjQ0NC0uNzY4LS4xODctLjYxOC4xNjctMS4yNi43NzItMS40NDQuNjE5LS4xODkgMS4yNjEuMTYzIDEuNDQ1Ljc2OC4xODMuNjA0LS4xNjcgMS4yNi0uNzczIDEuNDQ0eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg3IC01NzQpIHRyYW5zbGF0ZSg1NCAxMzYpIHRyYW5zbGF0ZSgyNCA0MzIpIHRyYW5zbGF0ZSgxMCA3KSIvPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBmaWxsPSIjRTJDMUZDIiBkPSJNMjAuMDAzIDUuNTkybC0uNjY4LTIuMi0xLjQ0LjA0MmMtLjE3NC0uMjQ1LS4zNjYtLjQ4NC0uNTctLjdsLjI4NS0xLjQxOEwxNS41NjkuMjNsLS45OCAxLjAzNGMtLjI5OS0uMDY4LS42MjMtLjA4OC0uOTI0LS4wOTVMMTIuODcyIDBsLTIuMjA0LjY3Mi4wMjIgMS4zODRjLS4yNjkuMTYxLS41MjIuMzc3LS43NS42MDZMOC41ODUgMi40IDcuNDk0IDQuNDRsLjk4LjkzM2MtLjA2My4zMTctLjA5Ni42NjUtLjA5NCAxLjAwMmwtMS4xNC43NjUuNjY4IDIuMiAxLjM2MS0uMDM4Yy4xODUuMjgxLjQwMS41MzMuNjM1Ljc4bC0uMjY2IDEuMzUyIDIuMDQyIDEuMDg2Ljk0OC0xLjAwNWMuMzE4LjA2My42NDIuMDgzLjk4LjA4bC43NjkgMS4xNTUgMi4yMjItLjY3OC0uMDM0LTEuNDJjLjI2NC0uMTguNTA0LS4zNzIuNzE1LS41OTVsMS4zOTUuMjcgMS4wOTItMi4wNDEtMS4wMzktLjk5NWMuMDUtLjI5My4wNzctLjU5OS4wODUtLjlsMS4xOS0uOHptLTUuODk4IDIuMzM1Yy0uODc0LjI2Ni0xLjc4MS0uMjMyLTIuMDQtMS4wODYtLjI2Ni0uODczLjIzNS0xLjc4IDEuMDktMi4wNDEuODc1LS4yNjcgMS43ODIuMjMxIDIuMDQyIDEuMDg2LjI2Ljg1NC0uMjM2IDEuNzgtMS4wOTIgMi4wNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NyAtNTc0KSB0cmFuc2xhdGUoNTQgMTM2KSB0cmFuc2xhdGUoMjQgNDMyKSB0cmFuc2xhdGUoMTAgNykiLz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="" />
+                                        <h1 className='text-xl ml-6'>Users can ask any question on different kinds of topics. Users can answer the question of other users.</h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <div className='hero-content text-center'>
-                            <img className=' mt-10 w-16' src="https://toppng.com/uploads/preview/technology-icon-orange-information-technology-icon-115535310117amjuxxw3e.png" alt="" />
-                            {/* <h1 class=" text-xl mt-5 font-bold ">EasyDocs Technology</h1> */}
+                        <div className='hero-content text-center mt-10'>
+                            <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
+                                <FaLaptopCode className='w-12 h-12 text-cyan-500' />
+                            </div>
                             <div class="title"><span>EasyDocs Technology</span></div>
                         </div>
                         <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 mt-10 lg:mx-0 md:mx-5 mx-5'>
                             <div>
-                               <h1 className='text-xl text-primary'>React js</h1><br />
-                                <p className='text-xl'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
-
+                                <h1 className='text-xl text-cyan-500 font-bold'>React js</h1>
+                                <div className='flex mt-10'>
+                                    <IoLogoReact className='w-32 h-12 text-cyan-500' />
+                                    <p className='text-xl ml-6'>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <span className=' text-cyan-500'><a target="_blank" href="https://reactjs.org/">View more...</a></span></p>
+                                </div>
                             </div>
                             <div>
-                                <h1 className='text-xl text-primary'>Tailwind Css</h1><br />
-                                <p className='text-xl'>Rapidly build modern websites without ever leaving your HTML.A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                                <h1 className='text-xl text-cyan-500  font-bold'>Tailwind Css</h1>
+                                <div className='flex mt-10' >
+                                    <SiTailwindcss className='w-32 h-12 text-cyan-500' />
+                                    <p className='text-xl ml-6'>Rapidly build modern websites without ever leaving your HTML.A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. <span className=' text-cyan-500'><a target="_blank" href="https://tailwindcss.com/">View more...</a></span></p>
+                                </div>
                             </div>
                             <div>
-                                <h1 className='text-xl text-primary'>Firebase for authentication</h1><br />
-                                <p className='text-xl'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p> 
+                                <h1 className='text-xl text-cyan-500  font-bold'>Firebase for authentication</h1>
+                                <div className='flex mt-10'>
+                                    <IoLogoFirebase className='w-32 h-12 text-cyan-500' />
+                                    <p className='text-xl ml-6'>Make your app the best it can be Firebase is an app development platform that helps you build and grow apps and games users love. Backed by Google and trusted by millions of businesses around the world.  <span className=' text-cyan-500'><a target="_blank" href="https://firebase.google.com/">View more...</a></span></p>
+                                </div>
                             </div>
                             <div>
-                                <h1 className='text-xl text-primary'>Heroku for server deploy</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                                <h1 className='text-xl text-cyan-500  font-bold'>Heroku for server deploy</h1>
+                                <div className='flex mt-10'>
+                                    <SiHeroku className='w-32 h-12 text-cyan-500' />
+                                    <p className='text-xl ml-6'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-cyan-500'><a target="_blank" href="https://www.heroku.com/">View more...</a></span></p>
+                                </div>
                             </div>
                             <div>
-                                <h1 className='text-xl text-primary'>Node js & Express js for backend</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                                <h1 className='text-xl text-cyan-500 font-bold'>Node js & Express js for backend</h1>
+                                <div className='flex mt-10'>
+                                    <FaNodeJs className='w-32 h-12 text-cyan-500' />
+                                    <p className='text-xl ml-6'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-cyan-500'><a target="_blank" href="https://nodejs.org/en/">View more...</a></span></p>
+                                </div>
                             </div>
                             <div>
-                                <h1 className='text-xl text-primary'>MongoDB for database</h1><br />
-                                <p className='text-xl'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-primary'><a href="https://firebase.google.com/">View more...</a></span></p>
+                                <h1 className='text-xl text-cyan-500 font-bold'>MongoDB for database</h1>
+                                <div className='flex mt-10'>
+                                    <DiMongodb className='w-32 h-12 text-cyan-500' />
+                                    <p className='text-xl ml-6'>Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly. <span className=' text-cyan-500'><a target="_blank" href="https://www.mongodb.com/cloud/atlas/register">View more...</a></span></p>
+                                </div>
                             </div>
-
                         </div>
                     </TabPanel>
                 </Tabs>

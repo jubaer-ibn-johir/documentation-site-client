@@ -10,5 +10,15 @@ body {
     /* color: white; */
 }
 
+.navbar a {
+    color: white;
+}
 
+.navbar a:hover {
+    color: rgb(6, 213, 6);
+}
 
+.menu :where(li:not(.menu-title):not(:empty))> :where(*:not(ul):focus),
+.menu :where(li:not(.menu-title):not(:empty))> :where(*:not(ul):hover) {
+    background-color: transparent;
+}

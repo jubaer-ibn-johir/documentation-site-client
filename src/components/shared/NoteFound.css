@@ -1,4 +1,4 @@
-.notfoundbody {
+/* .notfoundbody {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -177,4 +177,81 @@
     position: absolute;
     top: 30%;
     left: 90%;
+} */
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+    padding: 40px 0;
+    background: rgb(203 213 225);
+    font-family: "Arvo", serif;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top: -50px;
+}
+
+.commonButton {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    border: 2px;
+    border-color: aqua;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid #59c57c;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.commonButton::before {
+    content: "";
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #7cbaf0 100%);
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.commonButton:hover {}
+
+.commonButton:hover::before {
+    width: 9em;
 }
