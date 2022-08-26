@@ -5,7 +5,7 @@ import learnPic from '../../../assets/docs/learn.avif'
 
 const Nextjs = () => {
     return (
-        <div className='bg-slate-300 componentsCommonBody'>
+        <div className='bg-slate-300 componentsCommonBody pb-44'>
             <ScrollToTop smooth color="red" top='20' />
             <div className='text-center h-[80vh] flex justify-center items-center'>
                 <div>

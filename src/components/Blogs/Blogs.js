@@ -19,7 +19,7 @@ const Blogs = () => {
     const onSubmit = data => console.log(data);
 
     return (
-        <div>
+        <div className='pb-44'>
             <div>
                 <div style={{ background: 'linear-gradient(90deg, rgba(173,173,198,1) 0%, rgba(223,205,205,1) 55%, rgba(168,186,195,1) 100%)' }} >
                     <div className='max-w-7xl mx-auto'>

@@ -50,7 +50,7 @@ const AddTutorial = () => {
 
     };
     return (
-        <div className='lg:p-8 md:p-8 p-4 lg:pb-0 md:pb-0 pb-24 bg-lime-50 h-full rounded-xl flex justify-center items-center lg:py-0 md:py-0 py-12 componentsCommonBody'>
+        <div className='lg:p-8 md:p-8 p-4 lg:pb-0 md:pb-0 pb-24 bg-lime-50 h-full flex justify-center items-center lg:py-0 md:py-0 py-12 componentsCommonBody'>
             <ScrollToTop smooth color="red" top='20' />
             <div className='rounded-xl bg-white lg:p-12 p-8 lg:w-1/2 md:w-96 w-80 grid grid-cols-1 shadow-md hover:shadow-xl transition-all CardsCommonBg'>
                 <div className='lg:-mt-24 -mt-16 text-center flex justify-center items-center'>

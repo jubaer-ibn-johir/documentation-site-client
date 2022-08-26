@@ -72,7 +72,7 @@ const Reduxjs = () => {
                     </div>
                 </div>
             </div> */}
-            <div className=''>
+            <div className='pb-48'>
                 <div className='flex justify-center items-center' style={{ "background": 'linear-gradient(223deg, rgba(50,154,176,1) 0%, rgba(125,221,241,1) 50%, rgba(64,130,144,1) 100%)' }}>
                     <div className='my-24 text-center'>
                         <h1 className='text-white lg:text-5xl md:text-5xl text-4xl font-bold'>Redux</h1>

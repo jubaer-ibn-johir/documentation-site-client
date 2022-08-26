@@ -6,15 +6,17 @@ import { SiRedux } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
 import docBanner from '../../assets/about-img/banner.jpg';
+import { MdOutlineNavigateNext } from 'react-icons/md';
+
 
 const Docs = () => {
     return (
         <div>
             <ScrollToTop smooth color="red" top='20' />
-            <div className='bg-white componentsCommonBody overflow-hidden'>
+            <div className='bg-white componentsCommonBody lg:pb-28 pb-36'>
                 <div className='pt-44 pb-20' style={{ background: 'linear-gradient(223deg, rgba(163,188,255,1) 0%, rgba(226,219,205,1) 57%, rgba(163,188,255,1) 100%)' }}>
                     <h1 className='lg:text-5xl md:text-4xl text-3xl font-semibold text-center whiteTextToBlack'>Documentations</h1>
-                    <p className='text-center text-xl mt-2 text-gray-500'>Home Docs</p>
+                    <p className='text-center text-xl mt-2 text-gray-500 flex justify-center items-center'><Link to='/'>Home</Link><MdOutlineNavigateNext /> Docs</p>
                 </div>
                 <div className='lg:flex lg:justify-center gap-5 md:grid md:grid-cols-2 grid grid-cols-1 mx-5 justify-items-center lg:py-44 md:py-20 py-20 whiteTextToBlack'>
                     <div

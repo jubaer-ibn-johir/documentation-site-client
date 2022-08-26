@@ -39,9 +39,8 @@ const Tutorial = () => {
         return <Loading></Loading>
     }
     return (
-        
-        <div className='componentsCommonBody' style={{ backgroundColor: '#d4e0ff' }}>
-           
+        <div className='componentsCommonBody pb-44' style={{ backgroundColor: '#d4e0ff' }}>
+            <ScrollToTop smooth color="red" top='20' />
             <div style={{ background: ' linear-gradient(90deg, rgba(1,35,119,1) 0%, rgba(126,73,195,1) 50%, rgba(73,111,224,1) 99%)' }} className=''>
                 <div className='flex justify-center items-center pt-24 pb-20'>
                     <div className='grid grid-cols-1 gap-5'>
