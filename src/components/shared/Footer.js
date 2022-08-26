@@ -11,11 +11,38 @@ import { useForm } from 'react-hook-form';
 import { FaEnvelope } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
 import { IoIosCall } from 'react-icons/io';
+import Swal from 'sweetalert2';
 
 const Footer = () => {
     const [theme, setTheme] = useContext(ThemeContext)
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, reset } = useForm();
+    const onSubmit = data => {
+        console.log(data);
+
+        const url = 'https://polar-shore-69456.herokuapp.com/news';
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+                reset()
+
+                Swal.fire({
+                    title: 'Successfully Subscribeb!',
+                    icon: 'success',
+                    confirmButtonText: 'ok'
+
+                })
+
+            })
+
+
+    }
     return (
         <div>
             <div style={{ backgroundColor: '#12174E' }}>
