@@ -12,7 +12,7 @@ const NextGetStarted = () => {
     return (
         <div className='ml-7 mr-7'>
             <ScrollToTop smooth color="red" top='20' />
-            <h2 className='lg:text-4xl text-3xl font-bold mt-16'>Getting started</h2>
+            <h2 className='lg:text-4xl text-3xl font-bold pt-5'>Getting started</h2>
             <p className='mt-5 text-xl'>Welcome to the Next.js documentation! <br />
                 If you're new to Next.js, we recommend starting with the learn course. <br />
                 The interactive course with quizzes will guide you through everything you need to know to use Next.js. <br />

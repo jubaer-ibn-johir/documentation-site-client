@@ -15,7 +15,7 @@ const BlogDetails = () => {
     const onSubmit = data => console.log(data);
 
     return (
-        <div>
+        <div className='pb-28'>
             <div style={{ background: 'linear-gradient(90deg, rgba(173,173,198,1) 0%, rgba(223,205,205,1) 55%, rgba(168,186,195,1) 100%)' }} >
                 <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                     <div className='grid grid-cols-1 items-center lg:py-44 md:py-44 py-36'>
@@ -131,7 +131,7 @@ const BlogDetails = () => {
                                     <li className='list-disc'><Link to='#' className='text-lg hover:text-blue-600'>Inspire (5)</Link></li>
                                 </div>
                             </div>
-                            <div className='mt-12 grid gap-3'>
+                            <div className='mt-12 grid gap-3 lg:pb-0 md:pb-0 pb-28'>
                                 <p className='text-2xl font-bold mb-5'>Recent</p>
                                 <div className='flex items-center'>
                                     <div className='h-16 w-16 flex justify-center items-center mr-3'>

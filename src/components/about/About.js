@@ -7,17 +7,20 @@ import hridoyVai2 from '../../assets/about-img/Hridoy vai2.png';
 import naeem from '../../assets/about-img/Naeem.jpg';
 import { FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import ScrollToTop from 'react-scroll-to-top';
+import { MdOutlineNavigateNext } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
     return (
-        <div>
+        <div className='pb-44'>
             <ScrollToTop smooth color="red" top='20' />
             {/* <div className='flex justify-center items-center lg:py-44 md:py-44 py-32' style={{ "backgroundImage": `url(${aboutBanner})`, "backgroundPosition": "center", "backgroundRepeat": "no-repeat", "backgroundSize": "cover" }}>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-sky-800'>About Us</h1>
             </div> */}
-            <div className='flex justify-center items-center lg:py-44 md:py-44 py-32' style={{ background: 'linear-gradient(223deg, rgba(46,107,152,1) 0%, rgba(174,199,191,1) 50%, rgba(46,107,152,1) 100%)' }}>
+            <div className='grid justify-items-center items-center lg:py-44 md:py-44 py-32' style={{ background: 'linear-gradient(223deg, rgba(46,107,152,1) 0%, rgba(174,199,191,1) 50%, rgba(46,107,152,1) 100%)' }}>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-sky-800'>About Us</h1>
+                <p className='text-center text-xl mt-2 text-gray-500 flex justify-center items-center'><Link to='/'>Home</Link><MdOutlineNavigateNext /> About Us</p>
             </div>
             <div className='max-w-7xl mx-auto'>
                 <div className='grid items-center lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 my-16 lg:mx-0 md:mx-5 mx-5'>

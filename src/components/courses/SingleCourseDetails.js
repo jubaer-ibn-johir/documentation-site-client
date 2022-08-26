@@ -37,7 +37,7 @@ const SingleCourseDetails = () => {
         //         </div>
         //     </div>
         // </div>
-        <div className='bg-slate-400 componentsCommonBody'>
+        <div className='bg-slate-400 componentsCommonBody pb-36'>
             <div className='flex justify-center items-center lg:h-screen md:h-screen'>
                 <div className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
                     <div className='lg:flex md:flex grid grid-cols-1 rounded-xl lg:my-0 md:my-0 my-24' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
