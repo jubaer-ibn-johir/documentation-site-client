@@ -40,9 +40,19 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:py-24 md:py-24 py-20' style={{ "backgroundColor": "#FAFCFD" }}>
-                    <div className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
-                        <div className='lg:flex md:flex grid grid-cols-1 rounded-xl' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
+                <div
+                    
+                 className='lg:py-24 md:py-24 py-20 componentsCommonBody' style={{ "backgroundColor": "#FAFCFD" }}>
+                    <div 
+                        data-aos="flip-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                    className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
+                        <div className='lg:flex md:flex grid grid-cols-1 rounded-xl CardsCommonBg' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
                             <div className='lg:py-12 md:py-8 py-8 lg:pl-12 md:pl-5 pl-5 lg:pr-8 md:pr-5 pr-5 lg:w-1/2 md:w-1/2'>
                                 <div className='flex gap-5'>
                                     <p className='text-sm' style={{ "color": "#acace6" }}>9 Min Read</p>
@@ -75,7 +85,7 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ "backgroundColor": "#FAFCFD", "borderTop": "1px solid #e7edf0" }}>
+                <div style={{ "backgroundColor": "#FAFCFD", "borderTop": "1px solid #e7edf0" }} className='CardsCommonBg'>
                     <div className='max-w-5xl lg:mx-auto md:mx-5 mx-auto lg:flex md:flex grid grid-cols-4 lg:gap-0 md:gap-0 gap-0'>
                         <li className="h-16 flex items-center justify-center lg:px-5 md:px-2 px-1 hover:border-t-2 hover:border-slate-400 hover:bg-slate-200"><Link to="#">All</Link></li>
                         <li className="h-16 flex items-center justify-center lg:px-5 md:px-2 px-1 hover:border-t-2 hover:border-slate-400 hover:bg-slate-200"><Link to="#">Startups</Link></li>
@@ -90,7 +100,17 @@ const Blogs = () => {
 
                 <div className="max-w-7xl lg:mx-auto md:mx-auto mx-5 my-16">
                     <div className='grid justify-items-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
-                        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+                        <div 
+                         class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all"
+
+                            data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                         >
                             <figure><img src={blogImg1} alt="Shoes" className='w-full' /></figure>
                             <div class="card-body">
                                 <div className='flex gap-5'>
@@ -98,7 +118,7 @@ const Blogs = () => {
                                     <span style={{ "color": "#acace6" }}>|</span>
                                     <p className='text-blue-500 text-base'>WordPress</p>
                                 </div>
-                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium'>Is Your Store Safe From Magento Killer?</Link>
+                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>Is Your Store Safe From Magento Killer?</Link>
                                 <p className='text-base' style={{ "color": "#6b707f" }}>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
                                 <div class="card-actions justify-start">
                                     <div className='flex gap-5 items-center justify-start mt-8'>
@@ -107,15 +127,24 @@ const Blogs = () => {
                                         </div>
                                         <div className='flex justify-between items-center'>
                                             <div>
-                                                <p className='text-xl'>Jason Response</p>
-                                                <p className='text-sm'>Jul 14, 2022</p>
+                                                <p className='text-xl whiteTextToBlack'>Jason Response</p>
+                                                <p className='text-sm commonParagraph'>Jul 14, 2022</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+                        <div
+                         class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all"
+                            data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                         >
                             <figure><img src={blogImg2} alt="Shoes" className='w-full' /></figure>
                             <div class="card-body">
                                 <div className='flex gap-5'>
@@ -123,7 +152,7 @@ const Blogs = () => {
                                     <span style={{ "color": "#acace6" }}>|</span>
                                     <p className='text-blue-500 text-base'>Docy</p>
                                 </div>
-                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium'>70 Best Startups You Need to Watch Out for</Link>
+                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>70 Best Startups You Need to Watch Out for</Link>
                                 <p className='text-base' style={{ "color": "#6b707f" }}>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
                                 <div class="card-actions justify-start">
                                     <div className='flex gap-5 items-center justify-start mt-8'>
@@ -132,15 +161,24 @@ const Blogs = () => {
                                         </div>
                                         <div className='flex justify-between items-center'>
                                             <div>
-                                                <p className='text-xl'>Jason Response</p>
-                                                <p className='text-sm'>Jul 14, 2022</p>
+                                                <p className='text-xl whiteTextToBlack'>Jason Response</p>
+                                                <p className='text-sm commonParagraph'>Jul 14, 2022</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+                        <div 
+                        class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all"
+                            data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                        >
                             <figure><img src={blogImg3} alt="Shoes" className='w-full' /></figure>
                             <div class="card-body">
                                 <div className='flex gap-5'>
@@ -148,7 +186,7 @@ const Blogs = () => {
                                     <span style={{ "color": "#acace6" }}>|</span>
                                     <p className='text-blue-500 text-base'>Laravel</p>
                                 </div>
-                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium'>Create Conditional Logic Forms & Publish</Link>
+                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>Create Conditional Logic Forms & Publish</Link>
                                 <p className='text-base' style={{ "color": "#6b707f" }}>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
                                 <div class="card-actions justify-start">
                                     <div className='flex gap-5 items-center justify-start mt-8'>
@@ -157,15 +195,24 @@ const Blogs = () => {
                                         </div>
                                         <div className='flex justify-between items-center'>
                                             <div>
-                                                <p className='text-xl'>Jason Response</p>
-                                                <p className='text-sm'>Jul 14, 2022</p>
+                                                <p className='text-xl whiteTextToBlack'>Jason Response</p>
+                                                <p className='text-sm commonParagraph'>Jul 14, 2022</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+                        <div
+                         class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all"
+                            data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                         >
                             <figure><img src={blogImg4} alt="Shoes" className='w-full' /></figure>
                             <div class="card-body">
                                 <div className='flex gap-5'>
@@ -173,7 +220,7 @@ const Blogs = () => {
                                     <span style={{ "color": "#acace6" }}>|</span>
                                     <p className='text-blue-500 text-base'>WooCommerce</p>
                                 </div>
-                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium'>How to Use Forms for Enhancing UX In WordPress</Link>
+                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>How to Use Forms for Enhancing UX In WordPress</Link>
                                 <p className='text-base' style={{ "color": "#6b707f" }}>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
                                 <div class="card-actions justify-start">
                                     <div className='flex gap-5 items-center justify-start mt-8'>
@@ -182,15 +229,25 @@ const Blogs = () => {
                                         </div>
                                         <div className='flex justify-between items-center'>
                                             <div>
-                                                <p className='text-xl'>Jason Response</p>
-                                                <p className='text-sm'>Jul 14, 2022</p>
+                                                <p className='text-xl whiteTextToBlack'>Jason Response</p>
+                                                <p className='text-sm commonParagraph'>Jul 14, 2022</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+                        <div
+                         class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all"
+                            data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                         >
+
                             <figure><img src={blogImg5} alt="Shoes" className='w-full' /></figure>
                             <div class="card-body">
                                 <div className='flex gap-5'>
@@ -198,7 +255,7 @@ const Blogs = () => {
                                     <span style={{ "color": "#acace6" }}>|</span>
                                     <p className='text-blue-500 text-base'>Megento</p>
                                 </div>
-                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium'>Create A WordPress Multi Step Form With weForms</Link>
+                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>Create A WordPress Multi Step Form With weForms</Link>
                                 <p className='text-base' style={{ "color": "#6b707f" }}>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
                                 <div class="card-actions justify-start">
                                     <div className='flex gap-5 items-center justify-start mt-8'>
@@ -207,15 +264,24 @@ const Blogs = () => {
                                         </div>
                                         <div className='flex justify-between items-center'>
                                             <div>
-                                                <p className='text-xl'>Jason Response</p>
-                                                <p className='text-sm'>Jul 14, 2022</p>
+                                                <p className='text-xl whiteTextToBlack'>Jason Response</p>
+                                                <p className='text-sm commonParagraph'>Jul 14, 2022</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all">
+                        <div
+                         class="card lg:w-96 md:w-80 w-80 bg-base-100 shadow-md hover:shadow-2xl transition-all"
+                            data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                         >
                             <figure><img src={blogImg6} alt="Shoes" className='w-full' /></figure>
                             <div class="card-body">
                                 <div className='flex gap-5'>
@@ -223,7 +289,7 @@ const Blogs = () => {
                                     <span style={{ "color": "#acace6" }}>|</span>
                                     <p className='text-blue-500 text-base'>E-commerce</p>
                                 </div>
-                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium'>The Grand Ecommerce Giveaway Worth</Link>
+                                <Link to='#' className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>The Grand Ecommerce Giveaway Worth</Link>
                                 <p className='text-base' style={{ "color": "#6b707f" }}>The pressure to keep our skills sharp is constant. Mastering new skills may...</p>
                                 <div class="card-actions justify-start">
                                     <div className='flex gap-5 items-center justify-start mt-8'>
@@ -232,8 +298,8 @@ const Blogs = () => {
                                         </div>
                                         <div className='flex justify-between items-center'>
                                             <div>
-                                                <p className='text-xl'>Jason Response</p>
-                                                <p className='text-sm'>Jul 14, 2022</p>
+                                                <p className='text-xl whiteTextToBlack'>Jason Response</p>
+                                                <p className='text-sm commonParagraph'>Jul 14, 2022</p>
                                             </div>
                                         </div>
                                     </div>

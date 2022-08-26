@@ -15,7 +15,7 @@ const ReactDashboard = () => {
                     </div>
                     <div className="drawer-side shadow-2xl ">
                         <label for="next-button" className="drawer-overlay"></label>
-                        <ul className="menu p-4 overflow-y-auto w-80 lg:bg-white bg-base-200 text-base-content mt-20" >
+                        <ul className="menu p-4 overflow-y-auto w-80 lg:bg-white bg-base-200 text-base-content mt-20 CardsCommonBg blackToWhite" >
                             <li><Link to='/reactDashboard'>INSTALLATION</Link></li>
                             <li><Link to='/reactDashboard/mainconcepts'>MAIN CONCEPTS</Link></li>
                         </ul>

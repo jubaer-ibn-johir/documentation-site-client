@@ -66,10 +66,10 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const NotFound = () => {
   return (
-    <div >
+    <div className="componentsCommonBody">
       <ScrollToTop smooth color="red" top='20' />
-      <section class="page_404 ">
-        <div class="">
+      <section class="page_404 componentsCommonBody">
+        <div class="componentsCommonBody">
           <div class="row mt-8">
             <div class="col-sm-12 ">
               <div class="col-sm-10 col-sm-offset-1  text-center">
