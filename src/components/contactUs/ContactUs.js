@@ -3,7 +3,7 @@ import { FaEnvelope } from 'react-icons/fa';
 import { HiLocationMarker } from 'react-icons/hi';
 import { IoIosCall } from 'react-icons/io';
 import contactBg5 from '../../assets/contact-us/contactBg5.png';
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import ScrollToTop from 'react-scroll-to-top';
 

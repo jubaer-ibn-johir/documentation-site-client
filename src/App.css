@@ -72,3 +72,12 @@
 #dark .CardsCommonBgSecondary {
   background-color: rgb(83, 99, 122) !important;
 }
+
+#dark .swiper-slide {
+  background-color: rgb(51 65 85) !important;
+}
+
+#dark .customBg {
+  background-color: rgb(60, 76, 98) !important;
+  box-shadow: -3px -1px 9px #d9d9d9, -1px -1px 11px #ffffff;
+}
