@@ -69,7 +69,7 @@ const AddReview = () => {
     }
     return (
         <div>
-            <div className='flex justify-center items-center bg-slate-300 '>
+            <div className='flex justify-center items-center bg-slate-300 componentsCommonBody pb-44 pt-28 '>
 
                 <Card sx={{ background: "rgb(103 232 249)", padding: 3, boxShadow: 3, marginTop: '100px', marginBottom: '50px', borderRadius: 3, }}>
                     {/* <CardMedia
@@ -98,8 +98,8 @@ const AddReview = () => {
                                         activeColor="#ffd700"
                                     />
                                 </div>
-                                <textarea {...register("textArea")} cols="30" rows="5" placeholder='Add a Review' className='w-full outline-none px-5 py-2 rounded-md mb-3 bg-cyan-200' />
-                                <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-cyan-300 cursor-pointer w-28' value="Add" />
+                                <textarea {...register("textArea")} cols="30" rows="5" required placeholder='Add a Review' className='w-full outline-none px-5 py-2 rounded-md mb-3 bg-cyan-200' />
+                                <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-cyan-300 cursor-pointer w-28'  value="Add" />
                             </form>
                         </div>
 
