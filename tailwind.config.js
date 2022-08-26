@@ -8,15 +8,14 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#0FCFEC",
+          primary: "#4070f4",
           secondary: "#19D3AE",
-          accent: "#3A4256",
+          accent: "#E3F2FD",
           neutral: "#3d4451",
           "base-100": "#ffffff",
         },
       },
       "dark",
-      "cupcake",
     ],
   },
   plugins: [require("daisyui")],
