@@ -5,7 +5,7 @@ import ScrollToTop from 'react-scroll-to-top';
 const SingleAnswer = ({ answer }) => {
     const { aPhoto, aAnswer, aName, aDate } = answer
     return (
-        <div className='border-b-2 pb-5'>
+        <div className='border-b-2 bg-white my-5 rounded-md px-5 pt-2 pb-5'>
             <ScrollToTop smooth color="red" top='20' />
             <div className='my-5'>
                 <p>{aAnswer}</p>

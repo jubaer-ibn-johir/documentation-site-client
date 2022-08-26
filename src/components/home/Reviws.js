@@ -13,10 +13,11 @@ import avatar4 from '../../assets/home-img/img-4.png';
 import avatar5 from '../../assets/home-img/img-5.png';
 import avatar6 from '../../assets/home-img/img-6.png';
 import AddReview from './AddReview';
+import { Link } from 'react-router-dom';
 
 const Reviws = () => {
     return (
-        <div style={{ "backgroundColor": "#F8FAFC" }} className="py-5">
+        <div  className="py-5">
             <div className="my-16 lg:max-w-7xl mx-auto">
                 <h1 className="text-center text-4xl font-semibold tracking-wide">What People Says</h1>
                 <p className="text-center text-xl my-5 text-gray-500">We care about your opinion</p>
@@ -60,7 +61,7 @@ const Reviws = () => {
 
                 >
                     <SwiperSlide>
-                        <div className="p-3" style={{ "backgroundColor": "#F8FAFC" }}>
+                        <div className="p-3">
                             <div className="p-7 rounded-lg customBg">
                                 <p>Unleash cross-media information without cross-media value maximize timely deliverables for real-time. Unleash cross-media information without cross-media value maximize timely deliverables for real-time.</p>
                             </div>
@@ -85,7 +86,7 @@ const Reviws = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="p-3" style={{ "backgroundColor": "#F8FAFC" }}>
+                        <div className="p-3" >
                             <div className="p-7 rounded-lg customBg">
                                 <p>Unleash cross-media information without cross-media value maximize timely deliverables for real-time. Unleash cross-media information without cross-media value maximize timely deliverables for real-time.</p>
                             </div>
@@ -110,7 +111,7 @@ const Reviws = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="p-3" style={{ "backgroundColor": "#F8FAFC" }}>
+                        <div className="p-3">
                             <div className="p-7 rounded-lg customBg">
                                 <p>Unleash cross-media information without cross-media value maximize timely deliverables for real-time. Unleash cross-media information without cross-media value maximize timely deliverables for real-time.</p>
                             </div>
@@ -135,7 +136,7 @@ const Reviws = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="p-3" style={{ "backgroundColor": "#F8FAFC" }}>
+                        <div className="p-3">
                             <div className="p-7 rounded-lg customBg">
                                 <p>Unleash cross-media information without cross-media value maximize timely deliverables for real-time. Unleash cross-media information without cross-media value maximize timely deliverables for real-time.</p>
                             </div>
@@ -160,7 +161,7 @@ const Reviws = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="p-3" style={{ "backgroundColor": "#F8FAFC" }}>
+                        <div className="p-3" >
                             <div className="p-7 rounded-lg customBg">
                                 <p>Unleash cross-media information without cross-media value maximize timely deliverables for real-time. Unleash cross-media information without cross-media value maximize timely deliverables for real-time.</p>
                             </div>
@@ -185,7 +186,7 @@ const Reviws = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="p-3" style={{ "backgroundColor": "#F8FAFC" }}>
+                        <div className="p-3" >
                             <div className="p-7 rounded-lg customBg">
                                 <p>Unleash cross-media information without cross-media value maximize timely deliverables for real-time. Unleash cross-media information without cross-media value maximize timely deliverables for real-time.</p>
                             </div>
@@ -211,9 +212,9 @@ const Reviws = () => {
                 </Swiper>
                 <div className='my-16'>
                     <div className='text-center'>
-                        <label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label>
+                        <Link to='/addReview'>    <label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label></Link>
 
-                        <AddReview></AddReview>
+                        {/* <AddReview></AddReview> */}
 
                     </div >
                 </div >

@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 
 /* width */
@@ -25,12 +25,23 @@
 }
 
 #light {
-  background-color: #fff;
-  /* color: #000; */
+  background-color: #fff !important;
+  color: #000 !important;
 }
 
 #dark {
-  background-color: rgb(51 65 85);
-  /* color: #fff !important; */
+  background-color: rgb(51 65 85) !important;
+  color: #fff !important;
 
+}
+#dark  .title span{
+  color: #fff !important;
+}
+/* #dark  .commonBg{
+  background-color: rgb(71, 80, 93)!important;
+} */
+
+
+.toggole-button{
+  width: 20px;
 }

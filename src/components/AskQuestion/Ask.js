@@ -21,7 +21,7 @@ const Ask = () => {
     return (
         <div>
             <ScrollToTop smooth color="red" top='20' />
-            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(90deg, rgba(52,156,176,1) 0%, rgba(0,76,119,1) 100%)' }}>
+            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='lg:text-xl md:text-xl text-lg text-white text-center mt-3'>Find the answer of your question</p>
             </div>
@@ -29,17 +29,18 @@ const Ask = () => {
                 <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                     <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
                         <div className='lg:w-2/3 md:w-2/3 w-full'>
-                            <div className='bg-white p-5'>
+                            <div className='bg-white p-5 rounded-md'>
                                 <p className='text-center font-semibold text-2xl mb-3'>Search</p>
-                                <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-5 justify-items-center">
-                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center">
+                                    <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none rounded-r-none" {...register("searchValue", { required: true, maxLength: 20 })} />
+                                    <input type="submit" className='text-white border-2 bg-slate-500 border-slate-500 font-bold text-lg px-5 py-2 rounded-xl rounded-l-none gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-all cursor-pointer text-center' value="Submit" />
                                 </form>
                             </div>
                             <div className='grid gap-5'>
-                                <div className='mt-5'>
+                                <div className='mt-16'>
                                     <div className='flex justify-between items-center'>
                                         <p className='font-semibold text-3xl mb-3'>Questions</p>
-                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-transparent transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-white transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                                     </div>
 
                                     <div>
@@ -53,7 +54,7 @@ const Ask = () => {
                             </div>
                         </div>
                         <div className='lg:w-1/3 md:w-1/3 w-full'>
-                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center'>
+                            <div className='bg-white p-5 grid grid-cols-1 justify-items-center rounded-md'>
                                 <p className='text-center font-semibold text-2xl mb-3 '>Find Category Wise Question
                                 </p>
                                 <div class="form-control w-full max-w-xs">

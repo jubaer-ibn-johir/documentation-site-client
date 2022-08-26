@@ -11,13 +11,12 @@ import { DiMongodb } from "react-icons/di";
 const Details = () => {
     return (
         <div className='mt-10 max-w-7xl mx-auto' >
-            <div class="hero-content text-center text-neutral-content">
-                <div class="flex justify-center items-center">
-                    <div className='mb-10'>
-                        <h1 class="mb-2 text-2xl lg:text-4xl font-semibold tracking-wider text-black">Know about our EasyDocs</h1>
-                        <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
-                    </div>
-                </div>
+            
+            <div className='flex justify-center items-center mb-10'>
+              <div>
+                    <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>
+                    <p class=" text-gray-500 text-lg lg:text-2xl">The best documentation website in online with various kinds of documentation & Feature.</p>
+              </div>
             </div>
             <div className=''>
                 <Tabs>
@@ -31,34 +30,34 @@ const Details = () => {
                     </TabList>
 
                     <TabPanel>
-                        <div className='hero-content text-center flex justify-center items-center mt-10'>
+                        <div className='text-center flex justify-center items-center mt-5'>
                             <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
                                 <CgFileDocument className='w-12 h-12 text-cyan-500' />
                             </div>
                             <div class="title"><span>EasyDocs Documentation</span></div>
                         </div>
-                        <div className='grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1  mt-10 '>
+                        <div className='grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 my-16'>
                             <div >
                                 <img className=' w-100' src="https://docs-client-site.vercel.app/_next/image?url=https%3A%2F%2Fwordpress-theme.spider-themes.net%2Fdocy-dark%2Fwp-content%2Fuploads%2F2019%2F04%2Fspinner_logo-1.png&w=96&q=75" alt="" />
                                 <h1 className='text-2xl text-cyan-500 font-bold mt-5'>EasyDocs</h1>
                                 <p className='text-xl mb-5 mt-3 '>EasyDoc is a resourceful, responsive, and high-performance online documentation website.</p>
                             </div>
                             <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-20 grid-cols-1 mt-10'>
-                                <div>
+                                <div className=''>
                                     <div className='text-2xl mb-5 text-cyan-500'>Docs</div>
                                     <div className='flex'>
                                         <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
                                         <h1 className='text-xl ml-6'> This is a   Documentation base web-site , where every one can learn everything about React, Redux & NextJs. This website is mainly made with ReactJs.</h1>
                                     </div>
                                 </div>
-                                <div>
+                                <div className=''>
                                     <div className='text-2xl mb-5 text-cyan-500'>Blogs</div>
                                     <div className='flex'>
                                         <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
                                         <h1 className='text-xl ml-6'> The goal of the project is to give facilities to post documentation or blog and give support in making different types of documentation or blog.</h1>
                                     </div>
                                 </div>
-                                <div>
+                                <div className=''>
                                     <div className='text-2xl mb-5 text-cyan-500'>Dashboard</div>
                                     <div className='flex'>
                                         <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />
@@ -66,7 +65,7 @@ const Details = () => {
                                         </h1>
                                     </div>
                                 </div>
-                                <div>
+                                <div className=''>
                                     <div className='text-2xl mb-5 text-cyan-500'>ChangeLog</div>
                                     <div className='flex'>
                                         <IoArrowRedoSharp className='w-12 h-12 text-cyan-500' />

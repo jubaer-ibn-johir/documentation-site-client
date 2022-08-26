@@ -47,6 +47,7 @@ import Ask from './components/AskQuestion/Ask';
 import Answer from './components/AskQuestion/Answer';
 import Navbar from './components/shared/Navbar';
 import { createContext, useState } from 'react';
+import AddReview from './components/home/AddReview';
 export const ThemeContext = createContext(null);
 
 function App() {
@@ -58,9 +59,11 @@ function App() {
       <div id={theme}>
         {/* <Hearder></Hearder> */}
         <Navbar></Navbar>
+        
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
+          <Route path='/addReview' element={<AddReview></AddReview>}></Route>
           <Route path="/ask" element={<Ask></Ask>}></Route>
           <Route path="/askQuestion" element={<AskQuestion></AskQuestion>}></Route>
           <Route path="/answer/:ansId" element={<Answer></Answer>}></Route>
@@ -71,9 +74,8 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/docs" element={<Docs></Docs>} />
           <Route path="/blog" element={<Blogs></Blogs>} />
-          <Route path="/add-blog" element={<AddBlogs></AddBlogs>} />
-
-          <Route path="/blogDetails" element={<BlogDetails />} />
+          <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
+          <Route path="/blogDetails/:blogId" element={<BlogDetails />} />
           <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
           <Route path="/reactjs" element={<Reactjs></Reactjs>} />
           <Route path="/redux" element={<Reduxjs></Reduxjs>} />

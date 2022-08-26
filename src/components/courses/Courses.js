@@ -14,18 +14,11 @@ const Courses = () => {
     return (
         <div>
             <ScrollToTop smooth color="red" top='20' />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div className='bg-white lg:pt-10 md:pt-44 pt-32 pb-12 border border-b-2 shadow-2xl'>
+            <div className='pt-44 pb-20 border border-b-2 shadow-2xl' style={{ background: 'linear-gradient(223deg, rgba(77,184,255,1) 0%, rgba(255,144,173,1) 50%, rgba(90,187,255,1) 100%)' }}>
                 <p className='lg:text-5xl md:text-4xl text-3xl font-semibold text-center'>Courses</p>
-
             </div>
             <div className='lg:flex md:grid md:grid-cols-2 grid grid-cols-1 justify-center items-center gap-5 bg-accent '>
                 {
-
                     courses.map(course => <CourseDetails
                         key={course.id}
                         course={course}

@@ -12,7 +12,7 @@ const SingleQuestion = ({ question }) => {
             .then(data => setAnswers(data))
     }, [answers])
     return (
-        <div className='bg-white p-5 mt-5'>
+        <div className='bg-white p-5 mt-5 rounded-md'>
             <ScrollToTop smooth color="red" top='20' />
             <p className='text-sm'>Skill</p>
             <Link to={`/answer/${_id}`} className='text-xl font-bold hover:underline'>{title}</Link>
