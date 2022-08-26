@@ -141,7 +141,6 @@ const Navbar = () => {
           }
           <li>
             <div className='toggole-button'>
-              {/* <label> {theme === "light" ? "Light" : "Dark"}</label> */}
               <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
             </div>
           </li>

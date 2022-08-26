@@ -5,7 +5,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { toast } from 'react-toastify';
 
 
-const CheckoutForm = (props) => {
+const CheckoutForm = ({ payment }) => {
     const stripe = useStripe()
     const elements = useElements()
     const [cardError, setCardError] = useState('')
@@ -14,7 +14,7 @@ const CheckoutForm = (props) => {
     const [transactionId, setTransactionId] = useState('');
     const [clientSecret, setClientSecret] = useState('')
     const navigate = useNavigate()
-    const { price, name, email, _id } = props.payment
+    const { price, name, email, _id } = payment
 
     useEffect(() => {
         if (price) {
@@ -55,7 +55,7 @@ const CheckoutForm = (props) => {
         });
 
         setCardError(error?.message || '')
-        setSuccess('')
+        // setSuccess('')
 
         const { paymentIntent, error: intentError } = await stripe.confirmCardPayment(
             clientSecret,
@@ -77,27 +77,27 @@ const CheckoutForm = (props) => {
         else {
             setCardError('');
             console.log(paymentIntent);
-            setTransactionId(paymentIntent.id)
             setSuccess('Your Payment is complete')
-            setProccessing(true)
-            toast('Your Payment is complete')
+            // setTransactionId(paymentIntent.id)
+            // setProccessing(true)
+            // toast('Your Payment is complete')
 
-            const payment = {
-                appointment: _id,
-                transactionId: paymentIntent.id
-            }
-            fetch(`http://localhost:5000/course/${_id}`, {
-                method: 'PATCH',
-                headers: {
-                    'content-type': 'application/json',
-                },
-                body: JSON.stringify(payment)
-            })
-                .then(res => res.json())
-                .then(data => {
-                    setProccessing(false)
-                    console.log(data)
-                })
+            // const payment = {
+            //     appointment: _id,
+            //     transactionId: paymentIntent.id
+            // }
+            // fetch(`http://localhost:5000/course/${_id}`, {
+            //     method: 'PATCH',
+            //     headers: {
+            //         'content-type': 'application/json',
+            //     },
+            //     body: JSON.stringify(payment)
+            // })
+            //     .then(res => res.json())
+            //     .then(data => {
+            //         setProccessing(false)
+            //         console.log(data)
+            //     })
 
         }
 

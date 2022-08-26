@@ -59,7 +59,7 @@ function App() {
       <div id={theme}>
         {/* <Hearder></Hearder> */}
         <Navbar></Navbar>
-        
+
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>

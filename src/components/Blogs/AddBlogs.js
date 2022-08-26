@@ -11,11 +11,6 @@ const AddBlogs = () => {
 
   console.log(value);
 
-
-
-
-
-
   // const { register, handleSubmit } = useForm();
   const onSubmit = (e) => {
     e.preventDefault()

@@ -6,8 +6,37 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import logo from '../../assets/logo/logo4.png'
 import whiteLogo from '../../assets/logo/white logo.png';
 import { ThemeContext } from '../../App';
+import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
+
 
 const Footer = () => {
+
+    const { register, handleSubmit } = useForm();
+
+    const onSubmit = data => {
+        console.log(data);
+
+        const url = 'http://localhost:5000/news';
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+                Swal.fire({
+                    title: 'Subcribe Successfully!',
+                    icon: 'success',
+                    confirmButtonText: 'ok'
+                })
+            })
+
+    }
+
     const [theme, setTheme] = useContext(ThemeContext)
     return (
         <div style={{ position: "relative", marginTop: "25px" }}>
@@ -39,12 +68,16 @@ const Footer = () => {
                     </div>
                     <div>
                         <h2 className='text-2xl font-medium py-8'>Newsletter</h2>
-                        <div class="form-control">
+                        <form onSubmit={handleSubmit(onSubmit)}>
                             <label class="input-group">
-                                <input type="text" placeholder="info@site.com" onFocus={{ borderd: "none" }} className="input bg-slate-100 focus:outline-none" />
-                                <span className='bg-cyan-500 text-white'>Email</span>
+                                <input {...register("email")} required type="text" placeholder="info@site.com" className="input bg-slate-100 focus:outline-none" />
+
+
+                                <input type="submit" value='Email' className='bg-cyan-500 text-white' />
+
                             </label>
-                        </div>
+
+                        </form>
                         <div className='mt-7'>
                             <span style={{ position: "relative", fontSize: "14px", marginTop: "120px" }}>
                                 Try for free once

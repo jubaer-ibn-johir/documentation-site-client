@@ -6,7 +6,7 @@ import ScrollToTop from 'react-scroll-to-top';
 const Courses = () => {
     const [courses, setCourses] = useState([])
     useEffect(() => {
-        const url = 'https://polar-shore-69456.herokuapp.com/course'
+        const url = 'http://localhost:5000/course'
         fetch(url)
             .then(res => res.json())
             .then(data => setCourses(data))
