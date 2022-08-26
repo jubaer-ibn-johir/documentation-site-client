@@ -183,7 +183,7 @@ const BlogDetails = () => {
                                             <img src={recentBlog.blogImage} alt="" className='h-16 w-16 rounded-md' />
                                         </div>
                                         <div>
-                                            <p className='text-lg font-medium'>{recentBlog?.blogTitle?.slice(0, 45)}</p>
+                                            <Link to={`/blogDetails/${recentBlog._id}`} className='text-lg font-medium'>{recentBlog?.blogTitle?.slice(0, 45)}</Link>
                                             <p className='text-sm' style={{ color: '#6b707f' }}>{recentBlog?.blogPostDate}</p>
                                         </div>
                                     </div>)
