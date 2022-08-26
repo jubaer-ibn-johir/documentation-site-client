@@ -31,7 +31,7 @@ const Footer = () => {
             .then(result => {
                 console.log(result);
                 Swal.fire({
-                    title: 'Successfully Posted!',
+                    title: 'Successfully Subscribeb!',
                     icon: 'success',
                     confirmButtonText: 'ok'
                 })
