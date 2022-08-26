@@ -15,7 +15,7 @@ const ReactHome = () => {
                 <h1 className='text-primary text-center text-5xl lg:text-7xl  font-bold pt-28'>React</h1>
                 <h2 className='text-2xl lg:text-4xl leading-9 text-center mt-12 text-white'>A JavaScript library for building user interfaces</h2>
                 <div className='flex justify-center items-center mt-20 mb-12 lg:mb-24'>
-                    <Link to='/reactDashboard'><button className='btn btn-primary  pt-6 py-12  lg:px-12 text-lg lg:text-xl  rounded'>Get Started</button></Link>
+                    <Link to='/reactDashboard'><button className='btn btn-primary  px-7 pt-4 pb-10 text-lg  rounded'>Get Started</button></Link>
                     <p className='text-primary text-2xl hover:text-white pl-5 lg:pl-10 leading-10 flex justify-center items-center'>Take the Tutorial <FiChevronRight className='mt-2'></FiChevronRight></p>
                 </div>
             </div>

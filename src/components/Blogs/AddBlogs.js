@@ -10,7 +10,7 @@ const AddBlogs = () => {
     const [user] = useAuthState(auth);
     const [category, setCategory] = useState('')
     const [userData, setUserData] = useState({});
-    const { register, handleSubmit ,reset} = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const { name, photo } = userData;
     useEffect(() => {
         const email = user?.email
@@ -87,23 +87,23 @@ const AddBlogs = () => {
                 <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='text-xl text-white text-center mt-3'>What's on your mind?</p>
             </div>
-            <div className='w-full bg-slate-100 py-20'>
-                <div className="w-1/2 mx-auto">
-                    <div className=" bg-white gap-5 px-24 py-20 shadow-lg hover:shadow-xl transition-all rounded-xl">
+            <div className='w-full bg-slate-100 pt-20 pb-56 componentsCommonBody'>
+                <div className="lg:w-1/2 md:w-3/4 w-full mx-auto">
+                    <div className=" bg-white gap-5 lg:px-24 md:px-16 px-5 lg:py-16 md:py-20 py-5 shadow-lg hover:shadow-xl transition-all rounded-xl CardsCommonBg">
                         <div className=''>
                             <form onSubmit={handleSubmit(onSubmit)} className="">
                                 <div className='grid grid-cols-12 gap-5 mb-5'>
-                                    <div className='col-span-6'>
+                                    <div className='lg:col-span-6 md:col-span-6 col-span-12'>
                                         <div className='w-full'>
                                             <p className='text-sm'>Title</p>
-                                            <input type="text" placeholder="Please enter a title" class="input w-full outline-none focus:outline-none border-none bg-slate-100" {...register("title", { required: true, maxLength: 100 })} />
+                                            <input type="text" placeholder="Please enter a title" class="input w-full outline-none focus:outline-none border-none bg-slate-100 CardsCommonBgSecondary" {...register("title", { required: true, maxLength: 100 })} />
                                         </div>
                                     </div>
-                                    <div className='col-span-6'>
+                                    <div className='lg:col-span-6 md:col-span-6 col-span-12'>
                                         <div>
                                             <p className='text-sm'>Select Category</p>
                                             <div class="form-control">
-                                                <select onChange={(e) => setCategory(e.target.value)} class="select select-bordered bg-slate-100 focus:outline-none">
+                                                <select onChange={(e) => setCategory(e.target.value)} class="select select-bordered bg-slate-100 focus:outline-none CardsCommonBgSecondary">
                                                     <option disabled selected>Select Category</option>
                                                     <option>Creative</option>
                                                     <option>Programming</option>
@@ -120,21 +120,21 @@ const AddBlogs = () => {
                                     </div>
                                 </div>
                                 <div className='grid grid-cols-12 gap-5 mb-5'>
-                                    <div className='col-span-6'>
+                                    <div className='lg:col-span-6 md:col-span-6 col-span-12'>
                                         <div className='w-full'>
                                             <p className='text-sm'>Time</p>
-                                            <input type="number" placeholder="Please enter a time" class="input w-full outline-none focus:outline-none border-none bg-slate-100" {...register("readTime", { required: true, maxLength: 100 })} />
+                                            <input type="number" placeholder="Please enter a time" class="input w-full outline-none focus:outline-none border-none bg-slate-100 CardsCommonBgSecondary" {...register("readTime", { required: true, maxLength: 100 })} />
                                         </div>
                                     </div>
-                                    <div className='col-span-6'>
+                                    <div className='lg:col-span-6 md:col-span-6 col-span-12'>
                                         <div className='w-full'>
                                             <p className='text-sm'>Image</p>
-                                            <input className="mb-3" type='file' {...register("blogImage")} />
+                                            <input className="mb-3 " type='file' {...register("blogImage")} />
                                         </div>
                                     </div>
 
                                 </div>
-                                <textarea {...register("description")} required cols="30" rows="10" placeholder='Description' className='w-full bg-slate-100 outline-none px-5 py-2 rounded-md mb-3' />
+                                <textarea {...register("description")} required cols="30" rows="10" placeholder='Description' className='w-full bg-slate-100 outline-none px-5 py-2 rounded-md mb-3 CardsCommonBgSecondary' />
                                 <input type="submit" className='text-slate-500 border-2 bg-slate-100 border-slate-500 font-bold text-xl px-5 py-2 rounded-xl gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-transparent transition-all cursor-pointer text-center' value="Submit" />
                             </form>
                         </div>
