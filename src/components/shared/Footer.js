@@ -15,7 +15,7 @@ import Swal from 'sweetalert2';
 
 const Footer = () => {
     const [theme, setTheme] = useContext(ThemeContext)
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
 
@@ -30,12 +30,17 @@ const Footer = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result);
+                reset()
+
                 Swal.fire({
                     title: 'Successfully Subscribeb!',
                     icon: 'success',
                     confirmButtonText: 'ok'
+
                 })
+
             })
+
 
     }
     return (
