@@ -75,7 +75,7 @@ function App() {
           <Route path="/docs" element={<Docs></Docs>} />
           <Route path="/blog" element={<Blogs></Blogs>} />
           <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
-          <Route path="/blogDetails" element={<BlogDetails />} />
+          <Route path="/blogDetails/:blogId" element={<BlogDetails />} />
           <Route path="/addBlogs" element={<AddBlogs></AddBlogs>} />
           <Route path="/reactjs" element={<Reactjs></Reactjs>} />
           <Route path="/redux" element={<Reduxjs></Reduxjs>} />
