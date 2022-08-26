@@ -6,6 +6,7 @@ import Solution from './Solution';
 import Details from './Details';
 import AddReview from './AddReview';
 import ScrollToTop from "react-scroll-to-top";
+import Newsletter from './Newsletter';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Solution></Solution>
             <Details></Details>
             <Reviws></Reviws>
+            {/* <Newsletter></Newsletter> */}
         </div>
     );
 };

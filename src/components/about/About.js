@@ -7,6 +7,7 @@ import hridoyVai2 from "../../assets/about-img/Hridoy vai2.png";
 import naeem from "../../assets/about-img/Naeem.jpg";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -76,7 +77,7 @@ const About = () => {
           </div>
         </div>
         <div
-          className="mb-20 lg:mx-8 md:mx-5 mx-3 py-16 lg:rounded-full md:rounded-3xl rounded-3xl shadow-xl"
+          className="mb-20 lg:mx-8 md:mx-5 mx-3 py-16 lg:rounded-full md:rounded-3xl rounded-3xl shadow-xl CardsCommonBg"
           style={{ backgroundColor: "#EBF8F4" }}
         >
           <div className="grid grid-cols-1 lg:gap-20 md:gap-16 gap-10">
@@ -93,7 +94,9 @@ const About = () => {
                 <div>
                   <div>
                     <h2 className="font-semibold text-xl">Jubaer Ibn Zahir</h2>
-                    <p className="mt-1 mb-3 text-sky-800">Team Leader</p>
+                    <p className="mt-1 mb-3 text-sky-800 blackToWhite">
+                      Team Leader
+                    </p>
                     <p className="text-gray-400">
                       A very talented, team leader,
                       <br /> Mr. Jubaer. His dedication helped
@@ -134,7 +137,9 @@ const About = () => {
                     <h2 className="font-semibold text-xl">
                       Rakibul Hasan Sohag
                     </h2>
-                    <p className="mt-1 mb-3 text-sky-800">Team Member</p>
+                    <p className="mt-1 mb-3 text-sky-800 blackToWhite">
+                      Team Member
+                    </p>
                     <p className="text-gray-400">
                       Another talented, helpful team
                       <br /> member, Mr. Sohag. He helps in the
@@ -177,7 +182,9 @@ const About = () => {
                     <h2 className="font-semibold text-xl">
                       Saiful Islam Hridoy
                     </h2>
-                    <p className="mt-1 mb-3 text-sky-800">Team Member</p>
+                    <p className="mt-1 mb-3 text-sky-800 blackToWhite">
+                      Team Member
+                    </p>
                     <p className="text-gray-400">
                       Mr. Hridoy, a talented, friendly
                       <br /> team member. He helps mostly
@@ -216,7 +223,9 @@ const About = () => {
                 <div>
                   <div>
                     <h2 className="font-semibold text-xl">Jannatun Naeem</h2>
-                    <p className="mt-1 mb-3 text-sky-800">Team Member</p>
+                    <p className="mt-1 mb-3 text-sky-800 blackToWhite">
+                      Team Member
+                    </p>
                     <p className="text-gray-400">
                       Mr. Naeem, a front-end designer,
                       <br /> helps in the designing part <br />

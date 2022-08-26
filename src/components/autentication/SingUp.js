@@ -41,7 +41,7 @@ const SingUp = () => {
   return (
     <div>
       <ScrollToTop smooth color="red" top='20' />
-      <div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center">
+      <div class="flex items-center min-h-screen p-4 bg-gray-100 lg:justify-center componentsCommonBody pb-56 lg:pt-36 md:pt-44 pt-20">
         <div class="flex flex-col overflow-hidden mt-16 bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md">
           <div class="p-4 py-6 text-white bg-teal-500	 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
             <div>
@@ -70,13 +70,13 @@ const SingUp = () => {
               </a>
             </p>
           </div>
-          <div class="p-5 bg-white md:flex-1">
-            <h3 class="my-4 text-2xl font-semibold text-gray-700">
+          <div class="p-5 bg-white md:flex-1 CardsCommonBg">
+            <h3 class="my-4 text-2xl font-semibold text-gray-700 blackToWhite">
               Account Sing Up
             </h3>
             <form onSubmit={handleSubmit} class="flex flex-col space-y-5">
               <div class="flex flex-col space-y-1">
-                <label for="name" class="text-sm font-semibold text-gray-500">
+                <label for="name" class="text-sm font-semibold text-gray-500 blackToWhite">
                   Name
                 </label>
                 <input
@@ -85,12 +85,12 @@ const SingUp = () => {
                   id="name"
                   name="name"
                   autofocus
-                  class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+                  class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200 CardsCommonBgSecondary "
                   required
                 />
               </div>
               <div class="flex flex-col space-y-1">
-                <label for="email" class="text-sm font-semibold text-gray-500">
+                <label for="email" class="text-sm font-semibold text-gray-500 blackToWhite">
                   Email address
                 </label>
                 <input
@@ -99,7 +99,7 @@ const SingUp = () => {
                   id="email"
                   name="email"
                   autofocus
-                  class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+                  class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200  CardsCommonBgSecondary"
                   required
                 />
               </div>
@@ -107,7 +107,7 @@ const SingUp = () => {
                 <div class="flex items-center justify-between">
                   <label
                     for="password"
-                    class="text-sm font-semibold text-gray-500"
+                    class="text-sm font-semibold text-gray-500 blackToWhite"
                   >
                     Password
                   </label>
@@ -117,7 +117,7 @@ const SingUp = () => {
                   name="password"
                   type="password"
                   id="password"
-                  class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200"
+                  class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200  CardsCommonBgSecondary"
                   required
                 />
               </div>

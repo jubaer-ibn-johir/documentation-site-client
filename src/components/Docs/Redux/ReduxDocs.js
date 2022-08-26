@@ -5,16 +5,16 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const ReduxDocs = () => {
     return (
-        <div>
+        <div className='bg-blue-900'>
             <ScrollToTop smooth color="red" top='20' />
             <div className="drawer drawer-mobile ">
                 <input id="next-button" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content ">
+                <div className="drawer-content  mt-20 bg-slate-200">
                     <Outlet></Outlet>
                 </div>
-                <div className="drawer-side mt-16 shadow-2xl lg:shadow-2xl lg:shadow-cyan-400">
+                <div className="drawer-side mt-20 shadow-2xl lg:shadow-2xl lg:shadow-cyan-400">
                     <label for="next-button" className="drawer-overlay"></label>
-                    <ul className="menu p-4 overflow-y-auto lg:w-80 md:w-80 w-64 text-base-content  shadow-2xl bg-white" >
+                    <ul className="menu p-4 overflow-y-auto lg:w-80 md:w-80 w-64 text-base-content  shadow-2xl bg-white CardsCommonBg blackToWhite" >
                         {/* <!-- Sidebar content here --> */}
                         <li className='rounded-none transition-all'><Link to="/get-started" className='lg:text-lg text-base visited:bg-white focus:text-cyan-500 focus:font-semibold'>Getting Started with Redux</Link></li>
                         <li className='rounded-none transition-all'><Link to="/get-started/installation" className='lg:text-lg text-base visited:bg-white focus:text-cyan-500 focus:font-semibold'>Installation</Link></li>

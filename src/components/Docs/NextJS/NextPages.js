@@ -10,7 +10,7 @@ const NextPages = () => {
     return (
         <div className='ml-7 mr-7'>
             <ScrollToTop smooth color="red" top='20' />
-            <h2 className='lg:text-4xl text-3xl font-bold mt-16'>Pages</h2>
+            <h2 className='lg:text-4xl text-3xl font-bold pt-5'>Pages</h2>
             <p className='text-xl mt-5'>In Next.js, a page is a React Component exported from a <span className='text-pink-500'>`.js`</span> , <span className='text-pink-500'>`.jsx`</span> , <span className='text-pink-500'>`.ts`</span> , or <span className='text-pink-500'>`.tsx`</span> file in the pages directory. Each page is associated with a route based on its file name.</p>
             <p className='text-xl mt-5'><span className='font-bold'>Example:</span> If you create pages/about.js that exports a React component like below, it will be accessible at /about.</p>
             <div className='my-7'>

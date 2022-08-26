@@ -66,26 +66,26 @@ const AskQuestion = () => {
         <div>
             <ScrollToTop smooth color="red" top='20' />
             <div className='pt-52 pb-16' style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
-                <h1 className='text-5xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
-                <p className='text-xl text-white text-center mt-3'>Shear your question with EasyDoc and find the best answer</p>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
+                <p className='lg:text-xl md:text-xl text-base text-white text-center mt-3'>Shear your question with EasyDoc and find the best answer</p>
             </div>
-            <div className='w-full bg-slate-100 py-20'>
-                <div className="w-1/2 mx-auto">
-                    <div className=" bg-slate-200 gap-5 px-24 py-20 shadow-lg hover:shadow-xl transition-all rounded-xl">
+            <div className='w-full bg-slate-100 py-20 componentsCommonBody pb-56'>
+                <div className="lg:w-1/2 md:w-4/5 w-full mx-auto">
+                    <div className=" bg-slate-200 gap-5 lg:px-24 md:px-16 px-5 lg:py-16 md:py-20 py-5 shadow-lg hover:shadow-xl transition-all rounded-xl CardsCommonBg">
                         <div className=''>
                             <form onSubmit={handleSubmit(onSubmit)} className="">
                                 <div className='grid grid-cols-12 gap-5 mb-5'>
                                     <div className='col-span-6'>
                                         <div className='w-full'>
                                             <p className='text-sm'>Title</p>
-                                            <input type="text" placeholder="Please enter a title" class="input w-full outline-none focus:outline-none border-none bg-white" {...register("title", { required: true, maxLength: 100 })} />
+                                            <input type="text" placeholder="Please enter a title" class="input w-full outline-none focus:outline-none border-none bg-white CardsCommonBgSecondary" {...register("title", { required: true, maxLength: 100 })} />
                                         </div>
                                     </div>
                                     <div className='col-span-6'>
                                         <div>
                                             <p className='text-sm'>Select Category</p>
                                             <div class="form-control">
-                                                <select class="select select-bordered bg-white focus:outline-none">
+                                                <select class="select select-bordered bg-white focus:outline-none CardsCommonBgSecondary">
                                                     <option disabled selected>Select Category</option>
                                                     <option>Creative</option>
                                                     <option>Programming</option>
@@ -101,7 +101,7 @@ const AskQuestion = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <textarea {...register("description")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3' />
+                                <textarea {...register("description")} required cols="30" rows="10" placeholder='Description' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3 CardsCommonBgSecondary' />
                                 <input type="submit" className='text-white border-2 bg-slate-500 border-slate-500 font-bold text-lg px-5 py-2 rounded-xl gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-white transition-all cursor-pointer text-center' value="Submit" />
                             </form>
                         </div>

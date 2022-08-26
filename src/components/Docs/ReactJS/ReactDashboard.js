@@ -5,24 +5,24 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const ReactDashboard = () => {
     return (
-        <div>
+        <div className='bg-blue-900'>
             <ScrollToTop smooth color="red" top='20' />
             <div>
                 <div className="drawer drawer-mobile">
                     <input id="next-button" type="checkbox" className="drawer-toggle" />
-                    <div className="drawer-content mt-32">
+                    <div className="drawer-content mt-20 bg-slate-200">
                         <Outlet></Outlet>
                     </div>
-                    <div className="drawer-side shadow-2xl ">
+                    <div className="drawer-side mt-20 shadow-2xl">
                         <label for="next-button" className="drawer-overlay"></label>
-                        <ul className="menu p-4 overflow-y-auto w-80 lg:bg-white bg-base-200 text-base-content mt-20" >
-                            <li><Link to='/reactDashboard'>INSTALLATION</Link></li>
-                            <li><Link to='/reactDashboard/mainconcepts'>MAIN CONCEPTS</Link></li>
+                        <ul className="menu p-4 overflow-y-auto lg:bg-white CardsCommonBg blackToWhite lg:w-80 md:w-80 w-64 text-base-content  shadow-2xl bg-white CardsCommonBg blackToWhite" >
+                            <li><Link to='/reactDashboard' className='lg:text-lg text-base visited:bg-white focus:text-cyan-500 focus:font-semibold'>Installation</Link></li>
+                            <li><Link to='/reactDashboard/mainconcepts' className='lg:text-lg text-base visited:bg-white focus:text-cyan-500 focus:font-semibold'>Main Concepts</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className='text-right bottom-0 fixed right-0'>
-                    <label for="next-button" className="btn btn-primary drawer-button lg:hidden rounded-lg">Next <FaGreaterThan /></label>
+                    <label for="next-button" className="btn btn-primary drawer-button text-white bg-cyan-500 px-5 py-3 lg:hidden rounded-3xl border-cyan-500 hover:border-cyan-500 hover:bg-white hover:text-cyan-500 transition-all tracking-widest">Next <FaGreaterThan /></label>
                 </div>
             </div>
             {/* <div>
