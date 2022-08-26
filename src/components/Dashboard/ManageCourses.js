@@ -4,27 +4,27 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const ManageCourses = () => {
     return (
-        <div className='lg:p-8 md:p-8 p-4 h-full bg-blue-50 mb-12 rounded-xl'>
+        <div className='lg:p-8 md:p-8 p-4 h-full bg-blue-50 mb-12 componentsCommonBody'>
             <ScrollToTop smooth color="red" top='20' />
             <div>
-                <h1 className='lg:text-5xl md:text-4xl text-3xl text-center my-5 font-semibold text-blue-900'>Manage Courses</h1>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl text-center my-5 font-semibold text-blue-900 blackToWhite'>Manage Courses</h1>
             </div>
             <div class="overflow-x-auto shadow-xl">
                 <table class="table w-full">
                     <thead>
                         <tr>
-                            <th className='bg-blue-300'></th>
-                            <th className='bg-blue-300'>Courses</th>
-                            <th className='bg-blue-300'>Short Description</th>
-                            <th className='bg-blue-300'>Delete</th>
+                            <th className='bg-blue-300 CardsCommonBgSecondary'></th>
+                            <th className='bg-blue-300 CardsCommonBgSecondary'>Courses</th>
+                            <th className='bg-blue-300 CardsCommonBgSecondary'>Short Description</th>
+                            <th className='bg-blue-300 CardsCommonBgSecondary'>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>1</th>
-                            <td className='font-semibold'>Portfolio Tutorial</td>
-                            <td>Lorem ipsum dolor sit amet, consectetu radipisi...</td>
-                            <th>
+                            <th className='CardsCommonBg'>1</th>
+                            <td className='font-semibold CardsCommonBg'>Portfolio Tutorial</td>
+                            <td className='CardsCommonBg'>Lorem ipsum dolor sit amet, consectetu radipisi...</td>
+                            <th className='CardsCommonBg'>
                                 <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
                                     <div className='text-red-500 text-3xl leading-3'>
                                         <button className='text-center'><AiFillDelete /></button>
@@ -33,10 +33,10 @@ const ManageCourses = () => {
                             </th>
                         </tr>
                         <tr>
-                            <th>2</th>
-                            <td className='font-semibold'>Material UI Crash Course</td>
-                            <td>Lorem ipsum dolor sit amet, consectetu radipisi...</td>
-                            <th>
+                            <th className='CardsCommonBg'>2</th>
+                            <td className='font-semibold CardsCommonBg'>Material UI Crash Course</td>
+                            <td className='CardsCommonBg'>Lorem ipsum dolor sit amet, consectetu radipisi...</td>
+                            <th className='CardsCommonBg'>
                                 <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
                                     <div className='text-red-500 text-3xl leading-3'>
                                         <button className='text-center'><AiFillDelete /></button>
@@ -45,10 +45,10 @@ const ManageCourses = () => {
                             </th>
                         </tr>
                         <tr>
-                            <th>3</th>
-                            <td className='font-semibold'>React Crash Course</td>
-                            <td>Lorem ipsum dolor sit amet, consectetu radipisi...</td>
-                            <th>
+                            <th className='CardsCommonBg'>3</th>
+                            <td className='font-semibold CardsCommonBg'>React Crash Course</td>
+                            <td className='CardsCommonBg'>Lorem ipsum dolor sit amet, consectetu radipisi...</td>
+                            <th className='CardsCommonBg'>
                                 <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
                                     <div className='text-red-500 text-3xl leading-3'>
                                         <button className='text-center'><AiFillDelete /></button>

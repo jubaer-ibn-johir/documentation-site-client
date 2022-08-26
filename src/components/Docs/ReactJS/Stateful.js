@@ -13,7 +13,7 @@ const Stateful = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2  gap-x-12'>
         <div className='px-5 lg:px-0 mr-0 lg:mr-48'>
           <h2 className='text-4xl font-bold'>A Stateful Component</h2>
-          <p className='mt-10 text-2xl leading-9 '>In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state). When a component’s state data changes, the rendered markup will be updated by re-invoking render().
+          <p className='mt-10 text-xl leading-9 commonParagraph'>In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state). When a component's state data changes, the rendered markup will be updated by re-invoking render().
           </p>
         </div>
         <div className='text-lg '>

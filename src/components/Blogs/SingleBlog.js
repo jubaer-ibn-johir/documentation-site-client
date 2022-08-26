@@ -13,7 +13,7 @@ const SingleBlog = ({blog}) => {
                 <span style={{ "color": "#acace6" }}>|</span>
                 <p className='text-blue-500 text-base'>{blogCategory}</p>
             </div>
-            <Link to={`/blogDetails/${_id}`} className='text-2xl hover:text-blue-700 font-medium'>{blogTitle}</Link>
+            <Link to={`/blogDetails/${_id}`} className='text-2xl hover:text-blue-700 font-medium whiteTextToBlack'>{blogTitle}</Link>
             <p className='text-base' style={{ "color": "#6b707f" }}>{blogDescription.slice(0,65)}...</p>
             <div class="card-actions justify-start">
                 <div className='flex gap-5 items-center justify-start mt-8'>
@@ -22,8 +22,8 @@ const SingleBlog = ({blog}) => {
                     </div>
                     <div className='flex justify-between items-center'>
                         <div>
-                            <p className='text-xl'>{blogUploaderName}</p>
-                            <p className='text-sm'>{blogPostDate}</p>
+                            <p className='text-xl whiteTextToBlack'>{blogUploaderName}</p>
+                            <p className='text-sm commonParagraph'>{blogPostDate}</p>
                         </div>
                     </div>
                 </div>

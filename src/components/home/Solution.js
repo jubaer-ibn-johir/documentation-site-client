@@ -13,7 +13,7 @@ const Solution = () => {
                     <p className='lg:text-xl md:text-lg text-lg lg:mx-0 md:mx-0 mx-4 mt-6'>Easily create Documentation, Knowledge-base, FAQ, Forum and more</p>
                 </div>
                 <div className='lg:flex grid grid-cols-1 gap-6'>
-                    <div className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5 commonBg bg-cyan-500 hover:shadow-2xl transition-all'>
+                    <div className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5 CardsCommonBg bg-cyan-500 hover:shadow-2xl transition-all rounded-md'>
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>
                             <img className='w-16' src={noteIcon} alt="" />
                         </div>
@@ -23,11 +23,11 @@ const Solution = () => {
                             <Link to="/contact" className='font-bold flex items-center text-xl'>Go to help page <FaLongArrowAltRight className='ml-2' /></Link>
                         </div>
                     </div>
-                    <div className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5  commonBg bg-cyan-500 hover:shadow-2xl transition-all'>
+                    <div className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5  CardsCommonBg bg-cyan-500 hover:shadow-2xl transition-all rounded-md'>
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>
                             <img className='w-16' src={faqIcon} alt="" />
                         </div>
-                        <div className='text-white w-96'>
+                        <div className='text-white w-96' >
                             <h3 className='lg:text-2xl md:text-2xl text-xl font-bold'>Frequently Asked Questions</h3>
                             <p className='lg:text-lg md:text-lg text-sm my-2'>We have some frequently asked questions feature to help you.</p>
                             <Link to="/ask" className='font-bold flex items-center text-xl'>Go to FAQ page <FaLongArrowAltRight className='ml-2' /></Link>

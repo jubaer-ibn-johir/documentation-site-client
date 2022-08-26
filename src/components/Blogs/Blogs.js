@@ -32,7 +32,7 @@ const Blogs = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
+        <div className='pb-44'>
             <div>
                 <div style={{ background: 'linear-gradient(90deg, rgba(173,173,198,1) 0%, rgba(223,205,205,1) 55%, rgba(168,186,195,1) 100%)' }} >
                     <div className='max-w-7xl mx-auto'>
@@ -53,9 +53,9 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:py-24 md:py-24 py-20' style={{ "backgroundColor": "#FAFCFD" }}>
+                <div className='lg:py-24 md:py-24 py-20 componentsCommonBody' style={{ "backgroundColor": "#FAFCFD" }}>
                     <div className='max-w-5xl lg:mx-auto md:mx-5 mx-5'>
-                        <div className='lg:flex md:flex grid grid-cols-1 rounded-xl' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
+                        <div className='lg:flex md:flex grid grid-cols-1 rounded-xl CardsCommonBg' style={{ 'boxShadow': "0 .5rem 1rem rgba(0,0,0,.15)" }}>
                             <div className='lg:py-12 md:py-8 py-8 lg:pl-12 md:pl-5 pl-5 lg:pr-8 md:pr-5 pr-5 lg:w-1/2 md:w-1/2'>
                                 <div className='flex gap-5'>
                                     <p className='text-sm' style={{ "color": "#acace6" }}>{blogs[0]?.readTime} min read time</p>
@@ -88,7 +88,7 @@ const Blogs = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ "backgroundColor": "#FAFCFD", "borderTop": "1px solid #e7edf0" }}>
+                <div style={{ "backgroundColor": "#FAFCFD", "borderTop": "1px solid #e7edf0" }} className='CardsCommonBg'>
                     <div className='max-w-5xl lg:mx-auto md:mx-5 mx-auto lg:flex md:flex grid grid-cols-4 lg:gap-0 md:gap-0 gap-0'>
                         <li className="h-16 flex items-center justify-center lg:px-5 md:px-2 px-1 hover:border-t-2 hover:border-slate-400 hover:bg-slate-200"><Link to="#">All</Link></li>
                         <li className="h-16 flex items-center justify-center lg:px-5 md:px-2 px-1 hover:border-t-2 hover:border-slate-400 hover:bg-slate-200"><Link to="#">Startups</Link></li>
@@ -107,6 +107,7 @@ const Blogs = () => {
                      {
                        blogs.map(blog=><SingleBlog key={blog._id} blog={blog}></SingleBlog>)
                      } 
+                      
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TutorialCard from './TutorialCard';
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import Loading from '../shared/Loading';
 import './Tutorial.css'
 import ScrollToTop from 'react-scroll-to-top';
@@ -39,15 +39,15 @@ const Tutorial = () => {
         return <Loading></Loading>
     }
     return (
-        <div style={{ backgroundColor: '#d4e0ff' }}>
+        <div className='componentsCommonBody pb-44' style={{ backgroundColor: '#d4e0ff' }}>
             <ScrollToTop smooth color="red" top='20' />
             <div style={{ background: ' linear-gradient(90deg, rgba(1,35,119,1) 0%, rgba(126,73,195,1) 50%, rgba(73,111,224,1) 99%)' }} className=''>
                 <div className='flex justify-center items-center pt-24 pb-20'>
                     <div className='grid grid-cols-1 gap-5'>
                         <h1 className='lg:text-5xl md:text-4xl text-3xl text-center mt-28 font-bold text-white'>Search Your Tutorial</h1>
                         <form onSubmit={handleSubmit(onSubmit)} className='flex lg:mx-0 md:mx-0 mx-5'>
-                            <input {...register("firstName", { required: true, maxLength: 20 })} className='text-base bg-white h-12 lg:w-96 md:w-96 w-64 rounded-l-3xl px-5 active:border-none active:outline-none focus:outline-none' placeholder='Search for Topics' />
-                            <input type="submit" value="Search" className='text-base bg-white h-12 rounded-r-3xl cursor-pointer px-5 ml-2' />
+                            <input {...register("firstName", { required: true, maxLength: 20 })} className='text-base bg-white h-12 lg:w-96 md:w-96 w-64 rounded-l-3xl px-5 active:border-none active:outline-none focus:outline-none CardsCommonBgSecondary' placeholder='Search for Topics' />
+                            <input type="submit" value="Search" className='text-base bg-white h-12 rounded-r-3xl cursor-pointer px-5 ml-2 CardsCommonBgSecondary' />
                         </form>
                     </div>
                 </div>

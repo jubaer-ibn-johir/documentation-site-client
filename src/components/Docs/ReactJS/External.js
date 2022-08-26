@@ -13,7 +13,7 @@ const External = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2  gap-x-12'>
         <div className='px-5 lg:px-0 mr-0 lg:mr-48'>
           <h2 className='text-4xl font-bold'>A Component Using External Plugins</h2>
-          <p className='mt-10 text-2xl leading-9 '>React allows you to interface with other libraries and frameworks. This example uses <span className='font-bold'>remarkable</span>, an external Markdown library, to convert the texttarea's value in real time.
+          <p className='mt-10 text-xl leading-9 commonParagraph'>React allows you to interface with other libraries and frameworks. This example uses <span className='font-bold'>remarkable</span>, an external Markdown library, to convert the texttarea's value in real time.
           </p>
         </div>
         <div className='text-lg '>
