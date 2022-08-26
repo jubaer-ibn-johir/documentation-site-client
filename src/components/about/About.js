@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div>
+    <div className='pb-44'>
       <ScrollToTop smooth color="red" top="20" />
       {/* <div className='flex justify-center items-center lg:py-44 md:py-44 py-32 bg-cyan-600'>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white'>About Us</h1>
