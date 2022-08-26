@@ -1,13 +1,10 @@
 import React from 'react';
 import './Banner.css';
-import bannerBg from '../../assets/home-img/banner.png';
 import bannerImg from '../../assets/home-img/bannerImg.png';
-import { FaSearch } from 'react-icons/fa';
 // import ScrollToTop from "react-scroll-to-top";
-
 const Banner = ({ isDarkMode }) => {
     return (
-        <div class="hero h-96 lg:h-[80vh] banner flex justify-center items-center" style={{ "backgroundImage": `url(${bannerImg})`, 'backgroundPosition': 'center', 'backgroundRepeat': 'no-repeat' }}>
+        <div class="hero h-96 lg:h-[100vh] banner flex justify-center items-center" style={{ "backgroundImage": `url(${bannerImg})`, 'backgroundPosition': 'center', 'backgroundRepeat': 'no-repeat' }}>
             {/* <ScrollToTop smooth color="#0FCFEC" top='100'/> */}
             <div class="hero-content text-center text-neutral-content ">
                 <div class="">
