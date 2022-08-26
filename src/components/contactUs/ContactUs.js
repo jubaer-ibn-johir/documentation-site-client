@@ -18,9 +18,9 @@ const ContactUs = () => {
             })
     }
     return (
-        <div>
+        <div className=''>
             <ScrollToTop smooth color="red" top='20' />
-            <div className='componentsCommonBody' style={{ "backgroundColor": "#edefff" }}>
+            <div className='componentsCommonBody pb-56' style={{ "backgroundColor": "#edefff" }}>
                 <div className='pt-44 pb-20' style={{ "background": "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)" }}>
                     <h1 className='lg:text-5xl md:text-4xl text-3xl font-semibold text-center whiteTextToBlack'>Contact Us !</h1>
                     <p className='text-center text-xl mt-2 text-gray-500'>We are always here to help you whatever way we can.</p>

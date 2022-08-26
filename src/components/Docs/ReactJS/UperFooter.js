@@ -6,7 +6,7 @@ import ScrollToTop from 'react-scroll-to-top';
 
 const UperFooter = () => {
     return (
-        <div className='mt-28' style={{ backgroundColor: '#282c34', }}>
+        <div className='mt-28 pb-48'>
             <ScrollToTop smooth color="red" top='20' />
             <div className='flex justify-center items-center mt-20 pb-16'>
                 <Link to='/reactDashboard'><button className='btn btn-primary  pt-6 py-12 lg:px-12 text-lg lg:text-xl mt-16  rounded'>Get Started</button></Link>

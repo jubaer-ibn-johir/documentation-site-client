@@ -10,9 +10,9 @@ const WhyRedux = () => {
   }, []);
 
   return (
-    <div className='my-10 lg:mx-16 mx-0'>
+    <div className='lg:mx-16 mx-0'>
       <ScrollToTop smooth color="red" top='20' />
-      <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold mb-5 mt-20 lg:mx-0 md:mx-5 mx-5'>Why Redux Toolkit is How To Use Redux Today</h1>
+      <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold py-5 lg:mx-0 md:mx-5 mx-5'>Why Redux Toolkit is How To Use Redux Today</h1>
       <div className='lg:mx-0 md:mx-5 mx-5'>
         <div>
           <h1 className='lg:text-3xl md:text-2xl text-xl font-bold mb-5'>What is Redux Toolkit?</h1>

@@ -84,11 +84,11 @@ const Answer = () => {
             .then(data => setAnswers(data))
     }, [answers])
     return (
-        <div className='bg-slate-100 componentsCommonBody'>
+        <div className='bg-slate-100 componentsCommonBody pb-36'>
             <ScrollToTop smooth color="red" top='20' />
             <div style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
-                <div className='max-w-7xl mx-auto'>
-                    <div className='pt-52 pb-16 flex  justify-between'>
+                <div className='max-w-7xl lg:mx-auto md:mx-10 mx-5'>
+                    <div className='pt-52 pb-16 lg:flex md:flex grid grid-cols-1 gap-5 justify-between'>
                         <div>
                             <p className='text-sm text-cyan-200'>Skill</p>
                             <h1 className='text-3xl font-medium text-white '>{title}</h1>
@@ -101,7 +101,7 @@ const Answer = () => {
                 </div>
             </div>
             <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
-                <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
+                <div className='w-full lg:flex md:flex grid grid-cols-1 lg:gap-12 md:gap-5 gap-5'>
                     <div className='lg:w-2/3 md:w-2/3 w-full my-12'>
                         <div className='bg-white pt-8 px-8 pb-3 mb-5 rounded-md CardsCommonBg'>
                             <div className='w-full'>

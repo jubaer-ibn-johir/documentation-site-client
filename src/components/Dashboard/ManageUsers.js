@@ -10,7 +10,7 @@ const ManageUsers = () => {
             .then(data => setUsers(data))
     }, [users])
     return (
-        <div className='lg:p-8 md:p-8 p-4 bg-violet-50 h-full rounded-xl componentsCommonBody'>
+        <div className='lg:p-8 md:p-8 p-4 bg-violet-50 h-100 componentsCommonBody'>
             <ScrollToTop smooth color="red" top='20' />
             <div>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl text-center my-5 font-semibold text-violet-900 blackToWhite'>Manage Users</h1>

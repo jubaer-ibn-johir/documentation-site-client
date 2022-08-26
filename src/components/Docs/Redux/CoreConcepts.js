@@ -10,9 +10,9 @@ const CoreConcepts = () => {
   }, []);
 
   return (
-    <div className='my-10 max-w-7xl mx-auto'>
+    <div className='lg:mx-16 mx-0'>
       <ScrollToTop smooth color="red" top='20' />
-      <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold mb-5 mt-20 lg:mx-0 md:mx-5 mx-5'>Core Concepts</h1>
+      <h1 className='lg:text-5xl md:text-3xl text-2xl font-bold py-5 lg:mx-0 md:mx-5 mx-5'>Core Concepts</h1>
       <div className='lg:mx-0 md:mx-5 mx-5'>
         <div>
           <p className='mb-5'>Imagine your app's state is described as a plain object. For example, the state of a todo app might look like this:</p>

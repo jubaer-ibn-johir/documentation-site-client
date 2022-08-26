@@ -17,7 +17,7 @@ const Footer = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
     return (
-        <div className='mt-44'>
+        <div>
             <div style={{ backgroundColor: '#12174E' }}>
                 <div>
                     <div className='lg:max-w-4xl md:max-w-4xl max-w-full mx-auto'>

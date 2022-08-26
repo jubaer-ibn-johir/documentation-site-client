@@ -19,13 +19,14 @@ const Ask = () => {
     }, [])
 
     return (
-        <div>
+        <div className=''>
             <ScrollToTop smooth color="red" top='20' />
-            <div className='pt-52 pb-16' style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }}>
+            <div div className='pt-52 pb-16' style={{ background: 'linear-gradient(223deg, rgba(5,83,124,1) 0%, rgba(55,157,179,1) 50%, rgba(5,83,124,1) 100%)' }
+            }>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-white text-center'>Hello! Here is EasyDoc</h1>
                 <p className='lg:text-xl md:text-xl text-lg text-white text-center mt-3'>Find the answer of your question</p>
-            </div>
-            <div className='w-full bg-slate-100 py-16 componentsCommonBody'>
+            </div >
+            <div className='w-full bg-slate-100 py-16 componentsCommonBody pb-60'>
                 <div className='max-w-7xl lg:mx-auto md:mx-12 mx-5'>
                     <div className='w-full lg:flex md:flex grid grid-cols-1 gap-12'>
                         <div className='lg:w-2/3 md:w-2/3 w-full'>
@@ -33,14 +34,14 @@ const Ask = () => {
                                 <p className='text-center font-semibold text-2xl mb-3'>Search</p>
                                 <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center items-center">
                                     <input type="text" placeholder="Search..." class="input w-full outline-none border-none bg-slate-100 focus:outline-none rounded-r-none CardsCommonBgSecondary" {...register("searchValue", { required: true, maxLength: 20 })} />
-                                    <input type="submit" className='text-white border-2 bg-slate-500 border-slate-500 font-bold text-lg px-5 py-2 rounded-xl rounded-l-none gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-all cursor-pointer text-center' value="Submit" />
+                                    <input type="submit" className='text-white border-2 bg-slate-500 border-slate-500 font-bold text-lg lg:px-5 md:px-4 px-3 py-2 rounded-xl rounded-l-none gap-2 hover:border-slate-500 hover:text-slate-500 hover:bg-slate-100 transition-all cursor-pointer text-center' value="Submit" />
                                 </form>
                             </div>
                             <div className='grid gap-5'>
                                 <div className='mt-16'>
                                     <div className='flex justify-between items-center'>
-                                        <p className='font-semibold text-3xl mb-3'>Questions</p>
-                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl px-5 py-3 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-white transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
+                                        <p className='font-semibold lg:text-3xl md:text-2xl text-xl mb-3'>Questions</p>
+                                        <Link to="/askQuestion" className='bg-cyan-600 text-white rounded-xl lg:px-5 md:px-4 px-3 lg:py-3 md:py-3 py-2 border-2 border-cyan-600 flex items-center gap-2 hover:text-cyan-600 hover:border-2 hover:border-cyan-600 hover:bg-white transition-all'>Ask Question<AiOutlineQuestionCircle className='text-2xl' /></Link>
                                     </div>
 
                                     <div>
@@ -103,7 +104,7 @@ const Ask = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
 
     );

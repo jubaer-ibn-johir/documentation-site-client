@@ -9,7 +9,7 @@ const ReactHome = () => {
         <section style={{
             background: `url(${backgroundIcon})`, backgroundColor: '#282c34', backgroundRepeat: 'no-repeat', backgroundPositionX: '100%', backgroundPositionY: '100px', backgroundSize: '50% auto', height: '520px'
         }}
-            className='bg-aaccent lg:min-h-screen overlay flex justify-center items-center'>
+            className='bg-accent lg:min-h-screen overlay flex justify-center items-center'>
             <ScrollToTop smooth color="red" top='20' />
             <div>
                 <h1 className='text-primary text-center text-5xl lg:text-7xl  font-bold pt-28'>React</h1>
