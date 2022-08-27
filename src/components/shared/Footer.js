@@ -58,7 +58,7 @@ const Footer = () => {
                                 <div className='lg:w-3/5 md:w-3/5 w-full'>
                                     <form onSubmit={handleSubmit(onSubmit)} className='lg:flex md:flex grid grid-cols-1 justify-items-center lg:gap-0 md:gap-0 gap-3 lg:mx-0 md:mx-0 mx-5'>
                                         <input {...register("firstName", { required: true, maxLength: 20 })} className='text-base bg-white h-12 lg:w-96 md:w-96 w-64 rounded-md px-5 active:border-none active:outline-none focus:outline-none CardsCommonBgSecondary' placeholder='Email Address *' />
-                                        <input type="submit" value="Subscribe" className='text-white text-lg font-medium bg-blue-900 h-12 rounded-md cursor-pointer px-5 ml-2 ' />
+                                        <img type="submit" className='text-white text-lg font-medium bg-green-400 h-12 rounded-md cursor-pointer px-5 ml-2 ' src="https://cafebabel.com/static/img/gif-newsletter.gif" alt="" />
                                     </form>
                                 </div>
                             </div>

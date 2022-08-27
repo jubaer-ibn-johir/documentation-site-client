@@ -8,7 +8,7 @@ const BuildDocuments = () => {
         <div className='max-w-7xl mx-auto my-28'>
             <div className='mx-auto grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5'>
                 <div className='mx-5'>
-                    <img className='w-96 lg:w-full' style={{ borderRadius: '10px' }} src={docImg} alt="" />
+                    <img className='w-96 h-96  lg:w-full' style={{ borderRadius: '10px' }} src="https://wiki.pokkt.com/images/4/48/Doc_img_ani.gif" alt="" />
                 </div>
                 <div className='mx-5 lg:mx-0'>
                     <h2 className='font-bold mb-5 text-4xl leading-10'>Build online documentation
@@ -22,9 +22,18 @@ const BuildDocuments = () => {
                         <p className='flex items-center gap-x-3 mt-3 text-lg text-gray-500'><BsCheckLg className='text-primary'></BsCheckLg>Complete control of your text.</p>
                         <p className='flex items-center gap-x-3 mt-2 text-lg text-gray-500'><BsCheckLg className='text-primary'></BsCheckLg>Layer Organized .</p>
                         <p className='flex items-center gap-x-3 mt-2 text-lg text-gray-500'><BsCheckLg className='text-primary'></BsCheckLg>visualize your code. </p>
+                       
                     </div>
-                    <Link to="/docs" className='bg-cyan-500 text-white rounded-xl px-5 py-3 border-2 border-cyan-500 hover:text-cyan-500 hover:border-2 hover:border-cyan-500 hover:bg-transparent transition-all'>Read More</Link>
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                    </button>
+                    
+                    {/* <Link to="/docs" className='bg-cyan-500 text-white rounded-xl px-5 py-3 border-2 border-cyan-500 hover:text-cyan-500 hover:border-2 hover:border-cyan-500 hover:bg-transparent transition-all'>Read More</Link> */}
                 </div>
+                
             </div >
         </div>
     );
