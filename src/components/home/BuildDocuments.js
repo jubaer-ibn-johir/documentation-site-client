@@ -1,5 +1,5 @@
 import React from 'react';
-import docImg from '../../assets/home-img/Build-docs.jpg'
+
 import { BsCheckLg } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 

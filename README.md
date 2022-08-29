@@ -1,11 +1,11 @@
 # Easy Docs
 
-Live Link: [link here](link here).
+Live Link: [https://endgame-53c9b.web.app/].
 
 ### Short description of the project:
-- This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
+- This is a  Documentation base project , where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
 - Every page of this site has two common things Navbar & Footer.
-- In the Navbar section, we have 4 pages of nav links (Docs, Blogs, Contact Us) with dropdowns, and two more buttons (Login & Dark Mood).
+- In the Navbar section, we have many pages of nav links (Docs, Blogs, Contact Us,Dashboard,About us,tutorial,courses,404 and many more) , and two more buttons (Login & Dark Mood).
 - In the Footer, we have a social section on the left side and also have a huge amount of important links in the middle, and a newsletter section on the right side. At the bottom, we also have a copyright section.
 - On the Home Page, at first, there is a banner with the search bar. And then the documentation section with a Read More button that takes to the documentation page. Then we have two solutions buttons (Help & FAQ). Before the footer, we have added a reviews slider.
 - After that, we have a Doc page, where we have implemented three documentations (ReactJs, ReduxJs & NextJs). Every item has a home page with a Get Started button that takes to the Documentation page.
