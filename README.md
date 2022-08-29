@@ -1,6 +1,6 @@
 # Easy Docs
 
-Live Link: [link here](link here).
+Live Link: [https://endgame-53c9b.web.app/].
 
 ### Short description of the project:
 - This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
