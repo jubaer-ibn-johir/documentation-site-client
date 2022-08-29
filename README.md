@@ -15,6 +15,29 @@ Live Link: [https://endgame-53c9b.web.app/].
 - Now let’s know some features of our site. By clicking the dark mood, our page will change its theme to dark. We have a scroll-to-top button, that takes to the top section from the bottom. We also have Required Auth system, that protects our routes. We have a dashboard with various roles like Admin, User, etc.
 - At last, let's come to the Dashboard. In the dashboard, we have info about a summary of all we have. We have shown it also with an Area Chart. We have used nested routes in the dashboard. An admin can manage all the users, blogs, tutorials, courses, reviews, etc.
 
+### About Feature in this project:
+
+- Magical Feature=> This web site has a magical & interesting  feature which is that every normal user and every Admin can write and post their blog. The more interesting thing is that everyone can comment on each post.User can also see the recent blog post on the top of our blog page.
+
+- Write Review=> Every user can rate us by using our Add review Feature. And can share their experience.
+
+- Manage profile=>The most interesting thing is that the user can see his/her personal profile. And also they can control their profile section and they can edit their information.
+
+- Ask Question=> We have an Ask page. Here you can ask questions & get others answers also. For that, you have to look around the navbar for that route.
+
+- Courses=>In this whole website, we have a goal and the main feature is our Courses section. If a user wants to learn REACT,REDUX,NEXT JS ,then they can Enroll the courses.But It’s not free courses.You have to pay for these courses.
+
+- Email sending system=> In our site, we have a contact form with an email sending system. When you  fillup the form and press the submit button, that message will be sent to our team email.
+
+- Security =>Our web site has a strong login and registration system. If you want to be a member of our EasyDoc family, then you have to Login first.
+
+- Free Resource =>Every user can learn everything about Redux,React,next.js by using our Docs feature.
+
+- Dark Mood=> Our Easy Doc has a dark mood in the full site. For that, you have to look to the right of the navbar. There is a dark & light toggle button that changes into dark & light mood.
+
+- Dashboard=> We have an admin dashboard with Manage  Users, Manage Tutorials, Manage Blogs, and Manage Courses. These pages are for managing all dynamic contents by Admins. 
+
+- NewsLetter section=> If a user wants to subscribe to our EasyDoc, then they can see a newsletter section on the Navbar and then can send us to his/her email and subscribe by using this feature.
 
 ***More details will come day by day. Cause we are still working on this project.***
 
