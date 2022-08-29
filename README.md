@@ -2,7 +2,13 @@
 
 Live Link: [https://endgame-53c9b.web.app/].
 
-### Short description of the project:
+
+
+### Short descripti
+
+https://user-images.githubusercontent.com/96807696/187131484-0aae961b-4ec3-4e1e-bf54-6fa9bc37873d.mp4
+
+on of the project:
 - This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
 - Every page of this site has two common things Navbar & Footer.
 - In the Navbar section, we have 4 pages of nav links (Docs, Blogs, Contact Us) with dropdowns, and two more buttons (Login & Dark Mood).
