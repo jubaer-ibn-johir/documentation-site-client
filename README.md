@@ -2,6 +2,38 @@
 
 Live Link: [https://endgame-53c9b.web.app/].
 
+## 1.Install
+
+### npm
+
+```
+npm i
+or
+npm i --legacy-peer-deps
+```
+
+### yarn
+
+```
+yarn install
+```
+
+## 2.Start
+
+```sh
+npm start
+or
+yarn start
+```
+
+## 3.Build
+
+```sh
+npm run build or yarn build
+```
+
+### Live preview 
+
 https://user-images.githubusercontent.com/96807696/187131484-0aae961b-4ec3-4e1e-bf54-6fa9bc37873d.mp4
 
 
@@ -9,7 +41,6 @@ https://user-images.githubusercontent.com/96807696/187131484-0aae961b-4ec3-4e1e-
 ### Short descripti
 
 
-on of the project:
 - This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
 - Every page of this site has two common things Navbar & Footer.
 - In the Navbar section, we have 4 pages of nav links (Docs, Blogs, Contact Us) with dropdowns, and two more buttons (Login & Dark Mood).
