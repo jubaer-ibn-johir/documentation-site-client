@@ -3,10 +3,7 @@ import noteIcon from '../../assets/home-img/Note.png'
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
 import faqIcon from '../../assets/home-img/Faq.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+
 
 const Solution = () => {
     return (
