@@ -2,7 +2,7 @@
 
 Live Link: [link here](link here).
 
-### Short description of the project:
+### Short description 
 - This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
 - Every page of this site has two common things Navbar & Footer.
 - In the Navbar section, we have 4 pages of nav links (Docs, Blogs, Contact Us) with dropdowns, and two more buttons (Login & Dark Mood).
