@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import auth from "../../firebase.init";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Loading from "../shared/Loading";
 import SocialLogIn from "./SocialLogIn";
@@ -12,6 +12,8 @@ const SingUp = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+
+  const [updateProfile, updating ] = useUpdateProfile(auth);
 
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
@@ -36,6 +38,8 @@ const SingUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(email, password, name);
+    console.log(name);
+    updateProfile({ name  });
     // toast('Email sent.Verify your Email Please!!')
   };
   return (

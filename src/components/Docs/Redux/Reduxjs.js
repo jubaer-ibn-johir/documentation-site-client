@@ -90,13 +90,7 @@ const Reduxjs = () => {
                     <div 
                     className=' lg:mx-0 md:mx-5 mx-5 bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'
                     
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
+                      
                     
                     >
                         {/* <div className='inline-block text-7xl ' style={{ 'color': '#0FCFEC' }}><TiTick /></div> */}
@@ -112,13 +106,7 @@ const Reduxjs = () => {
                     </div>
                     <div 
                     className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'  
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
+                       
                     >
                         {/* <div className='inline-block text-7xl' style={{ 'color': '#0FCFEC' }}><AiOutlinePicCenter /></div> */}
                         <div className='h-20 w-20 rounded-full border-2 flex justify-center items-center mt-12' style={{ 'border': '2px solid #0FCFEC' }}
@@ -138,14 +126,6 @@ const Reduxjs = () => {
                     <div 
                     className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'
                     
-                     
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
                     
                     >
                         {/* <div className='inline-block text-7xl' style={{ 'color': '#0FCFEC' }}><VscDebugAll /></div> */}
@@ -165,14 +145,7 @@ const Reduxjs = () => {
                     </div>
                     <div 
                     className=' lg:mx-0 md:mx-5 mx-5  bg-white CardsCommonBg border-cyan-400 border-t-8 border-b-8 shadow-md p-5 rounded-xl transition-all hover:shadow-xl hover:shadow-cyan-300 grid justify-items-center'
-                    
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"   
+          
                     
                     >
                         {/* <div className='inline-block text-7xl text-cyan-500' style={{ 'color': '#0FCFEC' }}><GrSettingsOption /></div> */}
@@ -199,13 +172,7 @@ const Reduxjs = () => {
                         <div 
                         className='bg-white CardsCommonBg p-8 rounded-xl border-2 border-cyan-200 hover:shadow-xl hover:shadow-cyan-300 transition-all'
                         
-                            data-aos="fade-down-right"
-                            data-aos-offset="200"
-                            data-aos-delay="50"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
+                        
                         
                         >
                             <a href='https://react-redux.js.org/' style={{ color: '#0FCFEC' }} target="_blank" className='text-2xl font-bold'>React-Redux <FaExternalLinkSquareAlt className='inline' /> </a>
@@ -213,13 +180,7 @@ const Reduxjs = () => {
                         </div>
                         <div 
                         className='bg-white CardsCommonBg p-8 rounded-xl border-2 border-cyan-200 hover:shadow-xl hover:shadow-cyan-300 transition-all'
-                            data-aos="fade-down-left"
-                            data-aos-offset="200"
-                            data-aos-delay="50"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
+                   
                         
                         
                         >

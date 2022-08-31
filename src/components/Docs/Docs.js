@@ -5,7 +5,7 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import { SiRedux } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
-import docBanner from '../../assets/about-img/banner.jpg';
+import readmore from '../../assets/docs/arrow-unscreen.gif';
 import { MdOutlineNavigateNext } from 'react-icons/md';
 
 
@@ -21,13 +21,7 @@ const Docs = () => {
                 <div className='lg:flex lg:justify-center gap-5 md:grid md:grid-cols-2 grid grid-cols-1 mx-5 justify-items-center lg:py-20 lg:mb-28 md:py-20 py-20 whiteTextToBlack'>
                     <div
                         class="card lg:w-96 md:w-80 w-72 rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#f4e3e9", "borderWidth": "5px 0 0 0", "borderColor": "#fda6c5" }}
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
+                       
                     >
                         <div className='h-20 w-20 rounded-full bg-white flex justify-center items-center mt-12'>
                             <figure class="">
@@ -41,20 +35,15 @@ const Docs = () => {
                         >
                             <h2 class="card-title text-xl font-bold">React js Documentation</h2>
                             <small>A JavaScript library for building user interfaces</small>
-                            <div class="card-actions">
-                                <footer className='mt-5 text-primary font-semibold hover:underline'><Link className='flex items-center' to='/reactjs'>Read More</Link></footer>
+                            <div class="card-actions mt-5 flex justify-center items-center">
+                                <footer className='text-primary font-semibold hover:underline'><Link className='flex items-center' to='/reactjs'>Read More</Link> </footer>
+                                <img className='w-25 h-20' src={readmore} alt="" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="card lg:w-96 md:w-80 w-72 bg-white rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#f4e1ba", "borderWidth": "5px 0 0 0", "borderColor": "#f3c870" }}
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
+                        
 
                     >
                         <div className='h-20 w-20 rounded-full bg-white flex justify-center items-center mt-12'>
@@ -65,21 +54,16 @@ const Docs = () => {
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-xl">Redux Documentation</h2>
                             <small>A Predictable State Container for JS Apps</small>
-                            <div class="card-actions">
-                                <footer className='mt-5 text-primary font-semibold hover:underline'><Link className='flex items-center' to='/redux'>Read More</Link></footer>
+                            <div class="card-actions mt-5 flex justify-center items-center">
+                                <footer className=' text-primary font-semibold hover:underline'><Link className='flex items-center' to='/redux'>Read More</Link></footer>
+                                <img className='rounded-full w-25 h-20' src={readmore} alt="" />
                             </div>
                         </div>
                     </div>
                     <div
                         class="card lg:w-96 md:w-80 w-72 bg-white rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#e0edfc", "borderWidth": "5px 0 0 0", "borderColor": "#b5d7ff" }}
 
-                        data-aos="flip-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="2000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
+                        
 
                     >
                         <div className='h-20 w-20 rounded-full bg-white flex justify-center items-center mt-12'>
@@ -91,8 +75,9 @@ const Docs = () => {
                             <h2 class="card-title text-xl">Next js Documentation</h2>
                             <small>The React Framework
                                 for Production</small>
-                            <div class="card-actions">
-                                <footer className='mt-5 text-primary font-semibold hover:underline'><Link className='flex items-center' to='/nextjs'>Read More</Link></footer>
+                            <div class="card-actions mt-5 flex justify-center items-center">
+                                <footer className=' text-primary font-semibold hover:underline'><Link className='flex items-center' to='/nextjs'>Read More</Link></footer>
+                                <img className='w-25 h-20' src={readmore} alt="" />
                             </div>
                         </div>
                     </div>

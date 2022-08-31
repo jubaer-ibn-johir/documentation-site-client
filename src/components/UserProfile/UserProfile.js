@@ -75,7 +75,7 @@ const UserProfile = () => {
             })
     };
     return (
-        <div className='bg-slate-300 componentsCommonBody'>
+        <div className='bg-slate-300 componentsCommonBody pb-44 pt-20'>
             <div className='flex justify-center items-center h-screen '>
                 <div class="card w-96 lg:w-[800px] bg-base-100 shadow-xl bg-gradient-to-r from-purple-400 to-pink-400 CardsCommonBg">
                     <label for="my-modal-6" className=" modal-button flex justify-end m-8 cursor-pointer"><FaRegEdit className='w-6 h-6'></FaRegEdit></label>
