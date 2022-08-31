@@ -17,7 +17,7 @@ const Solution = () => {
                     <div
                      className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5 CardsCommonBg bg-cyan-500 hover:shadow-2xl transition-all rounded-md'
 
-                     
+                        
 
                      >
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>
@@ -33,7 +33,6 @@ const Solution = () => {
                     className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5  CardsCommonBg bg-cyan-500 hover:shadow-2xl transition-all rounded-md'
 
 
-                   
 
                     >
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>
