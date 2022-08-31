@@ -28,7 +28,7 @@ const BuildDocuments = () => {
                         <span class="circle" aria-hidden="true">
                             <span class="icon arrow"></span>
                         </span>
-                        <Link to="/docs"> <span class="button-text">Learn More</span></Link>
+                        <Link to="/docs"> <span class="button-text">Read More...</span></Link>
                     </button>
                     
                     {/* <Link to="/docs" className='bg-cyan-500 text-white rounded-xl px-5 py-3 border-2 border-cyan-500 hover:text-cyan-500 hover:border-2 hover:border-cyan-500 hover:bg-transparent transition-all'>Read More</Link> */}
