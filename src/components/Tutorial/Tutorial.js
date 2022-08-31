@@ -58,6 +58,7 @@ const Tutorial = () => {
                         tutorials.map(tutorial => <TutorialCard key={tutorial.id} tutorial={tutorial}></TutorialCard>)
                     }
                 </div>
+                <ScrollToTop smooth color="red" top='20' />
             </div>
         </div>
     );

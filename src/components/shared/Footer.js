@@ -5,7 +5,7 @@ import footerShap from '../../assets/footer-img/footer-shap-1.png';
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import logo from '../../assets/logo/logo4.png'
 import whiteLogo from '../../assets/logo/white logo.png';
-import newsletterImg from '../../assets/home-img/newsletter.png';
+import newsletterImg from '../../assets/footer-img/newsletter.png';
 import { ThemeContext } from '../../App';
 import { useForm } from 'react-hook-form';
 import { FaEnvelope } from 'react-icons/fa';

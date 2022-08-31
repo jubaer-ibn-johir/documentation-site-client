@@ -14,8 +14,10 @@ const CourseDetails = (props) => {
     return (
         <div>
             <ScrollToTop smooth color="red" top='20' />
-            <div className=''>
-                <div className='flex justify-center items-center lg:py-24 md:py-16 pb-16 '>
+            <div>
+                <div  
+                   
+                    className='flex justify-center items-center lg:py-24 md:py-16 pb-16 '>
                     <div className='lg:flex md:grid md:grid-cols-2 grid grid-cols-1 justify-center items-center gap-5'>
                         <div className='bg-white shadow-xl hover:shadow-2xl transition-all rounded-md lg:mt-0 md:mt-0 mt-14 CardsCommonBg'>
                             <div className='w-72'>

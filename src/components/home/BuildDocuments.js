@@ -3,14 +3,19 @@ import React from 'react';
 import { BsCheckLg } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
+
 const BuildDocuments = () => {
     return (
-        <div className='max-w-7xl mx-auto my-28'>
+        <div className='max-w-7xl mx-auto my-28 overflow-hidden'>
             <div className='mx-auto grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-5'>
                 <div className='mx-5'>
                     <img className='w-96 h-96  lg:w-full' style={{ borderRadius: '10px' }} src="https://wiki.pokkt.com/images/4/48/Doc_img_ani.gif" alt="" />
                 </div>
-                <div className='mx-5 lg:mx-0'>
+                <div 
+                className='mx-5 lg:mx-0'
+
+                    // data-aos-anchor-placement="top-center"
+                >
                     <h2 className='font-bold mb-5 text-4xl leading-10'>Build online documentation
                         <br />
                         with EasyDoc</h2>

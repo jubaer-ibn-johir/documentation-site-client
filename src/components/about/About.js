@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="pb-44">
+    <div className="pb-44 overflow-hidden">
       <ScrollToTop smooth color="red" top="20" />
       {/* <div className='flex justify-center items-center lg:py-44 md:py-44 py-32' style={{ "backgroundImage": `url(${aboutBanner})`, "backgroundPosition": "center", "backgroundRepeat": "no-repeat", "backgroundSize": "cover" }}>
                 <h1 className='lg:text-5xl md:text-4xl text-3xl font-medium text-sky-800'>About Us</h1>
@@ -34,10 +34,15 @@ const About = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="grid items-center lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 my-16 lg:mx-0 md:mx-5 mx-5">
-          <div>
+          <div 
+                      
+          >
             <img src={aboutImg} alt="" />
           </div>
-          <div>
+          <div
+                     
+          
+          >
             <div className="flex items-center">
               <div
                 className="w-8 bg-sky-800 mr-3"

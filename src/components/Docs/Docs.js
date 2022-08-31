@@ -18,14 +18,21 @@ const Docs = () => {
                     <h1 className='lg:text-5xl md:text-4xl text-3xl font-semibold text-center whiteTextToBlack'>Documentations</h1>
                     <p className='text-center text-xl mt-2 text-gray-500 flex justify-center items-center'><Link to='/'>Home</Link><MdOutlineNavigateNext /> Docs</p>
                 </div>
-                <div className='lg:flex lg:justify-center gap-5 md:grid md:grid-cols-2 grid grid-cols-1 mx-5 justify-items-center lg:py-44 md:py-20 py-20 whiteTextToBlack'>
-                    <div class="card lg:w-96 md:w-80 w-72 rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#f4e3e9", "borderWidth": "5px 0 0 0", "borderColor": "#fda6c5" }}>
+                <div className='lg:flex lg:justify-center gap-5 md:grid md:grid-cols-2 grid grid-cols-1 mx-5 justify-items-center lg:py-20 lg:mb-28 md:py-20 py-20 whiteTextToBlack'>
+                    <div
+                        class="card lg:w-96 md:w-80 w-72 rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#f4e3e9", "borderWidth": "5px 0 0 0", "borderColor": "#fda6c5" }}
+                       
+                    >
                         <div className='h-20 w-20 rounded-full bg-white flex justify-center items-center mt-12'>
                             <figure class="">
                                 <FaReact className='w-12 h-12 text-red-500' />
                             </figure>
                         </div>
-                        <div class="card-body items-center text-center">
+                        <div
+                            class="card-body items-center text-center"
+
+
+                        >
                             <h2 class="card-title text-xl font-bold">React js Documentation</h2>
                             <small>A JavaScript library for building user interfaces</small>
                             <div class="card-actions mt-5 flex justify-center items-center">
@@ -34,7 +41,11 @@ const Docs = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card lg:w-96 md:w-80 w-72 bg-white rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#f4e1ba", "borderWidth": "5px 0 0 0", "borderColor": "#f3c870" }}>
+                    <div
+                        class="card lg:w-96 md:w-80 w-72 bg-white rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#f4e1ba", "borderWidth": "5px 0 0 0", "borderColor": "#f3c870" }}
+                        
+
+                    >
                         <div className='h-20 w-20 rounded-full bg-white flex justify-center items-center mt-12'>
                             <figure class="">
                                 <SiRedux className='w-12 h-12 text-orange-500' />
@@ -49,7 +60,12 @@ const Docs = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card lg:w-96 md:w-80 w-72 bg-white rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#e0edfc", "borderWidth": "5px 0 0 0", "borderColor": "#b5d7ff" }}>
+                    <div
+                        class="card lg:w-96 md:w-80 w-72 bg-white rounded-xl border transition-all grid justify-items-center" style={{ "backgroundColor": "#e0edfc", "borderWidth": "5px 0 0 0", "borderColor": "#b5d7ff" }}
+
+                        
+
+                    >
                         <div className='h-20 w-20 rounded-full bg-white flex justify-center items-center mt-12'>
                             <figure class="">
                                 <TbBrandNextjs className='w-12 h-12 text-blue-500' />
