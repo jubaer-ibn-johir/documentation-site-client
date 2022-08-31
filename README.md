@@ -38,7 +38,7 @@ https://user-images.githubusercontent.com/96807696/187131484-0aae961b-4ec3-4e1e-
 
 
 
-### Short description :
+### Short Description :
 
 
 - This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
