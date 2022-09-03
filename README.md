@@ -45,9 +45,17 @@ https://user-images.githubusercontent.com/96807696/187131484-0aae961b-4ec3-4e1e-
 - This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
 =======
 
+<<<<<<< HEAD
+### Short description 
+- This is a ReactJS Documentation project, where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
+=======
 ### Short description of the project:
 - This is a  Documentation base project , where one can learn everything about React, Redux & NextJs. This is mainly made with ReactJs.
+<<<<<<< HEAD
+>>>>>>> 6ab6930dc593a027e1962e3af7f8b73e7186dae4
+=======
 >>>>>>> 2879618f5a1f90d0f3ebd8c9949181e2a928c107
+>>>>>>> 16f8a9588d0fe065986cd49c5790434863ced95e
 - Every page of this site has two common things Navbar & Footer.
 - In the Navbar section, we have many pages of nav links (Docs, Blogs, Contact Us,Dashboard,About us,tutorial,courses,404 and many more) , and two more buttons (Login & Dark Mood).
 - In the Footer, we have a social section on the left side and also have a huge amount of important links in the middle, and a newsletter section on the right side. At the bottom, we also have a copyright section.

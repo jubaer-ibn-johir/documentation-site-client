@@ -105,7 +105,7 @@ const Answer = () => {
                     <div className='lg:w-2/3 md:w-2/3 w-full my-12'>
                         <div className='bg-white pt-8 px-8 pb-3 mb-5 rounded-md CardsCommonBg'>
                             <div className='w-full'>
-                                <p className='text-xl'>{description}</p>
+                                <p className='text-xl   '>{description}</p>
                             </div>
                             <div className='my-12'>
                                 <div className='flex gap-5 items-center justify-end'>
