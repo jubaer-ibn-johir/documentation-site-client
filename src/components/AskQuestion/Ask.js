@@ -7,17 +7,21 @@ import { useEffect } from 'react';
 import SingleQuestion from './SingleQuestion';
 import ScrollToTop from 'react-scroll-to-top';
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { useSelector,useDispatch } from 'react-redux';
+import { fetchQuestions } from '../../redux/features/questions/questionSlice';
+import Loading from '../shared/Loading';
 
 const Ask = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
-    const [questions, setQuestion] = useState([])
-    useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/question`)
-            .then(res => res.json())
-            .then(data => setQuestion(data))
-    }, [])
-
+    const {isLoading,questions,error}=useSelector((state)=>state.questions)
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(fetchQuestions())
+    },[])
+  if(isLoading){
+   return <Loading></Loading>
+  }
     return (
         <div className=''>
             <ScrollToTop smooth color="red" top='20' />
@@ -45,8 +49,9 @@ const Ask = () => {
                                     </div>
 
                                     <div>
+                                        {error&& <p className='text-red-500'>{error}</p>}
                                         {
-                                            questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
+                                          questions &&  questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
                                         }
                                     </div>
                                 </div>

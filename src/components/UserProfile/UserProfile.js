@@ -102,14 +102,14 @@ const UserProfile = () => {
             </div>
 
             <div className='w-full  md:flex grid grid-cols-1 gap-12 mt-16 '>
-                <div className='lg:w-80 md:w-1/3 w-96 bg-white  ml-3 lg:ml-16 rounded-lg lg:h-64 '>
+                <div className='lg:w-80 md:w-1/3 w-96 bg-white  ml-3 lg:ml-16 rounded-lg lg:h-[204px] '>
                     <NavLink style={({ isActive }) => { return { color: isActive ? 'darkblue ' : 'black' } }} to="/user-profile"><h2 className='p-4 text-2xl justify-start items-end flex'><BsFillPersonFill className='w-6 h-6 mr-3' /> About </h2></NavLink>
                     <hr style={{ border: '2px solid lightgrey', backgroundColor: 'lightgrey' }} />
                     <NavLink style={({ isActive }) => { return { color: isActive ? 'darkblue ' : 'black' } }} to="/user-profile/userEditProfile"><h2 className='p-4 text-2xl justify-start items-end flex '><FaUserEdit className='w-6 h-6 mr-3' /> Edit Profile</h2></NavLink>
                     <hr style={{ border: '2px solid lightgrey', backgroundColor: 'lightgrey' }} />
-                    <h2 className='p-4 text-2xl justify-start items-end flex'><ImBlogger2 className='w-6 h-6 mr-3' /> Blogs</h2>
+                    <NavLink to="/addBlogs" style={({ isActive }) => { return { color: isActive ? 'darkblue ' : 'black' } }}>   <h2 className='p-4 text-2xl justify-start items-end flex'><ImBlogger2 className='w-6 h-6 mr-3' /> Blogs</h2></NavLink>
                     <hr style={{ border: '2px solid lightgrey', backgroundColor: 'lightgrey' }} />
-                    <h2 className='p-4 text-2xl justify-start items-end flex'><BsFillPeopleFill className='w-6 h-6 mr-3' />  Followers</h2>
+                    {/* <h2 className='p-4 text-2xl justify-start items-end flex'><BsFillPeopleFill className='w-6 h-6 mr-3' />  Followers</h2> */}
                 </div>
                 <Outlet></Outlet>
                 {/* <div className='lg:w-2/3 md:w-2/3 w-96  bg-slate-100 ml-3 lg:ml-16 rounded-lg mb-48'>

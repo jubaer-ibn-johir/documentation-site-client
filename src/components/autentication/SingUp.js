@@ -26,7 +26,9 @@ const SingUp = () => {
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
-
+ if(updating){
+  return <Loading></Loading>;
+ }
   if (token) {
     navigate(from, { replace: true });
   }
@@ -34,12 +36,10 @@ const SingUp = () => {
   if (loading) {
     return <Loading></Loading>;
   }
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(email, password, name);
-    console.log(name);
-    updateProfile({ name  });
+   await createUserWithEmailAndPassword(email, password);
+    await updateProfile({ displayName:name});
     // toast('Email sent.Verify your Email Please!!')
   };
   return (
