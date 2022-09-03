@@ -2,6 +2,7 @@
     width: 890px;
 }
 
+
 @media only screen and (max-width: 576px) {
     .textarea {
         width: 340px;
