@@ -29,7 +29,7 @@ const Details = () => {
                     </TabList>
 
                     <TabPanel>
-                        <div className='text-center flex justify-center items-center mt-5'>
+                        <div className='hero-content text-center mt-10 flex justify-center items-center'>
                             <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
                                 <CgFileDocument className='w-12 h-12 text-cyan-500' />
                             </div>

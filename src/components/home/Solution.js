@@ -3,10 +3,7 @@ import noteIcon from '../../assets/home-img/Note.png'
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
 import faqIcon from '../../assets/home-img/Faq.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+
 
 const Solution = () => {
     return (
@@ -20,13 +17,7 @@ const Solution = () => {
                     <div
                      className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5 CardsCommonBg bg-cyan-500 hover:shadow-2xl transition-all rounded-md'
 
-                        data-aos="fade-down-right"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
+                        
 
                      >
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>
@@ -42,13 +33,6 @@ const Solution = () => {
                     className='flex lg:p-12 md:p-5 p-3 lg:mx-0 md:mx-0 mx-5  CardsCommonBg bg-cyan-500 hover:shadow-2xl transition-all rounded-md'
 
 
-                        data-aos="fade-down-left"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
 
                     >
                         <div className='flex justify-center items-center lg:mr-10 md:mr-10 mr-5'>

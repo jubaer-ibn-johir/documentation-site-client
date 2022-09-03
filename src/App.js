@@ -48,6 +48,8 @@ import Answer from './components/AskQuestion/Answer';
 import Navbar from './components/shared/Navbar';
 import { createContext, useState } from 'react';
 import AddReview from './components/home/AddReview';
+import UserProfileAbout from './components/UserProfile/UserProfileAbout';
+import UserEditProfile from './components/UserProfile/UserEditProfile';
 export const ThemeContext = createContext(null);
 
 function App() {
@@ -59,7 +61,7 @@ function App() {
       <div id={theme}>
         {/* <Hearder></Hearder> */}
         <Navbar></Navbar>
-        
+
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path='/tutorial' element={<Tutorial></Tutorial>}></Route>
@@ -81,7 +83,6 @@ function App() {
           <Route path="/redux" element={<Reduxjs></Reduxjs>} />
           <Route path="/nextjs" element={<Nextjs></Nextjs>} />
           <Route path="/login" element={<Login></Login>} />
-          <Route path='/user-profile' element={<UserProfile></UserProfile>}></Route>
           <Route path="/payment" element={<Payment></Payment>} />
           <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
             <Route index element={<Installation></Installation>}></Route>
@@ -97,6 +98,10 @@ function App() {
             <Route path='installation' element={<ReduxInstallation></ReduxInstallation>}></Route>
             <Route path='why-redux' element={<WhyRedux></WhyRedux>}></Route>
             <Route path='core-concepts' element={<CoreConcepts></CoreConcepts>}></Route>
+          </Route>
+          <Route path='/user-profile' element={<UserProfile></UserProfile>}>
+            <Route index element={<UserProfileAbout></UserProfileAbout>}></Route>
+            <Route path='userEditProfile' element={<UserEditProfile></UserEditProfile>}></Route>
           </Route>
           <Route path='admin-panel' element={<AdminPanel></AdminPanel>}>
             <Route index element={<Dashboard></Dashboard>}></Route>

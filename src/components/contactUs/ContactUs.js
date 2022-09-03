@@ -31,13 +31,7 @@ const ContactUs = () => {
                             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10 lg:mx-0 md:mx-5 mx-5'>
                                 <div 
 
-                                    data-aos="flip-left"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1000"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-mirror="true"
-                                    data-aos-once="false"
+                                   
                                 className='flex items-center p-10 rounded-md bg-white border-2 hover:shadow-2xl hover:shadow-slate-300 transition-all CardsCommonBg' style={{ "border": "1px solid #99BAE7" }}>
                                     <div className='mr-5 text-5xl' style={{ "color": "#99BAE7" }}>
                                         <FaEnvelope />
@@ -49,13 +43,7 @@ const ContactUs = () => {
                                 </div>
                                 <div 
 
-                                    data-aos="flip-left"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1000"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-mirror="true"
-                                    data-aos-once="false"
+                                   
                                 className='flex items-center p-10 rounded-md bg-white border-2 hover:shadow-2xl hover:shadow-slate-300 transition-all CardsCommonBg' style={{ "border": "1px solid #99BAE7" }}>
                                     <div className='mr-5 text-5xl' style={{ "color": "#99BAE7" }}>
                                         <HiLocationMarker />
@@ -67,13 +55,7 @@ const ContactUs = () => {
                                 </div>
                                 <div 
 
-                                    data-aos="flip-left"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1000"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-mirror="true"
-                                    data-aos-once="false"
+                                   
                                 className='flex items-center p-10 rounded-md bg-white border-2 hover:shadow-2xl hover:shadow-slate-300 transition-all CardsCommonBg' style={{ "border": "1px solid #99BAE7" }}>
                                     <div className='mr-5 text-5xl' style={{ "color": "#99BAE7" }}>
                                         <IoIosCall />
