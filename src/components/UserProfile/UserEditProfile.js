@@ -27,24 +27,22 @@ const UserEditProfile = () => {
         // .then(result => {
         // if (result.success) {
         const profile = {
-            name: data.name,
+            name: data?.name,
             // photo: result.data.url,
-            profession: data.profession,
-            address: data.address,
-            phone: data.phone,
-            gender: data.gender,
-            website: data.website,
-            facebookLink: data.facebookLink,
-            linkedLink: data.linkedLink,
-            date: data.date,
-            twitterLink: data.twitterLink,
-            instagramLink: data.instagramLink,
-            biography: data.biography,
-
-
+            profession: data?.profession,
+            address: data?.address,
+            phone: data?.phone,
+            gender: data?.gender,
+            website: data?.website,
+            facebookLink: data?.facebookLink,
+            linkedLink: data?.linkedLink,
+            date: data?.date,
+            twitterLink: data?.twitterLink,
+            instagramLink: data?.instagramLink,
+            biography: data?.biography
         }
-        fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
-            method: 'PUT',
+        fetch(`https://polar-shore-69456.herokuapp.com/updateUser/${email}`, {
+            method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
             },

@@ -26,7 +26,7 @@ const UserProfileAbout = () => {
         }
     }, [user])
     return (
-        <div className='lg:w-3/5 md:w-3/5 w-96  bg-slate-50 ml-3 lg:ml-16 rounded-lg mb-56'>
+        <div className='lg:w-3/5 md:w-3/5 w-96  bg-white ml-3 lg:ml-16 rounded-lg mb-72'>
             <div className='flex justify-start items-center'>
                 <h2 className='p-6 text-xl font-semibold'>NAME</h2>
                 <p className='text-xl pl-0 lg:pl-16'>{userData?.name}</p>
@@ -57,7 +57,7 @@ const UserProfileAbout = () => {
                 <p className='text-xl pl-0 lg:pl-16'>{userData?.biography}</p>
             </div>
             <hr style={{ border: '1px solid lightgrey', backgroundColor: 'lightgrey' }} />
-            <div className='bg-white flex justify-end pt-5'>
+            <div className=' flex justify-end pt-5 bg-slate-200 '>
                 <div className='pr-4'>
                     <div className='h-12 w-12 rounded-full border-2  flex justify-center items-center bg-blue-800 transition-all '>
                         <a href="/"><FaFacebook className='text-white w-7 h-7 '></FaFacebook></a>
