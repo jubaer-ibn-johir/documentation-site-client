@@ -31,7 +31,7 @@ const Payment = () => {
                             <p className='text-xl'>And Please pay BDT 4500</p>
                         </div>
                     </div>
-                    <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100 CardsCommonBg">
+                    <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100 CardsCommonBg mb-56">
                         <div className="card-body">
                             <Elements stripe={stripePromise}>
                                 <CheckoutForm

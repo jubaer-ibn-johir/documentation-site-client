@@ -25,7 +25,7 @@ const SingleReview = ({ review }) => {
                         </div>
                         <div>
                             <div className='my-5'>
-                                <p className='text-sm md:text-lg lg:text-lg text-justify font-bold '>{rName}</p>
+                                <p className='text-sm md:text-lg lg:text-lg text-justify font-bold whiteTextToBlack'>{rName}</p>
                                 {/* <p>{rating}</p> */}
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -35,7 +35,7 @@ const SingleReview = ({ review }) => {
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                                 </div>
                             </div>
-                            <p>{rDescription}</p>
+                            <p className='whiteTextToBlack'>{rDescription}</p>
                         </div>
                     </div>
                 </div>
