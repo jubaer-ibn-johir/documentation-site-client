@@ -28,7 +28,7 @@ const Navbar = () => {
   const navigate = useNavigate()
   const [userData, setUserData] = useState({});
 
-  const [theme, setTheme] = useContext(ThemeContext)
+  const [theme, setTheme] = useContext(ThemeContext);
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
     console.log(theme);
