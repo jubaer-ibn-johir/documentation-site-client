@@ -19,14 +19,14 @@ const SingleBlog = ({ blog, index }) => {
                 .then(data => {
                     if (data.deletedCount > 0) {
                         Swal.fire({
-                            title: 'Successfully Delete Tutorial!',
+                            title: 'Successfully Delete Blog!',
                             icon: 'success',
                             confirmButtonText: 'ok'
                         })
                     }
                     else {
                         Swal.fire({
-                            title: 'Faild to Delete Tutorial!',
+                            title: 'Failed to Delete Blog!',
                             icon: 'error',
                             confirmButtonText: 'ok'
                         })

@@ -13,7 +13,7 @@ const AddReview = () => {
     const [user] = useAuthState(auth)
     const [rating, setRating] = useState(0)
     const [userData, setUserData] = useState({});
-    const { register, handleSubmit ,reset} = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const { name, photo } = userData;
     useEffect(() => {
         const email = user?.email
@@ -35,7 +35,8 @@ const AddReview = () => {
         const review = {
             rName: name,
             rPhoto: photo,
-            rDescription: data.textArea
+            rDescription: data.textArea,
+            rating: rating,
         }
         fetch('https://polar-shore-69456.herokuapp.com/review', {
             method: "POST",
@@ -99,7 +100,7 @@ const AddReview = () => {
                                     />
                                 </div>
                                 <textarea {...register("textArea")} cols="30" rows="5" required placeholder='Add a Review' className='w-full outline-none px-5 py-2 rounded-md mb-3 bg-cyan-200' />
-                                <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-cyan-300 cursor-pointer w-28'  value="Add" />
+                                <input type="submit" className='text-white font-bold text-2xl px-5 py-2 rounded-xl gap-2 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-cyan-300 cursor-pointer w-28' value="Add" />
                             </form>
                         </div>
 
