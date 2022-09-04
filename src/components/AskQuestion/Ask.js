@@ -7,21 +7,24 @@ import { useEffect } from 'react';
 import SingleQuestion from './SingleQuestion';
 import ScrollToTop from 'react-scroll-to-top';
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { useSelector,useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { fetchQuestions } from '../../redux/features/questions/questionSlice';
 import Loading from '../shared/Loading';
 
 const Ask = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
-    const {isLoading,questions,error}=useSelector((state)=>state.questions)
+
+    const [searchKey, setSearchKey] = useState('')
+    const { register, handleSubmit, reset } = useForm();
+    const onSubmit = data => setSearchKey(data.searchValue);
+    const { isLoading, questions, error } = useSelector((state) => state.questions)
     const dispatch = useDispatch()
-    useEffect(()=>{
-        dispatch(fetchQuestions())
-    },[])
-  if(isLoading){
-   return <Loading></Loading>
-  }
+    useEffect(() => {
+        dispatch(fetchQuestions(searchKey))
+        reset()
+    }, [searchKey])
+    if (isLoading) {
+        return <Loading></Loading>
+    }
     return (
         <div className=''>
             <ScrollToTop smooth color="red" top='20' />
@@ -49,9 +52,9 @@ const Ask = () => {
                                     </div>
 
                                     <div>
-                                        {error&& <p className='text-red-500'>{error}</p>}
+                                        {error && <p className='text-red-500'>{error}</p>}
                                         {
-                                          questions &&  questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
+                                            questions && questions.map(question => <SingleQuestion question={question} key={question._id}></SingleQuestion>)
                                         }
                                     </div>
                                 </div>
@@ -65,7 +68,7 @@ const Ask = () => {
                                 </p>
                                 <div class="form-control w-full max-w-xs">
                                     <select class="select select-bordered bg-slate-100 focus:outline-none CardsCommonBgSecondary">
-                                        <option disabled selected>Select Category</option>
+                                        <option selected>All</option>
                                         <option>Creative</option>
                                         <option>Programming</option>
                                         <option>Lifestyle</option>

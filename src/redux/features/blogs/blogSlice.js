@@ -1,9 +1,15 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchBlogs = createAsyncThunk("blogs/fetchBlogs",async()=>{
+export const fetchBlogs = createAsyncThunk("blogs/fetchBlogs",async(searchKey)=>{
     const res = await axios.get("https://polar-shore-69456.herokuapp.com/blog")
-    return res.data
+    if(searchKey){
+        const filterData= res.data.filter(blog =>blog.blogTitle.toLowerCase().includes(searchKey.toLowerCase()))
+        return filterData
+    }
+    else{
+        return res.data
+    }
 })
 const blogSlice = createSlice({
     name:"blogs",
