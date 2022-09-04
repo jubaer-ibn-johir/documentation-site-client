@@ -10,16 +10,18 @@ import { fetchBlogs } from '../../redux/features/blogs/blogSlice';
 
 
 const Blogs = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const [searchKey,setSearchKey]=useState('')
+    const { register, handleSubmit ,reset} = useForm();
+    const onSubmit = data => setSearchKey(data.searchValue);
     const { isLoading, blogs, error } = useSelector((state) => state.blogs)
     const dispatch = useDispatch()
     useEffect(() => {
-    dispatch(fetchBlogs())
-    }, [])
-    if (isLoading) {
-        return <Loading></Loading>
-    }
+    dispatch(fetchBlogs(searchKey))
+    reset()
+    }, [searchKey])
+    // if (isLoading) {
+    //     return <Loading></Loading>
+    // }
     return (
         <div className='pb-44'>
             <div>
@@ -27,7 +29,7 @@ const Blogs = () => {
                     <div className='max-w-7xl mx-auto'>
                         <div className='grid grid-cols-1 justify-items-center items-center lg:pt-44 md:pt-44 pt-36'>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input {...register("firstName", { required: true, maxLength: 20 })} className='text-base bg-white h-12 lg:w-96 md:w-96 w-64 rounded-l-3xl px-5 active:border-none active:outline-none focus:outline-none' placeholder='Search for Topics' style={{ "color": "#6b707f" }} />
+                                <input {...register("searchValue", { required: true, maxLength: 20 })} className='text-base bg-white h-12 lg:w-96 md:w-96 w-64 rounded-l-3xl px-5 active:border-none active:outline-none focus:outline-none' placeholder='Search for Topics' style={{ "color": "#6b707f" }} />
                                 <input type="submit" value="Search" className='text-base bg-white h-12 rounded-r-3xl cursor-pointer px-5 border-l-2' style={{ "color": "#6b707f" }} />
                             </form>
                             <div className='lg:flex md:flex grid grid-cols-2 gap-3 mt-3'>
@@ -97,6 +99,9 @@ const Blogs = () => {
                 <div className="max-w-7xl lg:mx-auto md:mx-auto mx-5 my-16">
                     <div className='grid justify-items-center lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
                          {error && <p className='text-red-500'>{error}</p>}
+                         {
+                            isLoading && <button class="btn loading">loading...</button>
+                         }
                         {
                           blogs &&  blogs.map(blog => <SingleBlog key={blog._id} blog={blog}></SingleBlog>)
                         }
