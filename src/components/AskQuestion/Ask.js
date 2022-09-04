@@ -59,7 +59,7 @@ const Ask = () => {
                                     </div>
                                 </div>
 
-
+                                []
                             </div>
                         </div>
                         <div className='lg:w-1/3 md:w-1/3 w-full'>
