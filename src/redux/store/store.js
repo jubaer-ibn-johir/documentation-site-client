@@ -5,7 +5,7 @@ import questionReducer from "../features/questions/questionSlice";
 const store = configureStore({
     reducer:{
         questions:questionReducer,
-        blogs:blogReducer,
+        blogs:blogReducer,    
     }
 })
 

@@ -27,7 +27,7 @@ const BlogDetails = () => {
             .then(res => res.json())
             .then(data => setBlog(data))
         setLoading(false)
-    }, [])
+    }, [blogId ])
 
     useEffect(() => {
         setLoading(true)
@@ -118,7 +118,7 @@ const BlogDetails = () => {
                                     <span>|</span>
                                     <p className='text-sm'>{blogPostDate}</p>
                                     <span>|</span>
-                                    <p className='text-sm'>{readTime}</p>
+                                    <p className='text-sm'>{readTime}min</p>
                                     <span>|</span>
                                 </div>
                                 <p className='text-blue-500 text-base'>{blogCategory}</p>
@@ -183,7 +183,7 @@ const BlogDetails = () => {
                                             <img src={recentBlog.blogImage} alt="" className='h-16 w-16 rounded-md' />
                                         </div>
                                         <div>
-                                            <Link to={`/blogDetails/${recentBlog._id}`} className='text-lg font-medium'>{recentBlog?.blogTitle?.slice(0, 45)}</Link>
+                                            <Link to={`/blogDetails/${recentBlog._id}`} className='text-lg font-medium hover:underline hover:text-blue-400'>{recentBlog?.blogTitle?.slice(0, 45)}</Link>
                                             <p className='text-sm' style={{ color: '#6b707f' }}>{recentBlog?.blogPostDate}</p>
                                         </div>
                                     </div>)
