@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import UseCourses from '../../hooks/UseCourses';
 import ScrollToTop from 'react-scroll-to-top';
 
+
 const stripePromise = loadStripe('pk_test_51L0UcsIFjt8xvGHkZh0UClsyUEwizGqQxOfATx5z1osYgwu3MBGOWKN7qVI4M29Vcd9i6ZJGIUwgtaKlpCC4y0hC00NtQIly3N')
 
 const Payment = () => {
@@ -31,7 +32,7 @@ const Payment = () => {
                             <p className='text-xl'>And Please pay BDT 4500</p>
                         </div>
                     </div>
-                    <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100 CardsCommonBg">
+                    <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100 CardsCommonBg mb-56">
                         <div className="card-body">
                             <Elements stripe={stripePromise}>
                                 <CheckoutForm

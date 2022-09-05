@@ -10,7 +10,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 const Details = () => {
     return (
-        <div className='mt-10 max-w-7xl lg:mx-auto md:mx-10 mx-5'>
+        <div className='mt-36 max-w-7xl lg:mx-auto md:mx-10 mx-5 overflow-hidden'>
             <div className='flex justify-center items-center mb-10'>
                 <div>
                     <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>
@@ -35,7 +35,7 @@ const Details = () => {
                             </div>
                             <div class="title"><span>EasyDocs Documentation</span></div>
                         </div>
-                        <div className='grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 my-16'>
+                        <div className='grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1 mb-16'>
                             <div >
                                 <img className=' w-100' src="https://docs-client-site.vercel.app/_next/image?url=https%3A%2F%2Fwordpress-theme.spider-themes.net%2Fdocy-dark%2Fwp-content%2Fuploads%2F2019%2F04%2Fspinner_logo-1.png&w=96&q=75" alt="" />
                                 <h1 className='text-2xl text-cyan-500 font-bold mt-5'>EasyDocs</h1>
@@ -83,7 +83,7 @@ const Details = () => {
                             </div>
                             <div class="title"><span>EasyDocs Feature</span></div>
                         </div>
-                        <div className='grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1  mt-10 '>
+                        <div className='grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1  mt-10 '>
                             <div >
                                 <img className=' w-20' src="https://freepikpsd.com/file/2019/10/feature-png-Transparent-Images.png" alt="" />
                                 <h1 className='text-2xl text-cyan-500 font-bold mt-5'>EasyDocs Feature</h1>

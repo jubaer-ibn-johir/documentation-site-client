@@ -10,7 +10,7 @@ const SingleBlog = ({blog}) => {
     const [blogs,setBlogs]=useState([])
     const {blogCategory,visitor,blogDescription,blogImage,blogPostDate,blogTitle,blogUploaderName,blogUploaderPhoto,readTime,_id}=blog;
     const handleVisitor=(id)=>{
-    fetch(`http://localhost:5000/blogVisitor/${id}`,{
+    fetch(`https://polar-shore-69456.herokuapp.com/blogVisitor/${id}`,{
         method:"PUT",
         headers:{
         'content-type': 'application/json'

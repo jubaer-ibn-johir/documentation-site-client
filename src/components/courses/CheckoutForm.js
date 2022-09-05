@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 
 
 const CheckoutForm = (props) => {
@@ -15,6 +16,17 @@ const CheckoutForm = (props) => {
     const [clientSecret, setClientSecret] = useState('')
     const navigate = useNavigate()
     const { price, name, email, _id } = props.payment
+    const [codes, setCode] = useState('61614654613')
+
+    const handlePayment = () => {
+        Swal.fire({
+            title: 'Payment Successfully !',
+            icon: 'success',
+            confirmButtonText: 'ok'
+        })
+        navigate('/myclass')
+
+    }
 
     useEffect(() => {
         if (price) {
@@ -101,6 +113,7 @@ const CheckoutForm = (props) => {
 
         }
 
+
     }
     return (
         <>
@@ -123,14 +136,26 @@ const CheckoutForm = (props) => {
                     }}
                 />
 
-                {!transactionId &&
-                    <button className='btn btn-success btn-sm mt-4' type="submit" disabled={!stripe}>
-                        Pay
-                    </button >}
-                {transactionId &&
+                {/* {!transactionId && */}
+
+                <button onClick={handlePayment} className='btn btn-success btn-sm mt-4' type="submit" >
+                    Pay
+                </button >
+
+
+                {/* <button className='btn btn-success btn-sm mt-4' type="submit" disabled={!stripe}>
+                    Paid
+                </button > */}
+
+                {/* } */}
+                {/* {transactionId &&
                     <button className='btn btn-success btn-sm mt-4 text-white' type="submit" disabled={!stripe || !clientSecret}>
                         Paied
-                    </button >}
+                    </button >} */}
+
+
+
+
             </form>
             {
                 cardError && <p className='text-red-500'>{cardError}</p>
@@ -145,4 +170,4 @@ const CheckoutForm = (props) => {
     );
 };
 
-export default CheckoutForm;
+export default CheckoutForm; 
