@@ -30,7 +30,7 @@ body {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     background-color: #06B6D4;
     transform-origin: bottom right;
