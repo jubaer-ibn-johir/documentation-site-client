@@ -1,9 +1,8 @@
-import { AiFillDelete } from 'react-icons/ai';
-import { BiEdit } from 'react-icons/bi';
+// import { AiFillDelete } from 'react-icons/ai';
+// import { BiEdit } from 'react-icons/bi';
 import React, { useEffect, useState } from 'react';
 import SingleBlog from './SingleBlog';
 import ScrollToTop from 'react-scroll-to-top';
-
 
 const ManageBlogs = () => {
     const [blogs, setBlogs] = useState([])
@@ -12,6 +11,7 @@ const ManageBlogs = () => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [blogs])
+
     return (
         <div className='lg:p-8 md:p-8 p-4 bg-sky-50 h-full componentsCommonBody'>
             <ScrollToTop smooth color="red" top='20' />
@@ -29,7 +29,7 @@ const ManageBlogs = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        {/* <tr>
                             <th className='CardsCommonBg'>1</th>
                             <td className='font-semibold CardsCommonBg'>Should You Invest In Internal...</td>
                             <td className='CardsCommonBg'>Aliquam finibus augue ac diam euismod, nec...</td>
@@ -85,8 +85,7 @@ const ManageBlogs = () => {
                                     </div>
                                 </div>
                             </th>
-                        </tr>
-
+                        </tr> */}
                         {
                             blogs.map((blog, index) => <SingleBlog index={index} key={blog._id} blog={blog}></SingleBlog>)
                         }

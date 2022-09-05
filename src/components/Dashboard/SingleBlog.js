@@ -7,7 +7,7 @@ import auth from '../../firebase.init';
 import useAdmin from '../../hooks/useAdmin';
 
 const SingleBlog = ({ blog, index }) => {
-    const { title, _id, details } = blog
+    const { blogTitle, _id, blogDescription } = blog
     const [user1] = useAuthState(auth)
     const [admin] = useAdmin(user1)
     const handleDelete = (id) => {
@@ -45,8 +45,8 @@ const SingleBlog = ({ blog, index }) => {
         <tr>
             <ScrollToTop smooth color="red" top='20' />
             <th className='CardsCommonBg'>{index + 1}</th>
-            <td className='font-semibold CardsCommonBg'>{title}</td>
-            <td className='CardsCommonBg'>{details?.slice(0, 20)}...</td>
+            <td className='font-semibold CardsCommonBg'>{blogTitle}</td>
+            <td className='CardsCommonBg'>{blogDescription?.slice(0, 20)}...</td>
             <th className='CardsCommonBg'>
                 <div className='w-12 h-12 rounded-full bg-red-100 flex justify-center items-center'>
                     <div className='text-red-500 text-3xl leading-3'>
