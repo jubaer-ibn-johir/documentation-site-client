@@ -13,8 +13,9 @@ const SingleBlog = ({blog}) => {
     fetch(`https://polar-shore-69456.herokuapp.com/blogVisitor/${id}`,{
         method:"PUT",
         headers:{
-         'content-type':"application/json"
-        }
+        'content-type': 'application/json'
+        },
+        body: JSON.stringify({visitorCount:1})
     })
     .then(res=>res.json())
     .then(data=>console.log(data))
@@ -50,8 +51,8 @@ const SingleBlog = ({blog}) => {
                 </div>
             </div>
             <div className='flex justify-between'>
-                <p className='flex items-end'>{visitor} <MdOutlineVisibility className='ml-3 w-6 h-6'></MdOutlineVisibility></p>
-                <p className='flex items-center'>{blogs.length} <FaRegCommentDots className='ml-3'></FaRegCommentDots></p>
+                <p className='flex items-end'>{visitor} <MdOutlineVisibility className='ml-1 w-6 h-6'></MdOutlineVisibility></p>
+                <p className='flex items-center'>{blogs.length} <FaRegCommentDots className='ml-1 w-5 h-5'></FaRegCommentDots></p>
             </div>
         </div>
     </div>
