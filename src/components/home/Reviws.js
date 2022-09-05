@@ -64,7 +64,7 @@ const Reviws = () => {
                 }
             </Slider >
 
-            <div className='my-16'>
+            <div className='my-16 mb-5'>
                 <div className='text-center'>
                     <Link to='/addReview'><label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label></Link>
                 </div >
