@@ -70,11 +70,11 @@ const Navbar = () => {
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
           <ul style={{ backgroundColor: '#042173' }} tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
-            <li><Link to='/' className='font-bold'>Home</Link></li>
+            <li><Link to='/' className=' hover-underline-animation font-bold nav'>Home</Link></li>
             <li className='active:bg-transparent focus:bg-transparent hover:bg-transparent'><Link className='font-bold text-white active:bg-transparent focus:bg-transparent hover:bg-transparent' to="/docs">Docs</Link></li>
-            <li><Link className='font-bold' to="/ask">Ask</Link></li>
-            <li><Link className='font-bold' to="/blog">Blogs</Link></li>
-            <li><Link className='font-bold' to="/admin-panel">Dashboard</Link></li>
+            <li><Link className='font-bold nav' to="/ask">Ask</Link></li>
+            <li><Link className='font-bold nav' to="/blog">Blogs</Link></li>
+            <li><Link className='font-bold nav' to="/admin-panel">Dashboard</Link></li>
             <li tabindex="0">
               <label>
                 Pages
