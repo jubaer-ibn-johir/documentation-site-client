@@ -12,7 +12,7 @@ import { DiMongodb } from "react-icons/di";
 
 const Details = () => {
     return (
-        <div className='mt-36 max-w-7xl lg:mx-auto md:mx-10 mx-5'>
+        <div className='mt-36 max-w-7xl lg:mx-auto md:mx-10 mx-5 overflow-hidden'>
             <div className='flex justify-center items-center mb-10'>
                 <div>
                     <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>

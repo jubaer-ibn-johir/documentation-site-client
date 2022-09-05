@@ -52,7 +52,7 @@ const Reviws = () => {
     };
 
     return (
-        <div className='h-screen max-w-7xl mx-auto py-24 mb-44'>
+        <div className='h-screen max-w-7xl mx-auto py-24 mb-36 md:mb-0 lg:mb-64'>
             <h1 className="text-center text-4xl font-semibold tracking-wide">What People Says</h1>
             <p className="text-center text-xl my-5 text-gray-500">We care about your opinion</p>
             <Slider {...settings}>
