@@ -2,12 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import avatar1 from '../../assets/home-img/img-1.png';
-import avatar2 from '../../assets/home-img/img-2.jpg';
-import avatar3 from '../../assets/home-img/img-3.png';
-import avatar4 from '../../assets/home-img/img-4.png';
-import avatar5 from '../../assets/home-img/img-5.png';
-import avatar6 from '../../assets/home-img/img-6.png';
 import SingleReview from './SingleReview';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +13,7 @@ const Reviws = () => {
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
-    console.log(reviews);
+    // console.log(reviews);
 
     var settings = {
         dots: true,
@@ -62,15 +56,14 @@ const Reviws = () => {
             <h1 className="text-center text-4xl font-semibold tracking-wide">What People Says</h1>
             <p className="text-center text-xl my-5 text-gray-500">We care about your opinion</p>
             <Slider {...settings}>
-
                 {
                     reviews.map(review => <SingleReview
                         key={review._id}
                         review={review}
                     ></SingleReview>)
                 }
-
             </Slider >
+
             <div className='my-16'>
                 <div className='text-center'>
                     <Link to='/addReview'><label for="AddReview" class="btn modal-button text-white bg-cyan-500 hover:bg-transparent hover:text-cyan-500 capitalize tracking-widest border-2 border-cyan-500  hover:border-cyan-500 shadow-xl">Add a Review</label></Link>
