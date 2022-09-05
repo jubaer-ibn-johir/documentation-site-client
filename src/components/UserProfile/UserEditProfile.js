@@ -23,51 +23,52 @@ const UserEditProfile = () => {
             method: 'POST',
             body: formData
         })
-        .then(res => res.json())
-        .then(result => {
-        if (result.success) {
-        const profile = {
-            name: data?.name,
-            photo: result.data.url,
-            profession: data?.profession,
-            address: data?.address,
-            phone: data?.phone,
-            gender: data?.gender,
-            website: data?.website,
-            facebookLink: data?.facebookLink,
-            linkedLink: data?.linkedLink,
-            date: data?.date,
-            twitterLink: data?.twitterLink,
-            instagramLink: data?.instagramLink,
-            biography: data?.biography
-        }
-        fetch(`https://polar-shore-69456.herokuapp.com/updateUser/${email}`, {
-            method: 'PATCH',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(profile)
-        })
             .then(res => res.json())
-            .then(data => {
+            .then(result => {
                 if (data) {
-                    Swal.fire({
-                        title: 'Successfully Updated!',
-                        icon: 'success',
-                        confirmButtonText: 'ok'
+                    const profile = {
+                        name: data?.name,
+                        photo: result.data.url,
+                        profession: data?.profession,
+                        address: data?.address,
+                        phone: data?.phone,
+                        gender: data?.gender,
+                        website: data?.website,
+                        facebookLink: data?.facebookLink,
+                        linkedLink: data?.linkedLink,
+                        date: data?.date,
+                        twitterLink: data?.twitterLink,
+                        instagramLink: data?.instagramLink,
+                        biography: data?.biography
+                    }
+                    fetch(`https://polar-shore-69456.herokuapp.com/updateUser/${email}`, {
+                        method: 'PUT',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(profile)
                     })
-                    reset()
+                        .then(res => res.json())
+                        .then(data => {
+                            if (data) {
+                                Swal.fire({
+                                    title: 'Successfully Updated!',
+                                    icon: 'success',
+                                    confirmButtonText: 'ok'
+                                })
+                                reset()
+                            }
+                            else {
+                                Swal.fire({
+                                    title: 'Faild to update!',
+                                    icon: 'error',
+                                    confirmButtonText: 'ok'
+                                })
+                            }
+                        })
                 }
-                else {
-                    Swal.fire({
-                        title: 'Faild to update!',
-                        icon: 'error',
-                        confirmButtonText: 'ok'
-                    })
-                }
-            })
-        }
-        })
+            }
+            )
     };
     useEffect(() => {
         const email = user?.email
@@ -86,8 +87,8 @@ const UserEditProfile = () => {
         }
     }, [user])
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className='lg:w-3/5 md:w-3/5 w-96  bg-slate-100 ml-3 lg:ml-16 rounded-lg  grid lg:grid-cols-2 grid-cols-1 lg:px-8 lg:mb-64 mb-48 '>
-            <div className='lg:ml-0 mx-5'>
+        <form onSubmit={handleSubmit(onSubmit)} className='lg:w-3/5 md:w-3/5 w-96  bg-slate-100 componentsCommonBody ml-3 lg:ml-16 rounded-lg  grid lg:grid-cols-2 grid-cols-1 lg:px-8 lg:mb-64 mb-48 '>
+            <div className='lg:ml-0 mx-5 '>
                 <div class="avatar">
                     <div class=" w-32  lg:w-48 rounded-full ring ring-white ring-offset-base-100 ring-offset-2 ml-24 my-14 lg:ml-24 lg:mt-8 justify-center">
                         <img src={userData?.photo ? userData?.photo : blankPic} alt="user" />
@@ -95,34 +96,34 @@ const UserEditProfile = () => {
                 </div>
                 <br />
                 <label >Name</label>
-                <input {...register("name")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("name")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label >Profession</label>
-                <input {...register("profession")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("profession")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label>Address</label>
-                <input {...register("address")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("address")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label>Facebook Profile Link</label>
-                <input {...register("facebookLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("facebookLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label>Linkedin Profile Link</label>
-                <input {...register("linkedLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("linkedLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
             </div>
             <div className='lg:mt-12 mt-0 lg:ml-0 mx-5'>
                 <label >Profile Photo</label>
-                <input {...register("img")} type="file" name="" id="" class="input input-bordered w-full max-w-md lg:p-24 p-12 mb-4 " />
+                <input {...register("img")} type="file" name="" id="" class="input input-bordered w-full max-w-md lg:p-24 p-12 mb-4 CardsCommonBgSecondary  " />
                 <label >Date of Birth</label>
-                <input {...register("date")} type="date" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 " />
+                <input {...register("date")} type="date" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label >Gender</label>
-                <input {...register("gender")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("gender")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label>Website</label>
-                <input {...register("website")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("website")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label>Twitter Profile Link</label>
-                <input {...register("twitterLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("twitterLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
                 <label>
                     Instagram Profile Link</label>
-                <input {...register("instagramLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5" />
+                <input {...register("instagramLink")} type="text" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 CardsCommonBgSecondary " />
             </div>
             <div className=' ml-5 lg:ml-0'>
                 <label >Biography</label>
-                <textarea {...register("biography")} required cols="10" rows="7" placeholder='Biography' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3 CardsCommonBgSecondary' />
+                <textarea {...register("biography")} cols="10" rows="7" placeholder='Biography' className='w-full  outline-none px-5 py-2 rounded-md mb-3 CardsCommonBgSecondary ' />
                 {/* <textarea type='text' {...register("biography")} className=' textarea rounded-md border-4  lg:px-0 text-lg ' name="" rows="7"></textarea> */}
                 <input className='btn btn-secondary lg:pt-6 lg:pb-12 lg:px-4 lg:my-5 my-8 text-white font-semibold text-lg ' type="submit" value="Save to Change" />
             </div>

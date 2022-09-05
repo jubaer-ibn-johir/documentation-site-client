@@ -11,7 +11,7 @@ import Newsletter from './Newsletter';
 
 const Home = () => {
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             <ScrollToTop smooth color="red" top='20' />
             <Banner></Banner>
             <BuildDocuments></BuildDocuments>
