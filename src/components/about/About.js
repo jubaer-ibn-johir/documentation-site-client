@@ -4,6 +4,7 @@ import aboutImg from "../../assets/about-img/about-pic.jpg";
 import jubaerVai3 from "../../assets/about-img/Jubaer vai3.jpg";
 import sohagVai5 from "../../assets/about-img/Sohag vai5.png";
 import hridoyVai2 from "../../assets/about-img/Hridoy vai2.png";
+import niharVai from "../../assets/about-img/Nihar vai.png";
 import naeem from "../../assets/about-img/Naeem.jpg";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
@@ -34,14 +35,14 @@ const About = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="grid items-center lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10 my-16 lg:mx-0 md:mx-5 mx-5">
-          <div 
-                      
+          <div
+
           >
             <img src={aboutImg} alt="" />
           </div>
           <div
-                     
-          
+
+
           >
             <div className="flex items-center">
               <div
@@ -85,7 +86,7 @@ const About = () => {
           </div>
         </div>
         <div
-          className="mb-20 lg:mx-8 md:mx-5 mx-3 py-16 lg:rounded-full md:rounded-3xl rounded-3xl shadow-xl CardsCommonBg"
+          className="mb-20 lg:mx-8 md:mx-5 mx-3 py-16 lg:rounded-3xl md:rounded-3xl rounded-3xl shadow-xl CardsCommonBg"
           style={{ backgroundColor: "#EBF8F4" }}
         >
           <div className="grid grid-cols-1 lg:gap-20 md:gap-16 gap-10">
@@ -94,6 +95,7 @@ const About = () => {
                 Our Perfect Team
               </h1>
             </div>
+
             <div className="lg:flex md:flex grid grid-cols-1 justify-center items-center lg:gap-5 md:gap-5 gap-10 lg:mx-0 md:mx-3 mx-3">
               <div className="flex justify-center items-center gap-5">
                 <div className="bg-gray-400 rounded-full">
@@ -172,6 +174,49 @@ const About = () => {
                     <a
                       className="text-xl text-gray-500 hover:text-sky-800"
                       href="https://github.com/Rakibulhasan70"
+                      target="_blank"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:flex md:flex grid grid-cols-1 justify-center items-center lg:gap-5 md:gap-5 gap-10 lg:mx-0 md:mx-3 mx-3">
+              <div className="flex justify-center items-center gap-5">
+                <div className="bg-gray-400 rounded-full">
+                  <img src={niharVai} alt="" className="rounded-full" />
+                </div>
+                <div>
+                  <div>
+                    <h2 className="font-semibold text-xl">Monirul Islam Nihar</h2>
+                    <p className="mt-1 mb-3 text-sky-800 blackToWhite">
+                      Team Member
+                    </p>
+                    <p className="text-gray-400">
+                      A very talented team member,
+                      <br /> Mr. Nihar. His coding skills helped
+                      <br /> us to reach our goals.
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 mt-3">
+                    <a
+                      className="text-xl text-gray-500 hover:text-sky-800"
+                      href="https://www.facebook.com/monirulislam.nihar"
+                      target="_blank"
+                    >
+                      <FaFacebookF />
+                    </a>
+                    <a
+                      className="text-xl text-gray-500 hover:text-sky-800"
+                      href="https://www.linkedin.com/in/moinr/"
+                      target="_blank"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                    <a
+                      className="text-xl text-gray-500 hover:text-sky-800"
+                      href="https://github.com/JRnihar"
                       target="_blank"
                     >
                       <FaGithub />
