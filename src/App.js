@@ -50,6 +50,7 @@ import { createContext, useState } from 'react';
 import AddReview from './components/home/AddReview';
 import UserProfileAbout from './components/UserProfile/UserProfileAbout';
 import UserEditProfile from './components/UserProfile/UserEditProfile';
+import MyClass from './components/courses/MyClass';
 export const ThemeContext = createContext(null);
 
 function App() {
@@ -83,6 +84,8 @@ function App() {
           <Route path="/redux" element={<Reduxjs></Reduxjs>} />
           <Route path="/nextjs" element={<Nextjs></Nextjs>} />
           <Route path="/login" element={<Login></Login>} />
+          <Route path="/myclass" element={<MyClass></MyClass>} />
+
           <Route path="/payment" element={<Payment></Payment>} />
           <Route path='/reactDashboard' element={<ReactDashboard></ReactDashboard>}>
             <Route index element={<Installation></Installation>}></Route>

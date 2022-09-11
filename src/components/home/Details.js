@@ -1,4 +1,5 @@
 import React from 'react';
+import './Details.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { MdFeaturedPlayList } from 'react-icons/md';
@@ -8,9 +9,10 @@ import { IoArrowRedoSharp, IoLogoReact, IoLogoFirebase, } from "react-icons/io5"
 import { SiHeroku, SiTailwindcss } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
+
 const Details = () => {
     return (
-        <div className='mt-36 max-w-7xl lg:mx-auto md:mx-10 mx-5'>
+        <div className='mt-36 max-w-7xl lg:mx-auto md:mx-10 mx-5 overflow-hidden'>
             <div className='flex justify-center items-center mb-10'>
                 <div>
                     <h1 class="mb-2 text-center text-2xl lg:text-4xl font-semibold tracking-wide">Know about our EasyDocs</h1>
@@ -33,7 +35,7 @@ const Details = () => {
                             <div className='h-16 w-16 rounded-full border-4 border-cyan-500 flex justify-center items-center p-3'>
                                 <CgFileDocument className='w-12 h-12 text-cyan-500' />
                             </div>
-                            <div class="title"><span>EasyDocs Documentation</span></div>
+                            <div className="title"><span>EasyDocs Documentation</span></div>
                         </div>
                         <div className='grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1 mb-16'>
                             <div >

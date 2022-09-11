@@ -12,23 +12,9 @@ const UserEditProfile = () => {
     const [userData, setUserData] = useState({});
     const { register, handleSubmit, reset } = useForm();
     const email = user?.email
-    const imageStorageKey = 'e480d661e84555b8eddd86bec84b7387'
     const onSubmit = data => {
-        console.log(data);
-        const image = data.img[0]
-        const formData = new FormData()
-        formData.append('image', image)
-        const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`
-        fetch(url, {
-            method: 'POST',
-            body: formData
-        })
-        .then(res => res.json())
-        .then(result => {
-        if (result.success) {
         const profile = {
             name: data?.name,
-            photo: result.data.url,
             profession: data?.profession,
             address: data?.address,
             phone: data?.phone,
@@ -42,7 +28,7 @@ const UserEditProfile = () => {
             biography: data?.biography
         }
         fetch(`https://polar-shore-69456.herokuapp.com/updateUser/${email}`, {
-            method: 'PATCH',
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
@@ -66,8 +52,6 @@ const UserEditProfile = () => {
                     })
                 }
             })
-        }
-        })
     };
     useEffect(() => {
         const email = user?.email
@@ -107,7 +91,7 @@ const UserEditProfile = () => {
             </div>
             <div className='lg:mt-12 mt-0 lg:ml-0 mx-5'>
                 <label >Profile Photo</label>
-                <input {...register("img")} type="file" name="" id="" class="input input-bordered w-full max-w-md lg:p-24 p-12 mb-4 " />
+                <input {...register("image")} type="file" name="" id="" class="input input-bordered w-full max-w-md lg:p-24 p-12 mb-4 " />
                 <label >Date of Birth</label>
                 <input {...register("date")} type="date" class="input input-bordered w-full max-w-md lg:p-7 p-0 mb-5 " />
                 <label >Gender</label>
@@ -122,7 +106,7 @@ const UserEditProfile = () => {
             </div>
             <div className=' ml-5 lg:ml-0'>
                 <label >Biography</label>
-                <textarea {...register("biography")} required cols="10" rows="7" placeholder='Biography' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3 CardsCommonBgSecondary' />
+                <textarea {...register("biography")} cols="10" rows="7" placeholder='Biography' className='w-full bg-white outline-none px-5 py-2 rounded-md mb-3 CardsCommonBgSecondary' />
                 {/* <textarea type='text' {...register("biography")} className=' textarea rounded-md border-4  lg:px-0 text-lg ' name="" rows="7"></textarea> */}
                 <input className='btn btn-secondary lg:pt-6 lg:pb-12 lg:px-4 lg:my-5 my-8 text-white font-semibold text-lg ' type="submit" value="Save to Change" />
             </div>
