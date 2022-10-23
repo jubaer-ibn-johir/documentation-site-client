@@ -51,7 +51,7 @@ const AddBlogs = () => {
                         readTime: data.readTime,
                         blogUploaderName: name,
                         blogUploaderPhoto: photo,
-                        visitor:0
+                        visitor: 0
                     }
                     fetch('https://polar-shore-69456.herokuapp.com/blog', {
                         method: "POST",
