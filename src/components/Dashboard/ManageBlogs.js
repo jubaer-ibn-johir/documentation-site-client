@@ -8,7 +8,7 @@ import ScrollToTop from 'react-scroll-to-top';
 const ManageBlogs = () => {
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/blog`)
+        fetch(`https://documentation-site-server.onrender.com/blog`)
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [blogs])

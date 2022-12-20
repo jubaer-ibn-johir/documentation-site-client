@@ -23,7 +23,7 @@ const BlogDetails = () => {
     const { blogCategory, blogDescription, blogImage, blogPostDate, blogTitle, blogUploaderName, blogUploaderPhoto, readTime, _id } = blog;
     useEffect(() => {
         setLoading(true)
-        fetch(`https://polar-shore-69456.herokuapp.com/blog/${blogId}`)
+        fetch(`https://documentation-site-server.onrender.com/blog/${blogId}`)
             .then(res => res.json())
             .then(data => setBlog(data))
         setLoading(false)
@@ -31,7 +31,7 @@ const BlogDetails = () => {
 
     useEffect(() => {
         setLoading(true)
-        fetch(`https://polar-shore-69456.herokuapp.com/blog`)
+        fetch(`https://documentation-site-server.onrender.com/blog`)
             .then(res => res.json())
             .then(data => setBlogs(data))
         setLoading(false)
@@ -41,7 +41,7 @@ const BlogDetails = () => {
     useEffect(() => {
         const email = user?.email
         if (email) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -64,7 +64,7 @@ const BlogDetails = () => {
                 postDate: today,
                 postId: _id
             }
-            fetch(`https://polar-shore-69456.herokuapp.com/comment`, {
+            fetch(`https://documentation-site-server.onrender.com/comment`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'
@@ -95,7 +95,7 @@ const BlogDetails = () => {
         }
     };
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/comment/${blogId}`)
+        fetch(`https://documentation-site-server.onrender.com/comment/${blogId}`)
             .then(res => res.json())
             .then(data => setComments(data))
     }, [comments])

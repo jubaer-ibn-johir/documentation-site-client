@@ -19,7 +19,7 @@ const AddReview = () => {
     useEffect(() => {
         const email = user?.email
         if (email) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -40,7 +40,7 @@ const AddReview = () => {
             rDescription: data.textArea,
             rating: rating,
         }
-        fetch('https://polar-shore-69456.herokuapp.com/review', {
+        fetch('https://documentation-site-server.onrender.com/review', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

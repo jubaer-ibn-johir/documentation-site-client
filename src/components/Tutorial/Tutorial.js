@@ -18,7 +18,7 @@ const Tutorial = () => {
     }
     useEffect(() => {
         setLoading(true)
-        fetch(`https://polar-shore-69456.herokuapp.com/tutorial`)
+        fetch(`https://documentation-site-server.onrender.com/tutorial`)
             .then(res => res.json())
             .then(result => {
                 if (searchQuery) {

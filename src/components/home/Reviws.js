@@ -9,7 +9,7 @@ const Reviws = () => {
 
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/review`)
+        fetch(`https://documentation-site-server.onrender.com/review`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
@@ -98,7 +98,7 @@ export default Reviws;
 
 //     const [reviews, setReviews] = useState([]);
 //     useEffect(() => {
-//         fetch(`https://polar-shore-69456.herokuapp.com/review`)
+//         fetch(`https://documentation-site-server.onrender.com/review`)
 //             .then(res => res.json())
 //             .then(data => setReviews(data))
 //     }, [])

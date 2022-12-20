@@ -13,7 +13,7 @@ const useToken = user => {
       photo: photo
     }
     if (email) {
-      fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+      fetch(`https://documentation-site-server.onrender.com/user/${email}`, {
         method: 'PUT',
         headers: {
           'content-type': 'application/json'

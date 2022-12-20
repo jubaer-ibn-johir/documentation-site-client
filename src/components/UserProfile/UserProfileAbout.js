@@ -12,7 +12,7 @@ const UserProfileAbout = () => {
     useEffect(() => {
         const email = user?.email
         if (email) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',

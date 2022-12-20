@@ -12,7 +12,7 @@ const SingleUser = ({ user }) => {
     const [admin] = useAdmin(user1)
     const makeAdmin = () => {
         if (admin) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/admin/${email}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/admin/${email}`, {
                 method: 'PUT',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -48,7 +48,7 @@ const SingleUser = ({ user }) => {
 
     const handleDelete = (id) => {
         if (admin) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${id}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

@@ -5,7 +5,7 @@ import ScrollToTop from 'react-scroll-to-top';
 const TutorialsManage = () => {
     const [tutorials, setTutorials] = useState([])
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/tutorial`)
+        fetch(`https://documentation-site-server.onrender.com/tutorial`)
             .then(res => res.json())
             .then(data => setTutorials(data))
     }, [tutorials])

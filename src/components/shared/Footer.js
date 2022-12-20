@@ -19,7 +19,7 @@ const Footer = () => {
     const onSubmit = data => {
         console.log(data);
 
-        const url = 'https://polar-shore-69456.herokuapp.com/news';
+        const url = 'https://documentation-site-server.onrender.com/news';
         fetch(url, {
             method: 'POST',
             headers: {

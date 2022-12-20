@@ -5,7 +5,7 @@ import SingleUser from './SingleUser';
 const ManageUsers = () => {
     const [users, setUsers] = useState([])
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/user`)
+        fetch(`https://documentation-site-server.onrender.com/user`)
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [users])

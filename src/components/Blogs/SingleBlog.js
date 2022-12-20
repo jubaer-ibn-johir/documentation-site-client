@@ -10,7 +10,7 @@ const SingleBlog = ({blog}) => {
     const [blogs,setBlogs]=useState([])
     const {blogCategory,visitor,blogDescription,blogImage,blogPostDate,blogTitle,blogUploaderName,blogUploaderPhoto,readTime,_id}=blog;
     const handleVisitor=(id)=>{
-    fetch(`https://polar-shore-69456.herokuapp.com/blogVisitor/${id}`,{
+    fetch(`https://documentation-site-server.onrender.com/blogVisitor/${id}`,{
         method:"PUT",
         headers:{
         'content-type': 'application/json'
@@ -21,7 +21,7 @@ const SingleBlog = ({blog}) => {
     .then(data=>console.log(data))
     }
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/comment/${_id}`)
+        fetch(`https://documentation-site-server.onrender.com/comment/${_id}`)
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [blogs])

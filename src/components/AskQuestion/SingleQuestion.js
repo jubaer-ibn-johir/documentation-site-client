@@ -7,7 +7,7 @@ const SingleQuestion = ({ question }) => {
     const { qName, qDate, qPhoto, title, _id } = question
     const [answers, setAnswers] = useState([]);
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/answer/${_id}`)
+        fetch(`https://documentation-site-server.onrender.com/answer/${_id}`)
             .then(res => res.json())
             .then(data => setAnswers(data))
     }, [answers])

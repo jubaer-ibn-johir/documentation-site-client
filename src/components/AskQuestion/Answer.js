@@ -25,7 +25,7 @@ const Answer = () => {
     useEffect(() => {
         const email = user?.email
         if (email) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -39,7 +39,7 @@ const Answer = () => {
         }
     }, [user])
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/question/${ansId}`)
+        fetch(`https://documentation-site-server.onrender.com/question/${ansId}`)
             .then(res => res.json())
             .then(data => setQuestion(data))
     }, [])
@@ -52,7 +52,7 @@ const Answer = () => {
             aDate: today,
             postId: _id
         }
-        fetch(`https://polar-shore-69456.herokuapp.com/answer`, {
+        fetch(`https://documentation-site-server.onrender.com/answer`, {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -79,7 +79,7 @@ const Answer = () => {
             })
     };
     useEffect(() => {
-        fetch(`https://polar-shore-69456.herokuapp.com/answer/${ansId}`)
+        fetch(`https://documentation-site-server.onrender.com/answer/${ansId}`)
             .then(res => res.json())
             .then(data => setAnswers(data))
     }, [answers])

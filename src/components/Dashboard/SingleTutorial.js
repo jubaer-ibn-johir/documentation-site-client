@@ -12,7 +12,7 @@ const SingleTutorial = ({ tutorial, index }) => {
     const [admin] = useAdmin(user1)
     const handleDelete = (id) => {
         if (admin) {
-            fetch(`https://polar-shore-69456.herokuapp.com/tutorial/${id}`, {
+            fetch(`https://documentation-site-server.onrender.com/tutorial/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

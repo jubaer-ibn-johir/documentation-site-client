@@ -9,7 +9,7 @@ import { IoArrowRedoSharp } from 'react-icons/io5';
 const Courses = () => {
     const [courses, setCourses] = useState([])
     useEffect(() => {
-        const url = 'https://polar-shore-69456.herokuapp.com/course'
+        const url = 'https://documentation-site-server.onrender.com/course'
         fetch(url)
             .then(res => res.json())
             .then(data => setCourses(data))

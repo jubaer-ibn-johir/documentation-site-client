@@ -12,7 +12,7 @@ const SingleBlog = ({ blog, index }) => {
     const [admin] = useAdmin(user1)
     const handleDelete = (id) => {
         if (admin) {
-            fetch(`https://polar-shore-69456.herokuapp.com/blog/${id}`, {
+            fetch(`https://documentation-site-server.onrender.com/blog/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

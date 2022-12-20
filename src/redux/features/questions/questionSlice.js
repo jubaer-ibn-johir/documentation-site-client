@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchQuestions=createAsyncThunk('questions/fetchQuestions',async(searchKey)=>{
-    const res = await axios.get("https://polar-shore-69456.herokuapp.com/question")
+    const res = await axios.get("https://documentation-site-server.onrender.com/question")
     if(searchKey){
         const filterData= res.data.filter(question =>question.title.toLowerCase().includes(searchKey.toLowerCase()))
         return filterData

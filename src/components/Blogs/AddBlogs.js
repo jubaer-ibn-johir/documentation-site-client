@@ -15,7 +15,7 @@ const AddBlogs = () => {
     useEffect(() => {
         const email = user?.email
         if (email) {
-            fetch(`https://polar-shore-69456.herokuapp.com/user/${email}`, {
+            fetch(`https://documentation-site-server.onrender.com/user/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -53,7 +53,7 @@ const AddBlogs = () => {
                         blogUploaderPhoto: photo,
                         visitor:0
                     }
-                    fetch('https://polar-shore-69456.herokuapp.com/blog', {
+                    fetch('https://documentation-site-server.onrender.com/blog', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json'

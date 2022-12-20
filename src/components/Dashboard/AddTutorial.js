@@ -14,7 +14,7 @@ const AddTutorial = () => {
     const [admin] = useAdmin(user1)
     const onSubmit = data => {
         if (admin) {
-            fetch(`https://polar-shore-69456.herokuapp.com/tutorial`, {
+            fetch(`https://documentation-site-server.onrender.com/tutorial`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'
